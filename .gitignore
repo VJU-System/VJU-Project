@@ -17,3 +17,8 @@ node_modules/
 # Environment
 .env
 .env.local
+
+# Project files (not needed for GitHub Pages)
+docs/project/
+docs/src/
+docs/stitch/

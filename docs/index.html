@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VNU Research Hub</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'vnu-blue': '#0054A6',
+            'bg-canvas': '#F4F6F8',
+            'surface': '#FFFFFF',
+            'text-main': '#111827',
+            'text-muted': '#6B7280',
+            'accent-urgent': '#DC2626',
+            'accent-new': '#10B981',
+            'border': '#e2e8f0',
+            'accent': '#3b82f6',
+            'dept-brand': '#800000',
+          },
+          fontFamily: {
+            sans: ['Arial', 'sans-serif'],
+            display: ['Arial', 'sans-serif'],
+            mono: ['monospace'],
+          },
+          boxShadow: {
+            soft: '0 1px 3px rgba(0,0,0,0.05), 0 10px 25px -5px rgba(0,0,0,0.05)',
+            hover: '0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04)',
+            subtle: '0 1px 3px rgba(0,0,0,0.05), 0 10px 25px -5px rgba(0,0,0,0.05)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Arial', sans-serif; }
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    .sync-highlight { background-color: #eff6ff; border-left: 3px solid #3b82f6; }
+    .view { display: none; }
+    .view.active { display: flex; }
+    .view-home.active, .view-search.active, .view-department.active { display: flex; flex-direction: column; }
+
+    /* Prose for document reader */
+    .prose-legal h1 { font-size: 1.35rem; font-weight: 700; margin: 2rem 0 0.75rem; text-align: center; }
+    .prose-legal h2 { font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; color: #1e293b; }
+    .prose-legal p { margin: 0.6rem 0; line-height: 1.75; font-size: 0.95rem; }
+    .prose-legal ul, .prose-legal ol { margin: 0.4rem 0 0.4rem 1.25rem; }
+    .prose-legal li { margin: 0.2rem 0; line-height: 1.7; font-size: 0.95rem; }
+    .prose-legal table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.85rem; }
+    .prose-legal th, .prose-legal td { border: 1px solid #e2e8f0; padding: 0.4rem 0.6rem; text-align: center; }
+    .prose-legal blockquote { border-left: 4px solid #f59e0b; background: #fffbeb; padding: 0.6rem 0.75rem; margin: 0.75rem 0; border-radius: 0 6px 6px 0; font-size: 0.85rem; }
+    .prose-legal hr { border-color: #e2e8f0; margin: 1rem 0; }
+    .prose-legal strong { color: #1e293b; }
+
+    /* TOC */
+    #toc a { display: block; padding: 6px 8px; border-radius: 6px; color: #334155; font-size: 12px; text-decoration: none; transition: all 0.15s; }
+    #toc a:hover { background: #ffffff; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+    #toc a.active { background: #eff6ff; color: #3b82f6; font-weight: 500; border-left: 2px solid #3b82f6; }
+    #toc .chapter-item > a { font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; padding-left: 8px; margin-top: 12px; }
+    #toc .article-item > a { padding-left: 16px; }
+    .drag-handle { cursor: col-resize; user-select: none; }
+    .drag-handle:hover .handle-bar, .drag-handle.dragging .handle-bar { background: #3b82f6; }
+  </style>
+</head>
+<body class="bg-bg-canvas text-text-main min-h-screen flex flex-col">
+
+<!-- ============================================================ -->
+<!-- SHARED HEADER NAV -->
+<!-- ============================================================ -->
+<nav id="main-nav" class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-14">
+      <!-- Logo -->
+      <a href="#" id="nav-home-btn" class="flex items-center gap-2.5 group">
+        <div class="w-7 h-7 rounded bg-vnu-blue flex items-center justify-center text-white font-bold text-sm">V</div>
+        <span class="font-bold text-base tracking-tight text-vnu-blue group-hover:text-blue-700 transition-colors">VNU Research Hub</span>
+      </a>
+      <!-- Nav links (hidden on reader) -->
+      <div id="nav-links" class="hidden md:flex gap-6">
+        <a href="#" data-nav="home" class="nav-link text-text-muted hover:text-vnu-blue text-sm font-medium transition-colors">Home</a>
+        <a href="#" data-nav="department" class="nav-link text-text-muted hover:text-vnu-blue text-sm font-medium transition-colors">Departments</a>
+        <a href="#" data-nav="search" class="nav-link text-text-muted hover:text-vnu-blue text-sm font-medium transition-colors">Search</a>
+      </div>
+      <!-- Reader controls (shown on reader only) -->
+      <div id="reader-controls" class="hidden items-center gap-1">
+        <button data-lang="vi" class="lang-btn px-2 py-1 text-[11px] font-bold bg-vnu-blue text-white rounded">VN</button>
+        <button data-lang="en" class="lang-btn px-2 py-1 text-[11px] font-bold bg-vnu-blue text-white rounded">EN</button>
+        <button data-lang="ja" class="lang-btn px-2 py-1 text-[11px] font-bold bg-vnu-blue text-white rounded">JP</button>
+        <div class="w-px h-3 bg-gray-200 mx-1"></div>
+        <a id="btn-source" href="data/3626_source.pdf" target="_blank" rel="noopener" class="view-btn px-2 py-1 text-[11px] font-medium text-text-muted hover:bg-gray-100 rounded inline-flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>Source</a>
+        <button id="btn-split" class="view-btn px-2 py-1 text-[11px] font-medium text-accent bg-blue-50 border border-blue-100 rounded">Split View</button>
+      </div>
+      <!-- Right actions -->
+      <div class="flex items-center gap-3">
+        <button id="btn-exit-split" class="hidden h-8 px-3 items-center gap-2 text-xs font-medium text-red-600 hover:bg-red-50 border border-red-100 rounded-md transition-all">
+          <span class="material-symbols-outlined text-[16px]">close_fullscreen</span>
+          <span class="hidden sm:inline">Exit Split</span>
+        </button>
+        <!-- Quick search (non-reader) -->
+        <div id="nav-search-box" class="relative hidden sm:block">
+          <span class="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none text-text-muted">
+            <span class="material-symbols-outlined text-[18px]">search</span>
+          </span>
+          <input id="nav-search-input" type="text" placeholder="Quick search..." class="block w-48 pl-9 pr-3 py-1.5 border border-gray-200 rounded-lg bg-bg-canvas placeholder-text-muted focus:outline-none focus:bg-white focus:ring-1 focus:ring-vnu-blue focus:border-vnu-blue text-sm transition-colors">
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================ -->
+<!-- VIEW: HOME / DISCOVERY -->
+<!-- ============================================================ -->
+<div id="view-home" class="view view-home active flex-1">
+  <!-- Hero -->
+  <section class="relative pt-14 pb-10 px-4 flex flex-col items-center text-center bg-gradient-to-b from-white to-bg-canvas border-b border-gray-200/50">
+    <div class="absolute top-0 inset-x-0 h-full overflow-hidden -z-10 pointer-events-none opacity-40">
+      <div class="absolute left-[calc(50%-15rem)] top-10 h-[40rem] w-[50rem] origin-top-left -rotate-12 rounded-full bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-10 blur-3xl"></div>
+      <div class="absolute right-[calc(50%-20rem)] top-20 h-[30rem] w-[40rem] origin-top-right rotate-12 rounded-full bg-gradient-to-tr from-[#0054A6] to-[#00C2FF] opacity-10 blur-3xl"></div>
+    </div>
+    <div class="w-full max-w-4xl mx-auto space-y-7 relative z-10">
+      <div class="space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-vnu-blue/5 text-vnu-blue text-xs font-semibold uppercase tracking-wider border border-vnu-blue/10">
+          <span class="w-2 h-2 rounded-full bg-vnu-blue animate-pulse"></span>
+          Administrative Intelligence
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-text-main tracking-tight leading-[1.1]">
+          Search the VNU<br>Administrative Archive
+        </h1>
+        <p class="text-lg text-text-muted max-w-2xl mx-auto">
+          Instant clarity on regulations, circulars, and academic decrees.
+        </p>
+      </div>
+      <!-- Search -->
+      <div class="relative max-w-[600px] w-full mx-auto group">
+        <div class="absolute -inset-1 bg-gradient-to-r from-vnu-blue/20 to-cyan-500/20 rounded-[24px] blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+        <div class="relative bg-white rounded-[20px] shadow-soft flex items-center p-2 focus-within:shadow-xl focus-within:ring-2 focus-within:ring-vnu-blue/20 transition-all duration-300">
+          <div class="pl-4 text-text-muted">
+            <span class="material-symbols-outlined text-[28px]">search</span>
+          </div>
+          <input id="home-search" type="text" class="w-full h-12 px-4 bg-transparent border-none text-lg text-text-main placeholder-text-muted focus:ring-0" placeholder="Search by ID, keyword, or department...">
+          <button id="home-search-btn" class="bg-vnu-blue hover:bg-blue-700 text-white p-3 rounded-2xl transition-colors flex items-center justify-center shadow-lg shadow-vnu-blue/20">
+            <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+      <!-- Trending -->
+      <div class="flex flex-wrap justify-center gap-2 pt-1">
+        <span class="text-sm text-text-muted py-1.5">Trending:</span>
+        <button class="trending-tag px-3 py-1.5 bg-white border border-gray-200 hover:border-vnu-blue/30 hover:bg-vnu-blue/5 text-sm font-medium text-text-muted hover:text-vnu-blue rounded-full transition-all shadow-sm">Academic Affairs</button>
+        <button class="trending-tag px-3 py-1.5 bg-white border border-gray-200 hover:border-vnu-blue/30 hover:bg-vnu-blue/5 text-sm font-medium text-text-muted hover:text-vnu-blue rounded-full transition-all shadow-sm">Scholarships 2024</button>
+        <button class="trending-tag px-3 py-1.5 bg-white border border-gray-200 hover:border-vnu-blue/30 hover:bg-vnu-blue/5 text-sm font-medium text-text-muted hover:text-vnu-blue rounded-full transition-all shadow-sm">Dormitory Rules</button>
+        <button class="trending-tag px-3 py-1.5 bg-white border border-gray-200 hover:border-vnu-blue/30 hover:bg-vnu-blue/5 text-sm font-medium text-text-muted hover:text-vnu-blue rounded-full transition-all shadow-sm">Tuition Fees</button>
+      </div>
+    </div>
+  </section>
+  <!-- Recent Circulars -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl font-bold text-text-main flex items-center gap-2">
+        <span class="material-symbols-outlined text-vnu-blue">history_edu</span>
+        Recent Circulars
+      </h2>
+      <a href="#" class="group flex items-center gap-1 text-sm font-semibold text-vnu-blue hover:text-blue-700 transition-colors" onclick="event.preventDefault(); navigateTo('search')">
+        View all archive
+        <span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+      </a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card: Regulation (real doc) -->
+      <article class="doc-card group bg-white rounded-xl border border-gray-200 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col h-full cursor-pointer" data-doc="3626">
+        <div class="absolute top-0 left-0 w-1 h-full bg-vnu-blue rounded-l-xl"></div>
+        <div class="flex justify-between items-start mb-4">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-vnu-blue border border-blue-100">Regulation</span>
+          <time class="text-xs text-text-muted font-mono bg-gray-50 px-2 py-1 rounded">OCT 21, 2022</time>
+        </div>
+        <h3 class="text-lg font-bold text-text-main mb-2 group-hover:text-vnu-blue transition-colors">Regulation on Undergraduate Training at VNU</h3>
+        <p class="text-text-muted text-sm leading-relaxed mb-6 line-clamp-2">Decision 3626/QD-DHQGHN promulgating the regulation on undergraduate training at Vietnam National University, Hanoi.</p>
+        <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center text-vnu-blue">
+              <span class="material-symbols-outlined text-[14px]">school</span>
+            </div>
+            <span class="text-xs font-medium text-text-main">Academic Affairs</span>
+          </div>
+          <div class="flex gap-1">
+            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-100">VN</span>
+            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-100">EN</span>
+          </div>
+        </div>
+      </article>
+      <!-- Card 2 -->
+      <article class="group bg-white rounded-xl border border-gray-200 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-1 h-full bg-accent-urgent"></div>
+        <div class="flex justify-between items-start mb-4">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-red-50 text-accent-urgent border border-red-100">URGENT</span>
+          <time class="text-xs text-text-muted font-mono bg-gray-50 px-2 py-1 rounded">OCT 24, 2024</time>
+        </div>
+        <h3 class="text-lg font-bold text-text-main mb-2 group-hover:text-vnu-blue transition-colors">Tuition Fee Adjustment &amp; Waiver Policy 2024-2025</h3>
+        <p class="text-text-muted text-sm leading-relaxed mb-6 line-clamp-2">Official decree regarding the new tuition framework for undergraduate programs and updated waiver criteria.</p>
+        <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center text-vnu-blue">
+              <span class="material-symbols-outlined text-[14px]">account_balance</span>
+            </div>
+            <span class="text-xs font-medium text-text-main">Financial Affairs</span>
+          </div>
+          <span class="text-[10px] font-mono text-gray-400">DOC-2024-882</span>
+        </div>
+      </article>
+      <!-- Card 3 -->
+      <article class="group bg-white rounded-xl border border-gray-200 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+        <div class="flex justify-between items-start mb-4">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-accent-new border border-emerald-100">New Announcement</span>
+          <time class="text-xs text-text-muted font-mono bg-gray-50 px-2 py-1 rounded">OCT 20, 2024</time>
+        </div>
+        <h3 class="text-lg font-bold text-text-main mb-2 group-hover:text-vnu-blue transition-colors">Holiday Schedule: Lunar New Year 2025</h3>
+        <p class="text-text-muted text-sm leading-relaxed mb-6 line-clamp-2">Administrative closing dates and campus facility access hours during the upcoming Tet holiday period.</p>
+        <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-gray-600">
+              <span class="material-symbols-outlined text-[14px]">calendar_month</span>
+            </div>
+            <span class="text-xs font-medium text-text-main">Admin Office</span>
+          </div>
+          <span class="text-[10px] font-mono text-gray-400">ADM-HOL-25</span>
+        </div>
+      </article>
+      <!-- Card 4 -->
+      <article class="group bg-white rounded-xl border border-gray-200 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+        <div class="flex justify-between items-start mb-4">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-50 text-orange-600 border border-orange-100">Opportunity</span>
+          <time class="text-xs text-text-muted font-mono bg-gray-50 px-2 py-1 rounded">OCT 18, 2024</time>
+        </div>
+        <h3 class="text-lg font-bold text-text-main mb-2 group-hover:text-vnu-blue transition-colors">Exchange Program Opportunities: Japan &amp; Korea</h3>
+        <p class="text-text-muted text-sm leading-relaxed mb-6 line-clamp-2">Open call for student applications for the Spring 2025 semester exchange programs with partner universities.</p>
+        <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-orange-50 flex items-center justify-center text-orange-600">
+              <span class="material-symbols-outlined text-[14px]">public</span>
+            </div>
+            <span class="text-xs font-medium text-text-main">Intl. Relations</span>
+          </div>
+          <span class="text-[10px] font-mono text-gray-400">EXC-JP-KR</span>
+        </div>
+      </article>
+      <!-- Card 5 -->
+      <article class="group bg-white rounded-xl border border-gray-200 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+        <div class="flex justify-between items-start mb-4">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-vnu-blue border border-blue-100">Directive</span>
+          <time class="text-xs text-text-muted font-mono bg-gray-50 px-2 py-1 rounded">OCT 15, 2024</time>
+        </div>
+        <h3 class="text-lg font-bold text-text-main mb-2 group-hover:text-vnu-blue transition-colors">Implementation of Digital Student ID Cards</h3>
+        <p class="text-text-muted text-sm leading-relaxed mb-6 line-clamp-2">Instructions for all students to update their profile photos and verify personal data for the new digital ID system.</p>
+        <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-teal-50 flex items-center justify-center text-teal-600">
+              <span class="material-symbols-outlined text-[14px]">badge</span>
+            </div>
+            <span class="text-xs font-medium text-text-main">Student Affairs</span>
+          </div>
+          <span class="text-[10px] font-mono text-gray-400">STU-ID-24</span>
+        </div>
+      </article>
+      <!-- Card 6 -->
+      <article class="group bg-white rounded-xl border border-gray-200 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+        <div class="flex justify-between items-start mb-4">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600 border border-gray-200">Archive</span>
+          <time class="text-xs text-text-muted font-mono bg-gray-50 px-2 py-1 rounded">OCT 12, 2024</time>
+        </div>
+        <h3 class="text-lg font-bold text-text-main mb-2 group-hover:text-vnu-blue transition-colors">Dormitory Safety Regulations 2024</h3>
+        <p class="text-text-muted text-sm leading-relaxed mb-6 line-clamp-2">Comprehensive safety guidelines for all dormitory residents, covering fire safety, visitor policies, and curfew.</p>
+        <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-yellow-50 flex items-center justify-center text-yellow-600">
+              <span class="material-symbols-outlined text-[14px]">apartment</span>
+            </div>
+            <span class="text-xs font-medium text-text-main">Housing Board</span>
+          </div>
+          <span class="text-[10px] font-mono text-gray-400">HSG-REG-24</span>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2 opacity-60">
+        <div class="w-5 h-5 rounded bg-gray-800 flex items-center justify-center text-white font-bold text-[10px]">V</div>
+        <span class="text-sm text-text-muted">&copy; 2024 Vietnam National University</span>
+      </div>
+      <div class="flex gap-6 text-sm text-text-muted">
+        <a class="hover:text-vnu-blue transition-colors" href="#">Privacy Policy</a>
+        <a class="hover:text-vnu-blue transition-colors" href="#">Terms of Service</a>
+        <a class="hover:text-vnu-blue transition-colors" href="#">Help Center</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ============================================================ -->
+<!-- VIEW: SEARCH RESULTS -->
+<!-- ============================================================ -->
+<div id="view-search" class="view view-search flex-1">
+  <main class="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 py-8 flex flex-col lg:flex-row gap-8">
+    <!-- Sidebar Filters -->
+    <aside class="w-full lg:w-[260px] shrink-0 space-y-6">
+      <!-- Department -->
+      <div class="bg-white rounded-xl shadow-subtle p-5 border border-gray-200">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-semibold text-base text-gray-900">Department</h3>
+          <span class="material-symbols-outlined text-gray-400 text-[20px]">apartment</span>
+        </div>
+        <div class="space-y-3">
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" checked class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">Financial Affairs</span><span class="ml-auto text-xs text-gray-400 font-mono">12</span></label>
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">Student Support</span><span class="ml-auto text-xs text-gray-400 font-mono">8</span></label>
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">Academic Affairs</span><span class="ml-auto text-xs text-gray-400 font-mono">24</span></label>
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">International Relations</span><span class="ml-auto text-xs text-gray-400 font-mono">5</span></label>
+          <button class="text-vnu-blue text-sm font-medium mt-1 hover:underline">+ Show more</button>
+        </div>
+      </div>
+      <!-- Document Type -->
+      <div class="bg-white rounded-xl shadow-subtle p-5 border border-gray-200">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-semibold text-base text-gray-900">Document Type</h3>
+          <span class="material-symbols-outlined text-gray-400 text-[20px]">description</span>
+        </div>
+        <div class="space-y-3">
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" checked class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">Regulations</span></label>
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">Circulars</span></label>
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">Announcements</span></label>
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">Forms</span></label>
+        </div>
+      </div>
+      <!-- Date Range -->
+      <div class="bg-white rounded-xl shadow-subtle p-5 border border-gray-200">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-semibold text-base text-gray-900">Date Range</h3>
+          <span class="material-symbols-outlined text-gray-400 text-[20px]">calendar_today</span>
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <div><label class="text-xs text-gray-500 mb-1 block">From</label><input type="date" class="w-full text-sm border-gray-300 rounded-lg focus:ring-vnu-blue focus:border-vnu-blue"></div>
+          <div><label class="text-xs text-gray-500 mb-1 block">To</label><input type="date" class="w-full text-sm border-gray-300 rounded-lg focus:ring-vnu-blue focus:border-vnu-blue"></div>
+        </div>
+        <div class="pt-2 flex flex-wrap gap-2">
+          <button class="px-3 py-1 bg-gray-100 hover:bg-gray-200 text-xs font-medium rounded-full text-gray-600 transition-colors">2024</button>
+          <button class="px-3 py-1 bg-gray-100 hover:bg-gray-200 text-xs font-medium rounded-full text-gray-600 transition-colors">Last 30 days</button>
+        </div>
+      </div>
+    </aside>
+    <!-- Results area -->
+    <div class="flex-1 min-w-0">
+      <!-- Search bar -->
+      <div class="flex flex-col sm:flex-row gap-4 mb-6">
+        <div class="relative flex-1">
+          <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><span class="material-symbols-outlined text-gray-400 text-[24px]">search</span></div>
+          <input id="search-input" type="text" class="block w-full pl-12 pr-4 py-3 border-gray-200 rounded-xl bg-white shadow-sm focus:ring-2 focus:ring-vnu-blue/20 focus:border-vnu-blue text-base placeholder-gray-400" placeholder="Search by ID, keyword, or department..." value="Tuition Regulations">
+        </div>
+        <select class="form-select border-gray-200 rounded-xl bg-white shadow-sm py-3 pl-4 pr-10 text-sm focus:ring-vnu-blue/20 focus:border-vnu-blue cursor-pointer">
+          <option>Relevance</option><option>Newest first</option><option>Oldest first</option>
+        </select>
+      </div>
+      <!-- Active filters -->
+      <div class="flex flex-wrap items-center gap-2 border-b border-gray-200 pb-4 mb-6">
+        <span class="text-sm font-medium text-gray-500 mr-2">Showing 24 results</span>
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-vnu-blue/10 text-vnu-blue border border-vnu-blue/20 text-sm font-medium">Financial Affairs <button class="hover:bg-vnu-blue/20 rounded-full p-0.5"><span class="material-symbols-outlined text-[16px]">close</span></button></div>
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-vnu-blue/10 text-vnu-blue border border-vnu-blue/20 text-sm font-medium">Regulations <button class="hover:bg-vnu-blue/20 rounded-full p-0.5"><span class="material-symbols-outlined text-[16px]">close</span></button></div>
+        <button class="text-sm text-gray-500 hover:text-vnu-blue font-medium ml-1">Clear all</button>
+      </div>
+      <!-- Results list -->
+      <div class="space-y-4 pb-8">
+        <!-- Result 1 (real doc) -->
+        <article class="search-result bg-white rounded-xl p-5 shadow-subtle border border-gray-200 hover:shadow-md hover:border-vnu-blue/30 transition-all cursor-pointer group flex flex-col sm:flex-row gap-5" data-doc="3626">
+          <div class="shrink-0 flex sm:flex-col items-center sm:items-start gap-3 sm:w-32">
+            <span class="inline-flex items-center px-2.5 py-1 rounded bg-gray-100 text-gray-600 font-mono text-xs font-medium border border-gray-200 group-hover:bg-vnu-blue/5 group-hover:text-vnu-blue group-hover:border-vnu-blue/20 transition-colors">3626/QD-DHQGHN</span>
+            <div class="flex items-center gap-1.5 text-xs text-gray-500"><span class="material-symbols-outlined text-[16px]">calendar_month</span><span>Oct 21, 2022</span></div>
+          </div>
+          <div class="flex-1 space-y-2">
+            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-vnu-blue transition-colors leading-tight">Regulation on Undergraduate Training at VNU, Hanoi</h3>
+            <p class="text-sm text-gray-600 leading-relaxed line-clamp-2">Decision promulgating the regulation on undergraduate training. Covers training programs, duration, organization, examinations, and graduation requirements.</p>
+            <div class="flex items-center flex-wrap gap-4 pt-2">
+              <div class="flex items-center gap-1.5 text-xs font-medium text-gray-500"><span class="material-symbols-outlined text-[18px] text-gray-400">school</span>Academic Affairs</div>
+              <div class="flex items-center gap-2 ml-auto">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-blue-50 text-blue-700 border border-blue-100">VN</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-emerald-50 text-emerald-700 border border-emerald-100">EN</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- Result 2 -->
+        <article class="bg-white rounded-xl p-5 shadow-subtle border border-l-4 border-gray-200 border-l-accent-urgent hover:shadow-md transition-all cursor-pointer group flex flex-col sm:flex-row gap-5 relative overflow-hidden">
+          <div class="shrink-0 flex sm:flex-col items-center sm:items-start gap-3 sm:w-32">
+            <span class="inline-flex items-center px-2.5 py-1 rounded bg-red-50 text-accent-urgent font-mono text-xs font-medium border border-red-100">STU-2024-99</span>
+            <div class="flex items-center gap-1.5 text-xs text-gray-500"><span class="material-symbols-outlined text-[16px]">calendar_month</span><span>Oct 22, 2024</span></div>
+          </div>
+          <div class="flex-1 space-y-2">
+            <div class="flex items-center gap-3">
+              <h3 class="text-lg font-semibold text-gray-900 group-hover:text-vnu-blue transition-colors leading-tight">Deadline Extension for Scholarship Applications</h3>
+              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-red-100 text-red-700 text-[10px] font-bold uppercase tracking-wider">Urgent</span>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed line-clamp-2">Due to technical maintenance on the portal, the deadline for merit-based scholarship applications has been extended.</p>
+            <div class="flex items-center flex-wrap gap-4 pt-2">
+              <div class="flex items-center gap-1.5 text-xs font-medium text-gray-500"><span class="material-symbols-outlined text-[18px] text-gray-400">school</span>Student Affairs</div>
+              <div class="flex items-center gap-2 ml-auto"><span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-blue-50 text-blue-700 border border-blue-100">VN</span></div>
+            </div>
+          </div>
+        </article>
+        <!-- Result 3 -->
+        <article class="bg-white rounded-xl p-5 shadow-subtle border border-gray-200 hover:shadow-md hover:border-vnu-blue/30 transition-all cursor-pointer group flex flex-col sm:flex-row gap-5">
+          <div class="shrink-0 flex sm:flex-col items-center sm:items-start gap-3 sm:w-32">
+            <span class="inline-flex items-center px-2.5 py-1 rounded bg-gray-100 text-gray-600 font-mono text-xs font-medium border border-gray-200 group-hover:bg-vnu-blue/5 group-hover:text-vnu-blue group-hover:border-vnu-blue/20 transition-colors">FAC-2023-12</span>
+            <div class="flex items-center gap-1.5 text-xs text-gray-500"><span class="material-symbols-outlined text-[16px]">calendar_month</span><span>Dec 15, 2023</span></div>
+          </div>
+          <div class="flex-1 space-y-2">
+            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-vnu-blue transition-colors leading-tight">Campus Safety Protocols during Construction</h3>
+            <p class="text-sm text-gray-600 leading-relaxed line-clamp-2">Guidelines for navigating Building C during the renovation period. Includes updated map for accessible routes and emergency exits.</p>
+            <div class="flex items-center flex-wrap gap-4 pt-2">
+              <div class="flex items-center gap-1.5 text-xs font-medium text-gray-500"><span class="material-symbols-outlined text-[18px] text-gray-400">engineering</span>Facilities</div>
+              <div class="flex items-center gap-2 ml-auto">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-blue-50 text-blue-700 border border-blue-100">VN</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-emerald-50 text-emerald-700 border border-emerald-100">EN</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-purple-50 text-purple-700 border border-purple-100">JP</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <!-- Pagination -->
+      <div class="flex items-center justify-between border-t border-gray-200 pt-6">
+        <button class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"><span class="material-symbols-outlined text-[18px]">arrow_back</span>Previous</button>
+        <div class="hidden sm:flex items-center gap-1">
+          <button class="px-3 py-1 text-sm font-medium text-white bg-vnu-blue rounded-md">1</button>
+          <button class="px-3 py-1 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-md">2</button>
+          <button class="px-3 py-1 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-md">3</button>
+          <span class="px-2 text-gray-400">...</span>
+          <button class="px-3 py-1 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-md">8</button>
+        </div>
+        <button class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">Next<span class="material-symbols-outlined text-[18px]">arrow_forward</span></button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- ============================================================ -->
+<!-- VIEW: DEPARTMENT ARCHIVE -->
+<!-- ============================================================ -->
+<div id="view-department" class="view view-department flex-1">
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <nav class="flex"><ol class="flex items-center space-x-2 text-sm">
+        <li><a href="#" class="text-text-muted hover:text-text-main font-medium" onclick="event.preventDefault(); navigateTo('home')">Home</a></li>
+        <li class="text-gray-300">/</li>
+        <li><span class="text-vnu-blue font-medium">Office of International Relations</span></li>
+      </ol></nav>
+    </div>
+  </div>
+  <main class="flex-grow py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Main -->
+        <div class="flex-1 min-w-0">
+          <!-- Hero -->
+          <div class="bg-white rounded-lg shadow-subtle border border-gray-200 overflow-hidden mb-8">
+            <div class="h-2 bg-dept-brand w-full"></div>
+            <div class="p-6 sm:p-8">
+              <div class="flex items-start justify-between gap-6">
+                <div class="flex-1">
+                  <div class="flex items-center gap-3 mb-2">
+                    <span class="bg-dept-brand/10 text-dept-brand text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">Department</span>
+                    <span class="text-text-muted text-sm flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span>Building C1, Room 202</span>
+                  </div>
+                  <h1 class="font-bold text-3xl text-text-main mb-4">Office of International Relations</h1>
+                  <p class="text-text-muted text-lg leading-relaxed max-w-2xl">Facilitating global partnerships, managing student exchange programs, and fostering international academic cooperation for Vietnam National University.</p>
+                </div>
+                <div class="hidden sm:flex items-center justify-center size-24 rounded-xl bg-gray-50 border border-gray-100 shrink-0 text-dept-brand">
+                  <span class="material-symbols-outlined text-[48px]">public</span>
+                </div>
+              </div>
+              <div class="mt-6 flex gap-3">
+                <button class="bg-vnu-blue hover:bg-blue-700 text-white font-medium px-5 py-2.5 rounded-lg text-sm transition-colors flex items-center gap-2 shadow-sm"><span class="material-symbols-outlined text-[20px]">mail</span>Contact Department</button>
+                <button class="bg-white border border-gray-200 hover:bg-gray-50 text-text-main font-medium px-5 py-2.5 rounded-lg text-sm transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-[20px]">captive_portal</span>Visit Website</button>
+              </div>
+            </div>
+          </div>
+          <!-- Frequently Accessed -->
+          <section class="mb-8">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="font-semibold text-xl text-text-main">Frequently Accessed</h2>
+              <a href="#" class="text-vnu-blue text-sm font-medium hover:underline">View all</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="flex justify-between items-start mb-3">
+                  <div class="bg-blue-50 text-vnu-blue p-2 rounded-lg group-hover:bg-vnu-blue group-hover:text-white transition-colors"><span class="material-symbols-outlined text-[24px]">book</span></div>
+                  <span class="bg-red-50 text-accent-urgent text-xs font-semibold px-2 py-0.5 rounded-full">Urgent</span>
+                </div>
+                <h3 class="font-semibold text-text-main mb-2 line-clamp-2 group-hover:text-vnu-blue transition-colors">Fall 2024 Exchange Guidelines</h3>
+                <p class="text-text-muted text-sm line-clamp-2 mb-3">Comprehensive guide for students applying for international exchange programs.</p>
+                <div class="flex items-center justify-between mt-auto"><span class="font-mono text-xs text-text-muted">DOC-2024-001</span><span class="text-xs text-text-muted">Oct 24, 2024</span></div>
+              </div>
+              <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="flex justify-between items-start mb-3">
+                  <div class="bg-blue-50 text-vnu-blue p-2 rounded-lg group-hover:bg-vnu-blue group-hover:text-white transition-colors"><span class="material-symbols-outlined text-[24px]">description</span></div>
+                  <span class="bg-gray-100 text-text-muted text-xs font-semibold px-2 py-0.5 rounded-full">Form</span>
+                </div>
+                <h3 class="font-semibold text-text-main mb-2 line-clamp-2 group-hover:text-vnu-blue transition-colors">Visa Application Support Form 3B</h3>
+                <p class="text-text-muted text-sm line-clamp-2 mb-3">Required documentation request form for student visa sponsorship letters.</p>
+                <div class="flex items-center justify-between mt-auto"><span class="font-mono text-xs text-text-muted">FRM-2023-882</span><span class="text-xs text-text-muted">Jan 12, 2024</span></div>
+              </div>
+              <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="flex justify-between items-start mb-3">
+                  <div class="bg-blue-50 text-vnu-blue p-2 rounded-lg group-hover:bg-vnu-blue group-hover:text-white transition-colors"><span class="material-symbols-outlined text-[24px]">gavel</span></div>
+                  <span class="bg-green-100 text-accent-new text-xs font-semibold px-2 py-0.5 rounded-full">Policy</span>
+                </div>
+                <h3 class="font-semibold text-text-main mb-2 line-clamp-2 group-hover:text-vnu-blue transition-colors">Scholarship Criteria Framework 2024-2025</h3>
+                <p class="text-text-muted text-sm line-clamp-2 mb-3">Updated eligibility requirements for VNU international excellence scholarships.</p>
+                <div class="flex items-center justify-between mt-auto"><span class="font-mono text-xs text-text-muted">REG-2024-112</span><span class="text-xs text-text-muted">Aug 05, 2024</span></div>
+              </div>
+            </div>
+          </section>
+          <!-- Announcements list -->
+          <section>
+            <div class="border-b border-gray-200 mb-6">
+              <nav class="-mb-px flex space-x-8">
+                <a href="#" class="border-vnu-blue text-vnu-blue whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm flex items-center gap-2">Announcements <span class="bg-vnu-blue/10 text-vnu-blue py-0.5 px-2 rounded-full text-xs">12</span></a>
+                <a href="#" class="border-transparent text-text-muted hover:text-text-main hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm flex items-center gap-2">Forms <span class="bg-gray-100 text-text-muted py-0.5 px-2 rounded-full text-xs">5</span></a>
+                <a href="#" class="border-transparent text-text-muted hover:text-text-main hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm flex items-center gap-2">Regulations <span class="bg-gray-100 text-text-muted py-0.5 px-2 rounded-full text-xs">28</span></a>
+              </nav>
+            </div>
+            <div class="space-y-3">
+              <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-subtle transition-shadow flex flex-col sm:flex-row sm:items-center gap-4 group cursor-pointer">
+                <div class="flex-shrink-0 flex flex-col items-center justify-center w-16 h-16 bg-gray-50 rounded-lg border border-gray-100 text-text-muted group-hover:border-vnu-blue/20 group-hover:bg-vnu-blue/5 transition-colors">
+                  <span class="block text-xs font-bold uppercase text-text-muted mb-0.5">Oct</span><span class="block text-xl font-bold text-text-main">22</span>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-1"><span class="font-mono text-xs text-text-muted bg-gray-100 px-1.5 py-0.5 rounded">ANC-2024-045</span><span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">New</span></div>
+                  <h4 class="text-base font-semibold text-text-main truncate group-hover:text-vnu-blue transition-colors">Call for Applications: Erasmus+ Mobility Program Spring 2025</h4>
+                  <p class="text-sm text-text-muted truncate">Deadline for submissions is November 30th. Open to all undergraduate students.</p>
+                </div>
+                <div class="flex items-center gap-3 sm:border-l sm:border-gray-100 sm:pl-4">
+                  <div class="flex -space-x-1 overflow-hidden">
+                    <div class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold text-text-muted bg-gray-100 rounded border border-white">VN</div>
+                    <div class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold text-text-muted bg-gray-100 rounded border border-white">EN</div>
+                  </div>
+                  <button class="text-text-muted hover:text-vnu-blue transition-colors p-1"><span class="material-symbols-outlined">download</span></button>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-subtle transition-shadow flex flex-col sm:flex-row sm:items-center gap-4 group cursor-pointer">
+                <div class="flex-shrink-0 flex flex-col items-center justify-center w-16 h-16 bg-gray-50 rounded-lg border border-gray-100 text-text-muted group-hover:border-vnu-blue/20 group-hover:bg-vnu-blue/5 transition-colors">
+                  <span class="block text-xs font-bold uppercase text-text-muted mb-0.5">Oct</span><span class="block text-xl font-bold text-text-main">15</span>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-1"><span class="font-mono text-xs text-text-muted bg-gray-100 px-1.5 py-0.5 rounded">ANC-2024-041</span></div>
+                  <h4 class="text-base font-semibold text-text-main truncate group-hover:text-vnu-blue transition-colors">Notice regarding change in office hours for International Student Support</h4>
+                  <p class="text-sm text-text-muted truncate">Effective immediately, the support desk will close at 4:30 PM on Fridays.</p>
+                </div>
+                <div class="flex items-center gap-3 sm:border-l sm:border-gray-100 sm:pl-4">
+                  <div class="flex -space-x-1 overflow-hidden"><div class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold text-text-muted bg-gray-100 rounded border border-white">VN</div></div>
+                  <button class="text-text-muted hover:text-vnu-blue transition-colors p-1"><span class="material-symbols-outlined">download</span></button>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-subtle transition-shadow flex flex-col sm:flex-row sm:items-center gap-4 group cursor-pointer">
+                <div class="flex-shrink-0 flex flex-col items-center justify-center w-16 h-16 bg-gray-50 rounded-lg border border-gray-100 text-text-muted group-hover:border-vnu-blue/20 group-hover:bg-vnu-blue/5 transition-colors">
+                  <span class="block text-xs font-bold uppercase text-text-muted mb-0.5">Sep</span><span class="block text-xl font-bold text-text-main">30</span>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-1"><span class="font-mono text-xs text-text-muted bg-gray-100 px-1.5 py-0.5 rounded">ANC-2024-038</span></div>
+                  <h4 class="text-base font-semibold text-text-main truncate group-hover:text-vnu-blue transition-colors">Seminar Invitation: "Global Trends in Higher Education"</h4>
+                  <p class="text-sm text-text-muted truncate">Guest speaker Dr. Emily Chen from NUS. Registration required.</p>
+                </div>
+                <div class="flex items-center gap-3 sm:border-l sm:border-gray-100 sm:pl-4">
+                  <div class="flex -space-x-1 overflow-hidden">
+                    <div class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold text-text-muted bg-gray-100 rounded border border-white">VN</div>
+                    <div class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold text-text-muted bg-gray-100 rounded border border-white">EN</div>
+                  </div>
+                  <button class="text-text-muted hover:text-vnu-blue transition-colors p-1"><span class="material-symbols-outlined">download</span></button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Right sidebar -->
+        <aside class="w-full lg:w-80 flex-shrink-0">
+          <div class="lg:sticky lg:top-20 space-y-6">
+            <!-- Contact -->
+            <div class="bg-white rounded-lg shadow-md border border-gray-200 p-6 relative overflow-hidden">
+              <h3 class="font-semibold text-lg text-text-main mb-4">Department Contact</h3>
+              <div class="space-y-4">
+                <div class="flex items-start gap-3">
+                  <div class="size-10 rounded-full bg-gray-100 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-text-muted">person</span></div>
+                  <div><p class="text-xs text-text-muted font-medium uppercase">Secretary</p><p class="text-sm font-semibold text-text-main">Ms. Nguyen Thi Lan</p></div>
+                </div>
+                <div class="h-px bg-gray-100 w-full"></div>
+                <a class="flex items-center gap-3 group" href="mailto:intl@vnu.edu.vn"><div class="size-8 rounded bg-blue-50 text-vnu-blue flex items-center justify-center group-hover:bg-vnu-blue group-hover:text-white transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></div><span class="text-sm text-text-muted group-hover:text-vnu-blue transition-colors">intl@vnu.edu.vn</span></a>
+                <a class="flex items-center gap-3 group" href="tel:+842412345678"><div class="size-8 rounded bg-blue-50 text-vnu-blue flex items-center justify-center group-hover:bg-vnu-blue group-hover:text-white transition-colors"><span class="material-symbols-outlined text-[18px]">call</span></div><span class="text-sm text-text-muted group-hover:text-vnu-blue transition-colors">+84 24 1234 5678</span></a>
+                <div class="flex items-start gap-3"><div class="size-8 rounded bg-gray-50 text-text-muted flex items-center justify-center mt-0.5"><span class="material-symbols-outlined text-[18px]">schedule</span></div><div class="text-sm text-text-muted"><p><span class="font-medium text-text-main">Mon - Fri:</span> 08:00 - 17:00</p><p><span class="font-medium text-text-main">Sat - Sun:</span> Closed</p></div></div>
+              </div>
+            </div>
+            <!-- Related -->
+            <div class="bg-white rounded-lg border border-gray-200 p-5">
+              <h3 class="font-semibold text-base text-text-main mb-3">Related Departments</h3>
+              <ul class="space-y-2">
+                <li><a class="flex items-center justify-between text-sm text-text-muted hover:text-vnu-blue group py-1" href="#"><span>Student Affairs</span><span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span></a></li>
+                <li><a class="flex items-center justify-between text-sm text-text-muted hover:text-vnu-blue group py-1" href="#"><span>Academic Affairs</span><span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span></a></li>
+                <li><a class="flex items-center justify-between text-sm text-text-muted hover:text-vnu-blue group py-1" href="#"><span>Science &amp; Technology</span><span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-white border-t border-gray-200 py-6 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-sm text-text-muted">&copy; 2024 Vietnam National University. All rights reserved.</p>
+      <div class="flex gap-6 text-sm text-text-muted">
+        <a class="hover:text-vnu-blue" href="#">Privacy Policy</a>
+        <a class="hover:text-vnu-blue" href="#">Terms of Use</a>
+        <a class="hover:text-vnu-blue" href="#">Help Center</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ============================================================ -->
+<!-- VIEW: DOCUMENT READER (Split View) -->
+<!-- ============================================================ -->
+<div id="view-reader" class="view" style="flex-direction:column; height:calc(100vh - 56px);">
+  <div id="reader-body" class="flex-1 flex overflow-hidden">
+    <!-- TOC Sidebar -->
+    <aside id="sidebar" class="w-60 flex-shrink-0 border-r border-gray-200 bg-slate-50 flex flex-col z-20">
+      <div class="h-[44px] border-b border-gray-200 flex items-center justify-between px-4 bg-white">
+        <span class="text-xs font-bold text-gray-900 flex items-center gap-2"><span class="material-symbols-outlined text-sm">menu_book</span>On this page</span>
+        <button id="toc-collapse" class="p-1 hover:bg-gray-100 rounded text-text-muted"><span class="material-symbols-outlined text-[18px]">side_navigation</span></button>
+      </div>
+      <nav id="toc" class="flex-1 overflow-y-auto p-3 space-y-1" aria-label="Table of contents">
+        <div class="text-xs text-text-muted py-4 text-center">Loading...</div>
+      </nav>
+    </aside>
+    <!-- Split container -->
+    <div id="split-container" class="flex-1 flex overflow-hidden">
+      <!-- Left: Vietnamese -->
+      <section id="pane-left" class="flex-1 flex flex-col border-r border-gray-200 min-w-[280px] bg-white">
+        <div class="h-[44px] border-b border-gray-200 bg-slate-50/50 flex items-center justify-between px-4 shrink-0">
+          <div class="flex items-center gap-2">
+            <span class="w-4 h-3 bg-red-600 relative overflow-hidden inline-block shadow-sm rounded-[1px]"><span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[4px] text-yellow-400 font-bold">&#9733;</span></span>
+            <span class="text-xs font-medium text-gray-900">Vietnamese (Original)</span>
+            <span class="text-[10px] text-text-muted uppercase font-bold tracking-wider ml-1">Source</span>
+          </div>
+        </div>
+        <div id="content-left" class="flex-1 overflow-y-auto p-6 sm:p-8"><div class="max-w-[680px] mx-auto prose-legal"><div class="flex items-center justify-center py-12 text-text-muted"><span class="material-symbols-outlined animate-spin mr-2">progress_activity</span>Loading...</div></div></div>
+      </section>
+      <!-- Drag handle -->
+      <div id="drag-handle" class="drag-handle w-[5px] bg-gray-200 hover:bg-accent/30 transition-all duration-200 z-10 flex flex-col justify-center items-center relative">
+        <div class="handle-bar h-8 w-1 bg-slate-300 rounded-full absolute"></div>
+      </div>
+      <!-- Right: English -->
+      <section id="pane-right" class="flex-1 flex flex-col min-w-[280px] bg-white">
+        <div id="pane-right-header" class="h-[44px] border-b border-gray-200 bg-slate-50/50 flex items-center justify-between px-4 shrink-0">
+          <div class="flex items-center gap-2">
+            <span class="w-4 h-3 bg-blue-800 relative overflow-hidden inline-block shadow-sm rounded-[1px] flex items-center justify-center">
+              <span class="block w-full h-[1px] bg-white absolute top-1/3"></span>
+              <span class="block w-full h-[1px] bg-white absolute top-2/3"></span>
+            </span>
+            <span id="pane-right-label" class="text-xs font-medium text-gray-900">English (Translated)</span>
+            <span class="text-[10px] text-emerald-600 bg-emerald-50 border border-emerald-100 px-1 rounded uppercase font-bold tracking-wider ml-1">AI</span>
+          </div>
+        </div>
+        <div id="content-right-en" class="flex-1 overflow-y-auto p-6 sm:p-8"><div class="max-w-[680px] mx-auto prose-legal"><div class="flex items-center justify-center py-12 text-text-muted"><span class="material-symbols-outlined animate-spin mr-2">progress_activity</span>Loading...</div></div></div>
+        <div id="content-right-ja" class="flex-1 overflow-y-auto p-6 sm:p-8 hidden"><div class="max-w-[680px] mx-auto prose-legal"><div class="flex items-center justify-center py-12 text-text-muted"><span class="material-symbols-outlined animate-spin mr-2">progress_activity</span>Loading...</div></div></div>
+      </section>
+    </div>
+  </div>
+  <!-- Sync toast -->
+  <div id="sync-toast" class="fixed bottom-6 right-6 z-50 bg-gray-900 text-white text-xs px-4 py-3 rounded-lg shadow-lg flex items-center gap-3 transition-opacity duration-300 opacity-0">
+    <span class="material-symbols-outlined text-[16px] text-accent">sync</span>
+    <div><span class="font-semibold">Scroll Sync Active</span><br><span class="text-gray-400 text-[10px]">Sections aligned by heading</span></div>
+  </div>
+</div>
+
+<!-- Dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+
+<script>
+(function() {
+  'use strict';
+
+  // ==================== NAVIGATION ====================
+  const views = ['home', 'search', 'department', 'reader'];
+  let currentView = 'home';
+  let readerLoaded = false;
+
+  function navigateTo(view) {
+    currentView = view;
+    views.forEach(v => {
+      const el = document.getElementById('view-' + v);
+      el.classList.toggle('active', v === view);
+    });
+
+    // Nav state
+    const navLinks = document.getElementById('nav-links');
+    const readerControls = document.getElementById('reader-controls');
+    const navSearchBox = document.getElementById('nav-search-box');
+    const body = document.body;
+
+    if (view === 'reader') {
+      navLinks.classList.add('hidden');
+      navLinks.classList.remove('md:flex');
+      readerControls.classList.remove('hidden');
+      readerControls.classList.add('flex');
+      navSearchBox.classList.add('hidden');
+      navSearchBox.classList.remove('sm:block');
+      body.style.overflow = 'hidden';
+      body.style.height = '100vh';
+      if (!readerLoaded) loadReader();
+    } else {
+      navLinks.classList.remove('hidden');
+      navLinks.classList.add('md:flex');
+      readerControls.classList.add('hidden');
+      readerControls.classList.remove('flex');
+      navSearchBox.classList.remove('hidden');
+      navSearchBox.classList.add('sm:block');
+      body.style.overflow = '';
+      body.style.height = '';
+    }
+
+    // Highlight active nav link
+    document.querySelectorAll('.nav-link').forEach(a => {
+      const target = a.dataset.nav;
+      if (target === view) {
+        a.classList.add('text-vnu-blue');
+        a.classList.remove('text-text-muted');
+      } else {
+        a.classList.remove('text-vnu-blue');
+        a.classList.add('text-text-muted');
+      }
+    });
+
+    // Update exit split button visibility
+    updateReaderUI();
+
+    window.scrollTo(0, 0);
+  }
+  window.navigateTo = navigateTo;
+
+  // Home logo → home
+  document.getElementById('nav-home-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+    navigateTo('home');
+  });
+
+  // Nav links
+  document.querySelectorAll('.nav-link').forEach(a => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      navigateTo(a.dataset.nav);
+    });
+  });
+
+  // Home search → search view
+  document.getElementById('home-search-btn').addEventListener('click', () => {
+    const q = document.getElementById('home-search').value;
+    document.getElementById('search-input').value = q;
+    navigateTo('search');
+  });
+  document.getElementById('home-search').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') document.getElementById('home-search-btn').click();
+  });
+
+  // Trending tags → search
+  document.querySelectorAll('.trending-tag').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('search-input').value = btn.textContent;
+      navigateTo('search');
+    });
+  });
+
+  // Nav quick search → search view
+  document.getElementById('nav-search-input').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      document.getElementById('search-input').value = e.target.value;
+      navigateTo('search');
+    }
+  });
+
+  // Document cards → reader
+  document.querySelectorAll('.doc-card[data-doc="3626"], .search-result[data-doc="3626"]').forEach(el => {
+    el.addEventListener('click', () => navigateTo('reader'));
+  });
+
+  // ==================== READER ====================
+  let viewMode = 'split';
+  let syncEnabled = true;
+  let isSyncing = false;
+  let rightLang = 'en'; // 'en' or 'ja' — which language is shown in the right pane
+
+  const sidebar = document.getElementById('sidebar');
+  const paneLeft = document.getElementById('pane-left');
+  const paneRight = document.getElementById('pane-right');
+  const dragHandle = document.getElementById('drag-handle');
+  const contentLeft = document.getElementById('content-left');
+  const contentRightEn = document.getElementById('content-right-en');
+  const contentRightJa = document.getElementById('content-right-ja');
+  const paneRightLabel = document.getElementById('pane-right-label');
+  const syncToast = document.getElementById('sync-toast');
+  const btnSplit = document.getElementById('btn-split');
+  const btnExitSplit = document.getElementById('btn-exit-split');
+  const tocEl = document.getElementById('toc');
+
+  function getActiveRight() { return rightLang === 'ja' ? contentRightJa : contentRightEn; }
+
+  function switchRightLang(lang) {
+    rightLang = lang;
+    if (lang === 'ja') {
+      contentRightEn.classList.add('hidden');
+      contentRightJa.classList.remove('hidden');
+      paneRightLabel.textContent = 'Japanese (Translated)';
+    } else {
+      contentRightJa.classList.add('hidden');
+      contentRightEn.classList.remove('hidden');
+      paneRightLabel.textContent = 'English (Translated)';
+    }
+    // Update lang button styles
+    document.querySelectorAll('.lang-btn').forEach(b => {
+      const l = b.dataset.lang;
+      if ((l === 'en' && lang === 'en') || (l === 'ja' && lang === 'ja') || (l === 'vi')) {
+        b.className = 'lang-btn px-2 py-1 text-[11px] font-bold bg-vnu-blue text-white rounded';
+      } else if (l === 'en' || l === 'ja') {
+        b.className = 'lang-btn px-2 py-1 text-[11px] font-medium text-text-muted hover:bg-gray-100 rounded';
+      }
+    });
+  }
+
+  // TOC collapse
+  document.getElementById('toc-collapse').addEventListener('click', () => {
+    sidebar.style.display = sidebar.style.display === 'none' ? '' : 'none';
+  });
+
+  // View mode
+  function setViewMode(mode) {
+    viewMode = mode;
+    paneLeft.style.display = '';
+    paneRight.style.display = '';
+    paneLeft.style.flex = '';
+    paneRight.style.flex = '';
+    paneLeft.style.width = '';
+    paneRight.style.width = '';
+    dragHandle.style.display = '';
+
+    if (mode === 'split') {
+      paneLeft.style.flex = '1';
+      paneRight.style.flex = '1';
+      btnSplit.className = 'view-btn px-2 py-1 text-[11px] font-medium text-accent bg-blue-50 border border-blue-100 rounded';
+      // Source button is now an <a> link to PDF
+      syncEnabled = true;
+      syncToast.style.opacity = '1';
+      setTimeout(() => { syncToast.style.opacity = '0'; }, 3000);
+    } else {
+      dragHandle.style.display = 'none';
+      btnSplit.className = 'view-btn px-2 py-1 text-[11px] font-medium text-text-muted hover:bg-gray-100 rounded';
+      // Source button is now an <a> link to PDF
+      syncEnabled = false;
+      syncToast.style.opacity = '0';
+      if (mode === 'source-vi') {
+        paneRight.style.display = 'none';
+        paneLeft.style.flex = '1';
+      } else {
+        // source-en or source-ja
+        paneLeft.style.display = 'none';
+        paneRight.style.flex = '1';
+      }
+    }
+    updateReaderUI();
+  }
+
+  function updateReaderUI() {
+    if (currentView === 'reader' && viewMode === 'split') {
+      btnExitSplit.classList.remove('hidden');
+      btnExitSplit.classList.add('flex');
+    } else {
+      btnExitSplit.classList.add('hidden');
+      btnExitSplit.classList.remove('flex');
+    }
+  }
+
+  btnSplit.addEventListener('click', () => setViewMode('split'));
+  // Source button is now a direct PDF link (<a> tag), no JS needed
+  btnExitSplit.addEventListener('click', () => {
+    const srcLang = rightLang === 'ja' ? 'source-ja' : 'source-en';
+    setViewMode(srcLang);
+  });
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.disabled) return;
+      const lang = btn.dataset.lang;
+      if (lang === 'vi') {
+        setViewMode('source-vi');
+      } else if (lang === 'en') {
+        switchRightLang('en');
+        if (viewMode !== 'split') setViewMode('source-en');
+      } else if (lang === 'ja') {
+        switchRightLang('ja');
+        if (viewMode !== 'split') setViewMode('source-ja');
+      }
+    });
+  });
+
+  // Drag handle
+  let isDragging = false;
+  dragHandle.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    dragHandle.classList.add('dragging');
+    document.body.style.cursor = 'col-resize';
+    document.body.style.userSelect = 'none';
+    e.preventDefault();
+  });
+  document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    const container = document.getElementById('split-container');
+    const rect = container.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const leftPct = Math.max(20, Math.min(80, (x / rect.width) * 100));
+    paneLeft.style.flex = 'none';
+    paneRight.style.flex = 'none';
+    paneLeft.style.width = leftPct + '%';
+    paneRight.style.width = (100 - leftPct) + '%';
+  });
+  document.addEventListener('mouseup', () => {
+    if (isDragging) {
+      isDragging = false;
+      dragHandle.classList.remove('dragging');
+      document.body.style.cursor = '';
+      document.body.style.userSelect = '';
+    }
+  });
+
+  // Load markdown
+  async function loadReader() {
+    readerLoaded = true;
+    try {
+      const [viMd, enMd, jaMd] = await Promise.all([
+        fetch('data/3626_vi.md').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
+        fetch('data/3626_en.md').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
+        fetch('data/3626_ja.md').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+      ]);
+      marked.setOptions({ gfm: true, breaks: false });
+      const render = md => DOMPurify.sanitize(marked.parse(md), { ADD_TAGS: ['sub','sup'], ADD_ATTR: ['align','style'] });
+      contentLeft.querySelector('.prose-legal').innerHTML = render(viMd);
+      contentRightEn.querySelector('.prose-legal').innerHTML = render(enMd);
+      contentRightJa.querySelector('.prose-legal').innerHTML = render(jaMd);
+      buildToc();
+      setupScrollSync();
+      setupScrollSpy();
+      setViewMode('split');
+    } catch (err) {
+      const msg = `<div class="text-center py-12 text-red-500"><span class="material-symbols-outlined text-3xl mb-2">error</span><p>Failed to load document.</p><p class="text-sm text-gray-400 mt-1">${err.message}</p></div>`;
+      contentLeft.querySelector('.prose-legal').innerHTML = msg;
+      contentRightEn.querySelector('.prose-legal').innerHTML = msg;
+      contentRightJa.querySelector('.prose-legal').innerHTML = msg;
+    }
+  }
+
+  function buildToc() {
+    const proseEl = contentRightEn.querySelector('.prose-legal');
+    const headings = proseEl.querySelectorAll('h1, h2');
+    const leftHeadings = contentLeft.querySelector('.prose-legal').querySelectorAll('h1, h2');
+    tocEl.innerHTML = '';
+    headings.forEach((h, i) => {
+      const text = h.textContent.trim();
+      const id = 'en-sec-' + i;
+      h.id = id;
+      if (leftHeadings[i]) leftHeadings[i].id = 'vi-sec-' + i;
+      // Also assign IDs to JA headings
+      const jaHeadings = contentRightJa.querySelector('.prose-legal').querySelectorAll('h1, h2');
+      if (jaHeadings[i]) jaHeadings[i].id = 'ja-sec-' + i;
+      const isChapter = h.tagName === 'H1' || /^chapter\s/i.test(text);
+      const isArticle = /^article\s/i.test(text);
+      const isTitle = /^regulation|^decision|^hereby/i.test(text);
+      if (isChapter || isArticle || isTitle) {
+        const item = document.createElement('div');
+        item.className = isArticle ? 'article-item' : 'chapter-item';
+        const a = document.createElement('a');
+        a.href = '#' + id;
+        a.dataset.targetEn = id;
+        a.dataset.targetVi = 'vi-sec-' + i;
+        a.dataset.idx = i;
+        if (isArticle) {
+          const s = text.replace(/^Article\s+(\d+)\.\s*/, 'Art. $1. ');
+          a.textContent = s.length > 42 ? s.slice(0, 39) + '...' : s;
+          a.title = text;
+        } else {
+          a.textContent = text;
+        }
+        a.addEventListener('click', (e) => {
+          e.preventDefault();
+          const idx = a.dataset.idx;
+          const en = document.getElementById('en-sec-' + idx);
+          const vi = document.getElementById('vi-sec-' + idx);
+          const ja = document.getElementById('ja-sec-' + idx);
+          if (vi) vi.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (rightLang === 'ja' && ja) ja.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          else if (en) en.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        item.appendChild(a);
+        tocEl.appendChild(item);
+      }
+    });
+  }
+
+  function setupScrollSync() {
+    contentLeft.addEventListener('scroll', () => {
+      if (!syncEnabled || isSyncing) return;
+      isSyncing = true;
+      const pct = contentLeft.scrollTop / (contentLeft.scrollHeight - contentLeft.clientHeight || 1);
+      const ar = getActiveRight();
+      ar.scrollTop = pct * (ar.scrollHeight - ar.clientHeight);
+      requestAnimationFrame(() => { isSyncing = false; });
+    });
+    // Sync from both EN and JA panes
+    [contentRightEn, contentRightJa].forEach(cr => {
+      cr.addEventListener('scroll', () => {
+        if (!syncEnabled || isSyncing) return;
+        isSyncing = true;
+        const pct = cr.scrollTop / (cr.scrollHeight - cr.clientHeight || 1);
+        contentLeft.scrollTop = pct * (contentLeft.scrollHeight - contentLeft.clientHeight);
+        requestAnimationFrame(() => { isSyncing = false; });
+      });
+    });
+  }
+
+  function setupScrollSpy() {
+    const tocLinks = tocEl.querySelectorAll('a[data-target-en]');
+    if (!tocLinks.length) return;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tocLinks.forEach(a => a.classList.remove('active'));
+          const active = tocEl.querySelector(`a[data-target-en="${entry.target.id}"]`);
+          if (active) { active.classList.add('active'); active.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
+        }
+      });
+    }, { root: contentRightEn, rootMargin: '-44px 0px -70% 0px', threshold: 0 });
+    contentRightEn.querySelectorAll('[id^="en-sec-"]').forEach(h => observer.observe(h));
+  }
+
+  // Start on home
+  navigateTo('home');
+})();
+</script>
+</body>
+</html>
