@@ -1,0 +1,168 @@
+# Document Migration Plan
+
+## Source Directories
+| # | Path | Category |
+|---|------|----------|
+| 1 | `5. DX-VJU/VJU-Project/3. University Regulations/` | University Regulations |
+| 2 | `5. DX-VJU/VJU-Project/2. Quality Assurance/` | Quality Assurance |
+| 3 | `5. DX-VJU/VJU-Project/4. Education Testing/` | Education Testing |
+| 4 | `5. DX-VJU/VJU-Project/1. Public Report 2025/` | Public Reports |
+
+**Destination:** `3. DX-General/VJU Project 2/docs/data/`
+
+## Naming Convention
+
+```
+{Number}-{Type}-{Issuer}_{English_Title}_transcription.md       ← 文字起こし（通常VI）
+{Number}-{Type}-{Issuer}_{English_Title}_transcription_en.md    ← English
+{Number}-{Type}-{Issuer}_{English_Title}_transcription_ja.md    ← Japanese
+{Number}-{Type}-{Issuer}_{English_Title}_source.pdf             ← Original PDF
+```
+
+Examples:
+- `3626-QD-DHQGHN_Regulation_on_Undergraduate_Training_transcription.md`
+- `BGDDT-TT-2021-08_Regulation_on_Undergraduate_Training_transcription_en.md`
+- `DHVN-HD-304_Learning_Outcome_Recognition_and_Credit_Transfer_source.pdf`
+
+Sub-documents (annexes): `{base}_Annex_{N}_{Short_Title}_*`
+
+## Legend
+- Status: `done` / `pending` / `skip`
+- VI/EN/JA: `Y` = file exists, `-` = missing
+- PDF: `Y` = PDF, `doc` = .doc/.docx only, `-` = none
+
+---
+
+## Group A: VNU Regulations (DHQGHN) — from `3. University Regulations`
+
+| # | Doc ID | New Filename Prefix | Title (EN) | PDF | VI | EN | JA | Status | Notes |
+|---|--------|---------------------|------------|:---:|:--:|:--:|:--:|:------:|-------|
+| 1 | DHQGHN-QD-3626 | `3626-QD-DHQGHN_Regulation_on_Undergraduate_Training` | Regulation on Undergraduate Training | Y | Y | Y | Y | done | |
+| 2 | DHQGHN-QD-3636 | `3636-QD-DHQGHN_Regulation_on_Masters_Training` | Regulation on Master's Training | Y | Y | Y | Y | done | |
+| 3 | DHQGHN-QD-3638 | `3638-QD-DHQGHN_Regulation_on_Doctoral_Training` | Regulation on Doctoral Training | Y | Y | Y | Y | done | |
+| 4 | DHQGHN-QD-2459 | `2459-QD-DHQGHN_Amendment_to_Masters_Training_Regulation` | Amendment to Master's Training Reg (3636) | Y | Y | Y | Y | pending | Amends #2 |
+| 5 | DHQGHN-QD-2486 | `2486-QD-DHQGHN_Amendment_to_Undergraduate_Admission_Regulation` | Amendment to Undergrad Admission Reg | Y | Y | Y | Y | pending | |
+| 6 | DHQGHN-QD-4391 | `4391-QD-DHQGHN_Online_Training_and_E-Lecture_Regulations` | Online Training & E-Lecture Regulations | Y | Y | Y | Y | pending | |
+| 7 | DHQGHN-QD-4455 | `4455-QD-DHQGHN_Diploma_and_Certificate_Management` | Diploma & Certificate Management | Y | Y | Y | Y | pending | |
+| 8 | DHQGHN-QD-4618 | `4618-QD-DHQGHN_Scholarship_Management_and_Use` | Scholarship Management & Use | Y | Y | Y | Y | pending | |
+| 9 | DHQGHN-QD-5115 | `5115-QD-DHQGHN_Superseded_Undergraduate_Training` | [Superseded] Undergraduate Training | Y | Y | Y | Y | pending | Replaced by #1 |
+| 10 | DHQGHN-QD-628 | `628-QD-DHQGHN_Educational_Quality_Assurance` | Educational Quality Assurance at VNU | Y | Y | Y | Y | pending | from QA dir |
+
+## Group B: VJU Regulations & Guidelines (DHVN) — from `3. University Regulations`
+
+| # | Doc ID | New Filename Prefix | Title (EN) | PDF | VI | EN | JA | Status | Notes |
+|---|--------|---------------------|------------|:---:|:--:|:--:|:--:|:------:|-------|
+| 11 | DHVN-QD-473 | `dhvn-qd-473` | Academic Advisory Work Regulations | Y | Y | Y | Y | pending | |
+| 12 | DHVN-QD-700 | `dhvn-qd-700` | Anti-Plagiarism Regulations | Y | Y | Y | Y | pending | Also in Testing dir |
+| 13 | DHVN-HD-000 | `dhvn-hd-000` | Foreign Language Cert Guidelines (VJU2022+) | Y | Y | Y | Y | pending | |
+| 14 | DHVN-HD-259 | `dhvn-hd-259` | Foreign Language Cert Guidelines (VJU2020-21) | Y | Y | Y | Y | pending | Main doc |
+| 15 | DHVN-HD-259 a1 | `dhvn-hd-259-annex1` | Certificate Equivalency Table | Y | Y | Y | Y | pending | |
+| 16 | DHVN-HD-259 a2 | `dhvn-hd-259-annex2` | JLPT Authorization Letter Template | Y | Y | Y | Y | pending | |
+| 17 | DHVN-HD-304 | `dhvn-hd-304` | Learning Outcome Recognition & Credit Transfer | Y | Y | Y | Y | pending | |
+| 18 | DHVN-HD-483 | `dhvn-hd-483` | Practical Internship Guidance | Y | Y | Y | Y | pending | |
+| 19 | DHVN-HD-1534 | `dhvn-hd-1534` | Thesis & Graduation Project Guidelines | Y | Y | Y | Y | pending | Main doc |
+| 20 | DHVN-HD-1534 en | `dhvn-hd-1534-annex-en` | Thesis Annex Templates (EN Format) | Y | Y | Y | Y | pending | |
+| 21 | DHVN-HD-1534 layout | `dhvn-hd-1534-layout` | Thesis Annex Layout Guide | doc | Y | Y | Y | pending | .docx only |
+| 22 | DHVN-DT-840 | `dhvn-dt-840` | Academic Calendar 2025-26 Cover Letter | - | Y | Y | Y | pending | No PDF |
+| 23 | DHVN-DT-840 a1 | `dhvn-dt-840-annex1` | Schedule VJU2025 | Y | Y | Y | Y | pending | |
+| 24 | DHVN-DT-840 a2 | `dhvn-dt-840-annex2` | Schedule VJU2024/2023 | Y | Y | Y | Y | pending | |
+| 25 | DHVN-DT-840 a3 | `dhvn-dt-840-annex3` | Schedule VJU2022/2021/2020 | Y | Y | Y | Y | pending | |
+| 26 | DHVN-DT-840 a4 | `dhvn-dt-840-annex4` | Master's & PhD Schedule | Y | Y | Y | Y | pending | |
+| 27 | DHVN-TB-911 | `dhvn-tb-911` | Language Cert Submission (VJU2024) | Y | Y | Y | Y | pending | |
+| 28 | DHVN-TB-984 | `dhvn-tb-984` | Language Cert Submission (VJU2023) | Y | Y | Y | Y | pending | |
+| 29 | DHVN-TB-1010 | `dhvn-tb-1010` | English Cert Submission (VJU2025) | Y | Y | Y | Y | pending | |
+
+## Group C: Ministry of Education (BGDDT) — from `3. University Regulations` + `2. Quality Assurance`
+
+| # | Doc ID | New Filename Prefix | Title (EN) | PDF | VI | EN | JA | Status | Notes |
+|---|--------|---------------------|------------|:---:|:--:|:--:|:--:|:------:|-------|
+| 30 | BGDDT-TT-2021-08 | `bgddt-tt-2021-08` | Regulation on Undergraduate Training | Y | Y | Y | Y | pending | National level |
+| 31 | BGDDT-TT-2021-17 | `bgddt-tt-2021-17` | Standards for Higher Education Programs | Y | Y | Y | Y | pending | |
+| 32 | BGDDT-TT-2021-18 | `bgddt-tt-2021-18` | Doctoral Admission & Training Regulation | Y | Y | Y | Y | pending | |
+| 33 | BGDDT-TT-2021-23 | `bgddt-tt-2021-23` | Master's Admission & Training Regulation | Y | Y | Y | Y | pending | |
+| 34 | BGDDT-TT-2024-01 | `bgddt-tt-2024-01` | Standards for Higher Education Institutions | Y | Y | Y | Y | pending | |
+| 35 | BGDDT-TT-2020-04 | `bgddt-tt-2020-04` | Foreign Cooperation in Education | Y | Y | Y | Y | pending | |
+| 36 | BGDDT-CV-2085 | `bgddt-cv-2085` | Self-Assessment & External Evaluation | Y | Y | Y | Y | pending | +Annex .doc |
+| 37 | BGDDT-CV-774 | `bgddt-cv-774` | Adjustment to Appendices of CV-2085 | Y | Y | Y | Y | pending | |
+| 38 | BGDDT-QD-4998 | `bgddt-qd-4998` | Education Database Technical Specs | Y | Y | Y | Y | pending | +Annex .docx |
+| 39 | BGDDT-TT-2013-38 | `bgddt-tt-2013-38` | QA Accreditation Process & Cycle | Y | Y | Y | Y | pending | from QA dir |
+| 40 | BGDDT-TT-2016-04 | `bgddt-tt-2016-04` | Quality Standards for HE Programs | Y | Y | Y | Y | pending | from QA dir |
+| 41 | BGDDT-TT-2020-39 | `bgddt-tt-2020-39` | Quality Standards for Distance Programs | Y | Y | Y | Y | pending | from QA dir |
+
+## Group D: Other Government (CP, BTC, DHNN, TTCP) — from `3. University Regulations` + `2. Quality Assurance`
+
+| # | Doc ID | New Filename Prefix | Title (EN) | PDF | VI | EN | JA | Status | Notes |
+|---|--------|---------------------|------------|:---:|:--:|:--:|:--:|:------:|-------|
+| 42 | CP-ND-2021-86 | `cp-nd-2021-86` | Decree on Overseas Study/Research | Y | Y | Y | Y | pending | |
+| 43 | CP-ND-2023-24 | `cp-nd-2023-24` | Decree on Base Salary | Y | Y | Y | Y | pending | |
+| 44 | BTC-TT-2013-111 | `btc-tt-2013-111` | Personal Income Tax Implementation | Y | Y | Y | Y | pending | |
+| 45 | DHNN-TB-2184 | `dhnn-tb-2184` | VNU-TESTS Language Assessment Plan | Y | Y | Y | Y | pending | |
+| 46 | TTCP-QD-2022-78 | `ttcp-qd-2022-78` | QA & Accreditation Program 2022-2030 | Y | Y | Y | Y | pending | from QA dir |
+
+## Group E: Education Testing — from `4. Education Testing`
+
+| # | Doc ID | New Filename Prefix | Title (EN) | PDF | VI | EN | JA | Status | Notes |
+|---|--------|---------------------|------------|:---:|:--:|:--:|:--:|:------:|-------|
+| 47 | DHVN-QD-1132 | `dhvn-qd-1132` | Examination Affairs Regulations | Y | Y | Y | Y | pending | Main decision |
+| 48 | DHVN-QD-1132 app | `dhvn-qd-1132-appendix` | Examination Affairs Appendix | Y | Y | Y | Y | pending | |
+| 49 | 1274-HD-KTDBCL | `1274-hd-ktdbcl` | End-of-Course Exam Guidance S1 2025-26 | Y | Y | Y | Y | pending | |
+
+## Group F: Public Reports — from `1. Public Report 2025`
+
+| # | Doc ID | New Filename Prefix | Title (EN) | PDF | VI | EN | JA | Status | Notes |
+|---|--------|---------------------|------------|:---:|:--:|:--:|:--:|:------:|-------|
+| 50 | DHVN-KT&DBCL-826 | `dhvn-kt-dbcl-826` | Public Report 2024-2025 | Y | Y | Y | Y | pending | |
+| 51 | DHVN-QD-1592 | `dhvn-qd-1592` | Budget Estimate Disclosure 2025 | Y | Y | Y | Y | pending | |
+| 52 | DHVN-QD-323 | `dhvn-qd-323` | Q1 2025 Budget Execution Disclosure | Y | Y | Y | Y | pending | |
+
+---
+
+## Summary
+
+| Group | Total | Done | Pending | Est. Files |
+|-------|:-----:|:----:|:-------:|:----------:|
+| A: VNU Regulations (DHQGHN) | 10 | 3 | 7 | ~28 MD + 7 PDF |
+| B: VJU Guidelines (DHVN) | 19 | 0 | 19 | ~57 MD + ~17 PDF |
+| C: Ministry of Education (BGDDT) | 12 | 0 | 12 | ~36 MD + 12 PDF |
+| D: Other Government | 5 | 0 | 5 | ~15 MD + 5 PDF |
+| E: Education Testing | 3 | 0 | 3 | ~9 MD + 3 PDF |
+| F: Public Reports | 3 | 0 | 3 | ~9 MD + 3 PDF |
+| **Total** | **52** | **3** | **49** | **~154 MD + ~47 PDF** |
+
+## YAML Front Matter Template
+
+```yaml
+---
+doc_id: "{id}"
+title: "..."
+doc_number: "..."
+date: YYYY-MM-DD
+department: "Academic Affairs|Financial Affairs|Quality Assurance|..."
+type: "Regulation|Circular|Guideline|Notification|Decree|Decision|Report"
+restricted: false
+last_updated: 2026-02-21
+---
+```
+
+## Processing Steps (per document)
+
+1. **Copy** VI/EN/JA `.md` files → rename to `{id}_{lang}.md`
+2. **Copy** source `.pdf` → rename to `{id}_source.pdf`
+3. **Replace** old YAML front matter with new standardized format
+4. **Verify** front matter stripped correctly, content renders
+
+## Execution Priority
+
+1. **Group A** — VNU core academic regulations (highest priority)
+2. **Group B** — VJU operational guidelines
+3. **Group E** — Testing regulations (small, quick)
+4. **Group C** — Ministry-level reference regulations
+5. **Group D** — Supporting government decrees
+6. **Group F** — Financial/public reports (lowest priority)
+
+## Duplicate/Overlap Notes
+
+- `DHVN-QD-700` exists in both `3. University Regulations` and `4. Education Testing` → use Regulations version as canonical
+- `DHVN-HD-259` has duplicate annex PDFs (Annex vs Appendix naming) → use one set
+- `BGDDT-QD-4998` has both `.pdf` and `.docx` sources → migrate PDF only
+- `DHQGHN-QD-5115` is superseded by `3626` → migrate with `[Superseded]` note
