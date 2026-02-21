@@ -1,0 +1,10 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Restricted PDFs: only @vju.ac.vn users can read
+    match /restricted/{allPaths=**} {
+      allow read: if request.auth != null
+                  && request.auth.token.email.matches('.*@vju\\.ac\\.vn$');
+    }
+  }
+}

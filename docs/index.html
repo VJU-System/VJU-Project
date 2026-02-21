@@ -111,6 +111,8 @@
           </span>
           <input id="nav-search-input" type="text" placeholder="Quick search..." class="block w-48 pl-9 pr-3 py-1.5 border border-gray-200 rounded-lg bg-bg-canvas placeholder-text-muted focus:outline-none focus:bg-white focus:ring-1 focus:ring-vnu-blue focus:border-vnu-blue text-sm transition-colors">
         </div>
+        <!-- Auth -->
+        <div class="border-l border-gray-200 pl-3" id="auth-section"></div>
       </div>
     </div>
   </div>
@@ -198,10 +200,13 @@
         </div>
       </article>
       <!-- Card 2 -->
-      <article class="group bg-white rounded-xl border border-gray-200 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+      <article class="doc-card group bg-white rounded-xl border border-gray-200 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden cursor-pointer" data-doc="tuition-2024" data-restricted="true">
         <div class="absolute top-0 left-0 w-1 h-full bg-accent-urgent"></div>
         <div class="flex justify-between items-start mb-4">
-          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-red-50 text-accent-urgent border border-red-100">URGENT</span>
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-red-50 text-accent-urgent border border-red-100">URGENT</span>
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-50 text-amber-700 border border-amber-200"><span class="material-symbols-outlined text-[12px]">lock</span>VJU Only</span>
+          </div>
           <time class="text-xs text-text-muted font-mono bg-gray-50 px-2 py-1 rounded">OCT 24, 2024</time>
         </div>
         <h3 class="text-lg font-bold text-text-main mb-2 group-hover:text-vnu-blue transition-colors">Tuition Fee Adjustment &amp; Waiver Policy 2024-2025</h3>
@@ -271,9 +276,12 @@
         </div>
       </article>
       <!-- Card 6 -->
-      <article class="group bg-white rounded-xl border border-gray-200 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+      <article class="doc-card group bg-white rounded-xl border border-gray-200 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col h-full cursor-pointer" data-doc="dorm-safety-2024" data-restricted="true">
         <div class="flex justify-between items-start mb-4">
-          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600 border border-gray-200">Archive</span>
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600 border border-gray-200">Archive</span>
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-50 text-amber-700 border border-amber-200"><span class="material-symbols-outlined text-[12px]">lock</span>VJU Only</span>
+          </div>
           <time class="text-xs text-text-muted font-mono bg-gray-50 px-2 py-1 rounded">OCT 12, 2024</time>
         </div>
         <h3 class="text-lg font-bold text-text-main mb-2 group-hover:text-vnu-blue transition-colors">Dormitory Safety Regulations 2024</h3>
@@ -687,18 +695,223 @@
   </div>
 </div>
 
+<!-- ============================================================ -->
+<!-- LOGIN MODAL -->
+<!-- ============================================================ -->
+<div id="login-modal" class="fixed inset-0 z-[100] hidden" data-pending-doc="">
+  <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="document.getElementById('login-modal').classList.add('hidden')"></div>
+  <div class="absolute inset-0 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-sm w-full p-8 relative">
+      <div class="text-center mb-6">
+        <div class="w-14 h-14 rounded-xl bg-vnu-blue/10 flex items-center justify-center mx-auto mb-4">
+          <span class="material-symbols-outlined text-vnu-blue text-[32px]">lock</span>
+        </div>
+        <h3 class="text-xl font-bold text-text-main mb-2">Restricted Document</h3>
+        <p class="text-sm text-text-muted leading-relaxed">This document is available only to VJU members. Please sign in with your <strong class="text-vnu-blue">@vju.ac.vn</strong> account to continue.</p>
+      </div>
+      <button id="modal-sign-in-btn" class="w-full flex items-center justify-center gap-3 px-4 py-3 bg-white border-2 border-gray-200 hover:border-vnu-blue/30 hover:bg-blue-50 rounded-xl font-medium text-sm transition-all">
+        <svg class="w-5 h-5" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+        Sign in with Google
+      </button>
+      <button class="w-full mt-3 text-sm text-text-muted hover:text-text-main transition-colors py-2" onclick="document.getElementById('login-modal').classList.add('hidden')">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- ACCESS DENIED MODAL -->
+<!-- ============================================================ -->
+<div id="access-denied-modal" class="fixed inset-0 z-[100] hidden">
+  <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="document.getElementById('access-denied-modal').classList.add('hidden')"></div>
+  <div class="absolute inset-0 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-sm w-full p-8 relative">
+      <div class="text-center mb-6">
+        <div class="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center mx-auto mb-4">
+          <span class="material-symbols-outlined text-red-500 text-[32px]">shield</span>
+        </div>
+        <h3 class="text-xl font-bold text-text-main mb-2">Access Denied</h3>
+        <p class="text-sm text-text-muted leading-relaxed">This document is restricted to <strong class="text-vnu-blue">@vju.ac.vn</strong> members only.</p>
+        <p class="text-sm text-text-muted mt-2">Signed in as: <span class="current-email font-mono text-xs bg-gray-100 px-2 py-0.5 rounded"></span></p>
+      </div>
+      <button id="modal-switch-account-btn" class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-vnu-blue hover:bg-blue-700 text-white rounded-xl font-medium text-sm transition-colors mb-2">
+        <span class="material-symbols-outlined text-[18px]">switch_account</span>
+        Sign in with a different account
+      </button>
+      <button class="w-full text-sm text-text-muted hover:text-text-main transition-colors py-2" onclick="document.getElementById('access-denied-modal').classList.add('hidden')">Close</button>
+    </div>
+  </div>
+</div>
+
 <!-- Dependencies -->
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+
+<!-- Firebase SDK (compat) -->
+<script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-storage-compat.js"></script>
 
 <script>
 (function() {
   'use strict';
 
+  // ==================== FIREBASE AUTH ====================
+  // TODO: Replace with your Firebase project config from Firebase Console
+  // Firebase Console → Project Settings → General → Your apps → Web app → Config
+  const firebaseConfig = {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_PROJECT.firebaseapp.com",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_PROJECT.firebasestorage.app",
+    messagingSenderId: "YOUR_SENDER_ID",
+    appId: "YOUR_APP_ID"
+  };
+
+  // Firebase initialization (skipped if config not set)
+  const firebaseReady = firebaseConfig.apiKey !== 'YOUR_API_KEY';
+  let fbApp = null, fbAuth = null, fbDb = null, fbStorage = null;
+  if (firebaseReady) {
+    fbApp = firebase.initializeApp(firebaseConfig);
+    fbAuth = firebase.auth();
+    fbDb = firebase.firestore();
+    fbStorage = firebase.storage();
+  }
+
+  let currentUser = null;
+  const ALLOWED_DOMAIN = 'vju.ac.vn';
+
+  function isVjuMember() {
+    return currentUser?.email?.endsWith('@' + ALLOWED_DOMAIN);
+  }
+
+  function updateAuthUI() {
+    const authSection = document.getElementById('auth-section');
+    if (!authSection) return;
+    if (currentUser) {
+      const name = currentUser.displayName || currentUser.email;
+      const photo = currentUser.photoURL;
+      const emailShort = currentUser.email.split('@')[0];
+      authSection.innerHTML = `
+        <div class="flex items-center gap-2">
+          ${photo ? `<img src="${photo}" class="w-7 h-7 rounded-full border border-gray-200" alt="" referrerpolicy="no-referrer">` : `<div class="w-7 h-7 rounded-full bg-vnu-blue flex items-center justify-center text-white text-xs font-bold">${(name || '?')[0].toUpperCase()}</div>`}
+          <span class="hidden sm:inline text-xs font-medium text-text-main max-w-[100px] truncate">${emailShort}</span>
+          ${isVjuMember() ? '<span class="hidden sm:inline px-1.5 py-0.5 rounded text-[9px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-100">VJU</span>' : ''}
+          <button id="btn-sign-out" class="p-1.5 text-text-muted hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors" title="Sign out">
+            <span class="material-symbols-outlined text-[18px]">logout</span>
+          </button>
+        </div>`;
+      document.getElementById('btn-sign-out').addEventListener('click', handleSignOut);
+    } else {
+      authSection.innerHTML = `
+        <button id="btn-sign-in" class="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-text-muted hover:text-vnu-blue hover:bg-blue-50 border border-gray-200 rounded-lg transition-all">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24"><path fill="currentColor" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="currentColor" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="currentColor" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="currentColor" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          Sign in
+        </button>`;
+      document.getElementById('btn-sign-in').addEventListener('click', handleSignIn);
+    }
+  }
+
+  function handleSignIn() {
+    if (!firebaseReady) {
+      alert('Firebase is not configured yet. Please update firebaseConfig in index.html.');
+      return;
+    }
+    const provider = new firebase.auth.GoogleAuthProvider();
+    provider.setCustomParameters({ hd: ALLOWED_DOMAIN });
+    fbAuth.signInWithPopup(provider).catch(err => {
+      if (err.code !== 'auth/popup-closed-by-user') {
+        console.error('Sign-in error:', err);
+        alert('Sign-in failed: ' + err.message);
+      }
+    });
+  }
+
+  function handleSignOut() {
+    if (fbAuth) fbAuth.signOut();
+  }
+
+  function showLoginModal(docId) {
+    const modal = document.getElementById('login-modal');
+    if (modal) {
+      modal.dataset.pendingDoc = docId || '';
+      modal.classList.remove('hidden');
+    }
+  }
+
+  function hideLoginModal() {
+    const modal = document.getElementById('login-modal');
+    if (modal) modal.classList.add('hidden');
+  }
+
+  function showAccessDenied() {
+    const modal = document.getElementById('access-denied-modal');
+    if (modal) {
+      const emailEl = modal.querySelector('.current-email');
+      if (emailEl) emailEl.textContent = currentUser?.email || '';
+      modal.classList.remove('hidden');
+    }
+  }
+
+  function hideAccessDenied() {
+    const modal = document.getElementById('access-denied-modal');
+    if (modal) modal.classList.add('hidden');
+  }
+
+  // Listen for auth state changes
+  if (firebaseReady) {
+    fbAuth.onAuthStateChanged((user) => {
+      currentUser = user;
+      updateAuthUI();
+      // If login modal was open and user just signed in, try opening pending doc
+      const modal = document.getElementById('login-modal');
+      if (user && modal && !modal.classList.contains('hidden')) {
+        const pendingDoc = modal.dataset.pendingDoc;
+        hideLoginModal();
+        if (pendingDoc) {
+          const restricted = true;
+          if (!isVjuMember()) {
+            showAccessDenied();
+          } else {
+            currentDocId = pendingDoc;
+            currentDocRestricted = true;
+            readerLoaded = false;
+            navigateTo('reader');
+          }
+        }
+      }
+    });
+  }
+
   // ==================== NAVIGATION ====================
   const views = ['home', 'search', 'department', 'reader'];
   let currentView = 'home';
   let readerLoaded = false;
+  let currentDocId = '3626';
+  let currentDocRestricted = false;
+
+  function openDocument(docId, restricted) {
+    if (!restricted) {
+      currentDocId = docId;
+      currentDocRestricted = false;
+      readerLoaded = false;
+      navigateTo('reader');
+      return;
+    }
+    if (!currentUser) {
+      showLoginModal(docId);
+      return;
+    }
+    if (!isVjuMember()) {
+      showAccessDenied();
+      return;
+    }
+    currentDocId = docId;
+    currentDocRestricted = true;
+    readerLoaded = false;
+    navigateTo('reader');
+  }
+  window.openDocument = openDocument;
 
   function navigateTo(view) {
     currentView = view;
@@ -793,10 +1006,26 @@
     }
   });
 
-  // Document cards → reader
-  document.querySelectorAll('.doc-card[data-doc="3626"], .search-result[data-doc="3626"]').forEach(el => {
-    el.addEventListener('click', () => navigateTo('reader'));
+  // Document cards → reader (via openDocument gate)
+  document.querySelectorAll('.doc-card[data-doc], .search-result[data-doc]').forEach(el => {
+    el.addEventListener('click', () => {
+      const docId = el.dataset.doc;
+      const restricted = el.dataset.restricted === 'true';
+      openDocument(docId, restricted);
+    });
   });
+
+  // Modal button wiring
+  const modalSignInBtn = document.getElementById('modal-sign-in-btn');
+  if (modalSignInBtn) modalSignInBtn.addEventListener('click', handleSignIn);
+  const modalSwitchBtn = document.getElementById('modal-switch-account-btn');
+  if (modalSwitchBtn) modalSwitchBtn.addEventListener('click', () => {
+    hideAccessDenied();
+    if (fbAuth) fbAuth.signOut().then(() => handleSignIn());
+  });
+
+  // Initialize auth UI on load
+  updateAuthUI();
 
   // ==================== READER ====================
   let viewMode = 'split';
@@ -945,20 +1174,65 @@
     }
   });
 
-  // Load markdown
+  // Load document content (public via fetch, restricted via Firestore)
+  async function loadPublicDoc(docId) {
+    const [viMd, enMd, jaMd] = await Promise.all([
+      fetch('data/' + docId + '_vi.md').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
+      fetch('data/' + docId + '_en.md').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
+      fetch('data/' + docId + '_ja.md').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+    ]);
+    return { vi: viMd, en: enMd, ja: jaMd };
+  }
+
+  async function loadRestrictedDoc(docId) {
+    if (!fbDb) throw new Error('Firebase not configured');
+    const [viSnap, enSnap, jaSnap] = await Promise.all([
+      fbDb.collection('docs').doc(docId).collection('content').doc('vi').get(),
+      fbDb.collection('docs').doc(docId).collection('content').doc('en').get(),
+      fbDb.collection('docs').doc(docId).collection('content').doc('ja').get()
+    ]);
+    const getText = (snap, lang) => {
+      if (!snap.exists) throw new Error('Document content (' + lang + ') not found in Firestore');
+      return snap.data().text || '';
+    };
+    return { vi: getText(viSnap, 'vi'), en: getText(enSnap, 'en'), ja: getText(jaSnap, 'ja') };
+  }
+
   async function loadReader() {
     readerLoaded = true;
+    const loading = '<div class="flex items-center justify-center py-12 text-text-muted"><span class="material-symbols-outlined animate-spin mr-2">progress_activity</span>Loading...</div>';
+    contentLeft.querySelector('.prose-legal').innerHTML = loading;
+    contentRightEn.querySelector('.prose-legal').innerHTML = loading;
+    contentRightJa.querySelector('.prose-legal').innerHTML = loading;
+
+    // Update source PDF link
+    const btnSource = document.getElementById('btn-source');
+    if (currentDocRestricted && fbStorage) {
+      btnSource.removeAttribute('href');
+      btnSource.style.cursor = 'pointer';
+      btnSource.onclick = async (e) => {
+        e.preventDefault();
+        try {
+          const url = await fbStorage.ref('restricted/' + currentDocId + '.pdf').getDownloadURL();
+          window.open(url, '_blank');
+        } catch (err) { alert('PDF not available: ' + err.message); }
+      };
+    } else {
+      btnSource.href = 'data/' + currentDocId + '_source.pdf';
+      btnSource.onclick = null;
+      btnSource.style.cursor = '';
+    }
+
     try {
-      const [viMd, enMd, jaMd] = await Promise.all([
-        fetch('data/3626_vi.md').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
-        fetch('data/3626_en.md').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
-        fetch('data/3626_ja.md').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
-      ]);
+      const docs = currentDocRestricted
+        ? await loadRestrictedDoc(currentDocId)
+        : await loadPublicDoc(currentDocId);
+
       marked.setOptions({ gfm: true, breaks: false });
       const render = md => DOMPurify.sanitize(marked.parse(md), { ADD_TAGS: ['sub','sup'], ADD_ATTR: ['align','style'] });
-      contentLeft.querySelector('.prose-legal').innerHTML = render(viMd);
-      contentRightEn.querySelector('.prose-legal').innerHTML = render(enMd);
-      contentRightJa.querySelector('.prose-legal').innerHTML = render(jaMd);
+      contentLeft.querySelector('.prose-legal').innerHTML = render(docs.vi);
+      contentRightEn.querySelector('.prose-legal').innerHTML = render(docs.en);
+      contentRightJa.querySelector('.prose-legal').innerHTML = render(docs.ja);
       buildToc();
       setupScrollSync();
       setupScrollSpy();

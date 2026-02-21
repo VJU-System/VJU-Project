@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Restricted documents: only @vju.ac.vn users can read
+    match /docs/{docId}/content/{lang} {
+      allow read: if request.auth != null
+                  && request.auth.token.email.matches('.*@vju\\.ac\\.vn$');
+    }
+  }
+}
