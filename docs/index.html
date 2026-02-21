@@ -1310,9 +1310,9 @@
   async function loadPublicDoc(docId) {
     const prefix = getDocPrefix(docId);
     const [viRaw, enRaw, jaRaw] = await Promise.all([
-      fetch('data/' + prefix + '_transcription.md').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
-      fetch('data/' + prefix + '_transcription_en.md').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
-      fetch('data/' + prefix + '_transcription_ja.md').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+      fetch(encodeURI('data/' + prefix + '_transcription.md')).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
+      fetch(encodeURI('data/' + prefix + '_transcription_en.md')).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
+      fetch(encodeURI('data/' + prefix + '_transcription_ja.md')).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
     ]);
     // Parse metadata from the source transcription (canonical), strip front matter from all
     const meta = parseFrontMatter(viRaw);
