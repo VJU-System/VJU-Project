@@ -13,18 +13,23 @@
 ## Naming Convention
 
 ```
-{Number}-{Type}-{Issuer}_{English_Title}_transcription.md       ← 文字起こし（通常VI）
-{Number}-{Type}-{Issuer}_{English_Title}_transcription_en.md    ← English
-{Number}-{Type}-{Issuer}_{English_Title}_transcription_ja.md    ← Japanese
-{Number}-{Type}-{Issuer}_{English_Title}_source.pdf             ← Original PDF
+{Document_ID}_{English_Title}_transcription.md       ← 文字起こし（通常VI）
+{Document_ID}_{English_Title}_transcription_en.md    ← English
+{Document_ID}_{English_Title}_transcription_ja.md    ← Japanese
+{Document_ID}_{English_Title}_source.pdf             ← Original PDF
 ```
 
-Examples:
-- `3626-QD-DHQGHN_Regulation_on_Undergraduate_Training_transcription.md`
-- `BGDDT-TT-2021-08_Regulation_on_Undergraduate_Training_transcription_en.md`
-- `DHVN-HD-304_Learning_Outcome_Recognition_and_Credit_Transfer_source.pdf`
+- **Document ID** = 文書の公式ID。ベトナムの公文書では `{番号}-{種別}-{発行者}` の形式
+  （例: `3626-QD-DHQGHN`, `BGDDT-TT-2021-08`）。
+  日本語・英語の文書ではIDの形式が異なる場合があるので注意。
+- **English Title** = 英語タイトルをそのまま記述（スペースOK）
 
-Sub-documents (annexes): `{base}_Annex_{N}_{Short_Title}_*`
+Examples:
+- `3626-QD-DHQGHN_Regulation on Undergraduate Training_transcription.md`
+- `BGDDT-TT-2021-08_Regulation on Undergraduate Training_transcription_en.md`
+- `DHVN-HD-304_Learning Outcome Recognition and Credit Transfer_source.pdf`
+
+Sub-documents (annexes): `{base}_Annex {N} {Short Title}_*`
 
 ## Legend
 - Status: `done` / `pending` / `skip`
@@ -37,16 +42,16 @@ Sub-documents (annexes): `{base}_Annex_{N}_{Short_Title}_*`
 
 | # | Doc ID | New Filename Prefix | Title (EN) | PDF | VI | EN | JA | Status | Notes |
 |---|--------|---------------------|------------|:---:|:--:|:--:|:--:|:------:|-------|
-| 1 | DHQGHN-QD-3626 | `3626-QD-DHQGHN_Regulation_on_Undergraduate_Training` | Regulation on Undergraduate Training | Y | Y | Y | Y | done | |
-| 2 | DHQGHN-QD-3636 | `3636-QD-DHQGHN_Regulation_on_Masters_Training` | Regulation on Master's Training | Y | Y | Y | Y | done | |
-| 3 | DHQGHN-QD-3638 | `3638-QD-DHQGHN_Regulation_on_Doctoral_Training` | Regulation on Doctoral Training | Y | Y | Y | Y | done | |
-| 4 | DHQGHN-QD-2459 | `2459-QD-DHQGHN_Amendment_to_Masters_Training_Regulation` | Amendment to Master's Training Reg (3636) | Y | Y | Y | Y | pending | Amends #2 |
-| 5 | DHQGHN-QD-2486 | `2486-QD-DHQGHN_Amendment_to_Undergraduate_Admission_Regulation` | Amendment to Undergrad Admission Reg | Y | Y | Y | Y | pending | |
-| 6 | DHQGHN-QD-4391 | `4391-QD-DHQGHN_Online_Training_and_E-Lecture_Regulations` | Online Training & E-Lecture Regulations | Y | Y | Y | Y | pending | |
-| 7 | DHQGHN-QD-4455 | `4455-QD-DHQGHN_Diploma_and_Certificate_Management` | Diploma & Certificate Management | Y | Y | Y | Y | pending | |
-| 8 | DHQGHN-QD-4618 | `4618-QD-DHQGHN_Scholarship_Management_and_Use` | Scholarship Management & Use | Y | Y | Y | Y | pending | |
-| 9 | DHQGHN-QD-5115 | `5115-QD-DHQGHN_Superseded_Undergraduate_Training` | [Superseded] Undergraduate Training | Y | Y | Y | Y | pending | Replaced by #1 |
-| 10 | DHQGHN-QD-628 | `628-QD-DHQGHN_Educational_Quality_Assurance` | Educational Quality Assurance at VNU | Y | Y | Y | Y | pending | from QA dir |
+| 1 | DHQGHN-QD-3626 | `3626-QD-DHQGHN_Regulation on Undergraduate Training` | Regulation on Undergraduate Training | Y | Y | Y | Y | done | |
+| 2 | DHQGHN-QD-3636 | `3636-QD-DHQGHN_Regulation on Masters Training` | Regulation on Master's Training | Y | Y | Y | Y | done | |
+| 3 | DHQGHN-QD-3638 | `3638-QD-DHQGHN_Regulation on Doctoral Training` | Regulation on Doctoral Training | Y | Y | Y | Y | done | |
+| 4 | DHQGHN-QD-2459 | `2459-QD-DHQGHN_Amendment to Masters Training Regulation` | Amendment to Master's Training Reg (3636) | Y | Y | Y | Y | pending | Amends #2 |
+| 5 | DHQGHN-QD-2486 | `2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation` | Amendment to Undergrad Admission Reg | Y | Y | Y | Y | pending | |
+| 6 | DHQGHN-QD-4391 | `4391-QD-DHQGHN_Online Training and E-Lecture Regulations` | Online Training & E-Lecture Regulations | Y | Y | Y | Y | pending | |
+| 7 | DHQGHN-QD-4455 | `4455-QD-DHQGHN_Diploma and Certificate Management` | Diploma & Certificate Management | Y | Y | Y | Y | pending | |
+| 8 | DHQGHN-QD-4618 | `4618-QD-DHQGHN_Scholarship Management and Use` | Scholarship Management & Use | Y | Y | Y | Y | pending | |
+| 9 | DHQGHN-QD-5115 | `5115-QD-DHQGHN_Superseded Undergraduate Training` | [Superseded] Undergraduate Training | Y | Y | Y | Y | pending | Replaced by #1 |
+| 10 | DHQGHN-QD-628 | `628-QD-DHQGHN_Educational Quality Assurance` | Educational Quality Assurance at VNU | Y | Y | Y | Y | pending | from QA dir |
 
 ## Group B: VJU Regulations & Guidelines (DHVN) — from `3. University Regulations`
 
@@ -166,3 +171,9 @@ last_updated: 2026-02-21
 - `DHVN-HD-259` has duplicate annex PDFs (Annex vs Appendix naming) → use one set
 - `BGDDT-QD-4998` has both `.pdf` and `.docx` sources → migrate PDF only
 - `DHQGHN-QD-5115` is superseded by `3626` → migrate with `[Superseded]` note
+
+## Important Notes
+
+- **Document ID format**: Vietnamese public documents follow `{Number}-{Type}-{Issuer}` convention
+  (e.g. `3626-QD-DHQGHN`). Documents from Japan or other countries may use different ID formats.
+  Always verify the official document ID before assigning filenames.
