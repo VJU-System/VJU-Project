@@ -178,7 +178,7 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- Card: Regulation (real doc) -->
-      <article class="doc-card group bg-white rounded-xl border border-gray-200 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col h-full cursor-pointer" data-doc="3626">
+      <article class="doc-card group bg-white rounded-xl border border-gray-200 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col h-full cursor-pointer" data-doc="3626-QD-DHQGHN">
         <div class="absolute top-0 left-0 w-1 h-full bg-vnu-blue rounded-l-xl"></div>
         <div class="flex justify-between items-start mb-4">
           <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-vnu-blue border border-blue-100">Regulation</span>
@@ -386,7 +386,7 @@
       <!-- Results list -->
       <div class="space-y-4 pb-8">
         <!-- Result 1 (real doc) -->
-        <article class="search-result bg-white rounded-xl p-5 shadow-subtle border border-gray-200 hover:shadow-md hover:border-vnu-blue/30 transition-all cursor-pointer group flex flex-col sm:flex-row gap-5" data-doc="3626">
+        <article class="search-result bg-white rounded-xl p-5 shadow-subtle border border-gray-200 hover:shadow-md hover:border-vnu-blue/30 transition-all cursor-pointer group flex flex-col sm:flex-row gap-5" data-doc="3626-QD-DHQGHN">
           <div class="shrink-0 flex sm:flex-col items-center sm:items-start gap-3 sm:w-32">
             <span class="inline-flex items-center px-2.5 py-1 rounded bg-gray-100 text-gray-600 font-mono text-xs font-medium border border-gray-200 group-hover:bg-vnu-blue/5 group-hover:text-vnu-blue group-hover:border-vnu-blue/20 transition-colors">3626/QD-DHQGHN</span>
             <div class="flex items-center gap-1.5 text-xs text-gray-500"><span class="material-symbols-outlined text-[16px]">calendar_month</span><span>Oct 21, 2022</span></div>
@@ -887,9 +887,9 @@
   // Maps doc ID → file prefix under docs/data/
   // Naming: {prefix}_transcription.md (VI), _transcription_en.md, _transcription_ja.md, _source.pdf
   const DOC_REGISTRY = {
-    '3626': '3626-QD-DHQGHN_Regulation on Undergraduate Training',
-    '3636': '3636-QD-DHQGHN_Regulation on Masters Training',
-    '3638': '3638-QD-DHQGHN_Regulation on Doctoral Training',
+    '3626-QD-DHQGHN': '3626-QD-DHQGHN_Regulation on Undergraduate Training',
+    '3636-QD-DHQGHN': '3636-QD-DHQGHN_Regulation on Masters Training',
+    '3638-QD-DHQGHN': '3638-QD-DHQGHN_Regulation on Doctoral Training',
   };
 
   function getDocPrefix(docId) {
@@ -900,7 +900,7 @@
   const views = ['home', 'search', 'department', 'reader'];
   let currentView = 'home';
   let readerLoaded = false;
-  let currentDocId = '3626';
+  let currentDocId = '3626-QD-DHQGHN';
   let currentDocRestricted = false;
 
   function openDocument(docId, restricted) {

@@ -1,5 +1,5 @@
 ---
-doc_id: "3626"
+doc_id: "3626-QD-DHQGHN"
 title: "ベトナム国家大学ハノイ校における学部課程教育に関する規程"
 doc_number: "3626/QĐ-ĐHQGHN"
 date: 2022-10-24

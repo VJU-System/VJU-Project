@@ -1,5 +1,5 @@
 ---
-doc_id: "3636"
+doc_id: "3636-QD-DHQGHN"
 title: "Regulation on Master's Training at VNU, Hanoi"
 doc_number: "3636/QĐ-ĐHQGHN"
 date: 2022-10-21

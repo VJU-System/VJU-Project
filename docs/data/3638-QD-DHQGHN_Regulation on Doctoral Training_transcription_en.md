@@ -1,5 +1,5 @@
 ---
-doc_id: "3638"
+doc_id: "3638-QD-DHQGHN"
 title: "Regulation on Doctoral Training at VNU, Hanoi"
 doc_number: "3638/QĐ-ĐHQGHN"
 date: 2022-10-21

@@ -1,5 +1,5 @@
 ---
-doc_id: "3638"
+doc_id: "3638-QD-DHQGHN"
 title: "Quy chế đào tạo tiến sĩ tại ĐHQGHN"
 doc_number: "3638/QĐ-ĐHQGHN"
 date: 2022-10-21

@@ -1,5 +1,5 @@
 ---
-doc_id: "3626"
+doc_id: "3626-QD-DHQGHN"
 title: "Quy chế đào tạo trình độ đại học tại ĐHQGHN"
 doc_number: "3626/QĐ-ĐHQGHN"
 date: 2022-10-24

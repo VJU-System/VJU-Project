@@ -1,5 +1,5 @@
 ---
-doc_id: "3636"
+doc_id: "3636-QD-DHQGHN"
 title: "ベトナム国家大学ハノイ校における修士課程教育に関する規程"
 doc_number: "3636/QĐ-ĐHQGHN"
 date: 2022-10-21
