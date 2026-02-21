@@ -42,15 +42,15 @@ Sub-documents (annexes): `{base}_Annex {N} {Short Title}_*`
 
 | # | Doc ID | New Filename Prefix | Title (EN) | PDF | VI | EN | JA | Status | Notes |
 |---|--------|---------------------|------------|:---:|:--:|:--:|:--:|:------:|-------|
-| 1 | DHQGHN-QD-3626 | `3626-QD-DHQGHN_Regulation on Undergraduate Training` | Regulation on Undergraduate Training | Y | Y | Y | Y | done | |
+| 1 | DHQGHN-QD-3626 | `3626-QD-DHQGHN_Regulation on Undergraduate Training` | Regulation on Undergraduate Training | Y | Y | Y | Y | done | Format normalization pending (see below) |
 | 2 | DHQGHN-QD-3636 | `3636-QD-DHQGHN_Regulation on Masters Training` | Regulation on Master's Training | Y | Y | Y | Y | done | |
 | 3 | DHQGHN-QD-3638 | `3638-QD-DHQGHN_Regulation on Doctoral Training` | Regulation on Doctoral Training | Y | Y | Y | Y | done | |
 | 4 | DHQGHN-QD-2459 | `2459-QD-DHQGHN_Amendment to Masters Training Regulation` | Amendment to Master's Training Reg (3636) | Y | Y | Y | Y | done | Amends #2 |
 | 5 | DHQGHN-QD-2486 | `2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation` | Amendment to Undergrad Admission Reg | Y | Y | Y | Y | done | |
 | 6 | DHQGHN-QD-4391 | `4391-QD-DHQGHN_Online Training and E-Lecture Regulations` | Online Training & E-Lecture Regulations | Y | Y | Y | Y | done | |
-| 7 | DHQGHN-QD-4455 | `4455-QD-DHQGHN_Diploma and Certificate Management` | Diploma & Certificate Management | Y | Y | Y | Y | pending | |
-| 8 | DHQGHN-QD-4618 | `4618-QD-DHQGHN_Scholarship Management and Use` | Scholarship Management & Use | Y | Y | Y | Y | pending | |
-| 9 | DHQGHN-QD-5115 | `5115-QD-DHQGHN_Superseded Undergraduate Training` | [Superseded] Undergraduate Training | Y | Y | Y | Y | pending | Replaced by #1 |
+| 7 | DHQGHN-QD-4455 | `4455-QD-DHQGHN_Diploma and Certificate Management` | Diploma & Certificate Management | Y | Y | Y | Y | done | |
+| 8 | DHQGHN-QD-4618 | `4618-QD-DHQGHN_Scholarship Management and Use` | Scholarship Management & Use | Y | Y | Y | Y | done | |
+| 9 | DHQGHN-QD-5115 | `5115-QD-DHQGHN_Superseded Undergraduate Training` | [Superseded] Undergraduate Training | Y | Y | Y | Y | done | Replaced by #1 |
 | 10 | DHQGHN-QD-628 | `628-QD-DHQGHN_Educational Quality Assurance` | Educational Quality Assurance at VNU | Y | Y | Y | Y | pending | from QA dir |
 
 ## Group B: VJU Regulations & Guidelines (DHVN) — from `3. University Regulations`
@@ -119,6 +119,24 @@ Sub-documents (annexes): `{base}_Annex {N} {Short Title}_*`
 | 50 | DHVN-KT&DBCL-826 | `dhvn-kt-dbcl-826` | Public Report 2024-2025 | Y | Y | Y | Y | pending | |
 | 51 | DHVN-QD-1592 | `dhvn-qd-1592` | Budget Estimate Disclosure 2025 | Y | Y | Y | Y | pending | |
 | 52 | DHVN-QD-323 | `dhvn-qd-323` | Q1 2025 Budget Execution Disclosure | Y | Y | Y | Y | pending | |
+
+---
+
+## Format Normalization: 3626-QD-DHQGHN (Pending)
+
+3626の3言語版（VI/EN/JA）でPDF原文との不整合が発見された。以下の正規化が必要:
+
+| # | Rule | Pattern | Target | Est. Count (per file) | Status |
+|---|------|---------|--------|:---------------------:|:------:|
+| 1 | khoản → 番号付きリスト | `- N.` → `N.` | 行頭の `- 1.`〜`- 10.` | ~176-180 | pending |
+| 2 | điểm → 通常段落 | `   - a)` → `a)` | `   - a)`〜`   - i)` (含đ) | ~238-256 | pending |
+| 3 | điểm (period) | `   - a.` → `a.` | Art.36のみ | 4 | pending |
+| 4 | 3rd-level nest | `     - text` → `- text` | Art.35のみ | ~6 | pending |
+| 5 | Chapter heading merge | 番号+タイトル結合 | 9章分 | 9 | pending |
+
+詳細な計画: セッションログ参照（`9a13c057-0e48-44a8-a8d1-c0ab082f7351`）
+
+**Note:** 非構造化箇条書き（`- テキスト`、番号なし）はPDFでもインデント付きなのでそのまま保持。
 
 ---
 
