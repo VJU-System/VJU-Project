@@ -5,7 +5,7 @@
 
 ## 1. 保存方針
 1. 原本ファイル（PDF/DOCX/MD 等）はフォルダ分割せず、単一保存領域に集約する。
-2. 分類は保存場所ではなくメタデータ（`category`, `lang`, `tags`, `relations`）で行う。
+2. 分類は保存場所ではなくメタデータ（`category`, `doc_language`, `tags`, `relations`）で行う。
 3. 表示時にインデックスを生成し、検索・絞り込み・関連リンク表示を行う。
 
 ## 2. メタデータ方針
@@ -18,7 +18,7 @@
 7. メタデータ全般の正規化（ASCII化、空白除去等）は [Spec_PDF_Converter_App.md](Spec_PDF_Converter_App.md#11-メタデータ正規化ルール-metadata-normalization-rules) の規定に従う。
 
 ## 3. 必須・推奨キー
-1. 必須: `doc_id`, `part_id`, `title`, `lang`, `tags`, `document_status`
+1. 必須: `doc_id`, `part_id`, `title`, `doc_language`, `tags`, `document_status`
    - `document_status` の既定値は `active`。失効・改廃は手動で更新する。
 2. 推奨: `source_url`, `source_hash_sha256`, `storage_path`, `issue_date`, `effective_date`
 
