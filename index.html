@@ -53,6 +53,7 @@
     .prose-legal h2 { font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; color: #1e293b; }
     .prose-legal p { margin: 0.6rem 0; line-height: 1.75; font-size: 0.95rem; }
     .prose-legal p.khoan { padding-left: 1.5em; margin: 0.3rem 0; }
+    .prose-legal p.diem { padding-left: 3em; margin: 0.3rem 0; }
     .prose-legal ul, .prose-legal ol { margin: 0.4rem 0 0.4rem 0.25rem; }
     .prose-legal li { margin: 0.2rem 0; line-height: 1.7; font-size: 0.95rem; }
     .prose-legal table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.85rem; }
@@ -1695,7 +1696,6 @@
       const preprocessLegalMd = (md) => {
         const lines = md.split('\n');
         const out = [];
-        const nbsp = '\u00A0';
         for (let i = 0; i < lines.length; i++) {
           let line = lines[i];
           const prev = i > 0 ? lines[i - 1] : '';
@@ -1703,14 +1703,15 @@
           line = line.replace(/^(\d+)\. /, '$1\\. ');
           const dm = line.match(DIEM_RE);
           if (dm) {
-            const indent = dm[1].length > 0 ? nbsp.repeat(Math.ceil(dm[1].length / 2)) : nbsp.repeat(1);
-            line = indent + dm[2] + ') ' + line.slice(dm[0].length);
+            if (prev.trim() !== '') out.push('');
+            line = dm[2] + ') ' + line.slice(dm[0].length);
           }
           out.push(line);
         }
         return out.join('\n');
       };
-      const render = md => { let html = DOMPurify.sanitize(marked.parse(preprocessLegalMd(md)), { ADD_TAGS: ['sub','sup'], ADD_ATTR: ['align','style'] }); html = html.replace(/<p>\s*(\d+)\. /g, '<p class="khoan">$1. '); return html; };
+      const DIEM_LETTERS = 'a-eghik-np-t\u0111';
+      const render = md => { let html = DOMPurify.sanitize(marked.parse(preprocessLegalMd(md)), { ADD_TAGS: ['sub','sup'], ADD_ATTR: ['align','style'] }); html = html.replace(/<p>\s*(\d+)\. /g, '<p class="khoan">$1. '); html = html.replace(new RegExp('<p>\\s*([' + DIEM_LETTERS + '])\\) ', 'g'), '<p class="diem">$1) '); return html; };
       const rendered = { vi: render(docs.vi), en: render(docs.en), ja: render(docs.ja) };
       ['left','right'].forEach(pane => {
         ['vi','en','ja'].forEach(lang => {
