@@ -50,11 +50,15 @@
 
     /* Prose for document reader */
     .prose-legal h1 { font-size: 1.35rem; font-weight: 700; margin: 2rem 0 0.75rem; text-align: center; }
-    .prose-legal h2 { font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; color: #1e293b; }
+    .prose-legal h2 { font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; color: #1e293b; border-left: 4px solid #3b82f6; padding-left: 8px; }
     .prose-legal p { margin: 0.6rem 0; line-height: 1.75; font-size: 0.95rem; text-indent: 1.5em; }
     .prose-legal div p, .prose-legal p[align] { text-indent: 0; }
-    .prose-legal ul, .prose-legal ol { margin: 0.4rem 0 0.4rem 1.25rem; }
-    .prose-legal li { margin: 0.2rem 0; line-height: 1.7; font-size: 0.95rem; }
+    .prose-legal ul, .prose-legal ol { margin: 0.5rem 0 0.5rem 1.5rem; }
+    .prose-legal li { margin: 0.3rem 0; line-height: 1.75; font-size: 0.95rem; }
+    .prose-legal ol > li { margin: 0.6rem 0; }
+    .prose-legal li > ul, .prose-legal li > ol { margin: 0.3rem 0 0.3rem 0.75rem; }
+    .prose-legal li > ul > li { padding-left: 0.25rem; border-left: 2px solid #e2e8f0; margin: 0.35rem 0; padding-top: 0.1rem; padding-bottom: 0.1rem; }
+    .prose-legal li > p { text-indent: 0; }
     .prose-legal table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.85rem; }
     .prose-legal th, .prose-legal td { border: 1px solid #e2e8f0; padding: 0.4rem 0.6rem; text-align: center; }
     .prose-legal blockquote { border-left: 4px solid #f59e0b; background: #fffbeb; padding: 0.6rem 0.75rem; margin: 0.75rem 0; border-radius: 0 6px 6px 0; font-size: 0.85rem; }
@@ -69,6 +73,15 @@
     #toc .article-item > a { padding-left: 16px; }
     .drag-handle { cursor: col-resize; user-select: none; }
     .drag-handle:hover .handle-bar, .drag-handle.dragging .handle-bar { background: #3b82f6; }
+    /* Relations panel */
+    #doc-relations { border-top: 1px solid #e2e8f0; padding: 12px; }
+    #doc-relations h4 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; margin-bottom: 8px; }
+    .rel-tag { display: inline-block; padding: 2px 8px; margin: 2px; font-size: 11px; background: #f1f5f9; color: #475569; border-radius: 9999px; cursor: pointer; transition: all 0.15s; }
+    .rel-tag:hover { background: #e0e7ff; color: #3b82f6; }
+    .rel-link { display: flex; align-items: center; gap: 6px; padding: 5px 8px; margin: 2px 0; font-size: 12px; color: #334155; text-decoration: none; border-radius: 6px; transition: all 0.15s; cursor: pointer; }
+    .rel-link:hover { background: #eff6ff; color: #3b82f6; }
+    .rel-link .rel-type { font-size: 10px; color: #94a3b8; white-space: nowrap; }
+    .rel-link .rel-icon { font-size: 16px; color: #94a3b8; }
   </style>
 </head>
 <body class="bg-bg-canvas text-text-main min-h-screen flex flex-col">
@@ -928,6 +941,10 @@
       <nav id="toc" class="flex-1 overflow-y-auto p-3 space-y-1" aria-label="Table of contents">
         <div class="text-xs text-text-muted py-4 text-center">Loading...</div>
       </nav>
+      <div id="doc-relations" class="overflow-y-auto" style="display:none;">
+        <div id="rel-tags"></div>
+        <div id="rel-links" class="mt-2"></div>
+      </div>
     </aside>
     <!-- Split container -->
     <div id="split-container" class="flex-1 flex overflow-hidden">
@@ -1167,27 +1184,136 @@
   // Maps doc ID → file prefix under docs/data/
   // Naming: {prefix}_transcription.md (VI), _transcription_en.md, _transcription_ja.md, _source.pdf
   const DOC_REGISTRY = {
-    '3626-QD-DHQGHN': '3626-QD-DHQGHN_Regulation on Undergraduate Training',
-    '3636-QD-DHQGHN': '3636-QD-DHQGHN_Regulation on Masters Training',
-    '3638-QD-DHQGHN': '3638-QD-DHQGHN_Regulation on Doctoral Training',
-    '2459-QD-DHQGHN': '2459-QD-DHQGHN_Amendment to Masters Training Regulation',
-    '2486-QD-DHQGHN': '2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation',
-    '4391-QD-DHQGHN': '4391-QD-DHQGHN_Online Training and E-Lecture Regulations',
-    '4455-QD-DHQGHN': '4455-QD-DHQGHN_Diploma and Certificate Management',
-    '4618-QD-DHQGHN': '4618-QD-DHQGHN_Scholarship Management and Use',
-    '5115-QD-DHQGHN': '5115-QD-DHQGHN_Superseded Undergraduate Training',
-    'DHVN-QD-1132': 'DHVN-QD-1132_Examination Affairs Regulations',
-    '1274-HD-KTDBCL': '1274-HD-KTDBCL_End-of-Course Exam Guidance S1 2025-2026',
-    'DHQGHN-QD-628': 'DHQGHN-QD-628_Educational Quality Assurance Regulation',
-    'DHVN-QD-700': 'DHVN-QD-700_Anti-Plagiarism Regulations',
-    'DHVN-DT-840': 'DHVN-DT-840_Academic Calendar 2025-2026',
-    'DHVN-HD-483': 'DHVN-HD-483_Practical Internship Guidance',
-    'DHVN-HD-1534': 'DHVN-HD-1534_Thesis and Graduation Project Guidelines',
-    'DHVN-HD-1534-Annex': 'DHVN-HD-1534_Annex Templates English Format',
+    '3626-QD-DHQGHN': {
+      prefix: '3626-QD-DHQGHN_Regulation on Undergraduate Training',
+      title: 'Regulation on Undergraduate Training',
+      tags: ['undergraduate', 'training', 'VNU regulation'],
+      relations: [
+        { id: '5115-QD-DHQGHN', type: 'supersedes', label: 'Supersedes' },
+        { id: '2486-QD-DHQGHN', type: 'amended-by', label: 'Amended by' },
+        { id: '3636-QD-DHQGHN', type: 'related', label: 'Related' },
+        { id: '3638-QD-DHQGHN', type: 'related', label: 'Related' },
+      ]
+    },
+    '3636-QD-DHQGHN': {
+      prefix: '3636-QD-DHQGHN_Regulation on Masters Training',
+      title: 'Regulation on Masters Training',
+      tags: ['masters', 'training', 'VNU regulation'],
+      relations: [
+        { id: '2459-QD-DHQGHN', type: 'amended-by', label: 'Amended by' },
+        { id: '3626-QD-DHQGHN', type: 'related', label: 'Related' },
+        { id: '3638-QD-DHQGHN', type: 'related', label: 'Related' },
+      ]
+    },
+    '3638-QD-DHQGHN': {
+      prefix: '3638-QD-DHQGHN_Regulation on Doctoral Training',
+      title: 'Regulation on Doctoral Training',
+      tags: ['doctoral', 'training', 'VNU regulation'],
+      relations: [
+        { id: '3626-QD-DHQGHN', type: 'related', label: 'Related' },
+        { id: '3636-QD-DHQGHN', type: 'related', label: 'Related' },
+      ]
+    },
+    '2459-QD-DHQGHN': {
+      prefix: '2459-QD-DHQGHN_Amendment to Masters Training Regulation',
+      title: 'Amendment to Masters Training Regulation',
+      tags: ['masters', 'amendment'],
+      relations: [
+        { id: '3636-QD-DHQGHN', type: 'amends', label: 'Amends' },
+      ]
+    },
+    '2486-QD-DHQGHN': {
+      prefix: '2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation',
+      title: 'Amendment to Undergraduate Admission Regulation',
+      tags: ['undergraduate', 'amendment', 'admission'],
+      relations: [
+        { id: '3626-QD-DHQGHN', type: 'amends', label: 'Amends' },
+      ]
+    },
+    '4391-QD-DHQGHN': {
+      prefix: '4391-QD-DHQGHN_Online Training and E-Lecture Regulations',
+      title: 'Online Training and E-Lecture Regulations',
+      tags: ['e-learning', 'online'],
+      relations: []
+    },
+    '4455-QD-DHQGHN': {
+      prefix: '4455-QD-DHQGHN_Diploma and Certificate Management',
+      title: 'Diploma and Certificate Management',
+      tags: ['diploma', 'certificate', 'management'],
+      relations: []
+    },
+    '4618-QD-DHQGHN': {
+      prefix: '4618-QD-DHQGHN_Scholarship Management and Use',
+      title: 'Scholarship Management and Use',
+      tags: ['scholarship', 'finance'],
+      relations: []
+    },
+    '5115-QD-DHQGHN': {
+      prefix: '5115-QD-DHQGHN_Superseded Undergraduate Training',
+      title: 'Superseded Undergraduate Training',
+      tags: ['undergraduate', 'training', 'superseded'],
+      relations: [
+        { id: '3626-QD-DHQGHN', type: 'superseded-by', label: 'Superseded by' },
+      ]
+    },
+    'DHVN-QD-1132': {
+      prefix: 'DHVN-QD-1132_Examination Affairs Regulations',
+      title: 'Examination Affairs Regulations',
+      tags: ['examination', 'VJU regulation'],
+      relations: []
+    },
+    '1274-HD-KTDBCL': {
+      prefix: '1274-HD-KTDBCL_End-of-Course Exam Guidance S1 2025-2026',
+      title: 'End-of-Course Exam Guidance S1 2025-2026',
+      tags: ['examination', 'guidance', 'semester'],
+      relations: []
+    },
+    'DHQGHN-QD-628': {
+      prefix: 'DHQGHN-QD-628_Educational Quality Assurance Regulation',
+      title: 'Educational Quality Assurance Regulation',
+      tags: ['quality assurance', 'VNU regulation'],
+      relations: []
+    },
+    'DHVN-QD-700': {
+      prefix: 'DHVN-QD-700_Anti-Plagiarism Regulations',
+      title: 'Anti-Plagiarism Regulations',
+      tags: ['plagiarism', 'academic integrity'],
+      relations: []
+    },
+    'DHVN-DT-840': {
+      prefix: 'DHVN-DT-840_Academic Calendar 2025-2026',
+      title: 'Academic Calendar 2025-2026',
+      tags: ['academic calendar', 'schedule'],
+      relations: []
+    },
+    'DHVN-HD-483': {
+      prefix: 'DHVN-HD-483_Practical Internship Guidance',
+      title: 'Practical Internship Guidance',
+      tags: ['internship', 'guidance'],
+      relations: []
+    },
+    'DHVN-HD-1534': {
+      prefix: 'DHVN-HD-1534_Thesis and Graduation Project Guidelines',
+      title: 'Thesis and Graduation Project Guidelines',
+      tags: ['thesis', 'graduation', 'guidance'],
+      relations: [
+        { id: 'DHVN-HD-1534-Annex', type: 'has-annex', label: 'Annex' },
+      ]
+    },
+    'DHVN-HD-1534-Annex': {
+      prefix: 'DHVN-HD-1534_Annex Templates English Format',
+      title: 'Annex Templates English Format',
+      tags: ['thesis', 'templates'],
+      relations: [
+        { id: 'DHVN-HD-1534', type: 'annex-of', label: 'Annex of' },
+      ]
+    },
   };
 
   function getDocPrefix(docId) {
-    return DOC_REGISTRY[docId] || docId;
+    const entry = DOC_REGISTRY[docId];
+    if (!entry) return docId;
+    return typeof entry === 'string' ? entry : entry.prefix;
   }
 
   // ==================== NAVIGATION ====================
@@ -1562,8 +1688,26 @@
         ? await loadRestrictedDoc(currentDocId)
         : await loadPublicDoc(currentDocId);
 
-      marked.setOptions({ gfm: true, breaks: false });
-      const render = md => DOMPurify.sanitize(marked.parse(md), { ADD_TAGS: ['sub','sup'], ADD_ATTR: ['align','style'] });
+      marked.setOptions({ gfm: true, breaks: true });
+      const DIEM_RE = /^( *)([a-eghik-np-t\u0111])\) /;
+      const preprocessLegalMd = (md) => {
+        const lines = md.split('\n');
+        const out = [];
+        const nbsp = '\u00A0';
+        for (let i = 0; i < lines.length; i++) {
+          let line = lines[i];
+          const prev = i > 0 ? lines[i - 1] : '';
+          if (/^\d+\.\s/.test(line) && prev.trim() !== '' && !/^\d+\.\s/.test(prev)) out.push('');
+          const dm = line.match(DIEM_RE);
+          if (dm) {
+            const indent = dm[1].length > 0 ? nbsp.repeat(dm[1].length * 2) : nbsp.repeat(4);
+            line = indent + dm[2] + ') ' + line.slice(dm[0].length);
+          }
+          out.push(line);
+        }
+        return out.join('\n');
+      };
+      const render = md => DOMPurify.sanitize(marked.parse(preprocessLegalMd(md)), { ADD_TAGS: ['sub','sup'], ADD_ATTR: ['align','style'] });
       const rendered = { vi: render(docs.vi), en: render(docs.en), ja: render(docs.ja) };
       ['left','right'].forEach(pane => {
         ['vi','en','ja'].forEach(lang => {
@@ -1574,6 +1718,7 @@
       setupScrollSync();
       setupScrollSpy();
       setViewMode('split');
+      buildRelationsPanel();
     } catch (err) {
       const msg = `<div class="text-center py-12 text-red-500"><span class="material-symbols-outlined text-3xl mb-2">error</span><p>Failed to load document.</p><p class="text-sm text-gray-400 mt-1">${err.message}</p></div>`;
       ['left','right'].forEach(pane => {
@@ -1582,6 +1727,33 @@
         });
       });
     }
+  }
+
+  function buildRelationsPanel() {
+    const panel = document.getElementById('doc-relations');
+    const tagsEl = document.getElementById('rel-tags');
+    const linksEl = document.getElementById('rel-links');
+    const entry = DOC_REGISTRY[currentDocId];
+    if (!entry || typeof entry === 'string') { panel.style.display = 'none'; return; }
+    const tags = entry.tags || [];
+    const relations = entry.relations || [];
+    if (!tags.length && !relations.length) { panel.style.display = 'none'; return; }
+    panel.style.display = '';
+    // Tags
+    if (tags.length) {
+      tagsEl.innerHTML = '<h4>Tags</h4>' + tags.map(t => '<span class="rel-tag" data-tag="' + t + '">' + t + '</span>').join('');
+    } else { tagsEl.innerHTML = ''; }
+    // Relations
+    if (relations.length) {
+      const typeIcons = { 'supersedes': 'upgrade', 'superseded-by': 'history', 'amended-by': 'edit_note', 'amends': 'edit_note', 'related': 'link', 'has-annex': 'attach_file', 'annex-of': 'attach_file' };
+      linksEl.innerHTML = '<h4>Related Documents</h4>' + relations.map(r => {
+        const rEntry = DOC_REGISTRY[r.id];
+        const rTitle = rEntry && typeof rEntry !== 'string' ? rEntry.title : r.id;
+        const icon = typeIcons[r.type] || 'description';
+        return '<a class="rel-link" data-doc-id="' + r.id + '"><span class="material-symbols-outlined rel-icon">' + icon + '</span><span class="flex-1">' + rTitle + '</span><span class="rel-type">' + r.label + '</span></a>';
+      }).join('');
+      linksEl.querySelectorAll('.rel-link').forEach(a => { a.addEventListener('click', () => openDocument(a.dataset.docId, false)); });
+    } else { linksEl.innerHTML = ''; }
   }
 
   function buildToc() {

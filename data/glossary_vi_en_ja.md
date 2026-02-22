@@ -195,6 +195,13 @@ document_status: "active"
 | Bộ GD&ĐT (Bộ Giáo dục và Đào tạo) | MOET (Ministry of Education and Training) | 教育訓練省 |
 | BĐT (Ban Đào tạo) | DAA (Department of Academic Affairs) | 教務局 |
 | Phòng TT&QTTH (Phòng Truyền thông và Quản trị thương hiệu) | Dept. of Communications and Brand Management | 広報・ブランド管理室 |
+| ĐT&CTSV (Đào tạo & Công tác sinh viên) | Academic Affairs & Student Activities | 教務・学生課 |
+| KT&ĐBCL (Khảo thí & Đảm bảo chất lượng) | Examination & Quality Assurance | 試験・品質保証課 |
+| KHTC (Kế hoạch tài chính) | Planning & Finance | 企画財務課 |
+| KĐCLGD (Kiểm định chất lượng giáo dục) | Educational Quality Accreditation | 教育品質認定 |
+| BGH (Ban Giám hiệu) | Board of Rectors | 学長団（経営陣） |
+| VP (Văn phòng) | Office / Secretariat | 事務局 |
+| HCTH (Hành chính tổng hợp) | General Administration | 総務課 |
 
 ### 11.2 Document Type Abbreviations（文書種別略称）
 
@@ -233,6 +240,12 @@ document_status: "active"
 | đăng website | post on website | ウェブサイト掲載 |
 | VT (Văn thư) | Archives / Secretariat | 文書課（庶務） |
 | Lưu | File / Archive | 保存 |
+| ĐT (in Lưu context) | Academic Affairs (copy) | 教務局（写し） |
+| Ban CT&CTHSSV | Student Affairs Division | 学生支援課 |
+| Như Điều _N_ | As per Article _N_ | 第_N_条の通り |
+
+> **Filing codes / 保存番号:** Codes like `M50`, `Th50`, `H06`, `QH04`, `L03`, `P3` are internal archive reference numbers. They indicate the filing category and number of copies, and should be kept as-is in all language versions.
+> 保存番号（例：M50, Th50, H06, QH04）は内部ファイリング記号であり、全言語版でそのまま保持する。
 
 ### 11.5 Masters-Specific Terms（修士課程固有用語）
 
@@ -247,4 +260,4 @@ document_status: "active"
 | học bổ sung kiến thức | prerequisite bridging courses | 補充科目（ブリッジ科目） |
 | người hướng dẫn luận văn | thesis supervisor | 修士論文指導教員 |
 
-*Last updated: 2026-02-22*
+*Last updated: 2026-02-23*
