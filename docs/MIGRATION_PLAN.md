@@ -51,14 +51,14 @@ Sub-documents (annexes): `{base}_Annex {N} {Short Title}_*`
 | 7 | DHQGHN-QD-4455 | `4455-QD-DHQGHN_Diploma and Certificate Management` | Diploma & Certificate Management | Y | Y | Y | Y | done | |
 | 8 | DHQGHN-QD-4618 | `4618-QD-DHQGHN_Scholarship Management and Use` | Scholarship Management & Use | Y | Y | Y | Y | done | |
 | 9 | DHQGHN-QD-5115 | `5115-QD-DHQGHN_Superseded Undergraduate Training` | [Superseded] Undergraduate Training | Y | Y | Y | Y | done | Replaced by #1 |
-| 10 | DHQGHN-QD-628 | `628-QD-DHQGHN_Educational Quality Assurance` | Educational Quality Assurance at VNU | Y | Y | Y | Y | pending | from QA dir |
+| 10 | DHQGHN-QD-628 | `DHQGHN-QD-628_Educational Quality Assurance Regulation` | Educational Quality Assurance at VNU | Y | Y | Y | Y | done | from QA dir |
 
 ## Group B: VJU Regulations & Guidelines (DHVN) — from `3. University Regulations`
 
 | # | Doc ID | New Filename Prefix | Title (EN) | PDF | VI | EN | JA | Status | Notes |
 |---|--------|---------------------|------------|:---:|:--:|:--:|:--:|:------:|-------|
 | 11 | DHVN-QD-473 | `dhvn-qd-473` | Academic Advisory Work Regulations | Y | Y | Y | Y | pending | |
-| 12 | DHVN-QD-700 | `dhvn-qd-700` | Anti-Plagiarism Regulations | Y | Y | Y | Y | pending | Also in Testing dir |
+| 12 | DHVN-QD-700 | `DHVN-QD-700_Anti-Plagiarism Regulations` | Anti-Plagiarism Regulations | Y | Y | Y | Y | done | From Regulations dir |
 | 13 | DHVN-HD-000 | `dhvn-hd-000` | Foreign Language Cert Guidelines (VJU2022+) | Y | Y | Y | Y | pending | |
 | 14 | DHVN-HD-259 | `dhvn-hd-259` | Foreign Language Cert Guidelines (VJU2020-21) | Y | Y | Y | Y | pending | Main doc |
 | 15 | DHVN-HD-259 a1 | `dhvn-hd-259-annex1` | Certificate Equivalency Table | Y | Y | Y | Y | pending | |
@@ -68,11 +68,11 @@ Sub-documents (annexes): `{base}_Annex {N} {Short Title}_*`
 | 19 | DHVN-HD-1534 | `dhvn-hd-1534` | Thesis & Graduation Project Guidelines | Y | Y | Y | Y | pending | Main doc |
 | 20 | DHVN-HD-1534 en | `dhvn-hd-1534-annex-en` | Thesis Annex Templates (EN Format) | Y | Y | Y | Y | pending | |
 | 21 | DHVN-HD-1534 layout | `dhvn-hd-1534-layout` | Thesis Annex Layout Guide | doc | Y | Y | Y | pending | .docx only |
-| 22 | DHVN-DT-840 | `dhvn-dt-840` | Academic Calendar 2025-26 Cover Letter | - | Y | Y | Y | pending | No PDF |
-| 23 | DHVN-DT-840 a1 | `dhvn-dt-840-annex1` | Schedule VJU2025 | Y | Y | Y | Y | pending | |
-| 24 | DHVN-DT-840 a2 | `dhvn-dt-840-annex2` | Schedule VJU2024/2023 | Y | Y | Y | Y | pending | |
-| 25 | DHVN-DT-840 a3 | `dhvn-dt-840-annex3` | Schedule VJU2022/2021/2020 | Y | Y | Y | Y | pending | |
-| 26 | DHVN-DT-840 a4 | `dhvn-dt-840-annex4` | Master's & PhD Schedule | Y | Y | Y | Y | pending | |
+| 22 | DHVN-DT-840 | `DHVN-DT-840_Academic Calendar 2025-2026` | Academic Calendar 2025-26 Cover Letter | - | Y | Y | Y | done | No PDF |
+| 23 | DHVN-DT-840 a1 | `DHVN-DT-840_Academic Calendar 2025-2026 Annex 1 VJU2025` | Schedule VJU2025 | Y | Y | Y | Y | done | |
+| 24 | DHVN-DT-840 a2 | `DHVN-DT-840_Academic Calendar 2025-2026 Annex 2 VJU2024-2023` | Schedule VJU2024/2023 | Y | Y | Y | Y | done | |
+| 25 | DHVN-DT-840 a3 | `DHVN-DT-840_Academic Calendar 2025-2026 Annex 3 VJU2022-2020` | Schedule VJU2022/2021/2020 | Y | Y | Y | Y | done | |
+| 26 | DHVN-DT-840 a4 | `DHVN-DT-840_Academic Calendar 2025-2026 Annex 4 Masters-PhD` | Master's & PhD Schedule | Y | Y | Y | Y | done | |
 | 27 | DHVN-TB-911 | `dhvn-tb-911` | Language Cert Submission (VJU2024) | Y | Y | Y | Y | pending | |
 | 28 | DHVN-TB-984 | `dhvn-tb-984` | Language Cert Submission (VJU2023) | Y | Y | Y | Y | pending | |
 | 29 | DHVN-TB-1010 | `dhvn-tb-1010` | English Cert Submission (VJU2025) | Y | Y | Y | Y | pending | |
@@ -108,9 +108,9 @@ Sub-documents (annexes): `{base}_Annex {N} {Short Title}_*`
 
 | # | Doc ID | New Filename Prefix | Title (EN) | PDF | VI | EN | JA | Status | Notes |
 |---|--------|---------------------|------------|:---:|:--:|:--:|:--:|:------:|-------|
-| 47 | DHVN-QD-1132 | `dhvn-qd-1132` | Examination Affairs Regulations | Y | Y | Y | Y | pending | Main decision |
-| 48 | DHVN-QD-1132 app | `dhvn-qd-1132-appendix` | Examination Affairs Appendix | Y | Y | Y | Y | pending | |
-| 49 | 1274-HD-KTDBCL | `1274-hd-ktdbcl` | End-of-Course Exam Guidance S1 2025-26 | Y | Y | Y | Y | pending | |
+| 47 | DHVN-QD-1132 | `dhvn-qd-1132` | Examination Affairs Regulations | Y | Y | Y | Y | done | Decision+Appendix combined |
+| 48 | DHVN-QD-1132 app | `dhvn-qd-1132-appendix` | Examination Affairs Appendix | Y | Y | Y | Y | done | Merged into #47 |
+| 49 | 1274-HD-KTDBCL | `1274-hd-ktdbcl` | End-of-Course Exam Guidance S1 2025-26 | Y | Y | Y | Y | done | Glossary fix (JA) |
 
 ## Group F: Public Reports — from `1. Public Report 2025`
 
