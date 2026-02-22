@@ -5,12 +5,12 @@ date: 2022-10-24
 department: "Academic Affairs"
 type: "Regulation"
 restricted: false
-last_updated: 2026-02-21
+last_updated: 2026-02-22
 ---
 
 > **[免責事項]** この文書はAIにより生成されたものであり、参考用です。法的効力はありません。重要な判断を行う際は、必ず公式文書を参照するか、発行機関であるベトナム国家大学ハノイ校（__https://vnu.edu.vn__）に問い合わせてください。
 
-<div align="right">
+<div style="margin-left: auto; width: fit-content; text-align: left;">
 <sub><strong>[Digital Certificate]</strong>: SAO Y<br>
 ベトナム国家大学ハノイ校<br>
 署名日時: 2022年11月24日 09:55:08 +07:00</sub>
@@ -62,7 +62,9 @@ last_updated: 2026-02-21
 <strong><em>送付先:</em></strong><br>
 - 第3条のとおり;<br>
 - 教育訓練省（報告用）;<br>
-- 保管: 総務部、教育訓練部
+- 総長（報告用）;<br>
+- 情報通信技術センター（ウェブサイト掲載用）;<br>
+- 保管: 総務部、教務局、Th50
 </div>
 <div style="text-align: center;">
 <strong>総長代理<br>副総長</strong><br><br>
@@ -75,7 +77,7 @@ last_updated: 2026-02-21
 
 # 大学教育規程 ベトナム国家大学ハノイ校
 
-<p align="center">*（2022年10月21日付ベトナム国家大学ハノイ校総長決定第3626/QĐ-ĐHQGHN号に添付して公布）*</p>
+<p align="center">*（2022年10月24日付ベトナム国家大学ハノイ校総長決定第3626/QĐ-ĐHQGHN号に添付して公布）*</p>
 
 # 第1章 総則
 
@@ -1083,17 +1085,3 @@ d) 現行の入学規程に基づく入学試験の通知
 本規程は署名日より施行され、2022年度入学生から適用される。本規程に反する従前の規定はすべて廃止される。
 
 特別な場合は、機関がベトナム国家大学ハノイ校総長に報告し、検討・決定を求める。/.
-
-<div style="display: flex; justify-content: space-between; margin-top: 2em;">
-<div>
-<strong><em>送付先:</em></strong><br>
-- 第3条のとおり;<br>
-- 教育訓練省（報告用）;<br>
-- 保管: 総務部、教育訓練部
-</div>
-<div style="text-align: center;">
-<strong>総長代理<br>副総長</strong><br><br>
-<em>（署名済み）</em><br><br>
-<strong>Nguyễn Hoàng Hải</strong>
-</div>
-</div>
