@@ -1,26 +1,20 @@
 ---
-id: DHVN-HD-1534
-title: Phụ lục biểu mẫu khóa luận tiếng Anh_source
-issuer: VNU – Vietnam-Japan University
-category: 3. University Regulations
-status: Official
-version:
-- en
-- ja
-- vi
-- source
-lang: vi
+doc_id: "1534/HD-ĐHVN"
+title: "Phụ lục biểu mẫu khóa luận (Định dạng tiếng Anh)"
+date: 2023-12-29
+department: "Academic Affairs"
+type: "Annex"
+restricted: false
+last_updated: 2026-02-22
 ---
-<div class="source-note" role="note" aria-label="Ghi chú nguồn">Tệp này được tạo dựa trên nội dung công khai.  
-Do hạn chế kỹ thuật, việc tái tạo bố cục và nội dung có thể không chính xác.  
-Để có thông tin chính xác, vui lòng tìm kiếm theo số thông tư và tham khảo cơ quan ban hành.  
-Cơ quan ban hành có thể công bố chính thức các phiên bản ngôn ngữ khác.
-</div>
-**Phụ lục 2: Định dạng khóa luận đại học**
+
+> **[DISCLAIMER]** Tài liệu này được tạo bởi AI và chỉ mang tính chất tham khảo. Tài liệu không có giá trị pháp lý. Đối với các quyết định quan trọng, vui lòng tham khảo văn bản gốc hoặc liên hệ cơ quan ban hành: Đại học Việt Nhật, Đại học Quốc gia Hà Nội (__https://vju.ac.vn__)
+
+## Phụ lục 2: Định dạng khóa luận đại học
 
 <em>Mẫu trình bày giữ nguyên tiếng Anh theo biểu mẫu gốc.</em>
 
-**[Phụ lục 2.1]{.underline} :** Mẫu bìa ngoài, khổ A4 *(210 x 297 mm)*
+### Phụ lục 2.1 : Mẫu bìa ngoài, khổ A4 *(210 x 297 mm)*
 
 <center>
 VIETNAM NATIONAL UNIVERSITY, HANOI<br>
@@ -48,7 +42,7 @@ Bachelor in ...&lt;Major&gt;<br>
 
 ---
 
-**[Phụ lục 2.2]{.underline} :** Mẫu bìa trong, khổ A4 *(210 x 297 mm)*
+### Phụ lục 2.2 : Mẫu bìa trong, khổ A4 *(210 x 297 mm)*
 
 <center>
 VIETNAM NATIONAL UNIVERSITY, HANOI<br>
@@ -73,7 +67,7 @@ Bachelor in ...&lt;Major&gt;<br>
 
 ---
 
-**[Phụ lục 2.3]{.underline} :** Hướng dẫn tài liệu tham khảo
+### Phụ lục 2.3 : Hướng dẫn tài liệu tham khảo
 
 **Lưu ý:** Hướng dẫn dưới đây được tối ưu khi danh mục tài liệu có nhiều ngôn ngữ khác nhau. Tác giả có thể áp dụng cách sắp xếp khác phù hợp với chuyên ngành của mình.
 
@@ -93,7 +87,7 @@ Bachelor in ...&lt;Major&gt;<br>
     Với bài báo đăng tạp chí hoặc trong sách, cần có:
     *   Tên tác giả;
     *   (năm);
-    *   “Tên bài viết”;
+    *   "Tên bài viết";
     *   *Tên tạp chí hoặc sách*;
     *   tập;
     *   (số);
@@ -101,7 +95,7 @@ Bachelor in ...&lt;Major&gt;<br>
 
 **Ví dụ:**
 
-1.  Quách Ngọc Ân (1992), “Nhìn lại hai năm phát triển lúa lai”, *Di truyền học ứng dụng*, 98(1), tr. 10-16.
+1.  Quách Ngọc Ân (1992), "Nhìn lại hai năm phát triển lúa lai", *Di truyền học ứng dụng*, 98(1), tr. 10-16.
 2.  Bộ Nông nghiệp và Phát triển Nông thôn (1996), *Báo cáo tổng kết 5 năm (1992-1996) phát triển lúa lai*, Hà Nội.
 3.  Nguyễn Hữu Đống, Đào Thanh Bằng, Lâm Quang Dụ, Phan Đức Trực (1997), *Đột biến - Cơ sở lý luận và ứng dụng*, NXB Nông nghiệp, Hà Nội.
 4.  Nguyễn Thị Gấm (1996), *Phát hiện và đánh giá một số dòng bất dục đực cảm ứng nhiệt độ*, Luận văn thạc sĩ khoa học Nông nghiệp, Viện Khoa học Kỹ thuật Nông nghiệp Việt Nam, Hà Nội.
@@ -111,18 +105,18 @@ Bachelor in ...&lt;Major&gt;<br>
 
 **Tiếng Anh**
 
-28. Anderson J. E. (2005), “The Relatives Inefficiency of Quota, The Cheese Case", *American Economic Review*, 175(1), pp. 178-190.
-29. Borkakati R. P. and S. S. Virmani (2007), “Genetics of thermosensitive genic male sterility in Rice”, *Euphytica*, 188, pp. 1-7.
-30. Borkakati R. P., S. S. Virmani and J. E. Anderson (2009), “Genetics of thermosensitive genic male sterility in Rice", *Euphytica*, 201, pp. 81-97.
+28. Anderson J. E. (2005), "The Relatives Inefficiency of Quota, The Cheese Case", *American Economic Review*, 175(1), pp. 178-190.
+29. Borkakati R. P. and S. S. Virmani (2007), "Genetics of thermosensitive genic male sterility in Rice", *Euphytica*, 188, pp. 1-7.
+30. Borkakati R. P., S. S. Virmani and J. E. Anderson (2009), "Genetics of thermosensitive genic male sterility in Rice", *Euphytica*, 201, pp. 81-97.
 31. Boulding K. E. (2005), *Economics Analysis*, Hamish Hamilton, London.
-32. Burton G. W. (2008), “Cytoplasmic male-sterility in pearl millet (penni-setum glaucum L.)", *Agronomic Journal*, 50, pp. 230-231.
+32. Burton G. W. (2008), "Cytoplasmic male-sterility in pearl millet (penni-setum glaucum L.)", *Agronomic Journal*, 50, pp. 230-231.
 33. Central Statistical Organization (2005), *Statistical Year Book*, Beijing.
 34. FAO (2011), *Agricultural Commodity Projection (1970-1980)*, Vol. II. Rome.
 35. Institute of Economics (2016), *Analysis of Expenditures Pattern of Urban Households in Vietnam*, Department of Economic, Economic Research Report, Hanoi.
 
 ---
 
-**[Phụ lục 2.4]{.underline} :** Hướng dẫn viết tóm tắt luận văn bằng tiếng Anh hoặc tiếng Nhật
+### Phụ lục 2.4 : Hướng dẫn viết tóm tắt luận văn bằng tiếng Anh hoặc tiếng Nhật
 
 <center>
 <b>TÓM TẮT (ABSTRACT)</b>
@@ -134,11 +128,11 @@ Nowadays, water pollution caused by arsenic is social issues of concern. The rem
 
 ---
 
-**Phụ lục 3. Biểu mẫu dành cho Khoa, Chương trình đào tạo, Giảng viên hướng dẫn**
+## Phụ lục 3. Biểu mẫu dành cho Khoa, Chương trình đào tạo, Giảng viên hướng dẫn
 
-**[Phụ lục 3.1]{.underline} : Nhật ký tiến độ khóa luận**
+### Phụ lục 3.1 : Nhật ký tiến độ khóa luận
 
-*3.1.1. Bìa ngoài*
+#### 3.1.1. Bìa ngoài
 
 |  |  |  |
 | :--- | :--- | :--- |
@@ -172,7 +166,7 @@ Period of doing thesis:
 
     **You (the student) should sign the appropriate statement below when you submit your Thesis Progress Log:**
 
-    > “ I confirm that the information I have given in this Log is a true and accurate record.
+    > " I confirm that the information I have given in this Log is a true and accurate record.
     >
     > ......, date month year 202...
     >
@@ -192,13 +186,13 @@ Period of doing thesis:
 
 ---
 
-*3.1.2. Biên bản làm việc với giảng viên hướng dẫn*
+#### 3.1.2. Biên bản làm việc với giảng viên hướng dẫn
 
 <center>
 <b>RECORD OF MEETINGS BETWEEN THE STUDENT AND SUPERVISOR(S) (*)</b>
 </center>
 
-| No. | Time¹ | Date² | Main points discussed and purpose of meeting³ | Supervisor’s comment⁴ | Supervisor’s signature⁵ | Student’s response⁶ | Student’s signature⁷ |
+| No. | Time¹ | Date² | Main points discussed and purpose of meeting³ | Supervisor's comment⁴ | Supervisor's signature⁵ | Student's response⁶ | Student's signature⁷ |
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 |  |  |  |  |  |  |  |
 | 2 |  |  |  |  |  |  |  |
@@ -213,7 +207,7 @@ Period of doing thesis:
 - Ghi nhận ý kiến của giảng viên liên quan nội dung làm việc; giảng viên ký và ghi rõ họ tên sau mỗi buổi.
 - Ghi phản hồi của sinh viên theo ý kiến giảng viên; bổ sung ý kiến khác (nếu có); sinh viên ký và ghi rõ họ tên sau mỗi buổi.
 
-*3.1.3. Phiếu nhận xét quá trình học tập của sinh viên do giảng viên hướng dẫn thực hiện*
+#### 3.1.3. Phiếu nhận xét quá trình học tập của sinh viên do giảng viên hướng dẫn thực hiện
 
 <center>
 VIETNAM NATIONAL UNIVERSITY, HANOI<br>
@@ -221,9 +215,9 @@ VIETNAM JAPAN UNIVERSITY
 <br><br>
 SOCIALIST REPUBLIC OF VIETNAM<br>
 Independence – Freedom – Happiness
-<hr>
 </center>
-<br>
+
+<hr>
 
 <center>
 <b>REVIEW OF STUDENT LEARNING PROCESS</b>
@@ -232,7 +226,7 @@ Independence – Freedom – Happiness
 <br>
 My name is:.............................................................. currently working at ........................................
 <br>
-Supervisor of: ............................................ to carry out undergraduate thesis title “..” for student .......... following Decision No. ..../QĐ-ĐHVN dated on..../..../.....by the Rector of Vietnam Japan University.
+Supervisor of: ............................................ to carry out undergraduate thesis title ".." for student .......... following Decision No. ..../QĐ-ĐHVN dated on..../..../.....by the Rector of Vietnam Japan University.
 <br><br>
 While supervising the student to conduct the graduation thesis, I have made the following observations:
 <br><br>
@@ -252,6 +246,7 @@ Hanoi, date ... month ... year 202...<br>
 <br>
 
 ---
+
 ¹ Gợi ý nội dung nhận xét:
 - Kết quả thực hiện khóa luận (tính cần thiết, ý nghĩa khoa học, mục tiêu và phương pháp nghiên cứu, mức độ hợp lý và độ tin cậy của phương pháp, đánh giá kết quả đạt được, điểm mới, đóng góp mới và giá trị khoa học của các đóng góp đó).
 - Thái độ, tinh thần trách nhiệm của sinh viên.
@@ -259,7 +254,7 @@ Hanoi, date ... month ... year 202...<br>
 
 ---
 
-*3.1.4. Đơn đề nghị bảo vệ khóa luận*
+#### 3.1.4. Đơn đề nghị bảo vệ khóa luận
 
 <center>
 VIETNAM NATIONAL UNIVERSITY, HANOI<br>
@@ -267,13 +262,14 @@ VIETNAM JAPAN UNIVERSITY
 <br><br>
 SOCIALIST REPUBLIC OF VIETNAM<br>
 Independence – Freedom – Happiness
-<hr>
 </center>
-<br>
+
+<hr>
 
 <center>
 <b>APPLICATION FOR THESIS DEFENSE</b>
 </center>
+
 <br>
 Student's full name:
 <br>
@@ -284,10 +280,8 @@ Students' ID: Cohort:
 Bachelor/Engineer Program in ...............................................................
 <br>
 I enrolled as an undergraduate student of the Bachelor/Engineer Program in ... under Decision No..../QD-DHVN dated ../../.... by the Rector of Vietnam Japan University.
-<EOF
-I enrolled as an undergraduate student of the Bachelor/Engineer Program in ... under Decision No..../QD-DHVN dated ../../.... by the Rector of Vietnam Japan University.
 <br>
-Up to now, I have completed my thesis with the title: “...”
+Up to now, I have completed my thesis with the title: "..."
 <br>
 With the supervisor's consent, I request that Vietnam Japan University, Vietnam National University, Hanoi grant me permission to defend my thesis before the Undergraduate Thesis Evaluation Committee.
 <br><br>
@@ -300,7 +294,7 @@ Sincerely.
 
 ---
 
-**[Phụ lục 3.2]{.underline} : Phiếu nhận xét khóa luận đại học**
+### Phụ lục 3.2 : Phiếu nhận xét khóa luận đại học
 
 <center>
 VIETNAM NATIONAL UNIVERSITY, HANOI<br>
@@ -308,13 +302,14 @@ VIETNAM JAPAN UNIVERSITY
 <br><br>
 SOCIALIST REPUBLIC OF VIETNAM<br>
 Independence – Freedom – Happiness
-<hr>
 </center>
-<br>
+
+<hr>
 
 <center>
 <b>UNDERGRADUATE THESIS REVIEW</b>
 </center>
+
 <br>
 Student:...........................................................
 <br>
@@ -355,7 +350,7 @@ Hanoi, date ... month ... year 202...<br>
 
 ---
 
-**[Phụ lục 3.3]{.underline} : Phiếu chấm điểm bảo vệ khóa luận**
+### Phụ lục 3.3 : Phiếu chấm điểm bảo vệ khóa luận
 
 *(Các Khoa có thể xây dựng thang đánh giá phù hợp với chương trình đào tạo)*
 
@@ -365,13 +360,14 @@ VIETNAM JAPAN UNIVERSITY
 <br><br>
 SOCIALIST REPUBLIC OF VIETNAM<br>
 Independence – Freedom – Happiness
-<hr>
 </center>
-<br>
+
+<hr>
 
 <center>
 <b>EVALUATION SHEET OF UNDERGRADUATE THESIS DEFENSE</b>
 </center>
+
 <br>
 Evaluation Committee of Bachelor/ Engineer Program in: .......................................................
 <br>
@@ -402,7 +398,7 @@ Hanoi, date ... month ... year 202...<br>
 
 ---
 
-**[Phụ lục 3.4]{.underline} : Biểu tổng hợp điểm bảo vệ khóa luận**
+### Phụ lục 3.4 : Biểu tổng hợp điểm bảo vệ khóa luận
 
 <center>
 VIETNAM NATIONAL UNIVERSITY, HANOI<br>
@@ -410,13 +406,14 @@ VIETNAM JAPAN UNIVERSITY
 <br><br>
 SOCIALIST REPUBLIC OF VIETNAM<br>
 Independence – Freedom – Happiness
-<hr>
 </center>
-<br>
+
+<hr>
 
 <center>
 <b>SUMMARY THE GRADING OF UNDERGRADUATE THESIS</b>
 </center>
+
 <br>
 
 | No. | Student' ID | Student full name | Chairman | Secretary | Reviewer 1 | Reviewer 2 | Member | Supervisor | Average score |
@@ -437,7 +434,7 @@ There are ... students in the list.
 
 ---
 
-**[Phụ lục 3.5]{.underline} : Biên bản họp Hội đồng bảo vệ khóa luận**
+### Phụ lục 3.5 : Biên bản họp Hội đồng bảo vệ khóa luận
 
 <center>
 VIETNAM NATIONAL UNIVERSITY, HANOI<br>
@@ -445,15 +442,17 @@ VIETNAM JAPAN UNIVERSITY
 <br><br>
 SOCIALIST REPUBLIC OF VIETNAM<br>
 Independence – Freedom – Happiness
-<hr>
 </center>
-<br>
+
+<hr>
+
 <div align="right">Hanoi, date   month   year 202...</div>
 <br>
 
 <center>
 <b>MINUTES ON THE EVALUATION OF UNDERGRADUATE THESIS DEFENSE</b>
 </center>
+
 <br>
 
 1.  **Date and time:**
@@ -482,7 +481,7 @@ Independence – Freedom – Happiness
 
 ---
 
-**[Phụ lục 3.7]{.underline} : Phiếu xác nhận chỉnh sửa khóa luận**
+### Phụ lục 3.7 : Phiếu xác nhận chỉnh sửa khóa luận
 
 <center>
 VIETNAM NATIONAL UNIVERSITY, HANOI<br>
@@ -490,15 +489,17 @@ VIETNAM JAPAN UNIVERSITY
 <br><br>
 SOCIALIST REPUBLIC OF VIETNAM<br>
 Independence – Freedom – Happiness
-<hr>
 </center>
-<br>
+
+<hr>
+
 <div align="right">Hanoi, date   month   year 202...</div>
 <br>
 
 <center>
 <b>CONFIRMATION OF THE THESIS REVISION</b>
 </center>
+
 <br>
 Student full name: ................................................................ Student's ID: .....................................
 <br>

@@ -58,9 +58,9 @@
 | 15 | DHVN-HD-259 a1 | `DHVN-HD-259_Annex 1 Certificate Equivalency Table` | Certificate Equivalency Table | Y | Y | Y | Y | done |
 | 16 | DHVN-HD-259 a2 | `DHVN-HD-259_Annex 2 JLPT Authorization Letter Template` | JLPT Authorization Letter Template | Y | Y | Y | Y | done |
 | 17 | DHVN-HD-304 | `DHVN-HD-304_Learning Outcome Recognition and Credit Transfer` | Learning Outcome Recognition & Credit Transfer | Y | Y | Y | Y | done |
-| 18 | DHVN-HD-483 | `DHVN-HD-483_Practical Internship Guidance` | Practical Internship Guidance | Y | Y | Y | Y | staged |
-| 19 | DHVN-HD-1534 | `DHVN-HD-1534_Thesis and Graduation Project Guidelines` | Thesis & Graduation Project Guidelines | - | Y | Y | Y | staged |
-| 20 | DHVN-HD-1534 en | `DHVN-HD-1534_Annex Templates English Format` | Thesis Annex Templates (EN Format) | Y | Y | Y | Y | staged |
+| 18 | DHVN-HD-483 | `DHVN-HD-483_Practical Internship Guidance` | Practical Internship Guidance | Y | Y | Y | Y | done |
+| 19 | DHVN-HD-1534 | `DHVN-HD-1534_Thesis and Graduation Project Guidelines` | Thesis & Graduation Project Guidelines | - | Y | Y | Y | done |
+| 20 | DHVN-HD-1534 en | `DHVN-HD-1534_Annex Templates English Format` | Thesis Annex Templates (EN Format) | Y | Y | Y | Y | done |
 | 21 | DHVN-HD-1534 layout | `DHVN-HD-1534_Annex Templates Layout Guide` | Thesis Annex Layout Guide | - | Y | Y | Y | staged |
 | 22 | DHVN-DT-840 | `DHVN-DT-840_Academic Calendar 2025-2026` | Academic Calendar 2025-26 Cover Letter | - | Y | Y | Y | done |
 | 23 | DHVN-DT-840 a1 | `DHVN-DT-840_Academic Calendar 2025-2026 Annex 1 VJU2025` | Schedule VJU2025 | Y | Y | Y | Y | done |
