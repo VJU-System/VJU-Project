@@ -25,7 +25,7 @@ last_updated: 2026-02-22
 
 *(Issued with Decision No. 5115/QĐ-ĐHQGHN dated December 25, 2014 of the President of Vietnam National University, Hanoi)*
 
-# Chapter I: GENERAL PROVISIONS
+# Chapter I. GENERAL PROVISIONS
 
 ## Article 1. Scope of regulation and applicable subjects
 
@@ -166,7 +166,7 @@ last_updated: 2026-02-22
     b)  The head of the training unit specifies the construction of the
         question bank of the course.
 
-# Chapter II: TRAINING PROGRAM
+# Chapter II. TRAINING PROGRAM
 
 ## Article 6. Training program
 
@@ -409,7 +409,7 @@ Promoting the effectiveness of international cooperation.
     b)  Develop and accept course outlines of courses under the
         management unit.
 
-# Chapter III: TRAINING ORGANIZATION
+# Chapter III. TRAINING ORGANIZATION
 
 ## Article 15. Semester
 
@@ -873,7 +873,7 @@ is 50 minutes. Break time between two classes is 10 minutes.
     education and physical education subjects as prescribed in Article
     22 of this Regulation.
 
-# Chapter IV: SCIENTIFIC RESEARCH ACTIVITIES OF STUDENTS
+# Chapter IV. SCIENTIFIC RESEARCH ACTIVITIES OF STUDENTS
 
 ## Article 27. Scientific research activities of students
 
@@ -945,7 +945,7 @@ works of students of Vietnam National University, Hanoi.
         benefits;
     b)  Students have aspirations.
 
-# Chapter V: LECTURERS AND ACADEMIC ADVISORS
+# Chapter V. LECTURERS AND ACADEMIC ADVISORS
 
 ## Article 30. Lecturers
 
@@ -1002,7 +1002,7 @@ works of students of Vietnam National University, Hanoi.
     b)  Time is arranged to attend training courses on academic
         advising.
 
-# Chapter VI: OBLIGATIONS AND RIGHTS OF STUDENTS
+# Chapter VI. OBLIGATIONS AND RIGHTS OF STUDENTS
 
 ## Article 32. Obligations of students
 
@@ -1086,7 +1086,7 @@ works of students of Vietnam National University, Hanoi.
         for resolution at least 2 weeks before the end of the temporary
         leave of absence.
 
-# Chapter VII: TESTING, EXAM AND ASSESSMENT OF LEARNING RESULTS
+# Chapter VII. TESTING, EXAM AND ASSESSMENT OF LEARNING RESULTS
 
 ## Article 34. Assessment of course results
 
@@ -1406,7 +1406,7 @@ Clause 3, Article 33 of these Regulations.
     đ)  Weak: The average semester score is below 2.00 but not yet in
         the case of forced expulsion.
 
-# Chapter VIII: GRADUATION RECOGNITION
+# Chapter VIII. GRADUATION RECOGNITION
 
 ## Article 43. Graduation conditions
 
@@ -1502,7 +1502,7 @@ Clause 3, Article 33 of these Regulations.
     the Vietnam National University, Hanoi's seal on the university graduation
     certificate for students trained at that affiliated faculty.
 
-# Chapter IX: IMPLEMENTATION PROVISIONS
+# Chapter IX. IMPLEMENTATION PROVISIONS
 
 ## Article 46. Implementation
 

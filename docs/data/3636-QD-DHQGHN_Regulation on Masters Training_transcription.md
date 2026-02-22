@@ -61,7 +61,7 @@ Số: 3636/QĐ-ĐHQGHN
 **Đào tạo thạc sĩ tại Đại học Quốc gia Hà Nội**
 *(Ban hành kèm theo Quyết định số 3636/QĐ-ĐHQGHN, ngày 21 tháng 10 năm 2022 của Giám đốc Đại học Quốc gia Hà Nội)*
 
-# Chương I: NHỮNG QUY ĐỊNH CHUNG
+# Chương I. NHỮNG QUY ĐỊNH CHUNG
 
 ## Điều 1. Phạm vi điều chỉnh và đối tượng áp dụng
 1. Quy chế này quy định về đào tạo trình độ thạc sĩ tại Đại học Quốc gia Hà Nội, bao gồm: tuyển sinh; tổ chức đào tạo; công nhận học vị và cấp bằng; trách nhiệm của đơn vị đào tạo, nghĩa vụ, quyền lợi của giảng viên và học viên; tài chính cho đào tạo; thanh tra kiểm tra, giải quyết và xử lý vi phạm.
@@ -132,7 +132,7 @@ Thời gian tối đa để học viên hoàn thành khóa học không vượt 
     c) Thời gian hiệu lực của kết quả học tập để xem xét công nhận và chuyển đổi tín chỉ không trái với khoản 3 Điều này;
     d) Các học phần (hoặc nhóm học phần) và số tín chỉ được công nhận, chuyển đổi theo đối tượng người học và ngành đào tạo thạc sĩ ở Đại học Quốc gia Hà Nội được xác định trên cơ sở ngành đào tạo trình độ đại học hoặc ngành phù hợp trong điều kiện đầu vào của chương trình đào tạo.
 
-# Chương II: TUYỂN SINH
+# Chương II. TUYỂN SINH
 
 ## Điều 9. Phương thức, số lần và địa điểm tổ chức tuyển sinh
 1. Phương thức tuyển sinh bao gồm thi tuyển, xét tuyển hoặc kết hợp giữa thi tuyển và xét tuyển. Đơn vị đào tạo được tổ chức tuyển sinh trực tuyến khi đáp ứng những điều kiện bảo đảm chất lượng để kết quả đánh giá tin cậy và công bằng như đối với tuyển sinh trực tiếp.
@@ -277,7 +277,7 @@ Hội đồng tuyển sinh của các đơn vị có nhiệm vụ điều hành 
 ## Điều 26. Xét tuyển người nước ngoài
 Việc xét tuyển người nước ngoài hoặc người Việt Nam có quốc tịch nước ngoài vào học thạc sĩ tại Đại học Quốc gia Hà Nội được thực hiện theo quy định riêng.
 
-# Chương III: TỔ CHỨC ĐÀO TẠO
+# Chương III. TỔ CHỨC ĐÀO TẠO
 
 ## Điều 27. Phân công giảng dạy các học phần tại Đại học Quốc gia Hà Nội
 1. Các học phần thuộc phần kiến thức chung được tổ chức giảng dạy chung trong toàn Đại học Quốc gia Hà Nội. Trường Đại học Ngoại ngữ chịu trách nhiệm giảng dạy học phần Ngoại ngữ; Trường Đại học Khoa học Xã hội và Nhân văn chịu trách nhiệm giảng dạy học phần Triết học.
@@ -367,7 +367,7 @@ Sau mỗi học kỳ, đơn vị đào tạo thực hiện xử lý học vụ.
 4. Hiệu trưởng trường đại học quyết định và báo cáo Đại học Quốc gia Hà Nội việc cho chuyển đi hoặc tiếp nhận học viên chuyển đến đơn vị mình. Giám đốc Đại học Quốc gia Hà Nội quyết định việc cho chuyển đi hoặc tiếp nhận học viên của khoa trực thuộc, trường trực thuộc, viện nghiên cứu khoa học.
 5. Quy chế của đơn vị đào tạo quy định chi tiết về điều kiện, quy trình thực hiện trao đổi học viên; công nhận tín chỉ học viên đã tích lũy khi thực hiện chương trình đào tạo ở đơn vị đào tạo phối hợp và công khai trên trang thông tin điện tử của đơn vị đào tạo.
 
-# Chương IV: LUẬN VĂN VÀ ĐÁNH GIÁ LUẬN VĂN
+# Chương IV. LUẬN VĂN VÀ ĐÁNH GIÁ LUẬN VĂN
 
 ## Điều 34. Yêu cầu đối với luận văn
 1. Học viên theo học chương trình định hướng nghiên cứu phải thực hiện một đề tài nghiên cứu có khối lượng từ 12 đến 15 tín chỉ, kết quả được thể hiện bằng luận văn. Học viên thực hiện luận văn trong thời gian ít nhất 06 tháng.
@@ -443,7 +443,7 @@ Nếu hội đồng thẩm định kết luận luận văn không đạt yêu c
 7. Trong trường hợp đề án không đạt yêu cầu, học viên được chỉnh sửa, bổ sung đề án để đánh giá lần thứ hai trong thời hạn 45 ngày tính từ ngày họp hội đồng đánh giá lần thứ nhất; không tổ chức đánh giá đề án lần thứ ba.
 8. Đơn vị đào tạo căn cứ quy định tại Điều 35, Điều 36, Điều 37, Điều 38 của Quy chế này và quy định tại Điều này để quy định chi tiết về hướng dẫn, đánh giá và thẩm định đề án.
 
-# Chương V: CÔNG NHẬN HỌC VỊ VÀ CẤP BẰNG THẠC SĨ
+# Chương V. CÔNG NHẬN HỌC VỊ VÀ CẤP BẰNG THẠC SĨ
 
 ## Điều 40. Quản lý phôi bằng
 Giám đốc Đại học Quốc gia Hà Nội ban hành mẫu phôi bằng, in phôi bằng, quản lý và cấp phôi bằng thạc sĩ cho các đơn vị đào tạo.
@@ -472,7 +472,7 @@ Hiệu trưởng trường đại học quyết định công nhận học vị 
     d) Tài liệu khác liên quan đến tuyển sinh, đào tạo trình độ thạc sĩ được lưu trữ, bảo quản tối thiểu 05 năm, kể từ khi người học tốt nghiệp;
     đ) Việc tiêu hủy tài liệu hết thời gian lưu trữ được thực hiện theo quy định hiện hành của nhà nước.
 
-# Chương VI: NGHĨA VỤ, QUYỀN LỢI CỦA GIẢNG VIÊN VÀ HỌC VIÊN
+# Chương VI. NGHĨA VỤ, QUYỀN LỢI CỦA GIẢNG VIÊN VÀ HỌC VIÊN
 
 ## Điều 44. Tiêu chuẩn, trách nhiệm và quyền lợi của giảng viên
 1. Giảng viên đào tạo trình độ thạc sĩ bao gồm giảng viên cơ hữu và giảng viên thỉnh giảng, được phân công nhiệm vụ giảng dạy các học phần trong chương trình đào tạo trình độ thạc sĩ hoặc hướng dẫn học viên thực hành, thực tập, thực hiện đề tài luận văn/đề án thạc sĩ.
@@ -491,7 +491,7 @@ Ngoài các yêu cầu chung của giảng viên, giảng viên giảng dạy ch
 4. Quyền lợi của giảng viên
     a) Được hưởng các quyền lợi theo quy định hiện hành của Nhà nước và của Đại học Quốc gia Hà Nội;
     b) Được đảm bảo các điều kiện vật chất, trang thiết bị phục vụ cho hoạt động giảng dạy, nghiên cứu khoa học; được cung cấp thông tin và sử dụng các dịch vụ đào tạo, khoa học và công nghệ của đơn vị;
-    c) Được hưởng thù lao trong đào tạo tiến sĩ theo quy định của nhà nước, của Đại học Quốc gia Hà Nội và của đơn vị đào tạo;
+    c) Được hưởng thù lao trong đào tạo thạc sĩ theo quy định của nhà nước, của Đại học Quốc gia Hà Nội và của đơn vị đào tạo;
     d) Được bảo hộ quyền sở hữu trí tuệ và bản quyền tác giả theo quy định hiện hành.
 
 ## Điều 45. Kỷ luật đối với cán bộ coi thi, tổ chức thi, chấm thi
@@ -524,7 +524,7 @@ Học viên không trung thực và có hành vi gian lận trong nghiên cứu 
 8. Được tôn trọng, đối xử bình đẳng và được cung cấp đầy đủ các thông tin liên quan đến việc học tập của mình.
 9. Các quyền khác theo quy định của pháp luật.
 
-# Chương VII: TÀI CHÍNH CHO ĐÀO TẠO
+# Chương VII. TÀI CHÍNH CHO ĐÀO TẠO
 
 ## Điều 48. Nguồn tài chính cho đào tạo
 1. Nguồn tài chính cho đào tạo bao gồm kinh phí từ ngân sách nhà nước, học phí của học viên, kinh phí của các đề tài nghiên cứu khoa học, kinh phí từ hoạt động hợp tác và chuyển giao công nghệ và các nguồn tài trợ khác.
@@ -547,7 +547,7 @@ Học viên không trung thực và có hành vi gian lận trong nghiên cứu 
 2. Học viên người nước ngoài học tập theo chương trình hợp tác, trao đổi giữa Đại học Quốc gia Hà Nội và đại học đối tác nước ngoài thực hiện theo thỏa thuận kí kết giữa hai bên.
 3. Đối với học viên người nước ngoài học tập theo chế độ tự túc, tuỳ theo ngành đào tạo, mức chi trả kinh phí đào tạo cụ thể do thủ trưởng đơn vị đào tạo xem xét, phê duyệt.
 
-# Chương VIII: THANH TRA, KIỂM TRA, GIẢI QUYẾT VÀ XỬ LÝ VI PHẠM
+# Chương VIII. THANH TRA, KIỂM TRA, GIẢI QUYẾT VÀ XỬ LÝ VI PHẠM
 
 ## Điều 50. Thanh tra, kiểm tra
 1. Đơn vị đào tạo có trách nhiệm tự kiểm tra, thanh tra nội bộ việc tuyển sinh, thực hiện kế hoạch, chương trình, quy chế đào tạo và các vấn đề khác liên quan đến đào tạo; chịu sự kiểm tra, thanh tra, giám sát của Đại học Quốc gia Hà Nội và các cơ quan có thẩm quyền theo các quy định hiện hành.
@@ -568,7 +568,7 @@ Người tham gia công tác tuyển sinh, thí sinh dự thi trong kỳ thi tuy
     c) Đơn vị đào tạo vi phạm Quy chế này thì tùy theo tính chất, mức độ, sẽ bị xử phạt vi phạm hành chính và áp dụng các trách nhiệm pháp lý khác đã được quy định. Trong trường hợp này, thủ trưởng đơn vị đào tạo và những người trực tiếp vi phạm bị xử lý kỷ luật; người vi phạm gây thiệt hại phải bồi thường theo quy định của pháp luật.
 3. Thủ trưởng đơn vị đào tạo có trách nhiệm thông báo về việc xử lý vi phạm của thí sinh, học viên, cán bộ, giảng viên tới cơ quan, đơn vị hoặc tới địa phương, nơi người đó đang làm việc, cư trú. Cơ quan có thẩm quyền xử lý đơn vị đào tạo vi phạm thông báo cho cơ quan chủ quản và thông báo công khai trên phương tiện thông tin đại chúng.
 
-# Chương IX: ĐIỀU KHOẢN THI HÀNH
+# Chương IX. ĐIỀU KHOẢN THI HÀNH
 
 ## Điều 53. Hiệu lực thi hành
 Quy chế này có hiệu lực thi hành kể từ ngày ký và áp dụng cho các khóa tuyển sinh từ năm 2022 trở đi.

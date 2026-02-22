@@ -24,7 +24,7 @@ last_updated: 2026-02-22
 # QUY CHẾ ĐÀO TẠO ĐẠI HỌC
 *(Ban hành kèm theo Quyết định số 5115/QĐ-ĐHQGHN ngày 25 tháng 12 năm 2014 của Giám đốc Đại học Quốc gia Hà Nội)*
 
-# Chương I: NHỮNG QUY ĐỊNH CHUNG
+# Chương I. NHỮNG QUY ĐỊNH CHUNG
 
 ## Điều 1. Phạm vi điều chỉnh và đối tượng áp dụng
 1. Quy chế này quy định về đào tạo bậc đại học tại Đại học Quốc gia Hà Nội, bao gồm: chương trình đào tạo; tổ chức và quản lý đào tạo; nghiên cứu khoa học của sinh viên; quyền lợi và nghĩa vụ của giảng viên, cố vấn học tập, sinh viên; kiểm tra, thi và đánh giá kết quả học tập; công nhận tốt nghiệp.
@@ -90,7 +90,7 @@ last_updated: 2026-02-22
     a) Mỗi học phần có ngân hàng câu hỏi do đơn vị quản lý học phần tổ chức biên soạn, được Hội đồng khoa học và đào tạo cấp khoa thẩm định và được Chủ nhiệm khoa cho phép sử dụng để lựa chọn làm đề kiểm tra đánh giá.
     b) Thủ trưởng đơn vị đào tạo quy định cụ thể việc xây dựng ngân hàng câu hỏi của học phần.
 
-# Chương II: CHƯƠNG TRÌNH ĐÀO TẠO
+# Chương II. CHƯƠNG TRÌNH ĐÀO TẠO
 
 ## Điều 6. Chương trình đào tạo
 1. Chương trình đào tạo đại học thể hiện mục tiêu, phạm vi và cấu trúc nội dung đào tạo đại học; quy định chuẩn đầu ra về kiến thức, kỹ năng, thái độ, phương pháp và hình thức đào tạo, cách thức đánh giá kết quả đào tạo.
@@ -204,7 +204,7 @@ Chương trình đào tạo được thiết kế hướng tới đạt chuẩn 
     a) Xây dựng, thẩm định chương trình đào tạo, đề án mở ngành học mới và trình Đại học Quốc gia Hà Nội phê duyệt, ban hành;
     b) Xây dựng, nghiệm thu đề cương học phần của các học phần thuộc đơn vị quản lý.
 
-# Chương III: TỔ CHỨC ĐÀO TẠO
+# Chương III. TỔ CHỨC ĐÀO TẠO
 
 ## Điều 15. Học kỳ
 Mỗi năm học có hai học kỳ chính và một học kỳ phụ.
@@ -389,7 +389,7 @@ Các điều kiện về trình độ tiếng Việt hoặc ngoại ngữ:
     - Có chứng chỉ tiếng Việt hoặc ngoại ngữ đạt bậc 4 (theo Khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam) trở lên.
 4. Sinh viên chuyển trường được bảo lưu điểm và số tín chỉ của học phần theo quy định tại khoản 6, Điều 20 và được miễn học, miễn thi các học phần giáo dục quốc phòng - an ninh, giáo dục thể chất theo quy định tại Điều 22 của Quy chế này.
 
-# Chương IV: HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC CỦA SINH VIÊN
+# Chương IV. HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC CỦA SINH VIÊN
 
 ## Điều 27. Hoạt động nghiên cứu khoa học của sinh viên
 Hoạt động nghiên cứu khoa học của sinh viên được tổ chức dưới các hình thức:
@@ -425,7 +425,7 @@ Nếu công trình nghiên cứu khoa học do nhiều sinh viên cùng thực h
     a) Được Hội đồng cấp khoa đánh giá cho điểm (quy về thang điểm 10) và quyết định thay cho học phần nào trong chương trình đào tạo của ngành học; Nếu công trình nghiên cứu khoa học do nhiều sinh viên cùng thực hiện thì sinh viên được hưởng quyền lợi như nhau;
     b) Sinh viên có nguyện vọng.
 
-# Chương V: GIẢNG VIÊN VÀ CỐ VẤN HỌC TẬP
+# Chương V. GIẢNG VIÊN VÀ CỐ VẤN HỌC TẬP
 
 ## Điều 30. Giảng viên
 1. Trách nhiệm và quyền hạn của giảng viên
@@ -449,7 +449,7 @@ Nếu công trình nghiên cứu khoa học do nhiều sinh viên cùng thực h
     a) Được giảm số giờ dạy định mức, hưởng phụ cấp theo quy định của đơn vị đào tạo;
     b) Được bố trí thời gian tham gia khóa tập huấn nghiệp vụ cố vấn học tập.
 
-# Chương VI: NGHĨA VỤ VÀ QUYỀN LỢI CỦA SINH VIÊN
+# Chương VI. NGHĨA VỤ VÀ QUYỀN LỢI CỦA SINH VIÊN
 
 ## Điều 32. Nghĩa vụ của sinh viên
 1. Thực hiện nghĩa vụ của công dân theo quy định của pháp luật. Sinh viên là người nước ngoài phải tuân thủ pháp luật Việt Nam, tôn trọng phong tục, tập quán của Việt Nam;
@@ -480,7 +480,7 @@ Sinh viên không trung thực và có hành vi gian lận trong nghiên cứu k
     c) Vì lý do chủ quan của cá nhân. Trường hợp này, sinh viên phải học ít nhất một học kỳ ở đơn vị đào tạo, không bị buộc thôi học và phải đạt điểm trung bình chung tích lũy không dưới 2,00. Thời gian nghỉ học tạm thời vì nhu cầu cá nhân được tính vào thời gian tối đa được phép học.
 Sinh viên nghỉ học tạm thời nếu muốn học tiếp phải có đơn đề nghị Thủ trưởng đơn vị đào tạo giải quyết chậm nhất 2 tuần trước khi hết thời hạn nghỉ học tạm thời.
 
-# Chương VII: KIỂM TRA, THI VÀ ĐÁNH GIÁ KẾT QUẢ HỌC TẬP
+# Chương VII. KIỂM TRA, THI VÀ ĐÁNH GIÁ KẾT QUẢ HỌC TẬP
 
 ## Điều 34. Đánh giá kết quả học phần
 1. Điểm đánh giá học phần (gọi là điểm học phần) bao gồm: điểm đánh giá bộ phận (trung bình của các điểm kiểm tra đánh giá thường xuyên, giữa kỳ) và điểm thi kết thúc học phần, trong đó, điểm thi kết thúc học phần là bắt buộc và có trọng số không dưới 60% điểm của học phần.
@@ -614,7 +614,7 @@ Sau mỗi học kỳ, sinh viên bị buộc thôi học nếu thuộc một tro
     d) Trung bình: Điểm trung bình chung học kỳ từ 2,00 đến 2,49
     đ) Yếu: Điểm trung bình chung học kỳ đạt dưới 2,00 nhưng chưa thuộc trường hợp bị buộc thôi học.
 
-# Chương VIII: CÔNG NHẬN TỐT NGHIỆP
+# Chương VIII. CÔNG NHẬN TỐT NGHIỆP
 
 ## Điều 43. Điều kiện tốt nghiệp
 1. Sinh viên sau khi hoàn thành chương trình đào tạo được xét công nhận tốt nghiệp nếu có đủ các điều kiện sau:
@@ -650,7 +650,7 @@ Sau mỗi học kỳ, sinh viên bị buộc thôi học nếu thuộc một tro
 2. Căn cứ vào quyết định công nhận tốt nghiệp, Hiệu trưởng trường đại học thành viên ký và đóng dấu của trường vào bằng tốt nghiệp đại học cho những sinh viên được đào tạo ở trường mình.
 3. Căn cứ vào quyết định công nhận tốt nghiệp, Chủ nhiệm khoa trực thuộc ký (không đóng dấu của khoa) trình Giám đốc Đại học Quốc gia Hà Nội ký và đóng dấu của Đại học Quốc gia Hà Nội vào bằng tốt nghiệp đại học cho những sinh viên được đào tạo ở khoa trực thuộc đó.
 
-# Chương IX: ĐIỀU KHOẢN THI HÀNH
+# Chương IX. ĐIỀU KHOẢN THI HÀNH
 
 ## Điều 46. Tổ chức thực hiện
 1. Đơn vị đào tạo có trách nhiệm tổ chức thực hiện đúng Quy chế này, có thể ban hành văn bản quy định chi tiết, phù hợp với điều kiện thực tế của đơn vị, nhưng không trái với Quy chế này.

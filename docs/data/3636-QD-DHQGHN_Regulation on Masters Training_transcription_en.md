@@ -73,7 +73,7 @@ and Communications (posting on website); - File: VT, DT, M50.
 Decision No. 3636/QD-VNU, dated October 21, 2022 of the Director of
 Vietnam National University, Hanoi)*
 
-# Chapter I: GENERAL PROVISIONS
+# Chapter I. GENERAL PROVISIONS
 
 ## Article 1. Scope of regulation and applicable subjects
 
@@ -300,7 +300,7 @@ major.
         or the appropriate major in the entrance requirements of the
         training program.
 
-# Chapter II: ADMISSION
+# Chapter II. ADMISSION
 
 ## Article 9. Methods, number of times and locations of enrollment
 
@@ -785,7 +785,7 @@ Admission of foreigners or Vietnamese people with foreign nationality to
 study for a master's degree at Vietnam National University, Hanoi is
 carried out according to separate regulations.
 
-# Chapter III: TRAINING ORGANIZATION
+# Chapter III. TRAINING ORGANIZATION
 
 ## Article 27. Assignment of teaching subjects at Hanoi National University
 
@@ -1086,7 +1086,7 @@ implementing student exchanges; recognize student credits accumulated
 when implementing training programs at the coordinating training unit
 and are made public on the training unit's website.
 
-# Chapter IV: THESIS AND THESIS EVALUATION
+# Chapter IV. THESIS AND THESIS EVALUATION
 
 ## Article 34. Requirements for dissertations
 
@@ -1364,7 +1364,7 @@ and are made public on the training unit's website.
     specify details on guidance, assessment and appraisal of the
     project.
 
-# Chapter V: RECOGNITION OF DEGREE AND AWARDING OF MASTER'S DEGREE
+# Chapter V. RECOGNITION OF DEGREE AND AWARDING OF MASTER'S DEGREE
 
 ## Article 40. Management of diploma templates
 
@@ -1463,7 +1463,7 @@ to training units.
     đ) Documents that have expired must be
         destroyed according to current state regulations.
 
-# Chapter VI: DUTIES AND RIGHTS OF LECTURERS AND STUDENTS
+# Chapter VI. DUTIES AND RIGHTS OF LECTURERS AND STUDENTS
 
 ## Article 44. Standards, responsibilities and rights of lecturers
 
@@ -1614,7 +1614,7 @@ Regulations.
     relevant to their studies.
 9.  Other rights as prescribed by law.
 
-# Chapter VII: FINANCE FOR TRAINING
+# Chapter VII. FINANCE FOR TRAINING
 
 ## Article 48. Financial resources for training
 
@@ -1675,7 +1675,7 @@ Regulations.
     training major, the specific training cost payment level will be
     considered and approved by the head of the training unit.
 
-# Chapter VIII: INSPECTION, EXAMINATION, RESOLUTION AND HANDLING OF VIOLATIONS
+# Chapter VIII. INSPECTION, EXAMINATION, RESOLUTION AND HANDLING OF VIOLATIONS
 
 ## Article 50. Inspection and examination
 
@@ -1741,7 +1741,7 @@ Regulations.
     units shall notify the competent authority and publicly announce it
     on the mass media.
 
-# Chapter IX: IMPLEMENTATION PROVISIONS
+# Chapter IX. IMPLEMENTATION PROVISIONS
 
 ## Article 53. Entry into force
 

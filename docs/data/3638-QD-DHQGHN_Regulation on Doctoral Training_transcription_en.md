@@ -74,7 +74,7 @@ Communications (post on website); - File: VT, Training Department, H50.
 *(Attached to Decision No. 3638/QD-VNU dated October 21, 2022 of the
 Director of Vietnam National University, Hanoi)*
 
-# Chapter I: GENERAL PROVISIONS
+# Chapter I. GENERAL PROVISIONS
 
 ## Article 1. Scope of regulation and applicable subjects
 
@@ -185,7 +185,7 @@ organize and implement professional activities.
     of specialized units.
 5.  Fully implement regulations on education quality assessment.
 
-# Chapter II: ADMISSION
+# Chapter II. ADMISSION
 
 ## Article 6. Form and time of admission
 
@@ -430,7 +430,7 @@ The selection of foreigners or Vietnamese people residing abroad to do
 research at Vietnam National University, Hanoi is carried out according
 to separate regulations.
 
-# Chapter III: TRAINING PROGRAM
+# Chapter III. TRAINING PROGRAM
 
 ## Article 16. Structure of the doctoral training program
 
@@ -622,7 +622,7 @@ to separate regulations.
     publish the output standards of each training program, but not lower
     than the requirements specified in this Regulation.
 
-# Chapter IV: TRAINING ORGANIZATION AND MANAGEMENT
+# Chapter IV. TRAINING ORGANIZATION AND MANAGEMENT
 
 ## Article 19. Form, language and duration of training
 
@@ -912,7 +912,7 @@ to separate regulations.
     recognizing and converting the learning and research results of
     graduate students.
 
-# Chapter V: THESIS AND THESIS EVALUATION
+# Chapter V. THESIS AND THESIS EVALUATION
 
 ## Article 25. Requirements for dissertations
 
@@ -1639,7 +1639,7 @@ Council.
     students, organize the thesis evaluation council and award doctoral
     degrees.
 
-# Chapter VI: RECOGNITION OF DEGREES AND AWARDING OF DOCTORAL DEGREE
+# Chapter VI. RECOGNITION OF DEGREES AND AWARDING OF DOCTORAL DEGREE
 
 ## Article 32. Conditions for recognition of academic degrees and granting of doctoral degrees
 
@@ -1758,7 +1758,7 @@ Council.
     within 30 working days from the effective date of the decision to
     recognize the degree and award the doctoral degree.
 
-# Chapter VII: STANDARDS, RESPONSIBILITIES, AND RIGHTS OF INDIVIDUALS AND UNITS PARTICIPATING IN THE TRAINING OF PHD STUDENTS
+# Chapter VII. STANDARDS, RESPONSIBILITIES, AND RIGHTS OF INDIVIDUALS AND UNITS PARTICIPATING IN THE TRAINING OF PHD STUDENTS
 
 ## Article 34. Requirements, responsibilities and powers of lecturers
 
@@ -2180,7 +2180,7 @@ Council.
 9.  Every 6 months, report to the head of the training unit on the study
     and research situation of the graduate student.
 
-# Chapter VIII: FINANCE DURING DOCTORAL TRAINING
+# Chapter VIII. FINANCE DURING DOCTORAL TRAINING
 
 ## Article 40. Financial resources for doctoral training
 
@@ -2243,7 +2243,7 @@ Council.
     the training sector/specialization, the specific training cost will
     be considered and approved by the head of the training unit.
 
-# Chapter IX: INSPECTION, EXAMINATION, RESOLUTION AND HANDLING OF VIOLATIONS
+# Chapter IX. INSPECTION, EXAMINATION, RESOLUTION AND HANDLING OF VIOLATIONS
 
 ## Article 42. Complaints and denunciations
 

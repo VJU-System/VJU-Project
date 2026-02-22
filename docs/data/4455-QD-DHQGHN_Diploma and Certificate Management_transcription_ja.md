@@ -9,7 +9,7 @@ last_updated: 2026-02-22
 ---
 > **[免責事項]** この文書はAIにより生成されたものであり、参考用です。法的効力はありません。重要な判断を行う際は、必ず公式文書を参照するか、発行機関であるベトナム国家大学ハノイ校（__https://vnu.edu.vn__）に問い合わせてください。
 
-<div align="right">
+<div style="margin-left: auto; width: fit-content; text-align: left;">
 <sub><strong>[Digital Certificate]</strong>: SAO Y<br>
 ベトナム国家大学ハノイ校<br>
 署名日時: 2023年12月20日 14:21:53 +07:00</sub>
