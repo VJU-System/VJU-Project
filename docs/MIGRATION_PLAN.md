@@ -121,15 +121,15 @@
 | Group | Total | Done | Staged | Remaining |
 |-------|:-----:|:----:|:------:|:---------:|
 | A: VNU Regulations (DHQGHN) | 10 | 10 | 0 | 0 |
-| B: VJU Guidelines (DHVN) | 19 | 12 | 7 | 0 |
+| B: VJU Guidelines (DHVN) | 19 | 16 | 3 | 0 |
 | C: Ministry of Education (BGDDT) | 12 | 0 | 12 | 0 |
 | D: Other Government | 5 | 0 | 5 | 0 |
 | E: Education Testing | 3 | 3 | 0 | 0 |
 | F: Public Reports | 3 | 0 | 3 | 0 |
-| **Total** | **52** | **25** | **27** | **0** |
+| **Total** | **52** | **29** | **23** | **0** |
 
 **全ソースファイル（PDF+MD）は `docs/data/` にコピー済み。**
-残り33文書のフォーマット正規化が必要。
+残り23文書のフォーマット正規化が必要。
 
 ---
 
