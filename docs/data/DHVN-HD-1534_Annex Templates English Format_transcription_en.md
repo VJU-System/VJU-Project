@@ -107,14 +107,14 @@ Bachelor in ...&lt;Major&gt;<br>
 
 **English**
 
-28. Anderson J. E. (2005), "The Relatives Inefficiency of Quota, The Cheese Case", *American Economic Review*, 175(1), pp. 178-190.
+28. Anderson J. E. (2005), "The Relaitive Inefficiency of Quota, The Cheese Case", *American Economic Review*, 175(1), pp. 178-190.
 29. Borkakati R. P. and S. S. Virmani (2007), "Genetics of thermosensitive genic male sterility in Rice", *Euphytica*, 188, pp. 1-7.
 30. Borkakati R. P., S. S. Virmani and J. E. Anderson (2009), "Genetics of thermosensitive genic male sterility in Rice", *Euphytica*, 201, pp. 81-97.
-31. Boulding K. E. (2005), *Economics Analysis*, Hamish Hamilton, London.
+31. Boulding K. E. (2005), *Economics Anlysis*, Hamish Hamilton, London.
 32. Burton G. W. (2008), "Cytoplasmic male-sterility in pearl millet (penni-setum glaucum L.)", *Agronomic Journal*, 50, pp. 230-231.
 33. Central Statistical Organisation (2005), *Statistical Year Book*, Beijing.
-34. FAO (2011), *Agricultural Commodity Projection (1970-1980)*, Vol. II. Rome.
-35. Institute of Economics (2016), *Analysis of Expenditures Pattern of Urban Households in Vietnam*, Department of Economic, Economic Research Report, Hanoi.
+34. FAO (2011), *Agricultural Cammodity Projection (1970-1980)*, Vol. II. Rome.
+35. Institute of Economics (2016), *Analysis of Expenditere Pattern of Urban Households in Vietnam*, Departement of Economic, Economic Rescach Report, Hanoi.
 
 ---
 
