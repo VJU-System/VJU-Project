@@ -185,4 +185,66 @@ document_status: "active"
 
 ---
 
+## 11. Abbreviations / Acronyms（略語・略称）
+
+### 11.1 Organization Abbreviations（組織略称）
+
+| Vietnamese | English | Japanese（日本語） |
+|---|---|---|
+| ĐHQGHN (Đại học Quốc gia Hà Nội) | VNU (Vietnam National University, Hanoi) | VNU（ベトナム国家大学ハノイ校） |
+| Bộ GD&ĐT (Bộ Giáo dục và Đào tạo) | MOET (Ministry of Education and Training) | 教育訓練省 |
+| BĐT (Ban Đào tạo) | DAA (Department of Academic Affairs) | 教務局 |
+| Phòng TT&QTTH (Phòng Truyền thông và Quản trị thương hiệu) | Dept. of Communications and Brand Management | 広報・ブランド管理室 |
+
+### 11.2 Document Type Abbreviations（文書種別略称）
+
+> **Note:** These abbreviations appear in document IDs (e.g., `3636/QĐ-ĐHQGHN`). They must be kept in the original Vietnamese form in all language versions.
+
+| Abbreviation | Vietnamese | English | Japanese（日本語） |
+|---|---|---|---|
+| QĐ | Quyết định | Decision | 決定 |
+| TT | Thông tư | Circular | 通達 |
+| NĐ | Nghị định | Decree | 政令 |
+| NQ | Nghị quyết | Resolution | 決議 |
+| HD | Hướng dẫn | Guideline | 指針（ガイドライン） |
+| TB | Thông báo | Notification | 通知 |
+| CV | Công văn | Official Dispatch | 公文書 |
+
+### 11.3 Issuing Body Abbreviations（発行機関略称）
+
+| Abbreviation | Vietnamese | English | Japanese（日本語） |
+|---|---|---|---|
+| ĐHQGHN | Đại học Quốc gia Hà Nội | VNU | ベトナム国家大学ハノイ校 |
+| BGDĐT | Bộ Giáo dục và Đào tạo | MOET | 教育訓練省 |
+| CP | Chính phủ | Government | 政府 |
+| TTg | Thủ tướng Chính phủ | Prime Minister | 首相 |
+| HĐ | Hội đồng | Council | 評議会 |
+| BTC | Bộ Tài chính | Ministry of Finance | 財務省 |
+
+### 11.4 Signature & Distribution Abbreviations（署名欄・送付先略称）
+
+> **Note:** These terms appear in the Nơi nhận (distribution) and signature sections. In EN/JA versions, translate the meaning but keep the section structure intact.
+
+| Vietnamese | English | Japanese（日本語） |
+|---|---|---|
+| KT. (Ký thay) | On behalf of / Acting | 代理（署名代行） |
+| Nơi nhận | Recipients / Distribution | 送付先 |
+| để b/c (để báo cáo) | for reporting | 報告用 |
+| đăng website | post on website | ウェブサイト掲載 |
+| VT (Văn thư) | Archives / Secretariat | 文書課（庶務） |
+| Lưu | File / Archive | 保存 |
+
+### 11.5 Masters-Specific Terms（修士課程固有用語）
+
+| Vietnamese | English | Japanese（日本語） |
+|---|---|---|
+| học viên | graduate student / master's student | 大学院生（修士課程学生） |
+| luận văn | thesis (master's) | 修士論文 |
+| đề án (thạc sĩ) | project / capstone (master's) | 修士課題（修士プロジェクト） |
+| định hướng nghiên cứu | research-oriented | 研究志向型 |
+| định hướng ứng dụng | application-oriented | 応用志向型 |
+| ngành phù hợp | cognate field / related major | 関連専攻（適合分野） |
+| học bổ sung kiến thức | prerequisite bridging courses | 補充科目（ブリッジ科目） |
+| người hướng dẫn luận văn | thesis supervisor | 修士論文指導教員 |
+
 *Last updated: 2026-02-22*

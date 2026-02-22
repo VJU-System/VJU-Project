@@ -77,7 +77,7 @@ Số: 3626/QĐ-ĐHQGHN
 
 # QUY CHẾ ĐÀO TẠO ĐẠI HỌC TẠI ĐẠI HỌC QUỐC GIA HÀ NỘI
 
-<p align="center">*(Ban hành kèm theo Quyết định số 3626 /QĐ-ĐHQGHN ngày 24 tháng 10 năm 2022 của Giám đốc Đại học Quốc gia Hà Nội)*</p>
+<p align="center"><em>(Ban hành kèm theo Quyết định số 3626/QĐ-ĐHQGHN ngày 24 tháng 10 năm 2022 của Giám đốc Đại học Quốc gia Hà Nội)</em></p>
 
 # Chương I. NHỮNG QUY ĐỊNH CHUNG
 

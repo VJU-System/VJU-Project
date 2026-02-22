@@ -51,7 +51,8 @@
     /* Prose for document reader */
     .prose-legal h1 { font-size: 1.35rem; font-weight: 700; margin: 2rem 0 0.75rem; text-align: center; }
     .prose-legal h2 { font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; color: #1e293b; }
-    .prose-legal p { margin: 0.6rem 0; line-height: 1.75; font-size: 0.95rem; }
+    .prose-legal p { margin: 0.6rem 0; line-height: 1.75; font-size: 0.95rem; text-indent: 1.5em; }
+    .prose-legal div p, .prose-legal p[align] { text-indent: 0; }
     .prose-legal ul, .prose-legal ol { margin: 0.4rem 0 0.4rem 1.25rem; }
     .prose-legal li { margin: 0.2rem 0; line-height: 1.7; font-size: 0.95rem; }
     .prose-legal table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.85rem; }
@@ -204,7 +205,7 @@
         <div class="absolute top-0 left-0 w-1 h-full bg-vnu-blue rounded-l-xl"></div>
         <div class="flex justify-between items-start mb-4">
           <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-vnu-blue border border-blue-100">Regulation</span>
-          <time class="text-xs text-text-muted font-mono bg-gray-50 px-2 py-1 rounded">OCT 24, 2022</time>
+          <time class="text-xs text-text-muted font-mono bg-gray-50 px-2 py-1 rounded">OCT 21, 2022</time>
         </div>
         <h3 class="text-lg font-bold text-text-main mb-2 group-hover:text-vnu-blue transition-colors">Regulation on Master's Training at VNU</h3>
         <p class="text-text-muted text-sm leading-relaxed mb-6 line-clamp-2">Decision 3636/QĐ-ĐHQGHN promulgating the regulation on master's training at Vietnam National University, Hanoi.</p>
@@ -1624,8 +1625,9 @@
           const rightEl = getActiveRight();
           const leftH = document.getElementById('left-' + langPrefix(leftLang) + idx);
           const rightH = document.getElementById('right-' + langPrefix(rightLang) + idx);
-          if (leftH) leftEl.scrollTo({ top: leftH.offsetTop - 20, behavior: 'smooth' });
-          if (rightH) rightEl.scrollTo({ top: rightH.offsetTop - 20, behavior: 'smooth' });
+          const scrollOffset = Math.round(leftEl.clientHeight / 3);
+          if (leftH) leftEl.scrollTo({ top: leftH.offsetTop - scrollOffset, behavior: 'smooth' });
+          if (rightH) rightEl.scrollTo({ top: rightH.offsetTop - scrollOffset, behavior: 'smooth' });
           setTimeout(() => { isSyncing = false; }, 800);
         });
         item.appendChild(a);

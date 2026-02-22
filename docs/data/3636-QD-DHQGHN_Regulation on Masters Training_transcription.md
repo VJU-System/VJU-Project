@@ -23,19 +23,26 @@ Số: 3636/QĐ-ĐHQGHN
 </div>
 
 # QUYẾT ĐỊNH
-**Ban hành Quy chế đào tạo thạc sĩ tại Đại học Quốc gia Hà Nội**
 
-**GIÁM ĐỐC ĐẠI HỌC QUỐC GIA HÀ NỘI**
+<p align="center"><strong>Ban hành Quy chế đào tạo thạc sĩ tại Đại học Quốc gia Hà Nội</strong></p>
+
+## GIÁM ĐỐC ĐẠI HỌC QUỐC GIA HÀ NỘI
 
 *Căn cứ Luật Giáo dục ngày 14 tháng 6 năm 2019;*
+
 *Căn cứ Luật Giáo dục đại học ngày 18 tháng 6 năm 2012 và Luật sửa đổi, bổ sung một số điều của Luật Giáo dục đại học ngày 19 tháng 11 năm 2018;*
+
 *Căn cứ Nghị định số 186/2013/NĐ-CP ngày 17 tháng 11 năm 2013 của Chính phủ về Đại học Quốc gia;*
+
 *Căn cứ Quyết định số 26/2014/QĐ-TTg ngày 26 tháng 3 năm 2014 của Thủ tướng Chính phủ ban hành Quy chế Tổ chức và hoạt động của Đại học Quốc gia và các cơ sở giáo dục đại học thành viên;*
+
 *Căn cứ Thông tư số 23/2021/TT-BGDĐT ngày 30 tháng 8 năm 2021 của Bộ trưởng Bộ Giáo dục và Đào tạo ban hành Quy chế tuyển sinh và đào tạo trình độ thạc sĩ;*
+
 *Căn cứ Nghị quyết số 3349/NQ-HĐ ngày 04 tháng 10 năm 2022 của Hội đồng Đại học Quốc gia Hà Nội nhiệm kỳ 2018-2023 về việc thông qua Quy chế đào tạo thạc sĩ tại Đại học Quốc gia Hà Nội;*
+
 *Theo đề nghị của Trưởng Ban Đào tạo.*
 
-**QUYẾT ĐỊNH:**
+## QUYẾT ĐỊNH:
 
 **Điều 1.** Ban hành kèm theo Quyết định này Quy chế đào tạo thạc sĩ tại Đại học Quốc gia Hà Nội.
 
@@ -43,23 +50,27 @@ Số: 3636/QĐ-ĐHQGHN
 
 **Điều 3.** Chánh Văn phòng, Trưởng ban chức năng, Thủ trưởng các đơn vị thuộc Đại học Quốc gia Hà Nội và các tổ chức, cá nhân có liên quan chịu trách nhiệm thi hành Quyết định này./.
 
-**Nơi nhận:**
-- Như Điều 3;
-- Bộ GD&ĐT (để báo cáo);
-- Giám đốc (để báo cáo);
-- Phòng TT&QTTH (đăng website);
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+<div>
+<strong><em>Nơi nhận:</em></strong><br>
+- Như Điều 3;<br>
+- Bộ GD&ĐT (để báo cáo);<br>
+- Giám đốc (để báo cáo);<br>
+- Phòng TT&QTTH (đăng website);<br>
 - Lưu: VT, ĐT, M50.
-
-**KT. GIÁM ĐỐC**
-**PHÓ GIÁM ĐỐC**
-*(đã ký)*
-**Nguyễn Hoàng Hải**
+</div>
+<div style="text-align: center;">
+<strong>KT. GIÁM ĐỐC<br>PHÓ GIÁM ĐỐC</strong><br><br>
+<em>(Đã ký)</em><br><br>
+<strong>Nguyễn Hoàng Hải</strong>
+</div>
+</div>
 
 ---
 
 # QUY CHẾ
 **Đào tạo thạc sĩ tại Đại học Quốc gia Hà Nội**
-*(Ban hành kèm theo Quyết định số 3636/QĐ-ĐHQGHN, ngày 21 tháng 10 năm 2022 của Giám đốc Đại học Quốc gia Hà Nội)*
+<p align="center"><em>(Ban hành kèm theo Quyết định số 3636/QĐ-ĐHQGHN, ngày 21 tháng 10 năm 2022 của Giám đốc Đại học Quốc gia Hà Nội)</em></p>
 
 # Chương I. NHỮNG QUY ĐỊNH CHUNG
 
