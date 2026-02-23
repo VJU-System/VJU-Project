@@ -14,6 +14,7 @@ version:
 replaces: []
 replaced_by: []
 revision_history: []
+last_updated: "2026-02-23"
 tags:
 - university-regulations
 lang: en

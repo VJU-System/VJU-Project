@@ -8,6 +8,7 @@ status: active
 replaces: []
 replaced_by: []
 revision_history: []
+last_updated: "2026-02-23"
 tags:
 - university-regulations
 version:
@@ -103,7 +104,7 @@ courses in the training program.
 
 - Students submit notarized copies of their foreign language
   certificates to the training program in charge before October 10,
-  2023.
+2023.
 
 ### 4. Notification of results
 

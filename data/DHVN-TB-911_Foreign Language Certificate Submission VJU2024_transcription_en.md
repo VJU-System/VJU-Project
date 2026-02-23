@@ -8,6 +8,7 @@ status: active
 replaces: []
 replaced_by: []
 revision_history: []
+last_updated: "2026-02-23"
 tags:
 - university-regulations
 version:
@@ -109,7 +110,7 @@ course as follows:
 - The list of establishments granting English language
   certificates/diplomas according to the 6-level foreign language
   proficiency framework for Vietnam is specified in detail in Appendix
-  2.
+2.
 
 ### 4. Notification of results
 

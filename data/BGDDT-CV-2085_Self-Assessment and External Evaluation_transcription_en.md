@@ -5,10 +5,10 @@ issuer: Ministry of Education and Training
 category: 3. University Regulations
 status: Official
 version:
-  - en
-  - ja
-  - vi
-  - source
+- en
+- ja
+- vi
+- source
 lang: en
 ---
 <div class="source-note" role="note" aria-label="Source note">This file is created with reference to publicly available content.  

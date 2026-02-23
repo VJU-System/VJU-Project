@@ -9,13 +9,14 @@ status: active
 replaces: []
 replaced_by: []
 revision_history: []
+last_updated: "2026-02-23"
 tags:
-  - quality-assurance
+- quality-assurance
 version:
-  - en
-  - ja
-  - source
-  - vi
+- en
+- ja
+- source
+- vi
 lang: vi
 ---
 
