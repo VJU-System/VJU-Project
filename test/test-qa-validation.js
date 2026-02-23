@@ -47,9 +47,13 @@ function validateIndentation(text) {
   var warnings = [];
   var lines = text.split('\n');
   lines.forEach(function (line, i) {
-    // khoan starting with number at column 0 should have indent
-    if (/^\d+\.\s/.test(line)) {
-      warnings.push('Line ' + (i + 1) + ': khoan "' + line.substring(0, 30) + '..." has no indentation (expected 4 spaces)');
+    // khoan with 4+ space indent is wrong — khoan must start at column 0
+    if (/^ {4,}\d+\.\s/.test(line)) {
+      warnings.push('Line ' + (i + 1) + ': khoan "' + line.trim().substring(0, 30) + '..." is indented (khoan must start at column 0)');
+    }
+    // dash list with 4+ space indent is wrong — must be 0 or 2 spaces
+    if (/^ {4,}- /.test(line)) {
+      warnings.push('Line ' + (i + 1) + ': dash list "' + line.trim().substring(0, 30) + '..." has 4+ space indent (max 2)');
     }
   });
   return { warnings: warnings };
@@ -109,16 +113,30 @@ describe('QA Validation Helpers', function () {
     assert(validateDocId('3626-QD-DHQGHN').valid === false, 'Sanitized ID should be invalid (no slash or diacriticals)');
   });
 
-  it('validateIndentation detects incorrect khoan indent', function () {
-    var bad = '1. No indent khoan';
-    var result = validateIndentation(bad);
-    assert(result.warnings.length > 0, 'Should warn about indentation');
+  it('validateIndentation passes khoan at column 0', function () {
+    var good = '1. Khoan at column 0';
+    var result = validateIndentation(good);
+    assertEqual(result.warnings.length, 0, 'Khoan at column 0 is correct');
   });
 
-  it('validateIndentation passes properly indented khoan', function () {
-    var good = '    1. Properly indented khoan';
+  it('validateIndentation detects 4sp-indented khoan', function () {
+    var bad = '    1. Incorrectly indented khoan';
+    var result = validateIndentation(bad);
+    assert(result.warnings.length > 0, 'Should warn about indented khoan');
+    assert(result.warnings[0].includes('column 0'), 'Should mention column 0');
+  });
+
+  it('validateIndentation detects 4sp-indented dash list', function () {
+    var bad = '    - Dash list with 4 space indent';
+    var result = validateIndentation(bad);
+    assert(result.warnings.length > 0, 'Should warn about 4sp dash list');
+    assert(result.warnings[0].includes('4+ space indent'), 'Should mention 4+ space indent');
+  });
+
+  it('validateIndentation passes 2sp-indented dash list', function () {
+    var good = '  - Dash list with 2 space indent';
     var result = validateIndentation(good);
-    assertEqual(result.warnings.length, 0, 'Should have no warnings');
+    assertEqual(result.warnings.length, 0, '2sp dash list is correct');
   });
 
   it('validateHtmlMarkdownMix detects asterisks inside HTML tags', function () {
@@ -137,5 +155,39 @@ describe('QA Validation Helpers', function () {
     var plain = 'Just some *italic* text outside HTML';
     var result = validateHtmlMarkdownMix(plain);
     assertEqual(result.errors.length, 0, 'Should pass for non-HTML text');
+  });
+});
+
+// === CSS Rule Validation ===
+
+function validateCssRules(cssText) {
+  var errors = [];
+  // p.khoan must NOT have non-zero padding-left (khoan is not a list)
+  var khoanMatch = cssText.match(/p\.khoan\s*\{([^}]*)\}/);
+  if (khoanMatch) {
+    var plMatch = khoanMatch[1].match(/padding-left:\s*([^;]+)/);
+    if (plMatch) {
+      var val = plMatch[1].trim();
+      if (val !== '0' && val !== '0px' && val !== '0em') {
+        errors.push('p.khoan has padding-left: ' + val + ' (must be 0 — khoan is not a bullet list)');
+      }
+    }
+  }
+  return { errors: errors };
+}
+
+describe('CSS Rule Validation', function () {
+
+  it('p.khoan must not have non-zero padding-left', function () {
+    var badCss = '.prose-legal p.khoan { padding-left: 1.5em; margin: 0.3rem 0; }';
+    var result = validateCssRules(badCss);
+    assert(result.errors.length > 0, 'Should detect non-zero khoan padding');
+    assert(result.errors[0].includes('1.5em'), 'Should mention the actual value');
+  });
+
+  it('p.khoan with padding-left: 0 is valid', function () {
+    var goodCss = '.prose-legal p.khoan { padding-left: 0; margin: 0.3rem 0; }';
+    var result = validateCssRules(goodCss);
+    assertEqual(result.errors.length, 0, 'padding-left: 0 should pass');
   });
 });

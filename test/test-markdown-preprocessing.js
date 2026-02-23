@@ -6,9 +6,17 @@
 // Helper: simplified version of preprocessLegalMd for testing.
 // This extracts the core logic without DOM dependencies.
 function preprocessForTest(md) {
-  // Escape numbered lists: "1. " at line start -> "1\. "
-  md = md.replace(/^(\d+)\. /gm, '$1\\. ');
-  return md;
+  var lines = md.split('\n');
+  var out = [];
+  for (var i = 0; i < lines.length; i++) {
+    var line = lines[i];
+    // Escape numbered lists: "1. " at line start -> "1\. "
+    line = line.replace(/^(\d+)\. /, '$1\\. ');
+    // Strip 4+ space indent from dash lists
+    if (/^ {4,}- /.test(line)) line = line.replace(/^ {4,}(- )/, '$1');
+    out.push(line);
+  }
+  return out.join('\n');
 }
 
 describe('Markdown Preprocessing', function () {
@@ -56,5 +64,18 @@ describe('Markdown Preprocessing', function () {
   it('handles text with no numbered lists', function () {
     var input = 'Just a paragraph.\nAnother line.';
     assertEqual(preprocessForTest(input), input);
+  });
+
+  it('strips 4+ space indent from dash lists', function () {
+    var input = '    - Indented dash item\n      continuation line';
+    var result = preprocessForTest(input);
+    assert(result.includes('- Indented dash item'), 'Should strip 4sp indent from dash list');
+    assert(!result.includes('    - '), 'Should not contain 4sp dash');
+  });
+
+  it('preserves 2sp-indented dash lists', function () {
+    var input = '  - Two space indent';
+    var result = preprocessForTest(input);
+    assertEqual(result, input, '2sp dash list should be preserved');
   });
 });

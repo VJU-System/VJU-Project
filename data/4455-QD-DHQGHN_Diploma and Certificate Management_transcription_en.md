@@ -103,10 +103,10 @@ Hanoi)*
     a)  Training units are units participating in management, granting
         degrees, certificates and certifications at VNU, including:
 
-    - Member universities;
-    - Affiliated schools, affiliated departments;
-    - Research Institute;
-    - Centers and units are allowed to organize training, fostering, and
+  - Member universities;
+  - Affiliated schools, affiliated departments;
+  - Research Institute;
+  - Centers and units are allowed to organize training, fostering, and
       organize exams to grant certificates and accreditation according
       to the functions, tasks and regulations of VNU or of competent
       state agencies.
@@ -357,19 +357,19 @@ Hanoi)*
         foil.
     b)  Cover size:
 
-    - Doctorate: 43 cm x 30.5 cm
-    - Other sizes: 32 cm x 21.5 cm
+  - Doctorate: 43 cm x 30.5 cm
+  - Other sizes: 32 cm x 21.5 cm
 
     c)  Material: cardboard, imitation leather.
     d)  Cover color:
 
-    - PhD: Bordeaux Red
-    - Master's Degree: Purple
-    - Bachelor's degree: Brown
-    - Engineering degree: Brown
-    - Medical degree: Brown
-    - Pharmacist degree: Brown
-    - Bachelor's, engineer's, doctor's, pharmacist's degrees awarded
+  - PhD: Bordeaux Red
+  - Master's Degree: Purple
+  - Bachelor's degree: Brown
+  - Engineering degree: Brown
+  - Medical degree: Brown
+  - Pharmacist degree: Brown
+  - Bachelor's, engineer's, doctor's, pharmacist's degrees awarded
       for talented, international standard, advanced training programs
       and excellent graduation for other training programs: Red flag
 3.  The content written on the blank is
@@ -377,37 +377,37 @@ Hanoi)*
         in Vietnamese, the left part presents the content in English;
     b)  The color in the content section is:
 
-    - First page: National emblem and letters in the same red color
-    - The second page of the content section includes:
-      - Frame, bronze drum, Hanoi symbol: Same color with different
+  - First page: National emblem and letters in the same red color
+  - The second page of the content section includes:
+  - Frame, bronze drum, Hanoi symbol: Same color with different
         shades, ensuring harmony and elegance on the printing paper
         color of each type of blank
-      - Diploma name: Red flag
-      - VNU logo: Green color that fluoresces under UV light
-      - Number plate: Red flag color with UV light fluoresce
-      - The sunken five-pointed star in the middle of the Hanoi symbol:
+  - Diploma name: Red flag
+  - VNU logo: Green color that fluoresces under UV light
+  - Number plate: Red flag color with UV light fluoresce
+  - The sunken five-pointed star in the middle of the Hanoi symbol:
         Colorless, fluoresces under ultraviolet light.
     c)  Size:
 
-    - Content page:
-      - Doctorate: 42 cm x 29.5 cm
-      - Other diplomas: 29.7 cm x 20.5 cm
-    - Frame:
-      - Doctorate: 38.2 cm x 25.7 cm
-      - Other sizes: 27.2 cm x 18.2 cm
-    - Outer edge of frame equal to:
-      - PhD: 1.9 cm × 1.9 cm
-      - Other sizes: 1.25 cm x 1.15 cm
+  - Content page:
+  - Doctorate: 42 cm x 29.5 cm
+  - Other diplomas: 29.7 cm x 20.5 cm
+  - Frame:
+  - Doctorate: 38.2 cm x 25.7 cm
+  - Other sizes: 27.2 cm x 18.2 cm
+  - Outer edge of frame equal to:
+  - PhD: 1.9 cm × 1.9 cm
+  - Other sizes: 1.25 cm x 1.15 cm
 
     d)  Material: Printing paper and color of printing paper are
         different for each type of blank.
 
-    - PhD: Textured paper, patterned, light pink
-    - Master's Degree: Smooth, light pink, textured paper
-    - Bachelor's Degree: Smooth, light yellow, textured paper
-    - Engineering Degree: Smooth, light yellow, textured paper
-    - Medical Certificate: Smooth, light yellow paper
-    - Pharmacist's degree: Smooth, light yellow rough paper. If
+  - PhD: Textured paper, patterned, light pink
+  - Master's Degree: Smooth, light pink, textured paper
+  - Bachelor's Degree: Smooth, light yellow, textured paper
+  - Engineering Degree: Smooth, light yellow, textured paper
+  - Medical Certificate: Smooth, light yellow paper
+  - Pharmacist's degree: Smooth, light yellow rough paper. If
       necessary, the President of VNU decides to change the material,
       type and color of the printing paper.
 4.  Content written on certificate form, certificate sample
@@ -542,16 +542,16 @@ Hanoi)*
         program (in accordance with the effective date of the decision);
     c)  The "Training Form" section records accordingly:
 
-    - Full-time
-    - In-service
+  - Full-time
+  - In-service
 
     d)  The "Rank" section corresponds to the following graduation
         ranks:
 
-    - High Distinction
-    - Distinction
-    - Credit
-    - Average (English: Pass) d) "At" section: Write the name of the
+  - High Distinction
+  - Distinction
+  - Credit
+  - Average (English: Pass) d) "At" section: Write the name of the
       training unit (according to Appendix I);
     đ)  "Given" section: Write the last name, middle name (if any),
         first name, and gender of the person receiving the certificate

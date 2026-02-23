@@ -514,10 +514,10 @@ Còn có một số chuẩn về phương tiện của các tổ chức khác nh
 7. Mục tiêu học phần:
 8. Học phần tiên quyết:
 9. Trang thiết bị và điều kiện kỹ thuật:
-    - Đơn vị đào tạo có phòng máy tính cho sinh viên và có kết nối vào mạng chung của ĐHQGHN hay không?
-    - Giảng viên thực hiện có nắm được quy trình, phương pháp làm bài giảng điện tử hay không?
-    - Giảng viên thực hiện có kỹ năng sử dụng các phần mềm hỗ trợ việc soạn và đóng gói bài giảng điện tử hay không?
-    - Nhóm chuyên gia CNTT và Multimedia (đa phương tiện) hỗ trợ (dự kiến):
+  - Đơn vị đào tạo có phòng máy tính cho sinh viên và có kết nối vào mạng chung của ĐHQGHN hay không?
+  - Giảng viên thực hiện có nắm được quy trình, phương pháp làm bài giảng điện tử hay không?
+  - Giảng viên thực hiện có kỹ năng sử dụng các phần mềm hỗ trợ việc soạn và đóng gói bài giảng điện tử hay không?
+  - Nhóm chuyên gia CNTT và Multimedia (đa phương tiện) hỗ trợ (dự kiến):
 
 ## II. Tóm tắt nội dung bài giảng điện tử
 1. Thông báo về khóa học: mục đích, yêu cầu, lịch trình (phụ thuộc vào từng khóa học cụ thể), phương thức kiểm tra đánh giá.
@@ -532,20 +532,20 @@ Còn có một số chuẩn về phương tiện của các tổ chức khác nh
 ## IV. Các tư liệu và cơ sở dữ liệu để sử dụng xây dựng bài giảng điện tử
 *(Cần thuyết minh chi tiết về vai trò đối với việc xây dựng bài giảng điện tử)*
 1. Hiện vật, mẫu vật (dùng làm thí nghiệm, quay phim, chụp ảnh)
-    - Hiện vật, mẫu vật đang có.
-    - Hiện vật, mẫu vật cần thiết nhưng chưa có:
+  - Hiện vật, mẫu vật đang có.
+  - Hiện vật, mẫu vật cần thiết nhưng chưa có:
         + Địa chỉ để tìm kiếm.
         + Thông tin liên quan
 2. Tư liệu giấy, ảnh (tranh, ảnh, hình vẽ, bản đồ, biểu đồ,…)
-    - Tư liệu giấy, ảnh đã và đang có.
-    - Tư liệu giấy, ảnh cần thiết nhưng chưa có.
+  - Tư liệu giấy, ảnh đã và đang có.
+  - Tư liệu giấy, ảnh cần thiết nhưng chưa có.
 3. Tư liệu số (các đĩa CD/VIDEO/DVD, các băng video, các tư liệu từ Internet, các bài giảng điện tử liên quan đã có, …)
-    - Tư liệu số đã có.
-    - Tư liệu số cần phải bổ sung (nêu rõ yêu cầu nội dung, kỹ thuật..).
+  - Tư liệu số đã có.
+  - Tư liệu số cần phải bổ sung (nêu rõ yêu cầu nội dung, kỹ thuật..).
 4. Những yêu cầu đòi hỏi phải có để xây dựng bài giảng điện tử
-    - Xây dựng bài thử nghiệm;
-    - Ghi âm, ghi hình tại hiện trường;
-    - Khai thác kho tư liệu trong và ngoài nước;
+  - Xây dựng bài thử nghiệm;
+  - Ghi âm, ghi hình tại hiện trường;
+  - Khai thác kho tư liệu trong và ngoài nước;
 
 ## V. Dự kiến kinh phí
 Kinh phí xây dựng bài giảng điện tử đơn vị thực hiện theo quy định hiện hành của Nhà nước và của ĐHQGHN.
@@ -693,10 +693,10 @@ Học liệu điện tử bao gồm 04 thành phần và thời lượng tương
 2. **Các bài tập phục vụ bài học:** tự luận, bài tập tình huống, yêu cầu thực hành (phần này yêu cầu có hướng dẫn để học viên tự hoàn thành), quy đổi 90 phút tự học. Bài tập cần có hướng dẫn chi tiết giúp người học thực hiện được bài tập và nắm được kiến thức của học phần. Số lượng tối thiểu là 5 bài tập cho mỗi bài giảng.
 3. **Rich Media:** bao gồm cả video, audio, slide (bản trình chiếu), câu hỏi trắc nghiệm của bài học có đánh giá tự động, danh mục tài liệu tham khảo, ghi chú cho các slide. Sản phẩm bài giảng phải được xuất bản theo chuẩn SCORM.
     *Yêu cầu chung:*
-    - Mỗi bài giảng phải có phần giới thiệu bài giảng, mục tiêu của bài, các nhiệm vụ học tập, nghiên cứu mà người học cần thực hiện để học tốt bài học.
-    - Trong phần Presenter của bài giảng có thể chỉ là 01 bức ảnh của giảng viên, tuy nhiên khuyến khích sử dụng video để tăng tính sinh động, tránh gây nhàm chán cho học viên.
-    - Yêu cầu mỗi bài giảng phải có tối thiểu 20 câu hỏi trắc nghiệm. Số câu hỏi về sau có thể được bổ sung thêm.
-    - Các slides sử dụng một template (định dạng) thống nhất cho tất cả các bài giảng, để đảm bảo các học liệu thể hiện trên mạng là giống nhau về hình thức, gồm có:
+  - Mỗi bài giảng phải có phần giới thiệu bài giảng, mục tiêu của bài, các nhiệm vụ học tập, nghiên cứu mà người học cần thực hiện để học tốt bài học.
+  - Trong phần Presenter của bài giảng có thể chỉ là 01 bức ảnh của giảng viên, tuy nhiên khuyến khích sử dụng video để tăng tính sinh động, tránh gây nhàm chán cho học viên.
+  - Yêu cầu mỗi bài giảng phải có tối thiểu 20 câu hỏi trắc nghiệm. Số câu hỏi về sau có thể được bổ sung thêm.
+  - Các slides sử dụng một template (định dạng) thống nhất cho tất cả các bài giảng, để đảm bảo các học liệu thể hiện trên mạng là giống nhau về hình thức, gồm có:
         + Tên của bài.
         + Giới thiệu mục tiêu của bài học; kiến thức cần có để học tốt bài học này (nếu cần thiết).
         + Giới thiệu các tài liệu tham khảo cần thiết.
@@ -709,11 +709,11 @@ Học liệu điện tử bao gồm 04 thành phần và thời lượng tương
 
 4. **Audio:** Âm thanh của bài giảng
     *Yêu cầu:*
-    - Không sử dụng lại âm thanh trong phần slide mà phải thu âm lại, vì việc dạy học có slide và không có slide là khác nhau;
-    - Nếu là giọng đọc: cần truyền cảm, rõ ràng, diễn cảm, tốc độ phù hợp;
-    - Nếu là nhạc nền: cần chọn nhạc nền có âm lượng nhỏ/vừa, dễ chịu để người học không mất tập trung khi đọc nội dung;
-    - Chất lượng âm thanh: 160 kbps hoặc 320 kbps;
-    - Định dạng audio: mp3.
+  - Không sử dụng lại âm thanh trong phần slide mà phải thu âm lại, vì việc dạy học có slide và không có slide là khác nhau;
+  - Nếu là giọng đọc: cần truyền cảm, rõ ràng, diễn cảm, tốc độ phù hợp;
+  - Nếu là nhạc nền: cần chọn nhạc nền có âm lượng nhỏ/vừa, dễ chịu để người học không mất tập trung khi đọc nội dung;
+  - Chất lượng âm thanh: 160 kbps hoặc 320 kbps;
+  - Định dạng audio: mp3.
 
 ## II. Kí hợp đồng sản xuất học liệu điện tử
 Căn cứ vào nhiệm vụ được giao, đơn vị đào tạo ký hợp đồng sản xuất học liệu điện tử với lãnh đạo đơn vị hoặc cán bộ, giảng viên có đủ trình độ, năng lực tổ chức sản xuất học liệu điện tử. Người ký hợp đồng chịu trách nhiệm tổ chức xây dựng học liệu theo đúng kế hoạch.

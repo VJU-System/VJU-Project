@@ -67,7 +67,34 @@
 
 ---
 
-## 5. Regression Checklist（回帰テスト）
+## 5. 自動テストスイート (Browser-based Unit Tests)
+
+> **テストランナー:** `test/test-runner.html` をブラウザで開くか、Puppeteer で実行する。
+
+| ファイル | テスト対象 | テスト数 |
+|---------|-----------|---------|
+| `test-pure-functions.js` | `isVjuMember`, `langPrefix`, `getDocPrefix` | 16 |
+| `test-frontmatter.js` | `stripFrontMatter`, `parseFrontMatter` | 16 |
+| `test-doc-registry.js` | `DOC_REGISTRY` 整合性 | 7 |
+| `test-markdown-preprocessing.js` | khoản エスケープ, ダッシュリスト除去 | 9 |
+| `test-qa-validation.js` | YAML検証, docId検証, インデント検証, HTML/MD混在, CSS検証 | 14 |
+
+### 5.1 検証ルール一覧
+
+**インデント検証 (`validateIndentation`):**
+- khoản (`1. 2. 3.`) は列0が正。4sp以上のインデントは誤検出
+- ダッシュリスト (`- `) の4sp以上インデントは誤検出（最大2sp）
+
+**CSS検証 (`validateCssRules`):**
+- `p.khoan` の `padding-left` は `0` でなければならない（khoånは箇条書きではない）
+
+**プリプロセッサ検証 (`preprocessForTest`):**
+- `1. ` → `1\. ` エスケープ（`<ol>` 変換防止）
+- `^    - ` → `- ` (4spダッシュリスト除去)
+
+---
+
+## 6. Regression Checklist（回帰テスト）
 
 新しい文書を追加するたびに確認:
 
