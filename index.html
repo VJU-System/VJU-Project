@@ -1363,6 +1363,10 @@
   ];
   const DOC_TYPES = ['Regulation', 'Decision', 'Guidance', 'Official Letter', 'Annex', 'Admissions', 'Superseded'];
 
+  // ==================== SEARCH INDEX (multilingual full-text) ====================
+  let searchIndex = null;
+  fetch('data/search-index.json').then(r => r.ok ? r.json() : null).then(data => { searchIndex = data; console.log('[SearchIndex] Loaded', data ? Object.keys(data).length + ' entries' : 'failed'); }).catch(() => { console.warn('[SearchIndex] Not available, falling back to metadata search'); });
+
   // ==================== SEARCH STATE ====================
   let searchState = { query: '', departments: [], types: [], dateFrom: null, dateTo: null, sortBy: 'newest' };
 
@@ -1386,15 +1390,41 @@
   }
 
   // ==================== SEARCH ENGINE ====================
+  // Find search index entries matching a DOC_REGISTRY key
+  function getIndexEntries(registryKey) {
+    if (!searchIndex) return [];
+    return Object.values(searchIndex).filter(e => e.registry_key === registryKey);
+  }
+
+  // Score a document against a query using search index (multilingual full-text)
+  function scoreDoc(doc, q) {
+    let score = 0;
+    // Metadata match (always available)
+    if (doc.title.toLowerCase().includes(q)) score += 10;
+    if (doc.id.toLowerCase().includes(q)) score += 5;
+    if ((doc.tags || []).join(' ').toLowerCase().includes(q)) score += 3;
+    if ((doc.description || '').toLowerCase().includes(q)) score += 2;
+    // Search index match (multilingual titles + body text)
+    const entries = getIndexEntries(doc.id);
+    for (const entry of entries) {
+      const titles = entry.titles || {};
+      for (const lang of ['vi', 'en', 'ja']) {
+        if (titles[lang] && titles[lang].toLowerCase().includes(q)) score += 8;
+      }
+      const body = entry.body || {};
+      for (const lang of ['vi', 'en', 'ja']) {
+        if (body[lang] && body[lang].toLowerCase().includes(q)) score += 4;
+      }
+    }
+    return score;
+  }
+
   function filterDocs(state) {
     let docs = getAllDocs();
-    // 1. Filter by text query
+    // 1. Filter by text query (metadata + search index)
     if (state.query) {
       const q = state.query.toLowerCase();
-      docs = docs.filter(d => {
-        const haystack = [d.title, d.id, d.description, ...(d.tags || [])].join(' ').toLowerCase();
-        return haystack.includes(q);
-      });
+      docs = docs.filter(d => scoreDoc(d, q) > 0);
     }
     // 2. Filter by departments
     if (state.departments && state.departments.length > 0) {
@@ -1418,11 +1448,7 @@
       docs.sort((a, b) => (a.date || '').localeCompare(b.date || ''));
     } else if (state.sortBy === 'relevance' && state.query) {
       const q = state.query.toLowerCase();
-      docs.sort((a, b) => {
-        const scoreA = (a.title.toLowerCase().includes(q) ? 10 : 0) + (a.id.toLowerCase().includes(q) ? 5 : 0) + ((a.tags || []).join(' ').toLowerCase().includes(q) ? 3 : 0);
-        const scoreB = (b.title.toLowerCase().includes(q) ? 10 : 0) + (b.id.toLowerCase().includes(q) ? 5 : 0) + ((b.tags || []).join(' ').toLowerCase().includes(q) ? 3 : 0);
-        return scoreB - scoreA || (b.date || '').localeCompare(a.date || '');
-      });
+      docs.sort((a, b) => scoreDoc(b, q) - scoreDoc(a, q) || (b.date || '').localeCompare(a.date || ''));
     }
     return docs;
   }
