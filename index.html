@@ -1748,14 +1748,15 @@
   // Load document content (public via fetch, restricted via Firestore)
   async function loadPublicDoc(docId) {
     const prefix = getDocPrefix(docId);
-    const [viRaw, enRaw, jaRaw] = await Promise.all([
+    const [viRaw, enRaw, jaRaw, viHtmlRaw] = await Promise.all([
       fetch(encodeURI('data/' + prefix + '_transcription.md')).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
       fetch(encodeURI('data/' + prefix + '_transcription_en.md')).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
-      fetch(encodeURI('data/' + prefix + '_transcription_ja.md')).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+      fetch(encodeURI('data/' + prefix + '_transcription_ja.md')).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
+      fetch(encodeURI('data/' + prefix + '_transcription_vi.html')).then(r => r.ok ? r.text() : null).catch(() => null)
     ]);
     // Parse metadata from the source transcription (canonical), strip front matter from all
     const meta = parseFrontMatter(viRaw);
-    return { vi: stripFrontMatter(viRaw), en: stripFrontMatter(enRaw), ja: stripFrontMatter(jaRaw), meta };
+    return { vi: stripFrontMatter(viRaw), en: stripFrontMatter(enRaw), ja: stripFrontMatter(jaRaw), viHtmlRaw, meta };
   }
 
   async function loadRestrictedDoc(docId) {
@@ -1806,6 +1807,20 @@
 
       marked.setOptions({ gfm: true, breaks: true });
       const DIEM_RE = /^( *)([a-eghik-np-t\u0111])\) /;
+      const sanitizeWebArticleHtml = (rawHtml) => {
+        if (!rawHtml) return null;
+        let html = DOMPurify.sanitize(rawHtml, {
+          ADD_TAGS: ['main'],
+          ADD_ATTR: ['align','style','width','height','srcset','sizes','fetchpriority','decoding','class','id']
+        });
+        // Remove site chrome and floating widgets if present in captured HTML.
+        html = html
+          .replace(/<nav[\s\S]*?<\/nav>/gi, '')
+          .replace(/<script[\s\S]*?<\/script>/gi, '')
+          .replace(/<iframe[\s\S]*?<\/iframe>/gi, '')
+          .replace(/<div[^>]*class=\"[^\"]*(zalo-chat-widget|elementor-location-footer|elementor-location-header)[^\"]*\"[^>]*>[\s\S]*?<\/div>/gi, '');
+        return html;
+      };
       const preprocessLegalMd = (md) => {
         const lines = md.split('\n');
         const out = [];
@@ -1826,7 +1841,11 @@
       };
       const DIEM_LETTERS = 'a-eghik-np-t\u0111';
       const render = md => { let html = DOMPurify.sanitize(marked.parse(preprocessLegalMd(md)), { ADD_TAGS: ['sub','sup'], ADD_ATTR: ['align','style'] }); html = html.replace(/<p>\s*(\d+)\. /g, '<p class="khoan">$1. '); html = html.replace(new RegExp('<p>\\s*([' + DIEM_LETTERS + '])\\) ', 'g'), '<p class="diem">$1) '); return html; };
-      const rendered = { vi: render(docs.vi), en: render(docs.en), ja: render(docs.ja) };
+      const rendered = {
+        vi: docs.viHtmlRaw ? sanitizeWebArticleHtml(docs.viHtmlRaw) : render(docs.vi),
+        en: render(docs.en),
+        ja: render(docs.ja)
+      };
       ['left','right'].forEach(pane => {
         ['vi','en','ja'].forEach(lang => {
           document.getElementById('content-' + pane + '-' + lang).querySelector('.prose-legal').innerHTML = rendered[lang];

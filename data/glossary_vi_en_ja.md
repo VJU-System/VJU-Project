@@ -25,6 +25,7 @@ document_status: "active"
 | Vietnamese | English | Japanese（日本語） |
 |---|---|---|
 | Đại học Quốc gia Hà Nội (ĐHQGHN) | Vietnam National University, Hanoi (VNU) | ベトナム国家大学ハノイ校 |
+| Trường Đại học Việt Nhật (ĐHVJ / VJU) | Vietnam Japan University (VJU) | 日越大学（VJU） |
 | đơn vị đào tạo | training unit | 教育訓練機関（教育実施単位） |
 | trường đại học thành viên | member university | 加盟大学（メンバー大学） |
 | khoa trực thuộc | affiliated faculty / directly affiliated school | 直属学部（直轄学部） |
@@ -34,6 +35,20 @@ document_status: "active"
 | Hội đồng khoa học và đào tạo | Scientific and Training Council | 科学教育評議会 |
 | bộ môn | department / division | 学科目（教室） |
 | khoa | faculty / school | 学部（学科） |
+
+### Web Admissions Abbreviations（入試Web記事向け略語）
+
+| Vietnamese | English | Japanese（日本語） |
+|---|---|---|
+| STT (Số thứ tự) | No. (serial number) | 番号 |
+| TT (Thứ tự) | No. (serial number) | 番号 |
+| Bài kiểm tra đánh giá năng lực (HSA) | Competency Assessment Test for High School Students (HSA) | 高校生向け学力評価試験（HSA） |
+| SAT (Scholastic Assessment Test) | SAT (Scholastic Assessment Test) | SAT標準化試験 |
+| Điểm quy đổi (ĐQĐ) | converted score | 換算点 |
+| Điểm ưu tiên (ĐT, KV) | priority points (category/object and region) | 優先加点（対象・地域） |
+| Cơ điện tử thông minh và sản xuất theo phương thức Nhật Bản (EMJM) | Smart Mechatronics and Japanese-style Manufacturing | スマートメカトロニクス・日本式ものづくり |
+| Đổi mới và phát triển toàn cầu (BGDI) | Global Development and Innovation | グローバルイノベーション・開発 |
+| Điều khiển thông minh và Tự động hóa (BICA) | Intelligent Control and Automation | インテリジェント制御・オートメーション |
 
 ---
 
@@ -210,7 +225,7 @@ document_status: "active"
 | Abbreviation | Vietnamese | English | Japanese（日本語） |
 |---|---|---|---|
 | QĐ | Quyết định | Decision | 決定 |
-| TT | Thông tư | Circular | 通達 |
+| TT | 通達 | Circular | 通達（「円形」は誤訳） |
 | NĐ | Nghị định | Decree | 政令 |
 | NQ | Nghị quyết | Resolution | 決議 |
 | HD | Hướng dẫn | Guideline | 指針（ガイドライン） |

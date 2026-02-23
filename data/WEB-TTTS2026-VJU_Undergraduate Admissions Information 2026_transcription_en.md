@@ -116,7 +116,7 @@ In accordance with the current admissions regulations of the Ministry of Educati
 
 ***Note:*** *Candidates who graduated from upper secondary school before 2026 registering for admission via the Upper Secondary Graduation Examination score method must retake the subjects in their chosen subject combination in the 2026 Upper Secondary Graduation Examination.*
 
-**2.3. Method based on the High School Aptitude Assessment (HSA) examination results for upper secondary students organized by VNU in 2026.**
+**2.3. Method based on the Competency Assessment Test (HSA) examination results for upper secondary students organized by VNU in 2026.**
 
 Admissions method based on HSA examination results for upper secondary students organized by VNU in 2026.
 
@@ -127,7 +127,7 @@ Valid HSA examination codes for each training program are as follows:
 | **Training program name / abbreviation** | **Q01** | **Q02** | **Q03** | **Q04** | **Q05** | **Q06** | **Q07** | **Q08** | **Q09** | **Q10** | **Q21** |
 |----|----|----|----|----|----|----|----|----|----|----|----|
 | Japanese Studies – BJS | x | x | x | x | x | x | x | x | x | x | x |
-| Computer Science & Engineering – BCSE | x | x | x | x | x | x | x | x | x |  | x |
+| Computer Science and Engineering – BCSE | x | x | x | x | x | x | x | x | x |  | x |
 | Smart Mechatronics and Japanese-style Manufacturing – EMJM | x | x | x | x | x | x | x | x | x |  | x |
 | Food Technology and Health – EFTH | x | x | x | x | x | x | x | x | x | x | x |
 | Smart and Sustainable Agriculture – ESAS | x | x | x | x | x | x | x | x | x | x | x |
@@ -577,7 +577,7 @@ language certificate</strong></th>
 <tbody>
 <tr>
 <td width="47">1</td>
-<td width="179">Japan Studies <em>(BJS)</em></td>
+<td width="179">Japanese Studies <em>(BJS)</em></td>
 <td rowspan="5" width="113">From 7.0<br />
 (English/ Japanese)</td>
 <td rowspan="5" width="180">Equivalent conversion as stipulated in
@@ -748,7 +748,7 @@ In addition, candidates must meet the conditions for each admission method, spec
 
 – Candidates taking the 2026 High School Graduation Exam must have common subjects in the admission subject combination achieving at least 50% of the weighted score for admission assessment (pursuant to Circular No. 06/2025/TT- BGD&ĐT dated March 19, 2025 of the Minister of Education and Training), in which:
 
-\+ For the Japan Studies program: the Literature subject is doubled in the admission subject combinations.
+\+ For the Japanese Studies program: the Literature subject is doubled in the admission subject combinations.
 
 \+ For the Global Development and Innovation program: the English subject is doubled in the admission subject combinations.
 
@@ -892,7 +892,7 @@ For the method based on the 2026 High School Graduation Exam results, there is n
 </tr>
 <tr>
 <td width="41">VJU1</td>
-<td width="160">Japan Studies – BJS</td>
+<td width="160">Japanese Studies – BJS</td>
 <td width="89">7310613</td>
 <td width="44"></td>
 <td width="43"></td>
@@ -917,7 +917,7 @@ X98</td>
 </tr>
 <tr>
 <td width="41">VJU2</td>
-<td width="160">Computer Science & Engineering – BCSE</td>
+<td width="160">Computer Science and Engineering – BCSE</td>
 <td width="89">7480204</td>
 <td width="44">A00</td>
 <td width="43">A01<br />
@@ -1162,7 +1162,7 @@ D23</td>
 <td width="112">130</td>
 <td rowspan="9" width="246">– Direct admission and priority admission in accordance with the current Admissions Regulation of MOET.
 <p>– Admission based on 2026 High School Graduation Examination results.</p>
-<p>– Admission based on the 2026 Competency Assessment Examination for high school students organized by VNU.</p>
+<p>– Admission based on the 2026 Competency Assessment Test for high school students organized by VNU.</p>
 <p>– Admission based on foreign language certificates combined with 2026 High School Graduation Examination scores.</p>
 <p>– Admission based on results of the standardized SAT (Scholastic Assessment Test, USA).</p>
 <p>– Admission based on interview and candidate evaluation.</p></td>
@@ -1240,7 +1240,7 @@ ESAS</td>
 
 5.  **Other necessary information for candidates applying to the institution\**
 
-- Vietnam-Japan University does not apply any additional sub-criteria beyond the provisions of the current Admissions Regulation and the admission screening and phantom-filtering guidelines of MOET.
+- Vietnam Japan University does not apply any additional sub-criteria beyond the provisions of the current Admissions Regulation and the admission screening and phantom-filtering guidelines of MOET.
 - During the admission screening process, for candidates with equal admission scores at the bottom of the list exceeding the quota, the system will prioritize candidates with a higher preference order.
 - Bonus points: in accordance with MOET and VNU regulations.
 - Criteria for major/program allocation: none
@@ -1249,7 +1249,7 @@ ESAS</td>
 
 **6.1.** Candidates register for admission online through the MOET Admissions System: applicable to the admission method based on 2026 High School Graduation Examination results. According to the MOET schedule.
 
-**6.2.** Candidates register for admission online through the Vietnam-Japan University Admissions Portal at: <https://tuyensinh.vju.ac.vn> as follows:
+**6.2.** Candidates register for admission online through the Vietnam Japan University Admissions Portal at: <https://tuyensinh.vju.ac.vn> as follows:
 
 <table width="629">
 <colgroup>
@@ -1363,7 +1363,7 @@ Schedule for the interview and candidate evaluation admission method:
 
 ***Note:*** *– Candidates who have participated in the University's separate admission methods must still register their preferences for the applied programs on the MOET information portal to be eligible for admission to the University.*
 
-- *Candidates are fully responsible for the information declared on the Vietnam-Japan University Admissions Portal. In case of incorrect information, candidates will have their results CANCELLED and will be subject to penalties in accordance with the current Admissions Regulation of MOET and VNU.*
+- *Candidates are fully responsible for the information declared on the Vietnam Japan University Admissions Portal. In case of incorrect information, candidates will have their results CANCELLED and will be subject to penalties in accordance with the current Admissions Regulation of MOET and VNU.*
 
 **6.3 Application Submission Procedures**
 
@@ -1385,13 +1385,13 @@ Schedule for the interview and candidate evaluation admission method:
 
 **6.4 Admission Principles**
 
-– Vietnam-Japan University announces official admission results according to the MOET schedule;
+– Vietnam Japan University announces official admission results according to the MOET schedule;
 
-– Vietnam-Japan University screens candidates' registered preferences in order from highest to lowest until the allocated quota for each program is filled;
+– Vietnam Japan University screens candidates' registered preferences in order from highest to lowest until the allocated quota for each program is filled;
 
 – The admission score for the 2026 High School Graduation Examination results-based admission method is on a 30-point scale. There is no score difference between subject combinations;
 
-– Candidates who have been screened through the separate admission methods of Vietnam-Japan University are required to register their preferences on the MOET Admissions System according to the schedule to be eligible for admission to the University.
+– Candidates who have been screened through the separate admission methods of Vietnam Japan University are required to register their preferences on the MOET Admissions System according to the schedule to be eligible for admission to the University.
 
 7.  **Priority Policies**
 
@@ -1493,11 +1493,11 @@ Candidates who won first, second, or third prizes in national or international a
 
 ***8.3. Scholarships***
 
-The University allocates a minimum of 8% of annual tuition revenue for academic encouragement scholarships. Students with outstanding entrance results and academic performance each semester receive scholarships, covering approximately 20% of the total students in each cohort. In addition, the University offers various scholarships sponsored by Japanese and Vietnamese organizations, enterprises, and individuals each semester, such as Yamamoto, Furyo, Deha, Pasona Tech, BIDV, and Rector's Scholarships, etc. Furthermore, students of Vietnam-Japan University are also eligible to apply for high-value scholarships managed by VNU, such as Kumho Asiana, Mitsubishi, Yamada, Posco, Annex, ADF, Nitori, Đinh Thiện Lý, K-T, Vingroup, and Thắp sáng niềm tin scholarships, etc.
+The University allocates a minimum of 8% of annual tuition revenue for academic encouragement scholarships. Students with outstanding entrance results and academic performance each semester receive scholarships, covering approximately 20% of the total students in each cohort. In addition, the University offers various scholarships sponsored by Japanese and Vietnamese organizations, enterprises, and individuals each semester, such as Yamamoto, Furyo, Deha, Pasona Tech, BIDV, and Rector's Scholarships, etc. Furthermore, students of Vietnam Japan University are also eligible to apply for high-value scholarships managed by VNU, such as Kumho Asiana, Mitsubishi, Yamada, Posco, Annex, ADF, Nitori, Đinh Thiện Lý, K-T, Vingroup, and Thắp sáng niềm tin scholarships, etc.
 
 9.  **The institution's fulfillment of commitments to candidates**
 
-The University commits to resolving complaints and protecting the legitimate rights of candidates in cases of risk in accordance with current laws of the State, the Admissions Regulation of MOET, VNU, and Vietnam-Japan University.
+The University commits to resolving complaints and protecting the legitimate rights of candidates in cases of risk in accordance with current laws of the State, the Admissions Regulation of MOET, VNU, and Vietnam Japan University.
 10. **Other Contents**
 
 **10.1. Vietnam Japan University achieved training quality standards according to Japanese standards.**
@@ -1717,7 +1717,7 @@ Information on partner universities: <https://vju.vnu.edu.vn/en/collaboration/gl
 
 – Continuing to pursue advanced training programs in their professional field, or pursuing postgraduate training programs at reputable universities in Vietnam or abroad.
 
-*10.5.7. Graduates of the Global Innovation and Development (International Studies) program can undertake positions such as:*
+*10.5.7. Graduates of the Global Development and Innovation (International Studies) program can undertake positions such as:*
 
 - Working at Vietnamese state agencies and public service units, participating in policy-making and developing programs related to development and innovation.
 - Working at development agencies, international organizations, embassies, international non-governmental organizations such as UNDP, JICA, World Bank, ADB..., international corporations, social enterprises, professional organizations...
@@ -1755,7 +1755,7 @@ Information on partner universities: <https://vju.vnu.edu.vn/en/collaboration/gl
 
 ***10.6.1. Training programs under the Faculty of Interdisciplinary Social Sciences***
 
-The Faculty of Interdisciplinary Social Sciences currently manages 02 undergraduate programs in Japanese Studies and Global Innovation and Development, and 04 Master's programs, 01 Doctoral program, contributing to the mission of training high-quality human resources in the field of interdisciplinary social sciences for sustainable development.
+The Faculty of Interdisciplinary Social Sciences currently manages 02 undergraduate programs in Japanese Studies and Global Development and Innovation, and 04 Master's programs, 01 Doctoral program, contributing to the mission of training high-quality human resources in the field of interdisciplinary social sciences for sustainable development.
 
 ***a) Bachelor's program in Japanese Studies***
 
@@ -1781,11 +1781,11 @@ High practicality: The content of courses is highly practical, with the particip
 
 Opportunity to continue studying in Japan: Students may have opportunities to study at prestigious Japanese universities such as Waseda University, Hosei University, Yokohama University, Tsukuba University... In particular, from 2025, Vietnam Japan University has signed an agreement with Waseda University on dual degree training, where students can transfer to study at Waseda University to obtain 2 graduation degrees from Vietnam Japan University and Waseda University (detailed information about the dual degree program in Section 10.6 below).
 
-***b) Bachelor's program in Global Innovation and Development (International Studies)***
+***b) Bachelor's program in Global Development and Innovation (International Studies)***
 
-The Bachelor's program in Global Innovation and Development is a new program opened in 2025, aiming to train high-quality human resources with an interdisciplinary and multidisciplinary knowledge foundation on global issues, with systems thinking, critical thinking, innovation capacity, and technology application in analyzing and solving sustainable development challenges in the context of modern international relations; while also having professional ethics, a sense of responsibility, and effective working skills in an international environment, contributing to the sustainable development of Vietnam and the world. The program is taught in English.
+The Bachelor's program in Global Development and Innovation is a new program opened in 2025, aiming to train high-quality human resources with an interdisciplinary and multidisciplinary knowledge foundation on global issues, with systems thinking, critical thinking, innovation capacity, and technology application in analyzing and solving sustainable development challenges in the context of modern international relations; while also having professional ethics, a sense of responsibility, and effective working skills in an international environment, contributing to the sustainable development of Vietnam and the world. The program is taught in English.
 
-The advantages of the Global Innovation and Development program are demonstrated through the following features:
+The advantages of the Global Development and Innovation program are demonstrated through the following features:
 
 International standard program: Based on world-leading university models, flexibly adjusted to suit Vietnam, the program equips critical thinking, leadership, and innovation to address global challenges that are multicultural and interdisciplinary.
 
@@ -1988,7 +1988,7 @@ Vietnam Japan University continues to develop dual degree programs with other pa
 </tr>
 <tr>
 <td width="56">VJU7</td>
-<td width="247">Global Innovation and Development (BGDI)
+<td width="247">Global Development and Innovation (BGDI)
 <p>(A01, D01, D07, D08, D09, D10, D14, D15, X25/X78</p></td>
 <td width="74">7310601</td>
 <td colspan="3" width="145">Not yet admitting</td>
