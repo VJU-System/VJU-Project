@@ -1538,7 +1538,10 @@
         b.className = 'lang-btn px-2 py-1 text-[11px] font-medium text-text-muted hover:bg-gray-100 rounded';
       }
     });
-    if (pane === 'left') setupScrollSpy();
+    if (pane === 'left') {
+      buildToc();
+      setupScrollSpy();
+    }
   }
 
   langSelectLeft.addEventListener('change', (e) => switchPaneLang('left', e.target.value));
@@ -1897,21 +1900,19 @@
   let scrollSpyObserver = null;
 
   function buildToc() {
-    // Use left-en for TOC text (English headings); assign IDs to all 6 panes
-    const enProse = document.getElementById('content-left-en').querySelector('.prose-legal');
-    const headings = Array.from(enProse.querySelectorAll('h1, h2, h3'));
+    // Build TOC from the currently visible left pane so heading order matches
+    // scroll spy and click targets even when one language uses HTML source rendering.
+    const leftPane = getActiveLeft();
+    const leftProse = leftPane.querySelector('.prose-legal');
+    const headings = Array.from(leftProse.querySelectorAll('h1, h2, h3'));
     tocEl.innerHTML = '';
     tocIndexMap = [];
-    // Assign heading IDs to all 6 panes
-    const langs = ['vi','en','ja'];
-    headings.forEach((h, i) => {
-      ['left','right'].forEach(pane => {
-        langs.forEach(lang => {
-          const prose = document.getElementById('content-' + pane + '-' + lang).querySelector('.prose-legal');
-          const hs = prose.querySelectorAll('h1, h2, h3');
-          if (hs[i]) hs[i].id = pane + '-' + langPrefix(lang) + i;
-        });
-      });
+    // Assign IDs to left pane headings (TOC + scrollspy source of truth)
+    headings.forEach((h, i) => { h.id = 'left-' + langPrefix(leftLang) + i; });
+    // Best-effort IDs to right pane only (same index when structures align; harmless if not)
+    const rightProse = getActiveRight().querySelector('.prose-legal');
+    Array.from(rightProse.querySelectorAll('h1, h2, h3')).forEach((h, i) => {
+      h.id = 'right-' + langPrefix(rightLang) + i;
     });
 
     // Prefer legal-document style TOC filtering, but fall back to generic article headings.
@@ -1964,7 +1965,12 @@
         const rightH = document.getElementById('right-' + langPrefix(rightLang) + idx);
         const scrollOffset = Math.round(leftEl.clientHeight / 3);
         if (leftH) leftEl.scrollTo({ top: leftH.offsetTop - scrollOffset, behavior: 'smooth' });
-        if (rightH) rightEl.scrollTo({ top: rightH.offsetTop - scrollOffset, behavior: 'smooth' });
+        if (rightH) {
+          rightEl.scrollTo({ top: rightH.offsetTop - scrollOffset, behavior: 'smooth' });
+        } else {
+          // If heading counts differ across languages, let generic sync place the right pane.
+          syncScroll(leftEl, rightEl, 'left-' + langPrefix(leftLang), 'right-' + langPrefix(rightLang));
+        }
         setTimeout(() => { isSyncing = false; }, 800);
       });
       item.appendChild(a);
