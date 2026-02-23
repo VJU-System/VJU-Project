@@ -126,15 +126,15 @@ Valid HSA examination codes for each training program are as follows:
 
 | **Training program name / abbreviation** | **Q01** | **Q02** | **Q03** | **Q04** | **Q05** | **Q06** | **Q07** | **Q08** | **Q09** | **Q10** | **Q21** |
 |----|----|----|----|----|----|----|----|----|----|----|----|
-| Japanese Studies – BJS | x | x | x | x | x | x | x | x | x | x | x |
-| Computer Science and Engineering – BCSE | x | x | x | x | x | x | x | x | x |  | x |
-| Smart Mechatronics and Japanese-style Manufacturing – EMJM | x | x | x | x | x | x | x | x | x |  | x |
-| Food Technology and Health – EFTH | x | x | x | x | x | x | x | x | x | x | x |
-| Smart and Sustainable Agriculture – ESAS | x | x | x | x | x | x | x | x | x | x | x |
-| Civil Engineering – ECE | x | x | x | x | x | x | x | x | x |  | x |
-| Global Development and Innovation – BGDI |  x | x | x | x | x | x |  x | x | x | x | x |
-| Semiconductor Chip Engineering Technology – ESCT | x | x | x |  |  |  |  |  |  |  |  |
-| Intelligent Control and Automation – BICA | x | x | x | x | x | x | x | x | x |  | x |
+| Bachelor's program in Japanese Studies – BJS | x | x | x | x | x | x | x | x | x | x | x |
+| Bachelor's program in Computer Science and Engineering – BCSE | x | x | x | x | x | x | x | x | x |  | x |
+| Engineer's program in Intelligent Mechatronics System & Japanese Manufacturing – EMJM | x | x | x | x | x | x | x | x | x |  | x |
+| Engineer's program in Food Technology and Health – EFTH | x | x | x | x | x | x | x | x | x | x | x |
+| Engineer's program in Smart Agriculture and Sustainability – ESAS | x | x | x | x | x | x | x | x | x | x | x |
+| Engineer's program in Civil Engineering – ECE | x | x | x | x | x | x | x | x | x |  | x |
+| Bachelor's program in Global Development and Innovation – BGDI |  x | x | x | x | x | x |  x | x | x | x | x |
+| Engineer's program in Semiconductor Chip Technology – ESCT | x | x | x |  |  |  |  |  |  |  |  |
+| Bachelor's program in Intelligent Control and Automation – BICA | x | x | x | x | x | x | x | x | x |  | x |
 
 *List of topics/knowledge domains by candidates' examination choices*
 
@@ -265,7 +265,7 @@ Candidates undergo an interview and write an essay or take a multiple-choice tes
 <tr>
 <th width="96"><strong>Civil Engineering</strong></th>
 <th width="133"><strong>Remaining high-quality training programs of the School of Advanced Technology and Engineering</strong></th>
-<th width="73"><strong>Semiconductor Chip Engineering Technology</strong></th>
+<th width="73"><strong>Semiconductor Chip Technology</strong></th>
 <th width="64"><strong>Global Development and Innovation</strong></th>
 <th width="64"><strong>Japanese Studies</strong></th>
 </tr>
@@ -408,7 +408,7 @@ Sustainable Science</th>
 
 <tr>
 <td>1</td>
-<td style="text-align: left;">Semiconductor Chip Engineering Technology (ESCT)</td>
+<td style="text-align: left;">Engineer's program in Semiconductor Chip Technology (ESCT)</td>
 <td>x</td>
 <td>E</td>
 <td>E</td>
@@ -418,7 +418,7 @@ Sustainable Science</th>
 </tr>
 <tr>
 <td>2</td>
-<td style="text-align: left;">Food Technology and Health (EFTH)</td>
+<td style="text-align: left;">Engineer's program in Food Technology and Health (EFTH)</td>
 <td>x</td>
 <td>E</td>
 <td>E</td>
@@ -428,7 +428,7 @@ Sustainable Science</th>
 </tr>
 <tr>
 <td>3</td>
-<td style="text-align: left;">Smart and Sustainable Agriculture (ESAS)</td>
+<td style="text-align: left;">Engineer's program in Smart Agriculture and Sustainability (ESAS)</td>
 <td>x</td>
 <td>E</td>
 <td>E</td>
@@ -438,7 +438,7 @@ Sustainable Science</th>
 </tr>
 <tr>
 <td>4</td>
-<td style="text-align: left;">Computer Science and Engineering (BCSE)</td>
+<td style="text-align: left;">Bachelor's program in Computer Science and Engineering (BCSE)</td>
 <td>x</td>
 <td>E</td>
 <td>E</td>
@@ -448,7 +448,7 @@ Sustainable Science</th>
 </tr>
 <tr>
 <td>5</td>
-<td style="text-align: left;">Civil Engineering (ECE)</td>
+<td style="text-align: left;">Engineer's program in Civil Engineering (ECE)</td>
 <td>x</td>
 <td>E</td>
 <td>E</td>
@@ -458,7 +458,7 @@ Sustainable Science</th>
 </tr>
 <tr>
 <td>6</td>
-<td style="text-align: left;">Intelligent Control and Automation (BICA)</td>
+<td style="text-align: left;">Bachelor's program in Intelligent Control and Automation (BICA)</td>
 <td>x</td>
 <td>E</td>
 <td>E</td>
@@ -469,7 +469,7 @@ Sustainable Science</th>
 </tbody>
 </table>
 
-*The Smart Mechatronics and Japanese-style Manufacturing (EMJM) program does NOT admit through the interview and candidate assessment method.*
+*The Engineer's program in Intelligent Mechatronics System & Japanese Manufacturing (EMJM) program does NOT admit through the interview and candidate assessment method.*
 
 *For the Global Development and Innovation (International Studies) program, candidates undergo the interview and write an essay in English.*
 
@@ -588,23 +588,23 @@ language certificate</strong></th>
 </tr>
 <tr>
 <td width="47">2</td>
-<td width="179">Computer Science and Engineering <em>(BCSE)</em></td>
+<td width="179">Bachelor's program in Computer Science and Engineering <em>(BCSE)</em></td>
 </tr>
 <tr>
 <td width="47">3</td>
-<td width="179">Smart and Sustainable Agriculture <em>(ESAS)</em></td>
+<td width="179">Engineer's program in Smart Agriculture and Sustainability <em>(ESAS)</em></td>
 </tr>
 <tr>
 <td width="47">4</td>
-<td width="179">Food Technology and Health <em>(EFTH)</em></td>
+<td width="179">Engineer's program in Food Technology and Health <em>(EFTH)</em></td>
 </tr>
 <tr>
 <td width="47">5</td>
-<td width="179">Smart Mechatronics and Japanese-style Manufacturing (EMJM)</td>
+<td width="179">Engineer's program in Intelligent Mechatronics System & Japanese Manufacturing (EMJM)</td>
 </tr>
 <tr>
 <td width="47">6</td>
-<td width="179">Semiconductor Chip Engineering Technology <em>(ESCT)</em></td>
+<td width="179">Engineer's program in Semiconductor Chip Technology <em>(ESCT)</em></td>
 <td rowspan="2" width="113">From 7.0<br />
 (English/ Japanese)</td>
 <td rowspan="2" width="180">Equivalent conversion as stipulated in
@@ -615,11 +615,11 @@ language certificate</strong></th>
 </tr>
 <tr>
 <td width="47">7</td>
-<td width="179">Intelligent Control and Automation <em>(BICA)</em></td>
+<td width="179">Bachelor's program in Intelligent Control and Automation <em>(BICA)</em></td>
 </tr>
 <tr>
 <td width="47">8</td>
-<td width="179">Global Development and Innovation (BGDI)</td>
+<td width="179">Bachelor's program in Global Development and Innovation (BGDI)</td>
 <td width="113">From 7.5 (English)</td>
 <td width="180">Equivalent conversion of IELTS 4.5 or above as stipulated in the current High School Graduation Exam regulations
 <p><em>(Details in Appendix I)</em></p></td>
@@ -628,7 +628,7 @@ language certificate</strong></th>
 </tr>
 <tr>
 <td width="47">9</td>
-<td width="179">Civil Engineering (ECE)</td>
+<td width="179">Engineer's program in Civil Engineering (ECE)</td>
 <td colspan="3" width="406">Foreign language entry requirements do not apply</td>
 </tr>
 </tbody>
@@ -651,40 +651,40 @@ language certificate</strong></th>
 </tr>
 <tr>
 <td width="52">1</td>
-<td width="251">Computer Science and Engineering (BCSE)</td>
+<td width="251">Bachelor's program in Computer Science and Engineering (BCSE)</td>
 <td rowspan="7" width="171">Achieving top 50% of nationwide Mathematics scores in the 2026 High School Graduation Exam</td>
 <td rowspan="7" width="142">Mathematics competency evaluation score in the interview and candidate evaluation test achieving at least 50% of the assessment scale</td>
 </tr>
 <tr>
 <td width="52">2</td>
-<td width="251">Smart and Sustainable Agriculture (ESAS)</td>
+<td width="251">Engineer's program in Smart Agriculture and Sustainability (ESAS)</td>
 </tr>
 <tr>
 <td width="52">3</td>
-<td width="251">Food Technology and Health (EFTH)</td>
+<td width="251">Engineer's program in Food Technology and Health (EFTH)</td>
 </tr>
 <tr>
 <td width="52">4</td>
-<td width="251">Smart Mechatronics and Japanese-style Manufacturing (EMJM)*</td>
+<td width="251">Engineer's program in Intelligent Mechatronics System & Japanese Manufacturing (EMJM)*</td>
 </tr>
 <tr>
 <td width="52">5</td>
-<td width="251">Semiconductor Chip Engineering Technology (ESCT)**</td>
+<td width="251">Engineer's program in Semiconductor Chip Technology (ESCT)**</td>
 </tr>
 <tr>
 <td width="52">6</td>
-<td width="251">Intelligent Control and Automation (BICA)</td>
+<td width="251">Bachelor's program in Intelligent Control and Automation (BICA)</td>
 </tr>
 <tr>
 <td width="52">7</td>
-<td width="251">Civil Engineering (ECE)</td>
+<td width="251">Engineer's program in Civil Engineering (ECE)</td>
 </tr>
 </tbody>
 </table>
 
-(\*): *The Smart Mechatronics and Japanese-style Manufacturing program does NOT accept admissions through the interview and candidate evaluation method.*
+(\*): *The Intelligent Mechatronics System & Japanese Manufacturing program does NOT accept admissions through the interview and candidate evaluation method.*
 
-*(\*\*): For the Semiconductor Chip Engineering Technology program, the Mathematics entry requirement follows MOET regulations.*
+*(\*\*): For the Semiconductor Chip Technology program, the Mathematics entry requirement follows MOET regulations.*
 
 - Mathematics entry requirements apply to the methods based on the Competency Assessment Test (HSA) results for high school students organized by VNU in 2026 and standardized SAT (Scholastic Assessment Test, USA) results.
 
@@ -703,38 +703,38 @@ language certificate</strong></th>
 <tbody>
 <tr>
 <td width="52">1</td>
-<td width="251">Computer Science and Engineering (BCSE)</td>
+<td width="251">Bachelor's program in Computer Science and Engineering (BCSE)</td>
 <td rowspan="7" width="171">Score in the "Mathematics and Data Processing" section achieving top 50%</td>
 <td rowspan="7" width="142">Mathematics section score achieving top 50%</td>
 </tr>
 <tr>
 <td width="52">2</td>
-<td width="251">Smart and Sustainable Agriculture (ESAS)</td>
+<td width="251">Engineer's program in Smart Agriculture and Sustainability (ESAS)</td>
 </tr>
 <tr>
 <td width="52">3</td>
-<td width="251">Food Technology and Health (EFTH)</td>
+<td width="251">Engineer's program in Food Technology and Health (EFTH)</td>
 </tr>
 <tr>
 <td width="52">4</td>
-<td width="251">Smart Mechatronics and Japanese-style Manufacturing (EMJM)</td>
+<td width="251">Engineer's program in Intelligent Mechatronics System & Japanese Manufacturing (EMJM)</td>
 </tr>
 <tr>
 <td width="52">5</td>
-<td width="251">Semiconductor Chip Engineering Technology (ESCT)*</td>
+<td width="251">Engineer's program in Semiconductor Chip Technology (ESCT)*</td>
 </tr>
 <tr>
 <td width="52">6</td>
-<td width="251">Intelligent Control and Automation (BICA)</td>
+<td width="251">Bachelor's program in Intelligent Control and Automation (BICA)</td>
 </tr>
 <tr>
 <td width="52">7</td>
-<td width="251">Civil Engineering (ECE)</td>
+<td width="251">Engineer's program in Civil Engineering (ECE)</td>
 </tr>
 </tbody>
 </table>
 
-*(\*): For the Semiconductor Chip Engineering Technology program, the Mathematics entry requirement follows MOET regulations.*
+*(\*): For the Semiconductor Chip Technology program, the Mathematics entry requirement follows MOET regulations.*
 
 In addition, candidates must meet the conditions for each admission method, specifically as follows:
 
@@ -772,7 +772,7 @@ In addition, candidates must meet the conditions for each admission method, spec
 
 English or Japanese foreign language certificates are converted to foreign language scores on the High School Graduation Exam scoring scale and added to the results of the remaining 02 subjects in the admission subject combination to obtain the total admission score.
 
-\+ For the Semiconductor Chip Engineering Technology program, the Mathematics score condition for the High School Graduation Exam follows MOET regulations.
+\+ For the Semiconductor Chip Technology program, the Mathematics score condition for the High School Graduation Exam follows MOET regulations.
 
 ***3.2.6. Selection based on interview and candidate evaluation***
 
@@ -892,7 +892,7 @@ For the method based on the 2026 High School Graduation Exam results, there is n
 </tr>
 <tr>
 <td width="41">VJU1</td>
-<td width="160">Japanese Studies – BJS</td>
+<td width="160">Bachelor's program in Japanese Studies – BJS</td>
 <td width="89">7310613</td>
 <td width="44"></td>
 <td width="43"></td>
@@ -917,7 +917,7 @@ X98</td>
 </tr>
 <tr>
 <td width="41">VJU2</td>
-<td width="160">Computer Science and Engineering – BCSE</td>
+<td width="160">Bachelor's program in Computer Science and Engineering – BCSE</td>
 <td width="89">7480204</td>
 <td width="44">A00</td>
 <td width="43">A01<br />
@@ -941,7 +941,7 @@ D23</td>
 </tr>
 <tr>
 <td width="41">VJU3</td>
-<td width="160">Smart Mechatronics and Japanese-style Manufacturing – EMJM</td>
+<td width="160">Engineer's program in Intelligent Mechatronics System & Japanese Manufacturing – EMJM</td>
 <td width="89">7520114</td>
 <td width="44">A00</td>
 <td width="43">A01<br />
@@ -965,7 +965,7 @@ D23</td>
 </tr>
 <tr>
 <td width="41">VJU4</td>
-<td width="160">Food Technology and Health – EFTH</td>
+<td width="160">Engineer's program in Food Technology and Health – EFTH</td>
 <td width="89">7540118QTD</td>
 <td width="44">A00</td>
 <td width="43">A01<br />
@@ -990,7 +990,7 @@ D33</td>
 </tr>
 <tr>
 <td width="41">VJU5</td>
-<td width="160">Smart and Sustainable Agriculture – ESAS</td>
+<td width="160">Engineer's program in Smart Agriculture and Sustainability – ESAS</td>
 <td width="89">7620122QTD</td>
 <td width="44">A00</td>
 <td width="43">A01<br />
@@ -1016,7 +1016,7 @@ D18</td>
 </tr>
 <tr>
 <td width="41">VJU6</td>
-<td width="160">Civil Engineering – ECE</td>
+<td width="160">Engineer's program in Civil Engineering – ECE</td>
 <td width="89">7580201</td>
 <td width="44">A00</td>
 <td width="43">A01<br />
@@ -1040,7 +1040,7 @@ D23</td>
 </tr>
 <tr>
 <td width="41">VJU7</td>
-<td width="160">Global Development and Innovation – BGDI</td>
+<td width="160">Bachelor's program in Global Development and Innovation – BGDI</td>
 <td width="89">7310601</td>
 <td width="44"></td>
 <td width="43"></td>
@@ -1061,7 +1061,7 @@ D23</td>
 </tr>
 <tr>
 <td width="41">VJU8</td>
-<td width="160">Semiconductor Chip Engineering Technology – ESCT</td>
+<td width="160">Engineer's program in Semiconductor Chip Technology – ESCT</td>
 <td width="89">7510301</td>
 <td width="44">A00</td>
 <td width="43">A01<br />
@@ -1084,7 +1084,7 @@ D23</td>
 </tr>
 <tr>
 <td width="41">VJU9</td>
-<td width="160">Intelligent Control and Automation – BICA</td>
+<td width="160">Bachelor's program in Intelligent Control and Automation – BICA</td>
 <td width="89">7520216</td>
 <td width="44">A00</td>
 <td width="43">A01<br />
@@ -1156,7 +1156,7 @@ D23</td>
 <tr>
 <td width="47">1.</td>
 <td width="104">VJU1</td>
-<td width="312">Japanese Studies
+<td width="312">Bachelor's program in Japanese Studies
 <p>BJS</p></td>
 <td width="125">7310613</td>
 <td width="112">130</td>
@@ -1170,7 +1170,7 @@ D23</td>
 <tr>
 <td width="47">2.</td>
 <td width="104">VJU2</td>
-<td width="312">Computer Science and Engineering
+<td width="312">Bachelor's program in Computer Science and Engineering
 <p>BCSE</p></td>
 <td width="125">7480204</td>
 <td width="112">160</td>
@@ -1178,7 +1178,7 @@ D23</td>
 <tr>
 <td width="47">3.</td>
 <td width="104">VJU3</td>
-<td width="312">Smart Mechatronics and Japanese-style Manufacturing
+<td width="312">Engineer's program in Intelligent Mechatronics System & Japanese Manufacturing
 <p>EMJM*</p></td>
 <td width="125">7520114</td>
 <td width="112">60</td>
@@ -1186,7 +1186,7 @@ D23</td>
 <tr>
 <td width="47">4.</td>
 <td width="104">VJU4</td>
-<td width="312">Food Technology and Health
+<td width="312">Engineer's program in Food Technology and Health
 <p>EFTH</p></td>
 <td width="125">7540118QTD</td>
 <td width="112">55</td>
@@ -1194,7 +1194,7 @@ D23</td>
 <tr>
 <td width="47">5.</td>
 <td width="104">VJU5</td>
-<td width="312">Smart and Sustainable Agriculture<br />
+<td width="312">Engineer's program in Smart Agriculture and Sustainability<br />
 ESAS</td>
 <td width="125">7620122QTD</td>
 <td width="112">20</td>
@@ -1202,7 +1202,7 @@ ESAS</td>
 <tr>
 <td width="47">6.</td>
 <td width="104">VJU6</td>
-<td width="312">Civil Engineering
+<td width="312">Engineer's program in Civil Engineering
 <p>ECE</p></td>
 <td width="125">7580201</td>
 <td width="112">55</td>
@@ -1210,7 +1210,7 @@ ESAS</td>
 <tr>
 <td width="47">7.</td>
 <td width="104">VJU 7</td>
-<td width="312">Global Development and Innovation
+<td width="312">Bachelor's program in Global Development and Innovation
 <p>BGDI</p></td>
 <td width="125">7310601</td>
 <td width="112">100</td>
@@ -1218,7 +1218,7 @@ ESAS</td>
 <tr>
 <td width="47">8.</td>
 <td width="104">VJU 8</td>
-<td width="312">Semiconductor Chip Engineering Technology
+<td width="312">Engineer's program in Semiconductor Chip Technology
 <p>ESCT</p></td>
 <td width="125">7510301</td>
 <td width="112">110</td>
@@ -1226,7 +1226,7 @@ ESAS</td>
 <tr>
 <td width="47">9.</td>
 <td width="104">VJU 9</td>
-<td width="312">Intelligent Control and Automation
+<td width="312">Bachelor's program in Intelligent Control and Automation
 <p>BICA</p></td>
 <td width="125">7520216</td>
 <td width="112">110</td>
@@ -1234,7 +1234,7 @@ ESAS</td>
 </tbody>
 </table>
 
-(\**)*: *For the Smart Mechatronics and Japanese-style Manufacturing program (EMJM), the Interview and Candidate Evaluation admission method is NOT applied.*
+(\**)*: *For the Intelligent Mechatronics System & Japanese Manufacturing program (EMJM), the Interview and Candidate Evaluation admission method is NOT applied.*
 
 ** **
 
@@ -1448,40 +1448,40 @@ Candidates who won first, second, or third prizes in national or international a
 <tbody>
 <tr>
 <td width="58">1</td>
-<td width="365">Japanese Studies – BJS</td>
+<td width="365">Bachelor's program in Japanese Studies – BJS</td>
 <td rowspan="8" width="151"><strong><em>58,000,000/year</em></strong></td>
 </tr>
 <tr>
 <td width="58">2</td>
-<td width="365">Computer Science and Engineering – BCSE</td>
+<td width="365">Bachelor's program in Computer Science and Engineering – BCSE</td>
 </tr>
 <tr>
 <td width="58">3</td>
-<td width="365">Mechatronics Engineering (Smart Mechatronics and Japanese-style Manufacturing) – EMJM</td>
+<td width="365">Engineer's program in Intelligent Mechatronics System & Japanese Manufacturing – EMJM</td>
 </tr>
 <tr>
 <td width="58">4</td>
-<td width="365">Food Technology and Health – EFTH</td>
+<td width="365">Engineer's program in Food Technology and Health – EFTH</td>
 </tr>
 <tr>
 <td width="58">5</td>
-<td width="365">Smart and Sustainable Agriculture – ESAS</td>
+<td width="365">Engineer's program in Smart Agriculture and Sustainability – ESAS</td>
 </tr>
 <tr>
 <td width="58">6</td>
-<td width="365">Semiconductor Chip Engineering Technology – ESCT</td>
+<td width="365">Engineer's program in Semiconductor Chip Technology – ESCT</td>
 </tr>
 <tr>
 <td width="58">7</td>
-<td width="365">Intelligent Control and Automation – BICA</td>
+<td width="365">Bachelor's program in Intelligent Control and Automation – BICA</td>
 </tr>
 <tr>
 <td width="58">8</td>
-<td width="365">Global Development and Innovation – BGDI</td>
+<td width="365">Bachelor's program in Global Development and Innovation – BGDI</td>
 </tr>
 <tr>
 <td width="58">9</td>
-<td width="365">Civil Engineering – ECE</td>
+<td width="365">Engineer's program in Civil Engineering – ECE</td>
 <td width="151"><strong><em>35,000,000/year</em></strong></td>
 </tr>
 </tbody>
@@ -1693,7 +1693,7 @@ Information on partner universities: <https://vju.vnu.edu.vn/en/collaboration/gl
 
 – Continuing to pursue Master's and Doctoral degrees at domestic and international training institutions in the fields of civil engineering, infrastructure engineering, or interdisciplinary fields.
 
-*10.5.5. Graduates of the Mechatronics Engineering program (Smart Mechatronics and Japanese-style Manufacturing) can undertake the following positions:*
+*10.5.5. Graduates of the Mechatronics Engineering program (Intelligent Mechatronics System & Japanese Manufacturing) can undertake the following positions:*
 
 – Technicians, design engineers, supervisors for manufacturing, testing, calibration, evaluation, analysis, reverse engineering, and development of products in the fields of mechatronics, precision mechanics, robotics...
 
@@ -1726,7 +1726,7 @@ Information on partner universities: <https://vju.vnu.edu.vn/en/collaboration/gl
 - Self-starting businesses in fields such as commerce, services, digital business, sustainable development, and other innovative industries...
 - Continuing to pursue postgraduate degrees (Master's, Doctoral) in specializations related to global development and innovation at domestic, regional, and international educational institutions.
 
-*10.5.8. Graduates of the Semiconductor Chip Engineering Technology program are engineers who can undertake many positions in various fields such as:*
+*10.5.8. Graduates of the Semiconductor Chip Technology program are engineers who can undertake many positions in various fields such as:*
 
 – VLSI Design Engineer: Designing and developing integrated circuits (ICs) for various applications, such as mobile phones, computers, and consumer electronics. Analyzing and optimizing circuit designs to achieve the highest performance.
 
@@ -1799,7 +1799,7 @@ Modern facilities and comprehensive support services: Modern classrooms, laborat
 
 Vietnam Japan University and the Protestant University of Applied Sciences Berlin (Evangelische Hochschule Berlin – EHB) officially signed a Memorandum of Understanding on cooperation on December 17, 2025. This event marks an important milestone in VJU's education internationalization strategy for the 2026–2030 period, while opening many opportunities for academic exchange and cultural interaction for students, graduate students, and lecturers of both universities.
 
-Both parties focus on promoting training and research cooperation at the bachelor's level, first within the framework of VJU's Bachelor of Global Development and Innovation (BGDI) program, linked with the Bachelor of Social Work program at EHB. At the same time, gradually expanding cooperation to the master's level, especially programs under VJU's Faculty of Interdisciplinary Social Sciences (FISS), including Global Leadership, Public Policy, Business Administration, and Area Studies.
+Both parties focus on promoting training and research cooperation at the bachelor's level, first within the framework of VJU's Bachelor's program in Global Development and Innovation (BGDI), linked with the Bachelor of Social Work program at EHB. At the same time, gradually expanding cooperation to the master's level, especially programs under VJU's Faculty of Interdisciplinary Social Sciences (FISS), including Global Leadership, Public Policy, Business Administration, and Area Studies.
 
 ***10.6.2. Training programs under the Faculty of Advanced Technology and Engineering.***
 
@@ -1809,7 +1809,7 @@ The Faculty of Advanced Technology and Engineering currently manages 12 training
 
 Unlike other programs in the Computer and Information Science group, the Computer Science and Engineering program at Vietnam Japan University is a liberal arts, comprehensive training program: built on an interdisciplinary basis between computer science and computer engineering, combined with general and essential knowledge for the 21st century, aiming to train high-quality computer science and engineering human resources with competitiveness in the domestic labor market, Japan, and countries around the world in the era of Industrial Revolution 4.0 and Society 5.0.
 
-***b) Engineer program in Civil Engineering.***
+***b) Engineer's program in Civil Engineering.***
 
 Civil Engineering is the third program that Vietnam Japan University chose to open after considering ways to leverage the university's strengths, its ability to contribute to undergraduate education in Vietnam, and to contribute to the development of cooperation between Vietnam and Japan in many aspects in the new era. The program was opened with technical support from the University of Tokyo, Japan.
 
@@ -1817,7 +1817,7 @@ Unlike many other programs in the Civil Engineering group, the Civil Engineering
 
 From 2024, Vietnam Japan University adjusted this program to a standard system to restructure the training scale; stratify programs to meet the needs and abilities of learners. The standard program has a smaller course load compared to the honors program and therefore has tuition fees suitable for the majority of learners.
 
-***c) Engineer program in Smart Agriculture and Sustainability.***
+***c) Engineer's program in Smart Agriculture and Sustainability.***
 
 Smart Agriculture and Sustainability is the 4th undergraduate program opened by Vietnam Japan University with technical support from the University of Tokyo, Japan. Agriculture is an important economic sector contributing to the sustainable development of Vietnam and Japan, and is one of the main pillars of cooperation between the two countries. Although it is the origin of Vietnamese culture, plays a key role in national and global food security, this field is facing many challenges regarding climate change, crisis due to shortage of high-quality human resources, and lack of connectivity with advanced science and technology fields in society.
 
@@ -1825,21 +1825,21 @@ Therefore, the program equips students with a solid foundation of knowledge in a
 
 From 2024, the University cooperates with Kochi University, Japan in sending students for annual internships and expanding employment opportunities after graduation.
 
-***d) Combined engineer and master's program in Mechatronics Engineering (Smart Mechatronics and Japanese-style Manufacturing).***
+***d) Combined engineer and master's program in Mechatronics Engineering (Intelligent Mechatronics System & Japanese Manufacturing).***
 
-Smart Mechatronics and Japanese-style Manufacturing is the fifth program that Vietnam Japan University chose to open after considering the university's strengths, the development potential of the field in undergraduate education in Vietnam, and its contribution to scientific and technical cooperation between Vietnam and Japan in the new era. This is also the first combined engineer and master's program of VJU, built with technical support from Osaka University, Japan.
+Intelligent Mechatronics System & Japanese Manufacturing is the fifth program that Vietnam Japan University chose to open after considering the university's strengths, the development potential of the field in undergraduate education in Vietnam, and its contribution to scientific and technical cooperation between Vietnam and Japan in the new era. This is also the first combined engineer and master's program of VJU, built with technical support from Osaka University, Japan.
 
 The program provides learners with knowledge of mathematics and basic sciences to meet the requirements for acquiring field and discipline knowledge about mechatronics system engineering and precision mechanics. In particular, in this program, students are equipped with knowledge of advanced technology in the fields of mechatronics, precision mechanical manufacturing, and materials engineering of Japan. The "Monozukuri" philosophy – Japanese-style manufacturing is thoroughly applied throughout the program, helping students adapt to diverse technological and engineering work environments, and develop Japanese-style scientific production organization and management skills.
 
-***e) Engineer program in Food Technology and Health***
+***e) Engineer's program in Food Technology and Health***
 
 Food Technology and Health is the sixth program opened by Vietnam Japan University with technical support from the University of Tokyo, Japan. The food and beverage industry in Vietnam is one of the most dynamic and fastest-growing industries. This is an industry with significant contributions to the economy and accounts for a large portion of the country's gross domestic product.
 
 The honors engineer program in Food Technology and Health was opened with the goal of training high-quality human resources for the future food industry. The program provides learners with a solid foundation of knowledge in food science, biology, nutrition, applied biomedical sciences, and strong professional skills in food processing and preservation technology, food safety and health, while also conveying to students a passion for building a safe and sustainable national food industry.
 
-***f) Engineer program in Semiconductor Chip Engineering Technology***
+***f) Engineer's program in Semiconductor Chip Technology***
 
-The Semiconductor Chip Engineering Technology program was newly opened in 2025 to train high-quality human resources, a comprehensive intellectual generation with a spirit of serving the people, with the capacity to meet the requirements of digital economic development and digital transformation in the new era, the era of Vietnam's national rise;
+The Semiconductor Chip Technology program was newly opened in 2025 to train high-quality human resources, a comprehensive intellectual generation with a spirit of serving the people, with the capacity to meet the requirements of digital economic development and digital transformation in the new era, the era of Vietnam's national rise;
 
 Training engineers with good political and moral qualities, loyal to the fatherland; with a solid foundation and professional knowledge; with deep expertise in the field of electrical-electronics, semiconductor technology, and integrated circuit design in the context of the digital era and industrialization; with updated knowledge and understanding of semiconductor technology and engineering applied in the semiconductor industry; with the ability to develop science and technology applications commensurate with engineer-level qualifications.
 
@@ -1916,7 +1916,7 @@ Vietnam Japan University continues to develop dual degree programs with other pa
 <tbody>
 <tr>
 <td width="56">VJU1</td>
-<td width="247">Japanese Studies (BJS)
+<td width="247">Bachelor's program in Japanese Studies (BJS)
 <p>(A01/D28, D01/D06, D14/D63,  D78/D81)</p></td>
 <td width="74">7310613</td>
 <td width="42">120</td>
@@ -1928,7 +1928,7 @@ Vietnam Japan University continues to develop dual degree programs with other pa
 </tr>
 <tr>
 <td width="56">VJU2</td>
-<td width="247">Computer Science and Engineering (BCSE)
+<td width="247">Bachelor's program in Computer Science and Engineering (BCSE)
 <p>(A00, A01/D28, D07/D23, 08/D33)</p></td>
 <td width="74">7480204</td>
 <td width="42">150</td>
@@ -1940,7 +1940,7 @@ Vietnam Japan University continues to develop dual degree programs with other pa
 </tr>
 <tr>
 <td width="56">VJU3</td>
-<td width="247">Smart Mechatronics and Japanese-style Manufacturing (EMJM)<br />
+<td width="247">Engineer's program in Intelligent Mechatronics System & Japanese Manufacturing (EMJM)<br />
 (A00, A01/D28, D01/D06, 07/D23)</td>
 <td width="74">7520114</td>
 <td width="42">55</td>
@@ -1952,7 +1952,7 @@ Vietnam Japan University continues to develop dual degree programs with other pa
 </tr>
 <tr>
 <td width="56">VJU4</td>
-<td width="247">Food Technology and Health (EFTH)<br />
+<td width="247">Engineer's program in Food Technology and Health (EFTH)<br />
 (A00, B00, A01/D28, D01/D06)</td>
 <td width="74">7540118QTD</td>
 <td width="42">55</td>
@@ -1964,7 +1964,7 @@ Vietnam Japan University continues to develop dual degree programs with other pa
 </tr>
 <tr>
 <td width="56">VJU5</td>
-<td width="247">Smart and Sustainable Agriculture (ESAS)<br />
+<td width="247">Engineer's program in Smart Agriculture and Sustainability (ESAS)<br />
 (A00, B00, A01/D28, D01/D06)</td>
 <td width="74">7620122QTD</td>
 <td width="42">20</td>
@@ -1976,7 +1976,7 @@ Vietnam Japan University continues to develop dual degree programs with other pa
 </tr>
 <tr>
 <td width="56">VJU6</td>
-<td width="247">Civil Engineering (ECE)<br />
+<td width="247">Engineer's program in Civil Engineering (ECE)<br />
 (A00, A01/D28, D01/D06, 07/D23)</td>
 <td width="74">7580101</td>
 <td width="42">50</td>
@@ -1988,7 +1988,7 @@ Vietnam Japan University continues to develop dual degree programs with other pa
 </tr>
 <tr>
 <td width="56">VJU7</td>
-<td width="247">Global Development and Innovation (BGDI)
+<td width="247">Bachelor's program in Global Development and Innovation (BGDI)
 <p>(A01, D01, D07, D08, D09, D10, D14, D15, X25/X78</p></td>
 <td width="74">7310601</td>
 <td colspan="3" width="145">Not yet admitting</td>
@@ -1998,7 +1998,7 @@ Vietnam Japan University continues to develop dual degree programs with other pa
 </tr>
 <tr>
 <td width="56">VJU8</td>
-<td width="247">Semiconductor Chip Engineering Technology (ESCT)
+<td width="247">Engineer's program in Semiconductor Chip Technology (ESCT)
 <p>(A00, A01/D28, A02, C01, C02, D07/D23, X02, X06, X26/X46</p></td>
 <td width="74">7510301</td>
 <td colspan="3" width="145">Not yet admitting</td>
@@ -2008,7 +2008,7 @@ Vietnam Japan University continues to develop dual degree programs with other pa
 </tr>
 <tr>
 <td width="56">VJU9</td>
-<td width="247">Intelligent Control and Automation (BICA)
+<td width="247">Bachelor's program in Intelligent Control and Automation (BICA)
 <p>A00, A01/D28, C01,C02, D01/D06, D07/D23, X02, X06, X26/X46</p></td>
 <td width="74">7520216</td>
 <td colspan="3" width="145">Not yet admitting</td>

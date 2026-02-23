@@ -46,9 +46,9 @@ document_status: "active"
 | SAT (Scholastic Assessment Test) | SAT (Scholastic Assessment Test) | SAT標準化試験 |
 | Điểm quy đổi (ĐQĐ) | converted score | 換算点 |
 | Điểm ưu tiên (ĐT, KV) | priority points (category/object and region) | 優先加点（対象・地域） |
-| Cơ điện tử thông minh và sản xuất theo phương thức Nhật Bản (EMJM) | Smart Mechatronics and Japanese-style Manufacturing | スマートメカトロニクス・日本式ものづくり |
-| Đổi mới và phát triển toàn cầu (BGDI) | Global Development and Innovation | グローバルイノベーション・開発 |
-| Điều khiển thông minh và Tự động hóa (BICA) | Intelligent Control and Automation | インテリジェント制御・オートメーション |
+| Cơ điện tử thông minh và sản xuất theo phương thức Nhật Bản (EMJM) | Engineer's program in Intelligent Mechatronics System & Japanese Manufacturing | 学部メカトロニクスと日本型ものづくりプログラム |
+| Đổi mới và phát triển toàn cầu (BGDI) | Bachelor's program in Global Development and Innovation | 学部グローバル開発とイノベーションプログラム |
+| Điều khiển thông minh và Tự động hóa (BICA) | Bachelor's program in Intelligent Control and Automation | 学部インテリジェント制御とオートメーションプログラム |
 
 ---
 
