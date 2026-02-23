@@ -82,13 +82,13 @@ Nhiệm vụ, quyền hạn và nguyên tắc làm việc của Hội đồng th
    a) Chậm nhất 07 (bảy) ngày làm việc trước phiên họp đầu tiên của Hội đồng thẩm định, dự thảo chương trình giáo dục tích hợp (sau đây gọi là dự thảo) được gửi cho các thành viên Hội đồng thẩm định; thành viên Hội đồng thẩm định đọc, nghiên cứu dự thảo và ghi nhận xét về nội dung dự thảo theo các yêu cầu quy định tại Điều 2, Điều 3 và Điều 4 của Thông tư này;
    b) Họp Hội đồng thẩm định để tiến hành thảo luận chung về dự thảo theo quy định tại Điều 2, Điều 3 và Điều 4 của Thông tư này;
    c) Thành viên Hội đồng thẩm định đánh giá và xếp loại dự thảo vào một trong ba loại: "Đạt", "Đạt nhưng cần sửa chữa", "Chưa đạt";
-    - Dự thảo được xếp loại "Đạt", nếu kết quả đánh giá theo các nội dung quy định tương ứng tại Điều 2, Điều 3 và Điều 4 của Thông tư này đều thuộc loại “Đạt”;
-    - Dự thảo được xếp loại "Đạt nhưng cần sửa chữa" nếu kết quả đánh giá theo các nội dung quy định tương ứng tại Điều 2, Điều 3 và Điều 4 của Thông tư này đều thuộc loại "Đạt" và "Đạt nhưng cần sửa chữa";
-    - Dự thảo được xếp loại "Chưa đạt" đối với các trường hợp còn lại;
+  - Dự thảo được xếp loại "Đạt", nếu kết quả đánh giá theo các nội dung quy định tương ứng tại Điều 2, Điều 3 và Điều 4 của Thông tư này đều thuộc loại “Đạt”;
+  - Dự thảo được xếp loại "Đạt nhưng cần sửa chữa" nếu kết quả đánh giá theo các nội dung quy định tương ứng tại Điều 2, Điều 3 và Điều 4 của Thông tư này đều thuộc loại "Đạt" và "Đạt nhưng cần sửa chữa";
+  - Dự thảo được xếp loại "Chưa đạt" đối với các trường hợp còn lại;
    d) Hội đồng thẩm định đánh giá dự thảo chương trình:
-    - Trường hợp có ít nhất 3/4 (ba phần tư) tổng số thành viên Hội đồng thẩm định tham gia biểu quyết đánh giá dự thảo xếp loại "Đạt" thì dự thảo được gửi cho cơ quan tổ chức thẩm định trình Bộ trưởng Bộ Giáo dục và Đào tạo xem xét, quyết định phê duyệt;
-    - Trường hợp có ít nhất 3/4 (ba phần tư) tổng số thành viên Hội đồng thẩm định tham gia biểu quyết đánh giá dự thảo xếp loại "Đạt" và "Đạt nhưng cần sửa chữa" thì dự thảo sẽ được chỉnh sửa trên cơ sở tiếp thu ý kiến của Hội đồng thẩm định. Dự thảo với những nội dung đã sửa hoặc bảo lưu, kèm theo ý kiến giải trình đối với nội dung bảo lưu, được chuyển đến Hội đồng thẩm định để thẩm định lại. Quy trình thẩm định lại được thực hiện theo quy định tại điểm a, điểm b và điểm c của khoản này;
-    - Đối với các trường hợp còn lại, dự thảo xếp loại “Chưa đạt”;
+  - Trường hợp có ít nhất 3/4 (ba phần tư) tổng số thành viên Hội đồng thẩm định tham gia biểu quyết đánh giá dự thảo xếp loại "Đạt" thì dự thảo được gửi cho cơ quan tổ chức thẩm định trình Bộ trưởng Bộ Giáo dục và Đào tạo xem xét, quyết định phê duyệt;
+  - Trường hợp có ít nhất 3/4 (ba phần tư) tổng số thành viên Hội đồng thẩm định tham gia biểu quyết đánh giá dự thảo xếp loại "Đạt" và "Đạt nhưng cần sửa chữa" thì dự thảo sẽ được chỉnh sửa trên cơ sở tiếp thu ý kiến của Hội đồng thẩm định. Dự thảo với những nội dung đã sửa hoặc bảo lưu, kèm theo ý kiến giải trình đối với nội dung bảo lưu, được chuyển đến Hội đồng thẩm định để thẩm định lại. Quy trình thẩm định lại được thực hiện theo quy định tại điểm a, điểm b và điểm c của khoản này;
+  - Đối với các trường hợp còn lại, dự thảo xếp loại “Chưa đạt”;
    đ) Trong quá trình thẩm định, Hội đồng thẩm định có thể đề xuất với đơn vị tổ chức thẩm định để xin ý kiến chuyên môn của các cơ quan, tổ chức, cá nhân có liên quan nếu cần thiết;
    e) Trong thời hạn 05 (năm) ngày làm việc kể từ ngày họp Hội đồng thẩm định, Chủ tịch Hội đồng thẩm định có trách nhiệm trình Bộ trưởng Bộ Giáo dục và Đào tạo kết quả thẩm định.
 5. Tổ chức thực hiện thẩm định:
@@ -106,11 +106,11 @@ Người học là công dân Việt Nam học tập chương trình giáo dục
    b) Thời lượng: Không ít hơn 2 lần/tuần, mỗi lần từ 25-35 phút.
 2. Đối với học sinh tiểu học: Học tập nội dung chương trình Tiếng Việt và chương trình Việt Nam học.
    a) Nội dung chương trình Tiếng Việt:
-    - Mục tiêu: Giúp học sinh hình thành và phát triển vốn từ vựng và các kĩ năng sử dụng tiếng Việt (nghe, nói, đọc, viết) để học tập và giao tiếp phù hợp với lứa tuổi; cung cấp cho học sinh những kiến thức ban đầu về tiếng Việt, văn hóa và con người Việt Nam;
-    - Thời lượng: Không ít hơn 140 phút/tuần, học ở tất cả các khối lớp tiểu học;
+  - Mục tiêu: Giúp học sinh hình thành và phát triển vốn từ vựng và các kĩ năng sử dụng tiếng Việt (nghe, nói, đọc, viết) để học tập và giao tiếp phù hợp với lứa tuổi; cung cấp cho học sinh những kiến thức ban đầu về tiếng Việt, văn hóa và con người Việt Nam;
+  - Thời lượng: Không ít hơn 140 phút/tuần, học ở tất cả các khối lớp tiểu học;
    b) Nội dung chương trình Việt Nam học:
-    - Mục tiêu: Giúp học sinh hiểu biết cơ bản về các sự kiện, nhân vật lịch sử tiêu biểu và những truyền thống, phong tục, tập quán tốt đẹp của đất nước và con người Việt Nam; hiểu biết đơn giản về vị trí địa lý, lãnh thổ, lãnh hải, biển đảo, khí hậu, sông núi, tài nguyên, khoáng sản của Việt Nam; qua đó học sinh hình thành tình yêu quê hương, đất nước và lòng tự hào dân tộc;
-    - Thời lượng: Không ít hơn 70 phút/tuần, học từ lớp 4 đến hết lớp 5.
+  - Mục tiêu: Giúp học sinh hiểu biết cơ bản về các sự kiện, nhân vật lịch sử tiêu biểu và những truyền thống, phong tục, tập quán tốt đẹp của đất nước và con người Việt Nam; hiểu biết đơn giản về vị trí địa lý, lãnh thổ, lãnh hải, biển đảo, khí hậu, sông núi, tài nguyên, khoáng sản của Việt Nam; qua đó học sinh hình thành tình yêu quê hương, đất nước và lòng tự hào dân tộc;
+  - Thời lượng: Không ít hơn 70 phút/tuần, học từ lớp 4 đến hết lớp 5.
 3. Đối với học sinh trung học cơ sở và trung học phổ thông: Học tập nội dung chương trình Việt Nam học.
    a) Mục tiêu: Cung cấp kiến thức phổ thông, cơ bản, hiện đại, có tính hệ thống về lịch sử, địa lí, văn hoá, truyền thống, phong tục, tập quán của Việt Nam. Bồi dưỡng cho học sinh tình yêu quê hương, đất nước, lòng tự hào dân tộc, sự trân trọng đối với các di sản lịch sử của dân tộc và truyền thống anh hùng trong dựng nước, giữ nước của cha ông. Đồng thời phát triển những phẩm chất cần thiết của người công dân: thái độ tích cực vì xã hội, tinh thần trách nhiệm đối với cộng đồng, yêu lao động, sống nhân ái, có kỷ luật, tôn trọng và làm theo pháp luật, có ý thức tự cường dân tộc, sẵn sàng tham gia xây dựng, bảo vệ và phát triển đất nước;
    b) Thời lượng: Không ít hơn 90 phút/tuần, học ở các lớp trung học cơ sở và trung học phổ thông.

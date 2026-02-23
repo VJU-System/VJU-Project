@@ -29,13 +29,17 @@ Số: 111/2013/TT-BTC
 
 **CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM**
 **Độc lập - Tự do - Hạnh phúc**
+
 ***
+
 Hà Nội, ngày 15 tháng 8 năm 2013
 
 **THÔNG TƯ**
 
 **Hướng dẫn thực hiện Luật Thuế thu nhập cá nhân, Luật sửa đổi, bổ sung một số điều của Luật thuế thu nhập cá nhân và Nghị định số 65/2013/NĐ-CP của Chính phủ quy định chi tiết một số điều của Luật Thuế thu nhập cá nhân và Luật sửa đổi, bổ sung một số điều của Luật thuế thu nhập cá nhân**
+
 ***
+
 Căn cứ Luật Thuế thu nhập cá nhân số 04/2007/QH12 ngày 21 tháng 11 năm 2007;
 
 Căn cứ Luật sửa đổi, bổ sung một số điều của Luật Thuế thu nhập cá nhân số 26/2012/QH13 ngày 22 tháng 11 năm 2012;

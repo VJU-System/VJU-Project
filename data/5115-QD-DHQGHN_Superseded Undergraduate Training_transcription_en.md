@@ -46,19 +46,19 @@ last_updated: 2026-02-22
     level.
     a)  Vietnam National University, Hanoi
 
-    - Direct and unify the organization and management of training
+  - Direct and unify the organization and management of training
       according to the open, interconnected, linked and cooperative
       mechanism between training units.
-    - Coordinate the use of common resources (human resources,
+  - Coordinate the use of common resources (human resources,
       facilities and techniques) for training.
-    - Comprehensive management of training organization and management
+  - Comprehensive management of training organization and management
       of affiliated departments.
     b)  Training unit
 
-    - Organize and manage training in majors and courses assigned by
+  - Organize and manage training in majors and courses assigned by
       Vietnam National University, Hanoi; recognize student learning outcomes
       between training units; develop shared learning materials.
-    - Develop new majors and new training programs, focusing on
+  - Develop new majors and new training programs, focusing on
       interdisciplinary training programs, report to the President of
       Vietnam National University, Hanoi for consideration and decision to issue
       and assign training organization tasks.
@@ -211,27 +211,27 @@ last_updated: 2026-02-22
         by the State budget.
     b)  Tuition
 
-    - Students studying any major must pay tuition fees (except for
+  - Students studying any major must pay tuition fees (except for
       students who are exempted according to current State regulations).
-    - Students pay tuition fees according to the number of credits they
+  - Students pay tuition fees according to the number of credits they
       register for each semester at the training unit that manages the
       major they are studying.
-    - Tuition fees are calculated according to the formula: M = a Σ hᵢnᵢ
+  - Tuition fees are calculated according to the formula: M = a Σ hᵢnᵢ
       (j = 1 ÷ 4) in which: M: Tuition fees payable a: Tuition fee rate
       for one credit according to training form and training program hᵢ:
       Tuition fee coefficient of the i-th course that students study for
       the first time (h₁), retake (h₂), improve grades (h₃), and freely
       elective courses (h₄) nᵢ: Number of credits of the ik-th course:
       Total number of courses
-    - The head of the training unit shall establish the tuition fee rate
+  - The head of the training unit shall establish the tuition fee rate
       for a credit and the tuition fee coefficient for each subject for
       each major, in accordance with the general regulations of the
       State and of Vietnam National University, Hanoi, and report to the President
       of Vietnam National University, Hanoi.
-    - The head of the training unit shall specify and announce to
+  - The head of the training unit shall specify and announce to
       students the method of collecting, paying and considering tuition
       exemptions.
-    - Training units implement tuition exemption and reduction policies
+  - Training units implement tuition exemption and reduction policies
       for students according to regulations of the State and of Hanoi
       National University.
     c)  Other legal sources of funding Legal sources of funding for
@@ -555,11 +555,11 @@ is 50 minutes. Break time between two classes is 10 minutes.
     electives).
     a)  For the main semester, excluding the final semester:
 
-    - Standard training program: Minimum 14 credits
-    - High quality training program: Minimum 16 credits
-    - International standard training program: Minimum 16 credits
-    - Talent training program: Minimum 18 credits
-    - Standard training program in the form of work-study and other
+  - Standard training program: Minimum 14 credits
+  - High quality training program: Minimum 16 credits
+  - International standard training program: Minimum 16 credits
+  - Talent training program: Minimum 18 credits
+  - Standard training program in the form of work-study and other
       training programs: The head of the training unit shall prescribe.
       In case a student wishes to register for less than the minimum
       number of credits in a semester, he/she must have the consent of
@@ -628,13 +628,13 @@ is 50 minutes. Break time between two classes is 10 minutes.
 8.  Register for thesis or graduation project
     a)  Head of training unit regulations
 
-    - Conditions for registration, registration process for receiving
+  - Conditions for registration, registration process for receiving
       topics, form and time for thesis or graduation project;
-    - Maximum number of theses and graduation projects supervised by one
+  - Maximum number of theses and graduation projects supervised by one
       lecturer at the same time;
-    - Duties of instructors, responsibilities of the department towards
+  - Duties of instructors, responsibilities of the department towards
       students during thesis and graduation project;
-    - Form and process of grading theses and graduation projects.
+  - Form and process of grading theses and graduation projects.
     b)  The Dean of a Faculty under the Vietnam National University,
         Hanoi, and the Dean of a Faculty of a member university assigns
         thesis and graduation project supervisors upon the request of
@@ -678,27 +678,27 @@ is 50 minutes. Break time between two classes is 10 minutes.
     national defense and security education subjects
     a)  Subjects exempted from studying the entire course
 
-    - Students with diplomas from military or police academies or
+  - Students with diplomas from military or police academies or
       schools;
-    - Students have certificates of national defense and security
+  - Students have certificates of national defense and security
       education;
-    - The student is a foreigner.
+  - The student is a foreigner.
     b)  Students who transfer training institutions are exempted from
         studying and taking exams for the learned content but must have
         scores to evaluate the learning outcomes of the corresponding
         content.
     c)  Subjects exempted from learning military skills practice content
 
-    - Students are monks of various religions;
-    - Students with congenital disabilities, chronic diseases that limit
+  - Students are monks of various religions;
+  - Students with congenital disabilities, chronic diseases that limit
       motor function with a certificate from a district-level hospital
       or equivalent or higher;
-    - Students who have completed military service and have a discharge
+  - Students who have completed military service and have a discharge
       certificate issued by a competent military unit.
     d)  Subjects who are temporarily suspended from school
 
-    - Students are sick, have accidents, natural disasters, fires;
-    - Female students who are pregnant or on maternity leave according
+  - Students are sick, have accidents, natural disasters, fires;
+  - Female students who are pregnant or on maternity leave according
       to current regulations; If the Head of the training unit approves
       the above subjects to temporarily defer their studies, after the
       deferment period expires, they must continue to study the missing
@@ -706,7 +706,7 @@ is 50 minutes. Break time between two classes is 10 minutes.
 2.  Exemption or postponement of physical education courses
     a)  Subjects exempted from studying the entire course
 
-    - Students have completed physical education courses appropriate to
+  - Students have completed physical education courses appropriate to
       their level of training.
     b)  Students with congenital disabilities or deformities that limit
         motor function (with a certificate from a district-level
@@ -715,8 +715,8 @@ is 50 minutes. Break time between two classes is 10 minutes.
         disabilities.
     c)  Subjects who are temporarily suspended from school
 
-    - Students are sick, have accidents, natural disasters, fires;
-    - Female students who are pregnant or on maternity leave according
+  - Students are sick, have accidents, natural disasters, fires;
+  - Female students who are pregnant or on maternity leave according
       to current regulations. The head of the training unit will
       consider and decide whether to defer their studies. After the
       deferment period, students will continue to study the missing
@@ -791,18 +791,18 @@ is 50 minutes. Break time between two classes is 10 minutes.
         training program of the corresponding major if they violate one
         of the following cases:
 
-    - There is one advanced, additional course that received an F;
-    - Have an average score of all subjects up to the time of
+  - There is one advanced, additional course that received an F;
+  - Have an average score of all subjects up to the time of
       consideration, below 2.50;
-    - Disciplined during school time from the level of reprimand or
+  - Disciplined during school time from the level of reprimand or
       higher.
     b)  When transferring to the regular standard training program,
         advanced and additional courses are converted as follows:
 
-    - For advanced courses, the course score remains the same, the
+  - For advanced courses, the course score remains the same, the
       number of credits is converted according to the standard training
       program;
-    - For additional courses, the Head of the training unit shall
+  - For additional courses, the Head of the training unit shall
       consider allowing replacement with another course in the standard
       training program or confirm it as a free elective course.
 2.  Add students from the regular standard training program to the
@@ -812,16 +812,16 @@ is 50 minutes. Break time between two classes is 10 minutes.
         study the high-quality, international-standard, talented
         training program if the following conditions are met:
 
-    - Be a second or third year student;
-    - The major is suitable for the major with a talent training
+  - Be a second or third year student;
+  - The major is suitable for the major with a talent training
       program, international standards, high quality;
-    - The average score of all subjects up to the time of consideration
+  - The average score of all subjects up to the time of consideration
       is from 3.20 or higher and English proficiency is at level 3 or
       higher;
-    - The scores of the subjects corresponding to the subjects in the
+  - The scores of the subjects corresponding to the subjects in the
       talent training program, international standards, high quality
       must be from B or higher;
-    - Good moral character, good sense of organization and discipline.
+  - Good moral character, good sense of organization and discipline.
     b)  For the conversion of credit points in the standard training
         program to corresponding advanced credit points, the Head of the
         training unit shall consider recognizing equivalence or
@@ -861,10 +861,10 @@ is 50 minutes. Break time between two classes is 10 minutes.
     b)  Exempt from Vietnamese or foreign language test if one of the
         following cases applies:
 
-    - As a citizen using a foreign language, it must be used as an
+  - As a citizen using a foreign language, it must be used as an
       official language;
-    - Graduated from university in the required foreign language;
-    - Have a Vietnamese or foreign language certificate at level 4
+  - Graduated from university in the required foreign language;
+  - Have a Vietnamese or foreign language certificate at level 4
       (according to the 6-level foreign language proficiency framework
       for Vietnam) or higher.
 4.  Transfer students are allowed to retain their scores and credits of
@@ -917,16 +917,16 @@ works of students of Vietnam National University, Hanoi.
     a)  Won awards at Vietnam National University, Hanoi or Ministry of Education
         and Training level:
 
-    - First prize: 0.20 points
-    - Second prize: 0.15 points
-    - Third prize: 0.10 points
-    - Encouragement prize: 0.07 points
+  - First prize: 0.20 points
+  - Second prize: 0.15 points
+  - Third prize: 0.10 points
+  - Encouragement prize: 0.07 points
 
     b)  Won training unit level award:
 
-    - First prize: 0.10 points
-    - Second prize: 0.07 points
-    - Third prize: 0.05 points If the scientific research project is
+  - First prize: 0.10 points
+  - Second prize: 0.07 points
+  - Third prize: 0.05 points If the scientific research project is
       carried out by many students, the bonus points will be divided
       equally among the participating students.
 3.  If a student wins multiple scientific research awards at different
@@ -970,9 +970,9 @@ works of students of Vietnam National University, Hanoi.
         the high-quality, international-standard talent training program
         enjoy the following benefits:
 
-    - Enjoy preferential treatment for teaching, study guidance, and
+  - Enjoy preferential treatment for teaching, study guidance, and
       scientific research of these training programs;
-    - Priority is given to internships and professional training at home
+  - Priority is given to internships and professional training at home
       and abroad.
 
 ## Article 31. Academic advisor
@@ -1031,10 +1031,10 @@ works of students of Vietnam National University, Hanoi.
     b)  Warning: applied to students who commit one of the following
         violations:
 
-    - Having been reprimanded once but still violating the regulations
+  - Having been reprimanded once but still violating the regulations
       during the exam of that subject;
-    - Exchange homework and scratch paper with others;
-    - Copying someone else's work. Exams that are found to be similar
+  - Exchange homework and scratch paper with others;
+  - Copying someone else's work. Exams that are found to be similar
       will be dealt with the same way, except in cases where the person
       being disciplined has sufficient evidence to prove that he/she has
       actually cheated, then the head of the training unit may consider
@@ -1044,11 +1044,11 @@ works of students of Vietnam National University, Hanoi.
     c)  Suspension from the exam: applies to students who commit one of
         the following violations:
 
-    - Having been warned once but still violating the regulations during
+  - Having been warned once but still violating the regulations during
       the exam of that subject;
-    - After opening the exam paper, it was discovered that he was
+  - After opening the exam paper, it was discovered that he was
       carrying unauthorized items;
-    - Taking the exam papers out or receiving the answers from outside
+  - Taking the exam papers out or receiving the answers from outside
       into the exam room. Students who are suspended from the exam will
       receive zero (0) for that subject's exam and must leave the exam
       room immediately after the suspension decision is made. The
@@ -1240,22 +1240,22 @@ distorting scores on exam papers, exam marking records or grade books;
     a letter grade.
     a)  Type of achievement:
 
-    - 9.0 - 10: equivalent to A+
-    - 8.5 -- 8.9: corresponding to A
-    - 8.0 -- 8.4: equivalent to B+
-    - 7.0 - 7.9: corresponding to B
-    - 6.5 - 6.9: equivalent to C+
-    - 5.5 - 6.4: corresponding to C
-    - 5.0 - 5.4: equivalent to D+
-    - 4.0 - 4.9: corresponds to D
+  - 9.0 - 10: equivalent to A+
+  - 8.5 -- 8.9: corresponding to A
+  - 8.0 -- 8.4: equivalent to B+
+  - 7.0 - 7.9: corresponding to B
+  - 6.5 - 6.9: equivalent to C+
+  - 5.5 - 6.4: corresponding to C
+  - 5.0 - 5.4: equivalent to D+
+  - 4.0 - 4.9: corresponds to D
 
     b)  Failed grade: Below 4.0 corresponds to F
     c)  For subjects that do not have enough basis to be included in
         calculating the semester average score, the following symbols
         are used when assigning assessment levels:
 
-    - I - Not enough points to evaluate the department
-    - X - No final exam results yet
+  - I - Not enough points to evaluate the department
+  - X - No final exam results yet
 
     d)  For courses that are allowed to transfer scores by the Head of
         the training unit or are evaluated at the beginning of the

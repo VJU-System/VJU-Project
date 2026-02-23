@@ -88,13 +88,13 @@ The tasks, powers, and working principles of the appraisal council shall follow 
    a) No later than seven (07) working days before the first meeting of the appraisal council, the draft integrated education program (hereinafter referred to as the draft) shall be sent to council members. Members shall read and study the draft and record their comments on the draft content according to the requirements prescribed in Articles 2, 3, and 4 of this Circular;
    b) The appraisal council shall convene to discuss the draft collectively in accordance with Articles 2, 3, and 4 of this Circular;
    c) Council members shall evaluate and classify the draft into one of three categories: “Approved”, “Approved with revisions”, or “Not approved”;
-    - The draft shall be classified as “Approved” if the appraisal results for all relevant content specified in Articles 2, 3, and 4 of this Circular are “Approved”;
-    - The draft shall be classified as “Approved with revisions” if the appraisal results for the relevant content specified in Articles 2, 3, and 4 of this Circular include only the categories “Approved” and “Approved with revisions”;
-    - The draft shall be classified as “Not approved” in the remaining cases;
+  - The draft shall be classified as “Approved” if the appraisal results for all relevant content specified in Articles 2, 3, and 4 of this Circular are “Approved”;
+  - The draft shall be classified as “Approved with revisions” if the appraisal results for the relevant content specified in Articles 2, 3, and 4 of this Circular include only the categories “Approved” and “Approved with revisions”;
+  - The draft shall be classified as “Not approved” in the remaining cases;
    d) The appraisal council shall evaluate the draft program as follows:
-    - If at least three quarters (3/4) of the total number of council members participating in the vote classify the draft as “Approved”, the draft shall be submitted by the appraising body to the Minister of Education and Training for consideration and approval;
-    - If at least three quarters (3/4) of the total number of council members participating in the vote classify the draft as either “Approved” or “Approved with revisions”, the draft shall be revised based on the council’s comments. The revised draft, indicating the revised or retained content together with explanations for any retained content, shall be sent to the council for re-appraisal. The re-appraisal process shall follow Points a, b, and c of this Clause;
-    - In other cases, the draft shall be classified as “Not approved”;
+  - If at least three quarters (3/4) of the total number of council members participating in the vote classify the draft as “Approved”, the draft shall be submitted by the appraising body to the Minister of Education and Training for consideration and approval;
+  - If at least three quarters (3/4) of the total number of council members participating in the vote classify the draft as either “Approved” or “Approved with revisions”, the draft shall be revised based on the council’s comments. The revised draft, indicating the revised or retained content together with explanations for any retained content, shall be sent to the council for re-appraisal. The re-appraisal process shall follow Points a, b, and c of this Clause;
+  - In other cases, the draft shall be classified as “Not approved”;
    đ) During the appraisal process, the council may propose that the appraising body seek expert opinions from relevant agencies, organizations, or individuals if necessary;
    e) Within five (05) working days from the date of the council meeting, the council chairperson shall submit the appraisal results to the Minister of Education and Training.
 5. Organization of appraisal implementation:
@@ -114,11 +114,11 @@ Learners who are Vietnamese citizens and who study foreign education programs at
    b) Duration: At least twice per week, 25–35 minutes each session.
 2. For primary school pupils: study the Vietnamese language program and the Việt Nam Studies program.
    a) Vietnamese language program content:
-    - Objectives: Help pupils build and develop vocabulary and skills in using Vietnamese (listening, speaking, reading, writing) for age-appropriate learning and communication; provide pupils with foundational knowledge about the Vietnamese language, culture, and people;
-    - Duration: At least 140 minutes per week, taught at all primary grade levels;
+  - Objectives: Help pupils build and develop vocabulary and skills in using Vietnamese (listening, speaking, reading, writing) for age-appropriate learning and communication; provide pupils with foundational knowledge about the Vietnamese language, culture, and people;
+  - Duration: At least 140 minutes per week, taught at all primary grade levels;
    b) Việt Nam Studies program content:
-    - Objectives: Provide pupils with basic knowledge about significant historical events and figures and about the fine traditions, customs, and practices of the country and people of Việt Nam; offer simple knowledge about Việt Nam’s geography, territory, seas and islands, climate, rivers and mountains, resources, and minerals, thereby fostering love for the homeland and national pride;
-    - Duration: At least 70 minutes per week, taught in Grades 4 and 5.
+  - Objectives: Provide pupils with basic knowledge about significant historical events and figures and about the fine traditions, customs, and practices of the country and people of Việt Nam; offer simple knowledge about Việt Nam’s geography, territory, seas and islands, climate, rivers and mountains, resources, and minerals, thereby fostering love for the homeland and national pride;
+  - Duration: At least 70 minutes per week, taught in Grades 4 and 5.
 3. For lower and upper secondary pupils: study the Việt Nam Studies program.
    a) Objectives: Provide systematic, modern, general knowledge about Việt Nam’s history, geography, culture, traditions, customs, and practices. Foster love for the homeland, national pride, respect for the nation’s historical heritage, and appreciation of the heroic traditions of nation-building and defense. At the same time, develop essential civic qualities: a positive attitude toward society, a sense of responsibility to the community, industriousness, kindness, discipline, respect for and compliance with the law, national self-reliance, and readiness to participate in building, defending, and developing the country;
    b) Duration: At least 90 minutes per week, taught at all lower and upper secondary grade levels.

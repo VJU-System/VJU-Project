@@ -335,18 +335,18 @@ Bước 11: Thư ký Hội đồng đọc công khai kết luận (bao gồm đi
 
 1. Tài liệu tham khảo được xếp riêng theo từng ngôn ngữ (Việt, Anh, Pháp, Đức, Nga, Trung, Nhật,...). Các tài liệu bằng tiếng nước ngoài phải giữ nguyên văn, không phiên âm, không dịch, kể cả tài liệu bằng tiếng Trung Quốc, Nhật Bản,... (đối với những tài liệu bằng ngôn ngữ còn ít người biết có thể thêm phần dịch tiếng Việt đi kèm mỗi tài liệu).
 2. Tài liệu tham khảo xếp theo thứ tự ABC họ tên tác giả theo thông lệ từng nước:
-   - Tác giả là người nước ngoài được xếp thứ tự ABC theo họ:
+  - Tác giả là người nước ngoài được xếp thứ tự ABC theo họ:
      + Có một tác giả (theo ví dụ tài liệu số 28);
      + Có hai tác giả (theo ví dụ tài liệu số 29);
      + Có ba tác giả trở lên: từ tác giả thứ hai trở đi viết tắt tên trước, tên họ sau, tên các tác giả có dấu phẩy ngăn cách, trước tên, họ tác giả cuối cùng thay dấu phẩy bằng "and" (theo ví dụ tài liệu số 30).
-   - Tác giả là người Việt Nam: xếp thứ tự ABC theo tên nhưng vẫn giữ nguyên thứ tự thông thường của tên người Việt Nam, không đảo tên lên trước họ.
-   - Tài liệu không có tên tác giả thì xếp thứ tự ABC từ đầu của tên cơ quan ban hành báo cáo hay ấn phẩm, ví dụ: Tổng cục Thống kê xếp theo vần T, Bộ Giáo dục và Đào tạo xếp theo vần B,...
+  - Tác giả là người Việt Nam: xếp thứ tự ABC theo tên nhưng vẫn giữ nguyên thứ tự thông thường của tên người Việt Nam, không đảo tên lên trước họ.
+  - Tài liệu không có tên tác giả thì xếp thứ tự ABC từ đầu của tên cơ quan ban hành báo cáo hay ấn phẩm, ví dụ: Tổng cục Thống kê xếp theo vần T, Bộ Giáo dục và Đào tạo xếp theo vần B,...
 3. Tài liệu tham khảo là sách, luận văn, luận án, báo cáo phải ghi đầy đủ các thông tin sau:
-   - tên tác giả hoặc cơ quan ban hành (không có dấu ngăn cách).
-   - (năm xuất bản), (đặt trong ngoặc đơn, dấu phẩy sau ngoặc đơn).
-   - *tên sách, luận án hoặc báo cáo*, (in nghiêng, dấu phẩy cuối tên).
-   - nhà xuất bản, (dấu phẩy cuối tên nhà xuất bản).
-   - nơi xuất bản. (dấu chấm kết thúc tài liệu tham khảo).
+  - tên tác giả hoặc cơ quan ban hành (không có dấu ngăn cách).
+  - (năm xuất bản), (đặt trong ngoặc đơn, dấu phẩy sau ngoặc đơn).
+  - *tên sách, luận án hoặc báo cáo*, (in nghiêng, dấu phẩy cuối tên).
+  - nhà xuất bản, (dấu phẩy cuối tên nhà xuất bản).
+  - nơi xuất bản. (dấu chấm kết thúc tài liệu tham khảo).
    (xem ví dụ tài liệu số 2, 3, 4, 23, 31, 33, 34, 35).
 
 Tài liệu tham khảo là bài báo trong tạp chí, bài trong một cuốn sách,... ghi đầy đủ các thông tin sau:
@@ -453,8 +453,8 @@ Nhằm mục đích nâng cao chất lượng khóa luận tốt nghiệp của 
    Sinh viên
    *(Ký và ghi rõ họ tên)*
 2. Nhật ký KL, ĐA là một loại sổ tay ghi chép những diễn biến trong quá trình thực hiện KL, ĐA của sinh viên, với những nội dung chủ yếu:
-   - Ghi chép cụ thể những lần làm việc với giảng viên hướng dẫn, gồm: ngày, tháng, năm, nội dung trao đổi, phản hồi và xác nhận của giảng viên, sinh viên. Trường hợp trao đổi qua email hoặc bằng các phương thức khác cũng phải thể hiện qua Nhật ký, có sự xác nhận của giảng viên hướng dẫn và sinh viên.
-   - Đồng thời, Nhật ký KL, ĐA của sinh viên cũng thể hiện rõ số lượng công việc của giảng viên hướng dẫn đối với sinh viên đó, từ đó làm căn cứ tính thù lao hướng dẫn của giảng viên.
+  - Ghi chép cụ thể những lần làm việc với giảng viên hướng dẫn, gồm: ngày, tháng, năm, nội dung trao đổi, phản hồi và xác nhận của giảng viên, sinh viên. Trường hợp trao đổi qua email hoặc bằng các phương thức khác cũng phải thể hiện qua Nhật ký, có sự xác nhận của giảng viên hướng dẫn và sinh viên.
+  - Đồng thời, Nhật ký KL, ĐA của sinh viên cũng thể hiện rõ số lượng công việc của giảng viên hướng dẫn đối với sinh viên đó, từ đó làm căn cứ tính thù lao hướng dẫn của giảng viên.
 3. Nhật ký KL, ĐA còn là minh chứng quan trọng cho quá trình thực hiện KL, ĐA của sinh viên và là điều kiện để sinh viên được nộp KL, ĐA. Khi hoàn thành KL, ĐA và đảm bảo đủ các điều kiện khác để bảo vệ, sinh viên làm đơn xin ý kiến bảo vệ KL, ĐA với sự đồng ý của giảng viên hướng dẫn; đồng thời gửi toàn bộ hồ sơ về Khoa.
 4. Giảng viên, sinh viên phải nghiêm túc thực hiện quy định này của Nhà trường.
 
@@ -640,12 +640,12 @@ Bằng chữ: ....................................
 4. Nội dung làm việc:
    4.1. Sinh viên bảo vệ theo Quyết định số /QĐ-ĐHVN ngày ...... tháng ....... năm ...... của Hiệu trưởng Trường Đại học Việt Nhật về danh sách sinh viên thực hiện khóa luận, đồ án tốt nghiệp, cụ thể: Có mặt: / (tỷ lệ: ...%); Vắng mặt: / (tỷ lệ: ....%).
    4.2. Quá trình bảo vệ:
-   - Sinh viên báo cáo Khóa luận/Đồ án tốt nghiệp theo thứ tự gọi tên;
-   - 02 phản biện đọc nhận xét về Khóa luận/Đồ án tốt nghiệp của từng sinh viên sau khi kết thúc thuyết trình;
-   - Các thành viên Hội đồng đánh giá đặt câu hỏi cho sinh viên;
-   - Sinh viên trả lời theo số lượng câu hỏi đã được đặt ra;
-   - Hội đồng đánh giá thảo luận và chấm điểm đối với từng sinh viên;
-   - Thư ký Hội đồng đọc kết quả bảo vệ cho sinh viên (chi tiết về số lượng khóa luận, đồ án tốt nghiệp, điểm bảo vệ, xếp loại của từng sinh viên)
+  - Sinh viên báo cáo Khóa luận/Đồ án tốt nghiệp theo thứ tự gọi tên;
+  - 02 phản biện đọc nhận xét về Khóa luận/Đồ án tốt nghiệp của từng sinh viên sau khi kết thúc thuyết trình;
+  - Các thành viên Hội đồng đánh giá đặt câu hỏi cho sinh viên;
+  - Sinh viên trả lời theo số lượng câu hỏi đã được đặt ra;
+  - Hội đồng đánh giá thảo luận và chấm điểm đối với từng sinh viên;
+  - Thư ký Hội đồng đọc kết quả bảo vệ cho sinh viên (chi tiết về số lượng khóa luận, đồ án tốt nghiệp, điểm bảo vệ, xếp loại của từng sinh viên)
    4.3. Kết luận của Hội đồng
    Cuộc họp kết thúc vào lúc ... giờ ....... phút cùng ngày.
 

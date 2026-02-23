@@ -220,8 +220,8 @@ PHÓ HIỆU TRƯỞNG</strong><br><br>
     b. Bảng tiêu chí chấm điểm cần được xây dựng khi ra đề và chấm bài kiểm tra giữa kỳ và thi kết thúc học phần. Đối với những học phần thi theo hình thức tiểu luận hoặc báo cáo, cần đưa tiêu chí chống đạo văn vào tiêu chí chấm điểm (Tham khảo Quy định về chống đạo văn tại trường Đại học Việt Nhật).
     c. Hướng dẫn chấm điểm, bảng tiêu chí chấm điểm, ví dụ bài đã chấm điểm phải nộp cho Phòng KT&ĐBCL chậm nhất là 15 ngày làm việc sau khi kết thúc học phần để lưu phục vụ công tác đảm bảo chất lượng.
 4.  Phản hồi cho người học về kết quả kiểm tra, đánh giá:
-    - Đối với các bài kiểm tra thường xuyên và giữa kỳ, giảng viên phải thông báo điểm và phản hồi cho người học chậm nhất là 7 ngày làm việc kể từ sau ngày kiểm tra hoặc ngày nộp tiểu luận, bài tập lớn, đồng thời giải quyết thắc mắc của người học về điểm đánh giá. Thời gian giải quyết thắc mắc của người học về điểm đánh giá thực hiện ngay tại buổi trả bài kiểm tra, sau thời gian trên việc thắc mắc không có giá trị. Trong trường hợp không giải quyết được, giảng viên, báo cáo với Giám đốc chương trình để phối hợp giải quyết. Trường hợp có điều chỉnh hay không điều chỉnh điểm, giảng viên phải thông báo công khai, nói rõ lý do cho người thắc mắc.
-    - Đối với bài thi kết thúc học phần: kết quả bài thi kết thúc học phần phải được thông báo cho người học chậm nhất là 15 ngày làm việc sau khi kết thúc kỳ thi.
+  - Đối với các bài kiểm tra thường xuyên và giữa kỳ, giảng viên phải thông báo điểm và phản hồi cho người học chậm nhất là 7 ngày làm việc kể từ sau ngày kiểm tra hoặc ngày nộp tiểu luận, bài tập lớn, đồng thời giải quyết thắc mắc của người học về điểm đánh giá. Thời gian giải quyết thắc mắc của người học về điểm đánh giá thực hiện ngay tại buổi trả bài kiểm tra, sau thời gian trên việc thắc mắc không có giá trị. Trong trường hợp không giải quyết được, giảng viên, báo cáo với Giám đốc chương trình để phối hợp giải quyết. Trường hợp có điều chỉnh hay không điều chỉnh điểm, giảng viên phải thông báo công khai, nói rõ lý do cho người thắc mắc.
+  - Đối với bài thi kết thúc học phần: kết quả bài thi kết thúc học phần phải được thông báo cho người học chậm nhất là 15 ngày làm việc sau khi kết thúc kỳ thi.
 
 # Chương III. CÔNG TÁC TỔ CHỨC THI KẾT THÚC HỌC PHẦN
 *(Các mốc thời gian cụ thể được tóm tắt trong phụ lục 2)*
@@ -269,15 +269,15 @@ PHÓ HIỆU TRƯỞNG</strong><br><br>
     e. Đối với hình thức thi tiểu luận, bài tập lớn, báo cáo, thời gian nộp bài và hình thức nộp bài do giảng viên phụ trách học phần đề nghị, thông qua Giám đốc CTĐT/Trưởng khoa nhưng phải đảm bảo theo đúng kế hoạch học tập và thi của Trường. Giảng viên phụ trách học phần chịu trách nhiệm về việc thực hiện kế hoạch và thời gian thu bài, chấm bài, nộp đề, tiêu chí chấm điểm, nộp bài tiểu luận, báo cáo và nộp bảng điểm thi kết thúc học phần cho Phòng KT&ĐBCL. Người học phải thực hiện đúng theo hướng dẫn của giảng viên. Báo cáo thực tập/luận văn tốt nghiệp thực hiện theo đúng quy định của Trường (Hướng dẫn thực hiện khóa luận luận văn của Trường Đại học Việt Nhật).
     f. Đối với hình thức thi vấn đáp: mỗi đề thi phải có thang điểm rõ ràng cho từng câu, đảm bảo tính hoàn chỉnh, chính xác, tính tổng hợp, tính vận dụng, tính đồng đều về độ khó giữa các đề thi, tính tương thích với số tín chỉ và thời gian thi kết thúc học phần.
     g. Thời gian làm bài thi kết thúc học phần:
-    - Hình thức thi tự luận hoặc tự luận kết hợp trắc nghiệm: 30 phút cho 01 tín chỉ nhưng không quá 120 phút đối với những học phần từ 4 tín chỉ trở lên.
-    - Hình thức thi trắc nghiệm: 20 phút cho 1 tín chỉ nhưng không quá 90 phút đối với những học phần từ 4 tín chỉ trở lên.
-    - Đối với hình thức thi vấn đáp: Thời gian chuẩn bị bài 15 phút; thời gian trình bày câu trả lời và phần hỏi thêm của giảng viên khoảng 7-10 phút. Những học phần có thời gian chuẩn bị bài hơn 15 phút, phải được quy định cụ thể trong ĐCCT học phần.
+  - Hình thức thi tự luận hoặc tự luận kết hợp trắc nghiệm: 30 phút cho 01 tín chỉ nhưng không quá 120 phút đối với những học phần từ 4 tín chỉ trở lên.
+  - Hình thức thi trắc nghiệm: 20 phút cho 1 tín chỉ nhưng không quá 90 phút đối với những học phần từ 4 tín chỉ trở lên.
+  - Đối với hình thức thi vấn đáp: Thời gian chuẩn bị bài 15 phút; thời gian trình bày câu trả lời và phần hỏi thêm của giảng viên khoảng 7-10 phút. Những học phần có thời gian chuẩn bị bài hơn 15 phút, phải được quy định cụ thể trong ĐCCT học phần.
     h. Đề thi phải có thang điểm, đáp án với các tiêu chí chấm điểm rõ ràng. Thang điểm chấm thi là thang điểm 10, có lẻ đến một chữ số thập phân. Đối với đề trắc nghiệm, ngoại ngữ có thể chấm khác thang điểm sau đó quy về thang điểm 10 (Xem mẫu ở phụ lục 3, 4).
     i. Đề thi, đáp án được bỏ vào phong bì riêng biệt, dán kín và ký giáp lai. Trên mỗi phong bì phải ghi cụ thể các thông tin như phần trên của đề thi và ghi rõ họ tên, số điện thoại của người ra đề. Người làm đáp án phải ký và ghi rõ họ tên vào đáp án (theo mẫu gửi kèm). Khi cần thiết, Trường sẽ công bố đáp án để người học biết và tự kiểm tra bài thi của mình.
     j. Số lượng đề thi/1 ca thi:
-    - Hình thức thi tự luận, tự luận kết hợp trắc nghiệm: ít nhất 02 đề/ca thi.
-    - Hình thức thi trắc nghiệm: mỗi đề thi phải có ít nhất 2 mã đề thi nếu thi trên giấy và ít nhất 4 mã đề thi nếu thi trên máy tính.
-    - Hình thức thi vấn đáp: đề thi được soạn thành từng bộ đề thi (tối thiểu 10 đề) để người học bốc thăm và trả lời trong thời gian thi.
+  - Hình thức thi tự luận, tự luận kết hợp trắc nghiệm: ít nhất 02 đề/ca thi.
+  - Hình thức thi trắc nghiệm: mỗi đề thi phải có ít nhất 2 mã đề thi nếu thi trên giấy và ít nhất 4 mã đề thi nếu thi trên máy tính.
+  - Hình thức thi vấn đáp: đề thi được soạn thành từng bộ đề thi (tối thiểu 10 đề) để người học bốc thăm và trả lời trong thời gian thi.
 3.  Hình thức đề thi kết thúc học phần:
     a. Đề thi được đánh máy hoặc viết tay bằng mực đen hoặc xanh đậm rõ ràng, trên một mặt giấy khổ A4, cách mép tờ giấy ít nhất là 2cm.
     b. Phần trên của đề thi phải ghi rõ tên học phần, mã học phần, số tín chỉ, đề số mấy và thời gian làm bài.
@@ -346,13 +346,13 @@ b. Phân công CBCT:
 2.  Phân công cán bộ chấm thi: Trưởng Khoa/Giám đốc CTĐT chịu trách nhiệm phân công giảng viên chấm thi bài thi kết thúc học phần và phải đảm bảo mỗi học phần do ít nhất 02 giảng viên đảm nhiệm (Mẫu quyết định phân công trong phụ lục 7b kèm theo). Công tác chấm thi phải thực hiện nghiêm túc, khách quan, chính xác và công bằng.
 3.  Quy trình chấm thi và bàn giao điểm
     a. Chấm thi trên giấy (bài thi tự luận, tự luận kết hợp trắc nghiệm và bài thi trắc nghiệm).
-    - Phòng KT&ĐBCL chuẩn bị phòng để giảng viên đến chấm thi và chịu trách nhiệm theo dõi tiến độ chấm thi.
-    - Một ngày sau khi học phần được tổ chức thi, giảng viên được phân công chấm thi có thể đến nhận bài thi tại phòng KT&ĐBCL. Cán bộ chấm thi phải nộp bảng điểm và bài thi đã chấm cho phòng KT&ĐBCL chậm nhất là hai tuần (10 ngày làm việc) sau khi học phần được tổ chức thi.
-    - Việc chấm thi bài thi kết thúc học phần phải theo đáp án và thang điểm chính thức đã nộp cho Phòng KT&ĐBCL. Giảng viên chấm thi chấm trực tiếp lên bài làm, chấm theo thang điểm 10, có lẻ đến một chữ số thập phân. Bài thi phải đủ chữ ký của 2 giảng viên chấm. Nếu phát hiện sai sót, giảng viên làm đề nghị điều chỉnh điểm và ghi rõ lý do điều chỉnh;
+  - Phòng KT&ĐBCL chuẩn bị phòng để giảng viên đến chấm thi và chịu trách nhiệm theo dõi tiến độ chấm thi.
+  - Một ngày sau khi học phần được tổ chức thi, giảng viên được phân công chấm thi có thể đến nhận bài thi tại phòng KT&ĐBCL. Cán bộ chấm thi phải nộp bảng điểm và bài thi đã chấm cho phòng KT&ĐBCL chậm nhất là hai tuần (10 ngày làm việc) sau khi học phần được tổ chức thi.
+  - Việc chấm thi bài thi kết thúc học phần phải theo đáp án và thang điểm chính thức đã nộp cho Phòng KT&ĐBCL. Giảng viên chấm thi chấm trực tiếp lên bài làm, chấm theo thang điểm 10, có lẻ đến một chữ số thập phân. Bài thi phải đủ chữ ký của 2 giảng viên chấm. Nếu phát hiện sai sót, giảng viên làm đề nghị điều chỉnh điểm và ghi rõ lý do điều chỉnh;
     b. Chấm thi phòng máy
-    - Đối với học phần thi chấm trực tiếp trên máy tính: sau khi kết thúc thời gian làm bài, người học dừng làm bài và ngồi yên tại chỗ để CBCT kiểm tra kết quả, ghi điểm thi hiển thị trên màn hình máy tính vào bảng điểm; Người học ký vào danh sách dự thi, trước khi ký vào danh sách người học kiểm tra lại kết quả trong bảng điểm. CBCT chịu trách nhiệm về độ chính xác của điểm thi ghi trong bảng điểm. Bảng điểm được sao thành 3 bản, bản chính gửi Phòng KT&ĐBCL, một bản gửi Khoa và một bản lưu tại Phòng ĐT&CTSV.
-    - Đối với các học phần không chấm trực tiếp được tại phòng thi: CBCT có trách nhiệm lưu trữ bài thi của người học trên đĩa CD hoặc USB ngay sau khi kết thúc mỗi ca thi. Ngay sau khi kết thúc buổi thi, CBCT bàn giao danh sách, đĩa CD hoặc USB chứa bài thi của người học cho phòng KT&ĐBCL. Phòng KT&ĐBCL bàn giao đĩa CD hoặc USB chứa bài thi của người học cho cán bộ được phân công chấm thi theo quy định.
-    - Việc chấm thi bài thi kết thúc học phần phải theo đáp án và thang điểm chính thức đã nộp cho Phòng KT&ĐBCL. Giảng viên chấm thi chấm trên phiếu chấm điểm và bàn giao lại đĩa CD hoặc USB chứa bài thi, phiếu chấm điểm kèm theo bảng điểm cho phòng KT&ĐBCL chậm nhất là 2 tuần (10 ngày làm việc) sau khi học phần được tổ chức thi.
+  - Đối với học phần thi chấm trực tiếp trên máy tính: sau khi kết thúc thời gian làm bài, người học dừng làm bài và ngồi yên tại chỗ để CBCT kiểm tra kết quả, ghi điểm thi hiển thị trên màn hình máy tính vào bảng điểm; Người học ký vào danh sách dự thi, trước khi ký vào danh sách người học kiểm tra lại kết quả trong bảng điểm. CBCT chịu trách nhiệm về độ chính xác của điểm thi ghi trong bảng điểm. Bảng điểm được sao thành 3 bản, bản chính gửi Phòng KT&ĐBCL, một bản gửi Khoa và một bản lưu tại Phòng ĐT&CTSV.
+  - Đối với các học phần không chấm trực tiếp được tại phòng thi: CBCT có trách nhiệm lưu trữ bài thi của người học trên đĩa CD hoặc USB ngay sau khi kết thúc mỗi ca thi. Ngay sau khi kết thúc buổi thi, CBCT bàn giao danh sách, đĩa CD hoặc USB chứa bài thi của người học cho phòng KT&ĐBCL. Phòng KT&ĐBCL bàn giao đĩa CD hoặc USB chứa bài thi của người học cho cán bộ được phân công chấm thi theo quy định.
+  - Việc chấm thi bài thi kết thúc học phần phải theo đáp án và thang điểm chính thức đã nộp cho Phòng KT&ĐBCL. Giảng viên chấm thi chấm trên phiếu chấm điểm và bàn giao lại đĩa CD hoặc USB chứa bài thi, phiếu chấm điểm kèm theo bảng điểm cho phòng KT&ĐBCL chậm nhất là 2 tuần (10 ngày làm việc) sau khi học phần được tổ chức thi.
     c. Chấm thi thuyết trình, tiểu luận: Việc chấm thi bài thi kết thúc học phần phải theo đáp án và thang điểm chính thức đã nộp cho Phòng KT&ĐBCL. Giảng viên chấm thi chấm trên phiếu chấm điểm, gửi phiếu chấm điểm, bài thi và bảng điểm tới phòng KT&ĐBCL chậm nhất là 2 tuần (10 ngày làm việc) sau khi học phần được tổ chức thi.
     d. Chấm thi vấn đáp: Việc chấm thi bài thi kết thúc học phần phải theo đáp án và thang điểm chính thức đã nộp cho Phòng KT&ĐBCL. Đối với hình thức thi vấn đáp mà không có ghi âm phần trả lời của người học, điểm thi phải được công bố cho người học ngay sau buổi thi và được nộp về Phòng KT&ĐBCL chậm nhất là 01 ngày làm việc kể từ ngày thi kết thúc học phần.
 5.  Xử lý kết quả chấm thi kết thúc học phần
@@ -411,43 +411,43 @@ b. Phân công CBCT:
 1.  Xử lý cán bộ, giảng viên
     Những cán bộ giảng viên tham gia kỳ thi kết thúc học phần có hành vi vi phạm quy định (bị phát hiện trong hoặc sau khi làm nhiệm vụ) tùy theo mức độ sẽ bị kiểm điểm và thi hành kỷ luật theo các hình thức sau:
     a. Khiển trách: áp dụng đối với những người vi phạm một trong các lỗi sau.
-    - Đến chậm giờ quy định.
-    - Không ký vào giấy thi, giấy nháp của người học.
-    - Không tập trung khi coi thi.
-    - Bỏ 1 buổi coi thi không có lý do chính đáng.
+  - Đến chậm giờ quy định.
+  - Không ký vào giấy thi, giấy nháp của người học.
+  - Không tập trung khi coi thi.
+  - Bỏ 1 buổi coi thi không có lý do chính đáng.
     b. Cảnh cáo: áp dụng đối với những người vi phạm một trong các lỗi sau
-    - Bỏ 2 buổi coi thi trở lên không có lý do chính đáng trong một năm học;
-    - Trong giờ coi thi bỏ đi làm việc khác;
-    - Để người học quay cóp, mang và sử dụng tài liệu trái phép trong khi thi;
-    - Không lập biên bản người học đã bị phát hiện có vi phạm quy chế;
-    - Làm mất bài thi;
-    - Chấm thi hay cộng điểm bài thi có sai sót nhiều;
+  - Bỏ 2 buổi coi thi trở lên không có lý do chính đáng trong một năm học;
+  - Trong giờ coi thi bỏ đi làm việc khác;
+  - Để người học quay cóp, mang và sử dụng tài liệu trái phép trong khi thi;
+  - Không lập biên bản người học đã bị phát hiện có vi phạm quy chế;
+  - Làm mất bài thi;
+  - Chấm thi hay cộng điểm bài thi có sai sót nhiều;
     c. Hạ bậc công tác hoặc buộc thôi việc: áp dụng đối với những người vi phạm một trong các lỗi sau.
-    - Làm lộ đề thi;
-    - Đưa đề thi ra ngoài, đưa bài giải từ ngoài vào phòng thi hoặc giúp người học làm bài thi trong lúc đang thi;
-    - Gian lận trong khi chấm thi; cho điểm không theo đáp án, chủ định tăng hoặc hạ điểm của bài thi so với đáp án;
-    - Sửa chữa, thêm bớt vào bài làm của người học để tăng hay hạ điểm;
-    - Đánh tráo bài thi hoặc điểm thi của người học.
+  - Làm lộ đề thi;
+  - Đưa đề thi ra ngoài, đưa bài giải từ ngoài vào phòng thi hoặc giúp người học làm bài thi trong lúc đang thi;
+  - Gian lận trong khi chấm thi; cho điểm không theo đáp án, chủ định tăng hoặc hạ điểm của bài thi so với đáp án;
+  - Sửa chữa, thêm bớt vào bài làm của người học để tăng hay hạ điểm;
+  - Đánh tráo bài thi hoặc điểm thi của người học.
 2.  Xử lý sinh viên, học viên
     Người học vi phạm các điểm quy định ở Điều 22 của quy định này phải lập biên bản và tuỳ theo mức độ sẽ bị xử lý theo các hình thức dưới đây. CBCT phải ghi rõ hình thức kỷ luật đã đề nghị trong biên bản và mục “Ghi chú” trong “Danh sách dự thi”. Biên bản xử lý vi phạm kỷ luật của người học phải đính kèm với bài thi. Khi kết thúc kì thi, Phòng KT&ĐBCL lập danh sách sinh viên, học viên vi phạm quy định để gửi Phòng ĐT&CTSV xem xét đánh giá điểm rèn luyện của người học.
     a. Khiển trách: áp dụng đối với người học vi phạm một lần, một trong các lỗi dưới đây. Người học bị kỷ luật khiển trách sẽ bị trừ 25% số điểm của bài thi kết thúc học phần đó.
-    - Nhìn bài của bạn, trao đổi bài với bạn;
-    - Nói chuyện riêng gây mất trật tự trong phòng thi, không ngồi đúng vị trí quy định trong phòng thi;
-    - Không nộp bài đúng thời gian quy định, tự ý đi lại trong phòng thi khi chưa được phép của CBCT.
+  - Nhìn bài của bạn, trao đổi bài với bạn;
+  - Nói chuyện riêng gây mất trật tự trong phòng thi, không ngồi đúng vị trí quy định trong phòng thi;
+  - Không nộp bài đúng thời gian quy định, tự ý đi lại trong phòng thi khi chưa được phép của CBCT.
     b. Cảnh cáo: áp dụng đối với người học vi phạm một trong các lỗi dưới đây. Người học bị kỷ luật cảnh cáo sẽ bị trừ 50% số điểm của bài thi kết thúc học phần đó.
-    - Đã bị khiển trách một lần nhưng trong giờ thi môn đó vẫn tiếp tục vi phạm Quy định
-    - Trao đổi bài làm hoặc giấy nháp cho bạn;
-    - Chép bài của người khác. Những bài thi đã có kết luận là giống nhau thì xử lý như nhau. Nếu người bị xử lý có đủ bằng chứng chứng minh mình bị quay cóp thì lãnh đạo Trường có thể xem xét giảm từ mức kỷ luật cảnh cáo xuống mức khiển trách.
+  - Đã bị khiển trách một lần nhưng trong giờ thi môn đó vẫn tiếp tục vi phạm Quy định
+  - Trao đổi bài làm hoặc giấy nháp cho bạn;
+  - Chép bài của người khác. Những bài thi đã có kết luận là giống nhau thì xử lý như nhau. Nếu người bị xử lý có đủ bằng chứng chứng minh mình bị quay cóp thì lãnh đạo Trường có thể xem xét giảm từ mức kỷ luật cảnh cáo xuống mức khiển trách.
     c. Đình chỉ thi: áp dụng đối với người học vi phạm một trong các lỗi dưới đây. Người học bị kỷ luật ở hình thức này phải ra khỏi phòng thi ngay sau khi được nghe CBCT công bố hình thức kỷ luật thi và nhận điểm 0 cho bài thi kết thúc học phần.
-    - Đã bị cảnh cáo một lần nhưng trong giờ thi học phần đó vẫn tiếp tục vi phạm Quy định;
-    - Mang tài liệu vào phòng thi;
-    - Khi vào phòng thi mang theo điện thoại di động, các phương tiện kỹ thuật thu, phát, truyền tin, ghi âm, ghi hình, thiết bị chứa đựng thông tin có thể lợi dụng để làm bài thi; vũ khí, chất gây nổ, gây cháy, các vật dụng gây nguy hại khác;
-    - Đưa đề thi ra ngoài khu vực thi hoặc nhận bài giải từ ngoài vào phòng thi;
-    - Viết vẽ những nội dung không liên quan đến bài thi, xé bài thi;
-    - Có hành động gây gổ, đe dọa cán bộ có trách nhiệm trong kỳ thi hay đe dọa người học khác.
+  - Đã bị cảnh cáo một lần nhưng trong giờ thi học phần đó vẫn tiếp tục vi phạm Quy định;
+  - Mang tài liệu vào phòng thi;
+  - Khi vào phòng thi mang theo điện thoại di động, các phương tiện kỹ thuật thu, phát, truyền tin, ghi âm, ghi hình, thiết bị chứa đựng thông tin có thể lợi dụng để làm bài thi; vũ khí, chất gây nổ, gây cháy, các vật dụng gây nguy hại khác;
+  - Đưa đề thi ra ngoài khu vực thi hoặc nhận bài giải từ ngoài vào phòng thi;
+  - Viết vẽ những nội dung không liên quan đến bài thi, xé bài thi;
+  - Có hành động gây gổ, đe dọa cán bộ có trách nhiệm trong kỳ thi hay đe dọa người học khác.
     d. Đình chỉ học tập 1 năm: áp dụng đối với người học vi phạm một trong các lỗi dưới đây. Người học bị kỷ luật ở hình thức này phải ra khỏi phòng thi ngay sau khi được nghe CBCT công bố hình thức kỷ luật thi.
-    - Đi thi hộ hoặc nhờ người khác thi hộ, làm bài hộ đối với trường hợp vi phạm lần thứ nhất;
-    - Có hành động phá hoại kỳ thi, hành hung cán bộ có trách nhiệm trong kỳ thi hoặc hành hung người học khác.
+  - Đi thi hộ hoặc nhờ người khác thi hộ, làm bài hộ đối với trường hợp vi phạm lần thứ nhất;
+  - Có hành động phá hoại kỳ thi, hành hung cán bộ có trách nhiệm trong kỳ thi hoặc hành hung người học khác.
     e. Buộc thôi học: áp dụng đối với trường hợp vi phạm lần thứ hai các lỗi trong điểm d. Hình thức kỷ luật này do hội đồng kỷ luật đề xuất và trình Hiệu trưởng quyết định.
 4.  Việc xử lý kỷ luật người học phải được công bố cho người học biết. Nếu người học không ký tên vào biên bản thì 02 CBCT và 01 người học có mặt trong phòng thi ký vào biên bản. Biên bản này được nộp cho Phòng KT&ĐBCL (mẫu Biên bản kèm theo phụ lục 10).
 5.  Đối với các trường hợp người học vi phạm Quy định mà CBCT không tiến hành lập biên bản thì cán bộ giám sát, thanh tra sẽ tiến hành lập biên bản theo đúng quy định về tổ chức và hoạt động thanh tra các kỳ thi của Bộ Giáo dục và Đào tạo và ĐHQGHN.

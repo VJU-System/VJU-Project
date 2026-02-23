@@ -186,13 +186,13 @@ For the purposes of this Decree, the following terms are understood as follows:
 2.  Receiving overseas students who have graduated:
     a) Overseas students who have completed their study programs and are eligible for or have received graduation diplomas or certificates must submit graduation reports to the sending agency for reception back to Vietnam;
     b) Graduation report dossiers comprise:
-    - Graduation report (Form No. 05 in the Appendix attached to this Decree);
-    - Certified translations into Vietnamese of graduation diplomas, certificates, and academic transcripts. If graduation documents are pending, submit certified translations of confirmation letters of program completion attached with academic transcripts (for vocational education, undergraduate, and master’s graduates) or confirmation of research results and thesis/dissertation defenses (for doctoral and research master’s graduates);
-    - Receipt confirming submission of the dissertation to the National Library of Vietnam or the General Sciences Library of Ho Chi Minh City (for doctoral graduates).
+  - Graduation report (Form No. 05 in the Appendix attached to this Decree);
+  - Certified translations into Vietnamese of graduation diplomas, certificates, and academic transcripts. If graduation documents are pending, submit certified translations of confirmation letters of program completion attached with academic transcripts (for vocational education, undergraduate, and master’s graduates) or confirmation of research results and thesis/dissertation defenses (for doctoral and research master’s graduates);
+  - Receipt confirming submission of the dissertation to the National Library of Vietnam or the General Sciences Library of Ho Chi Minh City (for doctoral graduates).
     c) Implementation order:
-    - Within 45 working days from the date of returning to Vietnam, overseas students must submit one set of dossiers via post or in person to the sending agency;
-    - Within 05 working days, if the graduation dossier is invalid, the sending agency shall notify the overseas student for supplementation and completion as prescribed;
-    - Within 20 working days from the date of receiving a complete dossier as prescribed at Point b of this Clause, the sending agency shall notify the overseas student’s direct managing agency (for those with a working agency) to receive them back for work, introduce them to agencies with recruitment needs, or confirm graduation (for those without a working agency). The sending agency shall send this notice to the overseas student and the direct managing agency (for those with a working agency).
+  - Within 45 working days from the date of returning to Vietnam, overseas students must submit one set of dossiers via post or in person to the sending agency;
+  - Within 05 working days, if the graduation dossier is invalid, the sending agency shall notify the overseas student for supplementation and completion as prescribed;
+  - Within 20 working days from the date of receiving a complete dossier as prescribed at Point b of this Clause, the sending agency shall notify the overseas student’s direct managing agency (for those with a working agency) to receive them back for work, introduce them to agencies with recruitment needs, or confirm graduation (for those without a working agency). The sending agency shall send this notice to the overseas student and the direct managing agency (for those with a working agency).
 3.  Receiving overseas students who temporarily return to Vietnam while awaiting defense or completion of procedures required by the foreign educational institution for graduation:
     a) Overseas students may temporarily return to Vietnam during the waiting period and must simultaneously apply for an extension of study duration in accordance with Article 9 of this Decree;
     b) Overseas students specified at Points a and b, Clause 1, Article 3 of this Decree must bear all travel costs and will not receive allowances during the time they are in Vietnam awaiting defense or completion of procedures required by the foreign educational institution for graduation;
@@ -265,16 +265,16 @@ For the purposes of this Decree, the following terms are understood as follows:
     b) Commence overseas study consultancy activities no later than 45 working days after the Certificate of registration for overseas study consultancy services is issued;
     c) Provide truthful and accurate advice on conditions related to quality assurance status of the programs and foreign educational institutions; expected tuition, living expenses, and related fees; living conditions, policies on part-time work as stipulated by the host country; and potential difficulties, risks, and contingencies during study abroad;
     d) Sign overseas study consultancy contracts with prospective overseas students or their parents or lawful guardians based on voluntariness, mutual agreement, and the following principles:
-    - The contract must clearly state the major, name of the institution, host country, duration of study, diploma or certificate awarded upon graduation; costs and service fees payable by the learner, parents, or guardian; rights, responsibilities, and commitments of each party; and risk mitigation measures;
-    - Only overseas study consultancy contracts may be signed; contracts combining overseas study and employment are prohibited.
+  - The contract must clearly state the major, name of the institution, host country, duration of study, diploma or certificate awarded upon graduation; costs and service fees payable by the learner, parents, or guardian; rights, responsibilities, and commitments of each party; and risk mitigation measures;
+  - Only overseas study consultancy contracts may be signed; contracts combining overseas study and employment are prohibited.
     đ) Not authorize or receive authorization from other enterprises providing overseas study consultancy services to conduct consultancy services for individuals wishing to study abroad;
     e) Publicly post information at the enterprise’s headquarters and on its website, and be legally responsible for the accuracy of the following information:
-    - Establishment decision or enterprise registration certificate;
-    - Certificate of registration for overseas study consultancy services issued by competent authorities;
-    - List of personnel directly providing consultancy services, including names, qualifications, and certificates meeting legal requirements, including certificates of overseas study consultancy expertise issued under Article 16 of this Decree;
-    - Information on majors, training programs, quality assurance or accreditation status of foreign educational institutions that have signed cooperation agreements or enrollment representation contracts with the enterprise;
-    - Information on tuition, living expenses, and service fees;
-    - Annual business activity reports submitted to management agencies.
+  - Establishment decision or enterprise registration certificate;
+  - Certificate of registration for overseas study consultancy services issued by competent authorities;
+  - List of personnel directly providing consultancy services, including names, qualifications, and certificates meeting legal requirements, including certificates of overseas study consultancy expertise issued under Article 16 of this Decree;
+  - Information on majors, training programs, quality assurance or accreditation status of foreign educational institutions that have signed cooperation agreements or enrollment representation contracts with the enterprise;
+  - Information on tuition, living expenses, and service fees;
+  - Annual business activity reports submitted to management agencies.
     g) Maintain contact, coordinate with foreign educational institutions, monitor, and support overseas students throughout their study abroad; urge overseas students to update information in the Database System specified in Clause 1, Article 4 of this Decree.
     h) Proactively coordinate with relevant agencies to protect the lawful rights and interests of overseas students;
     i) Retain dossiers of Vietnamese citizens sent abroad for study throughout their study period and continue to maintain contact after graduation; provide evaluations of the effectiveness of their consultancy when requested by state management agencies;
@@ -391,25 +391,25 @@ Assume the prime responsibility and coordinate with ministries and sectors to am
 3.  Reporting on Vietnamese citizens going abroad to study, teach, conduct scientific research, and engage in academic exchange
     a) Report contents: Situation of Vietnamese citizens going abroad to study, teach, conduct scientific research, and engage in academic exchange during the year; difficulties and obstacles; recommendations and proposals;
     b) Reporting entities, recipients, and procedures:
-    - People’s Committees of provinces and centrally run cities; agencies sending Vietnamese citizens abroad to teach, conduct scientific research, and engage in academic exchange; overseas study consultancy training institutions shall submit reports to the Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs;
-    - The Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs shall report to the Government.
+  - People’s Committees of provinces and centrally run cities; agencies sending Vietnamese citizens abroad to teach, conduct scientific research, and engage in academic exchange; overseas study consultancy training institutions shall submit reports to the Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs;
+  - The Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs shall report to the Government.
     c) Reporting frequency: Annual periodic reports;
     d) Method of submission:
-    - People’s Committees of provinces and centrally run cities; agencies sending Vietnamese citizens abroad to teach, conduct scientific research, and engage in academic exchange; overseas study consultancy training institutions shall submit reports via post, in person, or online to the Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs;
-    - The Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs, within their management scope, shall report to the Government via the Government reporting information system or submit directly or via post.
+  - People’s Committees of provinces and centrally run cities; agencies sending Vietnamese citizens abroad to teach, conduct scientific research, and engage in academic exchange; overseas study consultancy training institutions shall submit reports via post, in person, or online to the Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs;
+  - The Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs, within their management scope, shall report to the Government via the Government reporting information system or submit directly or via post.
     đ) Reporting data cut-off date: From 01 December of the year preceding the reporting period to 30 November of the reporting year;
     e) Reporting deadlines:
-    - Before 15 December each year, People’s Committees of provinces and centrally run cities; agencies sending Vietnamese citizens abroad to teach, conduct scientific research, and engage in academic exchange; and overseas study consultancy training institutions shall submit reports to the Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs;
-    - Before 25 December each year, the Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs, within their management scope, shall submit reports to the Government.
+  - Before 15 December each year, People’s Committees of provinces and centrally run cities; agencies sending Vietnamese citizens abroad to teach, conduct scientific research, and engage in academic exchange; and overseas study consultancy training institutions shall submit reports to the Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs;
+  - Before 25 December each year, the Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs, within their management scope, shall submit reports to the Government.
     g) Report outline templates:
-    - People’s Committees of provinces and centrally run cities shall use Form No. 10 in the Appendix attached to this Decree;
-    - Agencies sending Vietnamese citizens abroad to teach, conduct scientific research, and engage in academic exchange shall use Form No. 12 in the Appendix attached to this Decree;
-    - Overseas study consultancy training institutions shall use Form No. 14 in the Appendix attached to this Decree;
-    - The Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs shall use Form No. 15 in the Appendix attached to this Decree.
+  - People’s Committees of provinces and centrally run cities shall use Form No. 10 in the Appendix attached to this Decree;
+  - Agencies sending Vietnamese citizens abroad to teach, conduct scientific research, and engage in academic exchange shall use Form No. 12 in the Appendix attached to this Decree;
+  - Overseas study consultancy training institutions shall use Form No. 14 in the Appendix attached to this Decree;
+  - The Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs shall use Form No. 15 in the Appendix attached to this Decree.
     h) Statistical forms:
-    - People’s Committees of provinces and centrally run cities shall compile statistics using Forms No. 08 and No. 09 in the Appendix attached to this Decree;
-    - Agencies sending Vietnamese citizens abroad to teach, conduct scientific research, and engage in academic exchange shall compile statistics using Form No. 13 in the Appendix attached to this Decree;
-    - The Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs shall compile statistics using Form No. 16 in the Appendix attached to this Decree.
+  - People’s Committees of provinces and centrally run cities shall compile statistics using Forms No. 08 and No. 09 in the Appendix attached to this Decree;
+  - Agencies sending Vietnamese citizens abroad to teach, conduct scientific research, and engage in academic exchange shall compile statistics using Form No. 13 in the Appendix attached to this Decree;
+  - The Ministry of Education and Training and the Ministry of Labour, Invalids and Social Affairs shall compile statistics using Form No. 16 in the Appendix attached to this Decree.
 
 ---
 

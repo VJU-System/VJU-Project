@@ -47,19 +47,19 @@ At the request of the Head of the Academic Affairs Department.
 1. Amend and supplement Article 13 as follows:
     “1. Graduated or qualified for graduation from an undergraduate program (or an equivalent or higher qualification) in an appropriate discipline; for research-oriented programs, graduation with a rank of fairly good or higher or with scientific publications related to the intended field of study and research is required.
 
-    2. Possess foreign language proficiency at Level 3 or higher according to the 6-level Foreign Language Proficiency Framework for Viet Nam.
+2. Possess foreign language proficiency at Level 3 or higher according to the 6-level Foreign Language Proficiency Framework for Viet Nam.
 
-    3. Meet other requirements of the training program standards promulgated by the Ministry of Education and Training, Vietnam National University, Hanoi, and the specific training program.
+3. Meet other requirements of the training program standards promulgated by the Ministry of Education and Training, Vietnam National University, Hanoi, and the specific training program.
 
-    4. Candidates satisfy the requirement specified in Clause 2 of this Article when possessing one of the following degrees or certificates:
+4. Candidates satisfy the requirement specified in Clause 2 of this Article when possessing one of the following degrees or certificates:
     a) An undergraduate or higher degree in a foreign language major, foreign language pedagogy major, or an undergraduate or higher degree in which the foundational and specialized courses were delivered in a foreign language.
     b) An undergraduate or higher degree awarded by training units within Vietnam National University, Hanoi within two years up to the date of application for admission.
     c) One of the foreign language certificates equivalent to Level 3 or higher under the 6-level Foreign Language Proficiency Framework for Viet Nam within two years from the examination date to the date of application for admission, issued by foreign language testing organizations recognized by the Ministry of Education and Training and in the form prescribed by the Ministry of Education and Training.
     d) A VNU test foreign language certificate at Level 3 or higher issued within two years from the examination date to the date of application for admission.
 
-    5. Foreign nationals applying for master's programs delivered in Vietnamese must possess Vietnamese language proficiency at Level 4 or higher according to the Vietnamese Language Proficiency Framework for foreigners, or must have graduated from an undergraduate program (or equivalent qualification) delivered in Vietnamese; they must also satisfy requirements concerning the second foreign language as prescribed by the master's training program, if any.
+5. Foreign nationals applying for master's programs delivered in Vietnamese must possess Vietnamese language proficiency at Level 4 or higher according to the Vietnamese Language Proficiency Framework for foreigners, or must have graduated from an undergraduate program (or equivalent qualification) delivered in Vietnamese; they must also satisfy requirements concerning the second foreign language as prescribed by the master's training program, if any.
 
-    6. For programs delivered and studied in a foreign language, candidates must satisfy the foreign language requirements appropriate to the program's language of instruction by possessing one of the following degrees or certificates:
+6. For programs delivered and studied in a foreign language, candidates must satisfy the foreign language requirements appropriate to the program's language of instruction by possessing one of the following degrees or certificates:
     a) An undergraduate or higher degree in the language used for instruction, or in pedagogy of that language; or an undergraduate or higher degree delivered in a foreign language.
     b) One of the foreign language certificates used for instruction, equivalent to Level 4 or higher according to the 6-level Foreign Language Proficiency Framework for Viet Nam, or other equivalent foreign language certificates recognized by Vietnam National University, Hanoi, within two years from the date of the foreign language examination to the date of dossier submission.”
 
@@ -70,10 +70,10 @@ At the request of the Head of the Academic Affairs Department.
 
 3. Amend and supplement Article 24 as follows:
     “Article 24. Enrollment and recognition of learners
-    1. Based on the approved admission score, the head of the training unit shall announce the list of successful candidates, send admission letters, and issue Decisions on Admission to admitted candidates.
-    2. The training unit shall send admission notices to candidates on the list of successful candidates at least 15 days before the enrollment date. Candidates who enroll 15 days or more later than the enrollment date stated in the notice without a legitimate reason shall be considered to have withdrawn.
-    3. No later than one week after enrollment, learners must fully declare personal information as prescribed by Vietnam National University, Hanoi (through the integrated information system in the training management software) and by the training unit.
-    4. After candidates officially enroll, the head of the training unit that is a member university shall issue a decision recognizing the learners of their unit and report to Vietnam National University, Hanoi. Based on the proposal of the head of a training unit that is not a member university, the Director of Vietnam National University, Hanoi shall decide on the recognition of learners of those training units.”
+1. Based on the approved admission score, the head of the training unit shall announce the list of successful candidates, send admission letters, and issue Decisions on Admission to admitted candidates.
+2. The training unit shall send admission notices to candidates on the list of successful candidates at least 15 days before the enrollment date. Candidates who enroll 15 days or more later than the enrollment date stated in the notice without a legitimate reason shall be considered to have withdrawn.
+3. No later than one week after enrollment, learners must fully declare personal information as prescribed by Vietnam National University, Hanoi (through the integrated information system in the training management software) and by the training unit.
+4. After candidates officially enroll, the head of the training unit that is a member university shall issue a decision recognizing the learners of their unit and report to Vietnam National University, Hanoi. Based on the proposal of the head of a training unit that is not a member university, the Director of Vietnam National University, Hanoi shall decide on the recognition of learners of those training units.”
 
 **Article 2.** This Decision takes effect from the date of signing and applies from the 2024 admission cycle.
 

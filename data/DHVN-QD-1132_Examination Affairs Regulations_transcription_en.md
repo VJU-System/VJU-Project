@@ -215,15 +215,15 @@ The Office of Academic Affairs and Student Services shall develop the annual aca
    e. For examinations in the form of essays, major assignments, or reports, submission deadlines and formats are proposed by the course coordinator and approved by the Program Director/Dean, but must align with the University’s teaching and examination schedule. The course coordinator is responsible for collecting submissions, marking, submitting examination papers, marking criteria, essays, reports, and grade sheets to the Office of Testing and Quality Assurance. Learners must comply with the lecturer’s instructions. Internship reports and graduation theses follow the University’s guidelines on theses and graduation reports.
    f. For oral examinations, each paper must include a clear scoring guide for each question, ensure completeness, accuracy, synthesis, applicability, consistent difficulty, and alignment with the number of credits and examination duration.
    g. Examination duration:
-      - Essay or essay combined with multiple-choice: 30 minutes per credit, but not exceeding 120 minutes for courses with four or more credits.
-      - Multiple-choice: 20 minutes per credit, but not exceeding 90 minutes for courses with four or more credits.
-      - Oral examinations: 15 minutes for preparation; 7–10 minutes for responses and follow-up questions. Courses requiring longer preparation must specify the duration in the course syllabus.
+  - Essay or essay combined with multiple-choice: 30 minutes per credit, but not exceeding 120 minutes for courses with four or more credits.
+  - Multiple-choice: 20 minutes per credit, but not exceeding 90 minutes for courses with four or more credits.
+  - Oral examinations: 15 minutes for preparation; 7–10 minutes for responses and follow-up questions. Courses requiring longer preparation must specify the duration in the course syllabus.
    h. Examination papers must include scoring guides and marking criteria. Scores are on a 10-point scale rounded to one decimal. Multiple-choice or foreign language exams may be graded on a different scale and converted to the 10-point scale (see Appendices 3 and 4).
    i. Examination papers and answer keys must be sealed in separate envelopes, sealed, and countersigned. Each envelope must indicate the information shown at the top of the paper and the full name and phone number of the author. The lecturer preparing the answer key must sign the answer key (using the provided template). When necessary, the University may publish answer keys so learners can review their exams.
    j. Number of papers per examination session:
-      - Essay or essay combined with multiple-choice: at least two versions per session.
-      - Multiple-choice: at least two versions for paper-based exams and at least four versions for computer-based exams.
-      - Oral examinations: a set of at least ten questions from which learners draw lots during the session.
+  - Essay or essay combined with multiple-choice: at least two versions per session.
+  - Multiple-choice: at least two versions for paper-based exams and at least four versions for computer-based exams.
+  - Oral examinations: a set of at least ten questions from which learners draw lots during the session.
 3. Format of examination papers:
    a. Papers must be typed or handwritten clearly in black or dark blue ink on one side of A4 paper with margins of at least 2 cm.
    b. The heading must clearly state the course title, course code, number of credits, paper version, and examination duration.
@@ -252,17 +252,17 @@ b. The Office, together with the Office of Planning and Finance, coordinates wit
 ## Article 17. Assignment of invigilators
 
 a. Number of invigilators per room:
-   - At least two invigilators must be assigned to each room (no more than 15 learners per invigilator).
-   - At least one supervisor must be assigned to every five examination rooms in a session.
-   - For oral examinations: each room must have at least two staff members (one may be assigned to call candidates in addition to the two examiners). For oral exams with many candidates, multiple interview tables may be set up, but each table must have two lecturers.
-   - For computer-based multiple-choice exams: each room must have one IT officer and one invigilator who is a lecturer or specialist of the University.
-   - Courses with specific characteristics may assign invigilators and supporting staff according to the Program Director’s proposal approved by the Board of Rectors.
+  - At least two invigilators must be assigned to each room (no more than 15 learners per invigilator).
+  - At least one supervisor must be assigned to every five examination rooms in a session.
+  - For oral examinations: each room must have at least two staff members (one may be assigned to call candidates in addition to the two examiners). For oral exams with many candidates, multiple interview tables may be set up, but each table must have two lecturers.
+  - For computer-based multiple-choice exams: each room must have one IT officer and one invigilator who is a lecturer or specialist of the University.
+  - Courses with specific characteristics may assign invigilators and supporting staff according to the Program Director’s proposal approved by the Board of Rectors.
 
 b. Assignment procedures:
-   - The Office of Testing and Quality Assurance issues a written request to Faculties and functional offices to nominate invigilators no later than 18 working days before the examination session.
-   - Faculties and functional offices nominate invigilators in response to the request and submit the list no later than 10 working days before the examination session. If a Faculty cannot meet the required number, it must send a written request no later than seven days before the exam so the Office can mobilise support from other units.
-   - No later than five working days before the examination session, the Office of Testing and Quality Assurance circulates the official assignment list to Faculties and functional offices for implementation.
-   - Invigilator assignments to specific rooms are made by drawing lots, while ensuring that lecturers do not invigilate classes they teach, to maintain transparency and fairness.
+  - The Office of Testing and Quality Assurance issues a written request to Faculties and functional offices to nominate invigilators no later than 18 working days before the examination session.
+  - Faculties and functional offices nominate invigilators in response to the request and submit the list no later than 10 working days before the examination session. If a Faculty cannot meet the required number, it must send a written request no later than seven days before the exam so the Office can mobilise support from other units.
+  - No later than five working days before the examination session, the Office of Testing and Quality Assurance circulates the official assignment list to Faculties and functional offices for implementation.
+  - Invigilator assignments to specific rooms are made by drawing lots, while ensuring that lecturers do not invigilate classes they teach, to maintain transparency and fairness.
 
 ## Article 18. Handover of examination papers, invigilation, and collection of scripts
 
@@ -283,13 +283,13 @@ b. Assignment procedures:
 2. Deans/Program Directors assign lecturers to grade each course, ensuring that at least two lecturers grade each course (see assignment template in Appendix 7b). Grading must be conducted seriously, objectively, accurately, and fairly.
 3. Grading procedures and submission of scores:
    a. Paper-based grading (essays, combined exams, paper-based multiple-choice):
-      - The Office of Testing and Quality Assurance prepares grading rooms and monitors progress.
-      - One day after the exam, assigned lecturers may collect scripts at the Office. Graders must submit marked scripts and grade sheets within two weeks (10 working days) of the exam date.
-      - Grading must follow the official answer keys and rubrics submitted to the Office. Graders mark directly on the scripts using the 10-point scale rounded to one decimal. Scripts must bear the signatures of both graders. Errors must be reported with a written request stating the reason for adjustment.
+  - The Office of Testing and Quality Assurance prepares grading rooms and monitors progress.
+  - One day after the exam, assigned lecturers may collect scripts at the Office. Graders must submit marked scripts and grade sheets within two weeks (10 working days) of the exam date.
+  - Grading must follow the official answer keys and rubrics submitted to the Office. Graders mark directly on the scripts using the 10-point scale rounded to one decimal. Scripts must bear the signatures of both graders. Errors must be reported with a written request stating the reason for adjustment.
    b. Computer-based grading:
-      - For exams graded directly on computers: after the test ends, learners stop working and remain seated while invigilators record the scores displayed on screen onto the grade sheet. Learners check and sign the grade sheet. Invigilators are responsible for score accuracy. Grade sheets are made in triplicate: the original for the Office of Testing and Quality Assurance, one copy for the Faculty, and one for the Office of Academic Affairs and Student Services.
-      - For exams not graded on-site: invigilators must save each learner’s submission on a CD or USB immediately after each session. At the end of the session, invigilators hand over the attendance list and storage media to the Office, which then delivers them to graders as regulated.
-      - Grading must follow official answer keys and rubrics. Graders mark on grading sheets and return the storage media, grading sheets, and score sheets to the Office within two weeks (10 working days) of the exam date.
+  - For exams graded directly on computers: after the test ends, learners stop working and remain seated while invigilators record the scores displayed on screen onto the grade sheet. Learners check and sign the grade sheet. Invigilators are responsible for score accuracy. Grade sheets are made in triplicate: the original for the Office of Testing and Quality Assurance, one copy for the Faculty, and one for the Office of Academic Affairs and Student Services.
+  - For exams not graded on-site: invigilators must save each learner’s submission on a CD or USB immediately after each session. At the end of the session, invigilators hand over the attendance list and storage media to the Office, which then delivers them to graders as regulated.
+  - Grading must follow official answer keys and rubrics. Graders mark on grading sheets and return the storage media, grading sheets, and score sheets to the Office within two weeks (10 working days) of the exam date.
    c. Presentations and essays: grading must follow the approved answer keys and rubrics. Graders record scores on grading sheets and submit the sheets, assignments, and score sheets to the Office within two weeks (10 working days).
    d. Oral examinations: grading must follow the approved answer keys and rubrics. If oral exams are not recorded, scores must be announced to learners immediately after the session and submitted to the Office no later than one working day after the exam.
 4. Handling grading discrepancies:
@@ -353,43 +353,43 @@ b. Assignment procedures:
 1. Handling of staff and lecturers:
    Staff and lecturers involved in examination sessions who violate regulations (detected during or after duty) will be disciplined depending on severity:
    a. Reprimand, applied when committing one of the following:
-      - Arriving late.
-      - Failing to sign learners’ answer booklets or scrap paper.
-      - Failing to concentrate while invigilating.
-      - Missing one invigilation session without a legitimate reason.
+  - Arriving late.
+  - Failing to sign learners’ answer booklets or scrap paper.
+  - Failing to concentrate while invigilating.
+  - Missing one invigilation session without a legitimate reason.
    b. Warning, applied when committing one of the following:
-      - Missing two or more sessions without legitimate reasons in an academic year.
-      - Leaving the room for other business during invigilation.
-      - Allowing learners to cheat or use unauthorised materials.
-      - Failing to record detected violations.
-      - Losing examination scripts.
-      - Making multiple errors in grading or total scores.
+  - Missing two or more sessions without legitimate reasons in an academic year.
+  - Leaving the room for other business during invigilation.
+  - Allowing learners to cheat or use unauthorised materials.
+  - Failing to record detected violations.
+  - Losing examination scripts.
+  - Making multiple errors in grading or total scores.
    c. Demotion or dismissal, applied when committing one of the following:
-      - Leaking examination papers.
-      - Delivering examination papers outside or bringing solutions into the room, or assisting learners during the exam.
-      - Cheating during grading; awarding scores contrary to the answer key or intentionally inflating or lowering scores.
-      - Altering or adding to learners’ scripts to change scores.
-      - Swapping scripts or scores.
+  - Leaking examination papers.
+  - Delivering examination papers outside or bringing solutions into the room, or assisting learners during the exam.
+  - Cheating during grading; awarding scores contrary to the answer key or intentionally inflating or lowering scores.
+  - Altering or adding to learners’ scripts to change scores.
+  - Swapping scripts or scores.
 2. Handling of learners:
    Learners violating the provisions of Article 22 are recorded and disciplined depending on severity. Invigilators must record the proposed disciplinary form in the report and in the “Notes” column of the attendance list. Reports are attached to the scripts. After the examination, the Office compiles a list of violators and sends it to the Office of Academic Affairs and Student Services to consider conduct scores.
    a. Reprimand: applied for first-time violations of the following, resulting in a 25% deduction from the examination score:
-      - Looking at or exchanging scripts.
-      - Talking, disturbing order, or sitting in the wrong seat.
-      - Failing to submit the script on time or moving around without permission.
+  - Looking at or exchanging scripts.
+  - Talking, disturbing order, or sitting in the wrong seat.
+  - Failing to submit the script on time or moving around without permission.
    b. Warning: applied for the following, resulting in a 50% deduction from the examination score:
-      - Repeating violations after a reprimand in the same exam.
-      - Exchanging scripts or scrap paper.
-      - Copying another learner’s work. Identical scripts are handled identically. If the learner can prove they were copied from, the Board may reduce the penalty.
+  - Repeating violations after a reprimand in the same exam.
+  - Exchanging scripts or scrap paper.
+  - Copying another learner’s work. Identical scripts are handled identically. If the learner can prove they were copied from, the Board may reduce the penalty.
    c. Suspension from the exam: applied for the following, with an immediate expulsion from the room and a score of zero:
-      - Repeating violations after a warning in the same exam.
-      - Bringing materials into the room.
-      - Bringing mobile phones, recording or transmitting devices, storage devices, weapons, explosives, or other dangerous objects.
-      - Delivering papers outside the exam area or receiving solutions from outside.
-      - Writing or drawing irrelevant content, tearing scripts.
-      - Fighting or threatening responsible staff or other learners.
+  - Repeating violations after a warning in the same exam.
+  - Bringing materials into the room.
+  - Bringing mobile phones, recording or transmitting devices, storage devices, weapons, explosives, or other dangerous objects.
+  - Delivering papers outside the exam area or receiving solutions from outside.
+  - Writing or drawing irrelevant content, tearing scripts.
+  - Fighting or threatening responsible staff or other learners.
    d. Suspension from study for one year: applied for the following, with immediate removal from the exam room:
-      - Sitting exams on behalf of someone else or asking another person to sit the exam for the first offence.
-      - Sabotaging the exam or assaulting responsible staff or other learners.
+  - Sitting exams on behalf of someone else or asking another person to sit the exam for the first offence.
+  - Sabotaging the exam or assaulting responsible staff or other learners.
    e. Expulsion: applied for a second offence under Point d. The disciplinary council proposes this penalty to the Rector for decision.
 3. Disciplinary decisions must be communicated to learners. If a learner refuses to sign the record, two invigilators and one learner witness sign it. The record is submitted to the Office (see template in Appendix 10).
 4. If invigilators fail to prepare records for violations, supervisors or inspectors shall prepare records according to the regulations on inspection of examinations issued by the Ministry of Education and Training and VNU.

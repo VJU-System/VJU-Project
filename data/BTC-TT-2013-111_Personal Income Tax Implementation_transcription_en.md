@@ -29,13 +29,17 @@ No. 111/2013/TT-BTC
 
 **SOCIALIST REPUBLIC OF VIET NAM**
 **Independence – Freedom – Happiness**
+
 ***
+
 Ha Noi, 15 August 2013
 
 **CIRCULAR**
 
 **Guiding the implementation of the Law on Personal Income Tax, the Law amending and supplementing a number of articles of the Law on Personal Income Tax, and Government Decree No. 65/2013/ND-CP detailing a number of articles of the Law on Personal Income Tax and the Law amending and supplementing a number of articles of the Law on Personal Income Tax**
+
 ***
+
 Pursuant to the Law on Personal Income Tax No. 04/2007/QH12 dated 21 November 2007;
 
 Pursuant to the Law amending and supplementing a number of articles of the Law on Personal Income Tax No. 26/2012/QH13 dated 22 November 2012;

@@ -227,8 +227,8 @@ External evaluation and re-evaluation results (if any) form the basis for the in
    d) Vote by secret ballot to approve the resolution on the appraisal of quality accreditation results.
 2. The accreditation organization sends the appraisal resolution to the institution within 10 working days from the adoption of the resolution, together with the council’s recommendations on remedial actions and quality enhancement.
 3. The institution receives the resolution and provides feedback (if any):
-   - For programs without graduates at the time of external evaluation, the institution uses the appraisal results to continue improving quality.
-   - For programs with at least one graduating cohort, within 20 working days of receiving the documents specified in Clause 2 of this Article, the institution sends written feedback to the accreditation organization under one of the following forms:
+  - For programs without graduates at the time of external evaluation, the institution uses the appraisal results to continue improving quality.
+  - For programs with at least one graduating cohort, within 20 working days of receiving the documents specified in Clause 2 of this Article, the institution sends written feedback to the accreditation organization under one of the following forms:
      a) Agreeing with the resolution and recommendations, and requesting recognition that the program meets quality standards and issuance of a quality accreditation certificate;
      b) Agreeing with the resolution and recommendations, and committing to remedial actions and quality improvement before registering for accreditation in the near future;
      c) Disagreeing with part or all of the resolution and recommendations, and requesting reconsideration.

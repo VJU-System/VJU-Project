@@ -32,7 +32,7 @@ Cơ quan ban hành có thể công bố chính thức các phiên bản ngôn ng
 
 2.  Sắp xếp tài liệu theo thứ tự bảng chữ cái dựa trên họ tác giả theo thông lệ của từng quốc gia:
 
-    - Tác giả nước ngoài: sắp xếp theo thứ tự alphabet của họ (surname):
+  - Tác giả nước ngoài: sắp xếp theo thứ tự alphabet của họ (surname):
 
       > + Một tác giả (xem ví dụ tài liệu số 28);
       >
@@ -40,27 +40,27 @@ Cơ quan ban hành có thể công bố chính thức các phiên bản ngôn ng
       >
       > + Từ ba tác giả trở lên: từ tác giả thứ hai ghi tắt tên (first name) trước rồi đến họ; tên các tác giả cách nhau bằng dấu phẩy, riêng trước tên tác giả cuối cùng thay dấu phẩy bằng từ “and” (xem ví dụ tài liệu số 30).
 
-    - Tác giả là người Việt Nam: giữ nguyên thứ tự Họ Tên như thông lệ Việt Nam và xếp theo chữ cái của tên riêng, không đảo vị trí.
+  - Tác giả là người Việt Nam: giữ nguyên thứ tự Họ Tên như thông lệ Việt Nam và xếp theo chữ cái của tên riêng, không đảo vị trí.
 
-    - Tài liệu không ghi tên tác giả: sắp xếp theo chữ cái đầu của tên cơ quan ban hành báo cáo/ấn phẩm (ví dụ: Tổng cục Thống kê sắp theo chữ T, Bộ Giáo dục và Đào tạo theo chữ B,...).
+  - Tài liệu không ghi tên tác giả: sắp xếp theo chữ cái đầu của tên cơ quan ban hành báo cáo/ấn phẩm (ví dụ: Tổng cục Thống kê sắp theo chữ T, Bộ Giáo dục và Đào tạo theo chữ B,...).
 
 3.  Đối với sách, luận văn, luận án, báo cáo phải ghi đủ các thông tin:
 
-    - Tên tác giả hoặc tên cơ quan phát hành (không dấu ngăn cách);
-    - (năm xuất bản), (ghi trong ngoặc, sau ngoặc là dấu phẩy);
-    - *Nhan đề tài liệu* (in nghiêng, kết thúc bằng dấu phẩy);
-    - Nhà xuất bản;
-    - Nơi xuất bản.
+  - Tên tác giả hoặc tên cơ quan phát hành (không dấu ngăn cách);
+  - (năm xuất bản), (ghi trong ngoặc, sau ngoặc là dấu phẩy);
+  - *Nhan đề tài liệu* (in nghiêng, kết thúc bằng dấu phẩy);
+  - Nhà xuất bản;
+  - Nơi xuất bản.
 
 4.  Đối với bài báo khoa học đăng trên tạp chí hoặc bài trong sách chuyên khảo phải ghi:
 
-    - Tên tác giả;
-    - (năm);
-    - “Tên bài viết”;
-    - *Tên tạp chí hoặc sách* (in nghiêng);
-    - Tập (vol.);
-    - Số (nếu có);
-    - Trang (pp.).
+  - Tên tác giả;
+  - (năm);
+  - “Tên bài viết”;
+  - *Tên tạp chí hoặc sách* (in nghiêng);
+  - Tập (vol.);
+  - Số (nếu có);
+  - Trang (pp.).
 
 **Ví dụ:**
 

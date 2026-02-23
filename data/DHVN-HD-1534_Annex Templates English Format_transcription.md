@@ -459,18 +459,18 @@ Independence – Freedom – Happiness
 2.  **Location:**
 3.  **Participants:** Member committee following the Decision No........ /QĐ-ĐHVN dated by the Rector of Vietnam Japan University on Evaluating Thesis Defense.
     3.1. **Presenting Committee members include:**
-        - ....................................................................................
+  - ....................................................................................
     3.2. **Absence:**
-        - ....................................................................................
+  - ....................................................................................
 4.  **Defense content:**
     4.1. Following Decision No. /QD-DHVN dated ../../... by the Rector of Vietnam Japan University on Evaluating Undergraduate Thesis, there are ... students in the list, including: Present:.../... (...%), Absent::.../... (...%),
     4.2. **Defense process:**
-    - Students report their thesis/project in the order of their names;
-    - Two reviewers read comments on each student's thesis/project after the presentation ends;
-    - Members of the Evaluation Committee ask questions to the students;
-    - Students answer according to the number of questions posed;
-    - The Evaluation Committee discusses and scores each student;
-    - The secretary of the Committee reads the defense results for the students (details about the number of theses/projects, defense scores, and rankings of each student)
+  - Students report their thesis/project in the order of their names;
+  - Two reviewers read comments on each student's thesis/project after the presentation ends;
+  - Members of the Evaluation Committee ask questions to the students;
+  - Students answer according to the number of questions posed;
+  - The Evaluation Committee discusses and scores each student;
+  - The secretary of the Committee reads the defense results for the students (details about the number of theses/projects, defense scores, and rankings of each student)
     4.3. **Conclusion**
     The meeting ends at ... o'clock ... minutes of the same day.
 <br><br>

@@ -163,9 +163,9 @@ The results of the duplication check and the original database are the responsib
     e. If a check using spelling and duplication detection software shows a plagiarism error of 50% or more, the instructor will assign a score of 0. At the same time, the student will be subject to disciplinary action ranging from a one-year suspension to expulsion.
     f. For facilitating another person's plagiarism violation: If the person is a current student of the University, they will be suspended for one year or expelled. If the person is not a current student of the University, the University's Department of Academic and Student Affairs will notify the person's place of residence/study of the violation and request disciplinary action.
     g. For final exams, essays, assignment reports, and practical training reports, if there is an accusation of plagiarism or if an instructor suspects plagiarism, the department receiving the accusation documents shall send them to the University's Office of Examination and Quality Assurance for a plagiarism check using Turnitin software or equivalent software. If the check confirms plagiarism, disciplinary action shall be taken according to the regulations, based on the extent and severity of the violation. Specifically:
-        - If the plagiarism error is more than 20% but less than 30%, the student must retake the final exam, and 10% will be deducted from the exam score.
-        - If the plagiarism is 30% or more but less than 50%, the student must retake the final exam, and 25% will be deducted from the exam score.
-        - If the plagiarism is 50% or more, the instructor will assign a score of 0, and the student must retake the course.
+  - If the plagiarism error is more than 20% but less than 30%, the student must retake the final exam, and 10% will be deducted from the exam score.
+  - If the plagiarism is 30% or more but less than 50%, the student must retake the final exam, and 25% will be deducted from the exam score.
+  - If the plagiarism is 50% or more, the instructor will assign a score of 0, and the student must retake the course.
 
 3. **Cheating and Fabrication**
     a. If a student commits cheating by using a false certificate or transcript to apply for a course/exam exemption, the Rector will decide on disciplinary action ranging from a one-year suspension to expulsion, depending on the documents and the severity of the violation.

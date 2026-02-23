@@ -53,7 +53,7 @@ Số: 2486/QĐ-ĐHQGHN
 3.  Sửa đổi, bổ sung Điều 16 như sau:
     "5. Căn cứ kết quả xử lý nguyện vọng, đơn vị đào tạo lặp lại quy trình xét tuyển ở chu kỳ sau, điều chỉnh điểm trúng tuyển cho phù hợp với chỉ tiêu trong thời hạn quy định. Ở chu kỳ cuối, đơn vị đào tạo quyết định phương án điểm trúng tuyển vào các nhóm ngành/ngành, chương trình đào tạo (theo các phương thức tuyển sinh) và tải lên hệ thống danh sách (chính thức) thí sinh đủ điều kiện trúng tuyển. Trên cơ sở kết quả xử lý nguyện vọng cuối cùng, đơn vị đào tạo quyết định danh sách thí sinh trúng tuyển vào các nhóm ngành/ngành, chương trình đào tạo. Riêng đối với các trường/khoa trực thuộc, Chủ tịch HĐTS báo cáo ĐHQGHN (qua Ban Đào tạo) phương án xác định điểm trúng tuyển để trình Giám đốc ĐHQGHN phê duyệt.
 
-    8. Ký quyết định trúng tuyển và công nhận sinh viên: Chủ tịch Hội đồng tuyển sinh báo cáo người đứng đầu đơn vị đào tạo kết quả tuyển sinh, trên cơ sở chỉ tiêu đã xác định Hiệu trưởng các trường đại học thành viên ký Quyết định trúng tuyển và công nhận sinh viên; đối với các trường/khoa trực thuộc, Giám đốc ĐHQGHN ký Quyết định trúng tuyển và Quyết định công nhận sinh viên."
+8. Ký quyết định trúng tuyển và công nhận sinh viên: Chủ tịch Hội đồng tuyển sinh báo cáo người đứng đầu đơn vị đào tạo kết quả tuyển sinh, trên cơ sở chỉ tiêu đã xác định Hiệu trưởng các trường đại học thành viên ký Quyết định trúng tuyển và công nhận sinh viên; đối với các trường/khoa trực thuộc, Giám đốc ĐHQGHN ký Quyết định trúng tuyển và Quyết định công nhận sinh viên."
 
 **Điều 2. Thay thế Phụ lục IV của Quyết định 1328/QĐ-ĐHQGHN ngày 18 tháng 04 năm 2023 của Giám đốc ĐHQGHN ban hành Quy chế tuyển sinh đại học chính quy tại ĐHQGHN bằng Phụ lục IV ban hành kèm theo Quyết định này.**
 

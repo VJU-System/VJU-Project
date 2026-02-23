@@ -375,8 +375,8 @@ Số người thôi học sau năm đầu tiên nhập học (B1) chia cho tổn
 - N1 là tổng số (lượt) người học gửi ý kiến phản hồi hợp lệ về mức độ hài lòng về chất lượng và hiệu quả giảng dạy, hướng dẫn của giảng viên đối với tiến bộ học tập của bản thân.
 **Yêu cầu khảo sát:**
 a) Cơ sở GDĐH thực hiện khảo sát theo hình thức trên giấy hoặc trực tuyến, theo một trong 2 cách dưới đây:
-   - Khảo sát theo lớp học trên toàn bộ giảng viên, một người học có thể tham gia nhiều lượt khảo sát (theo từng lớp học, đối với từng giảng viên), kết quả khảo sát tính trung bình trên kết quả khảo sát đối với từng giảng viên;
-   - Khảo sát tổng thể đội ngũ giảng viên với toàn bộ người học, mỗi người học tham gia một lượt khảo sát, số lượt khảo sát bằng tổng số người học, kết quả khảo sát tính chung cho toàn bộ đội ngũ giảng viên.
+  - Khảo sát theo lớp học trên toàn bộ giảng viên, một người học có thể tham gia nhiều lượt khảo sát (theo từng lớp học, đối với từng giảng viên), kết quả khảo sát tính trung bình trên kết quả khảo sát đối với từng giảng viên;
+  - Khảo sát tổng thể đội ngũ giảng viên với toàn bộ người học, mỗi người học tham gia một lượt khảo sát, số lượt khảo sát bằng tổng số người học, kết quả khảo sát tính chung cho toàn bộ đội ngũ giảng viên.
 b) Cơ quan quản lý nhà nước có thể tiến hành khảo sát độc lập (để kiểm chứng) với tối thiểu 20% người học theo cách lựa chọn ngẫu nhiên, bảo đảm đại diện cho tất cả các khóa đào tạo và chương trình đào tạo.
 c) Câu hỏi khảo sát thống nhất theo mẫu “Anh/Chị hài lòng như thế nào về chất lượng, hiệu quả giảng dạy, hướng dẫn của giảng viên đối với tiến bộ học tập của bản thân?” với 5 mức đánh giá (Rất không hài lòng, Không hài lòng, Phân vân, Hài lòng, Rất hài lòng), trong đó chỉ 2 mức cao nhất (Hài lòng, Rất hài lòng) được coi là phản hồi tích cực, đánh giá từ mức “Hài lòng” trở lên.
 d) Số lượt người học gửi ý kiến phản hồi hợp lệ không bao gồm những phiếu trả lời hoàn toàn trống hoặc những phiếu có chứa thông tin mâu thuẫn, phiếu của một người học gửi nhiều lần cho một lượt khảo sát. Yêu cầu số lượt người học gửi ý kiến phản hồi hợp lệ đạt tối thiểu 70% số lượt người học được khảo sát.

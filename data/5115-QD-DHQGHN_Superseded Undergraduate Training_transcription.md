@@ -33,12 +33,12 @@ last_updated: 2026-02-22
 ## Điều 2. Phân cấp tổ chức và quản lý đào tạo
 1. Hệ thống tổ chức và quản lý đào tạo bậc đại học gồm hai cấp: cấp Đại học Quốc gia Hà Nội và cấp đơn vị đào tạo.
     a) Đại học Quốc gia Hà Nội
-    - Chỉ đạo và điều hành thống nhất công tác tổ chức và quản lý đào tạo theo cơ chế mở, liên thông, liên kết và hợp tác giữa các đơn vị đào tạo.
-    - Điều phối sử dụng các nguồn lực chung (nhân lực, cơ sở vật chất - kỹ thuật) phục vụ đào tạo.
-    - Quản lý toàn diện công tác tổ chức và quản lý đào tạo của các khoa trực thuộc.
+  - Chỉ đạo và điều hành thống nhất công tác tổ chức và quản lý đào tạo theo cơ chế mở, liên thông, liên kết và hợp tác giữa các đơn vị đào tạo.
+  - Điều phối sử dụng các nguồn lực chung (nhân lực, cơ sở vật chất - kỹ thuật) phục vụ đào tạo.
+  - Quản lý toàn diện công tác tổ chức và quản lý đào tạo của các khoa trực thuộc.
     b) Đơn vị đào tạo
-    - Tổ chức và quản lý đào tạo các ngành học, học phần đã được Đại học Quốc gia Hà Nội giao nhiệm vụ; công nhận kết quả học tập của sinh viên giữa các đơn vị đào tạo; xây dựng học liệu dùng chung.
-    - Xây dựng những ngành học mới, chương trình đào tạo mới, chú trọng các chương trình đào tạo có tính liên ngành, báo cáo Giám đốc Đại học Quốc gia Hà Nội xem xét quyết định ban hành và giao nhiệm vụ tổ chức đào tạo.
+  - Tổ chức và quản lý đào tạo các ngành học, học phần đã được Đại học Quốc gia Hà Nội giao nhiệm vụ; công nhận kết quả học tập của sinh viên giữa các đơn vị đào tạo; xây dựng học liệu dùng chung.
+  - Xây dựng những ngành học mới, chương trình đào tạo mới, chú trọng các chương trình đào tạo có tính liên ngành, báo cáo Giám đốc Đại học Quốc gia Hà Nội xem xét quyết định ban hành và giao nhiệm vụ tổ chức đào tạo.
 2. Phân công giảng dạy các học phần
     a) Các học phần ngoại ngữ do Trường Đại học Ngoại ngữ giảng dạy;
     b) Các học phần lý luận chính trị do Trường Đại học Khoa học Xã hội và Nhân văn giảng dạy;
@@ -116,9 +116,9 @@ Kinh phí để tổ chức đào tạo một ngành học bao gồm kinh phí t
     a) Kinh phí từ ngân sách nhà nước
     Đại học Quốc gia Hà Nội phân bổ kinh phí theo định mức và chỉ tiêu đào tạo hàng năm cho các ngành học được cấp ngân sách Nhà nước.
     b) Học phí
-    - Sinh viên theo học bất kỳ ngành học nào đều phải trả học phí (trừ sinh viên thuộc đối tượng được miễn giảm theo quy định hiện hành của Nhà nước).
-    - Sinh viên trả học phí theo số tín chỉ đăng ký học trong mỗi học kỳ tại đơn vị đào tạo quản lý ngành học mà sinh viên theo học.
-    - Học phí được tính theo công thức:
+  - Sinh viên theo học bất kỳ ngành học nào đều phải trả học phí (trừ sinh viên thuộc đối tượng được miễn giảm theo quy định hiện hành của Nhà nước).
+  - Sinh viên trả học phí theo số tín chỉ đăng ký học trong mỗi học kỳ tại đơn vị đào tạo quản lý ngành học mà sinh viên theo học.
+  - Học phí được tính theo công thức:
     M = a Σ hᵢnᵢ  (i=1,..,k)
     trong đó:
     M: Số học phí phải nộp
@@ -126,9 +126,9 @@ Kinh phí để tổ chức đào tạo một ngành học bao gồm kinh phí t
     hᵢ: Hệ số học phí của học phần thứ i mà sinh viên học lần đầu (h₁), học lại (h₂), học cải thiện điểm (h₃), học tự chọn tự do (h₄)
     nᵢ: Số tín chỉ của học phần thứ i
     k: Tổng số học phần
-    - Thủ trưởng đơn vị đào tạo xây dựng định mức học phí cho một tín chỉ và hệ số học phí của từng học phần cho các ngành học, phù hợp với các quy định chung của Nhà nước và của Đại học Quốc gia Hà Nội, báo cáo Giám đốc Đại học Quốc gia Hà Nội.
-    - Thủ trưởng đơn vị đào tạo quy định cụ thể và công bố cho sinh viên biết cách thức thu, nộp và xét miễn giảm học phí.
-    - Các đơn vị đào tạo thực hiện chế độ miễn, giảm học phí cho sinh viên theo quy định của Nhà nước và của Đại học Quốc gia Hà Nội.
+  - Thủ trưởng đơn vị đào tạo xây dựng định mức học phí cho một tín chỉ và hệ số học phí của từng học phần cho các ngành học, phù hợp với các quy định chung của Nhà nước và của Đại học Quốc gia Hà Nội, báo cáo Giám đốc Đại học Quốc gia Hà Nội.
+  - Thủ trưởng đơn vị đào tạo quy định cụ thể và công bố cho sinh viên biết cách thức thu, nộp và xét miễn giảm học phí.
+  - Các đơn vị đào tạo thực hiện chế độ miễn, giảm học phí cho sinh viên theo quy định của Nhà nước và của Đại học Quốc gia Hà Nội.
     c) Các nguồn kinh phí hợp pháp khác
     Các nguồn kinh phí hợp pháp dành cho công tác đào tạo do Thủ trưởng đơn vị đào tạo quy định.
 2. Sử dụng kinh phí đào tạo
@@ -263,11 +263,11 @@ Thời gian hoạt động giảng dạy và học tập của đơn vị đào 
 ## Điều 20. Đăng ký học phần
 1. Số tín chỉ đăng ký học trong mỗi học kỳ (không bao gồm các học phần ngoại ngữ, giáo dục thể chất, giáo dục quốc phòng - an ninh, kỹ năng bổ trợ, cải thiện điểm, tự chọn tự do).
     a) Đối với học kỳ chính, không tính học kỳ cuối khóa:
-    - Chương trình đào tạo chuẩn: Tối thiểu 14 tín chỉ
-    - Chương trình đào tạo chất lượng cao: Tối thiểu 16 tín chỉ
-    - Chương trình đào tạo chuẩn quốc tế: Tối thiểu 16 tín chỉ
-    - Chương trình đào tạo tài năng: Tối thiểu 18 tín chỉ
-    - Chương trình đào tạo chuẩn theo hình thức vừa làm vừa học và các chương trình đào tạo còn lại: Thủ trưởng đơn vị đào tạo quy định.
+  - Chương trình đào tạo chuẩn: Tối thiểu 14 tín chỉ
+  - Chương trình đào tạo chất lượng cao: Tối thiểu 16 tín chỉ
+  - Chương trình đào tạo chuẩn quốc tế: Tối thiểu 16 tín chỉ
+  - Chương trình đào tạo tài năng: Tối thiểu 18 tín chỉ
+  - Chương trình đào tạo chuẩn theo hình thức vừa làm vừa học và các chương trình đào tạo còn lại: Thủ trưởng đơn vị đào tạo quy định.
     Trường hợp sinh viên có nguyện vọng đăng ký học ít hơn số tín chỉ tối thiểu trong một học kỳ phải được sự đồng ý của Thủ trưởng đơn vị đào tạo.
     b) Đối với học kỳ phụ: Thủ trưởng đơn vị đào tạo quy định.
 2. Đăng ký học phần
@@ -290,10 +290,10 @@ Các học phần có cùng nội dung, thời lượng mà sinh viên chuyển 
 Đơn vị đào tạo thông báo kết quả đăng ký học phần cho sinh viên khi sinh viên đã hoàn thành việc đăng ký đảm bảo khối lượng học tập tối thiểu của học kỳ quy định tại khoản 1, Điều này.
 8. Đăng ký đề tài khoá luận hoặc đồ án tốt nghiệp
     a) Thủ trưởng đơn vị đào tạo quy định
-    - Điều kiện được đăng ký, quy trình đăng ký nhận đề tài, hình thức và thời gian làm khoá luận hoặc đồ án tốt nghiệp;
-    - Số lượng khóa luận, đồ án tốt nghiệp tối đa do một giảng viên hướng dẫn trong cùng một thời gian;
-    - Nhiệm vụ của giảng viên hướng dẫn, trách nhiệm của bộ môn đối với sinh viên trong thời gian làm khóa luận, đồ án tốt nghiệp;
-    - Hình thức, quy trình chấm khoá luận, đồ án tốt nghiệp.
+  - Điều kiện được đăng ký, quy trình đăng ký nhận đề tài, hình thức và thời gian làm khoá luận hoặc đồ án tốt nghiệp;
+  - Số lượng khóa luận, đồ án tốt nghiệp tối đa do một giảng viên hướng dẫn trong cùng một thời gian;
+  - Nhiệm vụ của giảng viên hướng dẫn, trách nhiệm của bộ môn đối với sinh viên trong thời gian làm khóa luận, đồ án tốt nghiệp;
+  - Hình thức, quy trình chấm khoá luận, đồ án tốt nghiệp.
     b) Chủ nhiệm khoa trực thuộc Đại học Quốc gia Hà Nội, Chủ nhiệm khoa thuộc trường đại học thành viên phân công cán bộ hướng dẫn khóa luận, đồ án tốt nghiệp theo đề nghị của Trưởng bộ môn. Đề tài khóa luận, đồ án tốt nghiệp do giảng viên hướng dẫn đề nghị và được thông qua ở bộ môn.
     c) Sinh viên không đủ điều kiện làm khóa luận hoặc đồ án tốt nghiệp sẽ đăng ký học các học phần thay thế do Thủ trưởng đơn vị đào tạo quy định. Các học phần thay thế cho khóa luận hoặc đồ án tốt nghiệp được tổ chức đào tạo, kiểm tra đánh giá như các học phần khác.
 
@@ -312,27 +312,27 @@ Sinh viên chỉ được phép không lên lớp đối với học phần xin 
 ## Điều 22. Đối tượng được miễn, tạm hoãn học các học phần giáo dục quốc phòng - an ninh, giáo dục thể chất
 1. Đối tượng được miễn, tạm hoãn học học phần giáo dục quốc phòng - an ninh
     a) Đối tượng được miễn học toàn bộ học phần
-    - Sinh viên có bằng tốt nghiệp học viện, trường sĩ quan quân đội, công an;
-    - Sinh viên đã có chứng chỉ giáo dục quốc phòng - an ninh;
-    - Sinh viên là người nước ngoài.
+  - Sinh viên có bằng tốt nghiệp học viện, trường sĩ quan quân đội, công an;
+  - Sinh viên đã có chứng chỉ giáo dục quốc phòng - an ninh;
+  - Sinh viên là người nước ngoài.
     b) Đối tượng được miễn học, miễn thi các nội dung đã học
     Sinh viên chuyển cơ sở đào tạo được miễn học các nội dung đã học nhưng phải có điểm đánh giá kết quả học tập các nội dung tương ứng.
     c) Đối tượng được miễn học các nội dung thực hành kỹ năng quân sự
-    - Sinh viên là tu sỹ thuộc các tôn giáo;
-    - Sinh viên có thương tật, khuyết tật bẩm sinh, bị bệnh mãn tính làm hạn chế chức năng vận động có giấy chứng nhận của bệnh viện cấp huyện và tương đương trở lên;
-    - Sinh viên đã hoàn thành nghĩa vụ quân sự, có giấy xuất ngũ do đơn vị quân đội có thẩm quyền cấp.
+  - Sinh viên là tu sỹ thuộc các tôn giáo;
+  - Sinh viên có thương tật, khuyết tật bẩm sinh, bị bệnh mãn tính làm hạn chế chức năng vận động có giấy chứng nhận của bệnh viện cấp huyện và tương đương trở lên;
+  - Sinh viên đã hoàn thành nghĩa vụ quân sự, có giấy xuất ngũ do đơn vị quân đội có thẩm quyền cấp.
     d) Đối tượng được tạm hoãn học
-    - Sinh viên bị ốm đau, tai nạn, thiên tai, hỏa hoạn;
-    - Nữ sinh viên đang mang thai hoặc trong thời gian nghỉ thai sản theo quy định hiện hành;
+  - Sinh viên bị ốm đau, tai nạn, thiên tai, hỏa hoạn;
+  - Nữ sinh viên đang mang thai hoặc trong thời gian nghỉ thai sản theo quy định hiện hành;
     Các đối tượng trên nếu được Thủ trưởng đơn vị đào tạo chấp thuận cho tạm hoãn học thì sau khi hết thời hạn tạm hoãn phải tiếp tục học những nội dung còn thiếu theo quy định.
 2. Miễn, tạm hoãn học học phần giáo dục thể chất
     a) Đối tượng được miễn học toàn bộ học phần
-    - Sinh viên đã hoàn thành học phần giáo dục thể chất phù hợp với trình độ đào tạo.
+  - Sinh viên đã hoàn thành học phần giáo dục thể chất phù hợp với trình độ đào tạo.
     b) Đối tượng được miễn học các nội dung thực hành
     Sinh viên có thương tật, dị tật bẩm sinh làm hạn chế chức năng vận động (có giấy chứng nhận của bệnh viện cấp huyện và tương đương trở lên) được miễn học các nội dung thực hành hoặc có thể lựa chọn nội dung đặc thù dành cho người khuyết tật.
     c) Đối tượng được tạm hoãn học
-    - Sinh viên bị ốm đau, tai nạn, thiên tai, hỏa hoạn;
-    - Nữ sinh viên đang mang thai hoặc trong thời gian nghỉ thai sản theo quy định hiện hành.
+  - Sinh viên bị ốm đau, tai nạn, thiên tai, hỏa hoạn;
+  - Nữ sinh viên đang mang thai hoặc trong thời gian nghỉ thai sản theo quy định hiện hành.
     Thủ trưởng đơn vị đào tạo xem xét quyết định cho các đối tượng được tạm hoãn học. Hết thời gian tạm hoãn, sinh viên tiếp tục học những nội dung còn thiếu trong học phần quy định.
 
 ## Điều 23. Đào tạo văn bằng thứ hai
@@ -355,19 +355,19 @@ Sinh viên chỉ được phép không lên lớp đối với học phần xin 
 ## Điều 25. Chuyển đổi sinh viên giữa các chương trình đào tạo
 1. Chuyển sinh viên học chương trình đào tạo tài năng, chuẩn quốc tế, chất lượng cao sang học chương trình đào tạo chuẩn chính quy của ngành học tương ứng.
     a) Sinh viên học chương trình đào tạo tài năng, chuẩn quốc tế, chất lượng cao chưa bị buộc thôi học phải chuyển sang học chương trình đào tạo chuẩn chính quy của ngành học tương ứng nếu vi phạm một trong các trường hợp sau:
-    - Có một học phần nâng cao, bổ sung đạt điểm F;
-    - Có điểm trung bình chung các học phần tính đến thời điểm xét, đạt dưới 2,50;
-    - Bị kỷ luật trong thời gian học từ mức khiển trách trở lên.
+  - Có một học phần nâng cao, bổ sung đạt điểm F;
+  - Có điểm trung bình chung các học phần tính đến thời điểm xét, đạt dưới 2,50;
+  - Bị kỷ luật trong thời gian học từ mức khiển trách trở lên.
     b) Khi chuyển sang học chương trình đào tạo chuẩn chính quy, các học phần nâng cao, bổ sung được chuyển đổi như sau:
-    - Đối với học phần nâng cao, điểm học phần được giữ nguyên, số tín chỉ được quy đổi theo chương trình đào tạo chuẩn;
-    - Đối với học phần bổ sung, Thủ trưởng đơn vị đào tạo xem xét cho phép thay thế bằng học phần khác trong chương trình đào tạo chuẩn hoặc xác nhận là học phần tự chọn tự do.
+  - Đối với học phần nâng cao, điểm học phần được giữ nguyên, số tín chỉ được quy đổi theo chương trình đào tạo chuẩn;
+  - Đối với học phần bổ sung, Thủ trưởng đơn vị đào tạo xem xét cho phép thay thế bằng học phần khác trong chương trình đào tạo chuẩn hoặc xác nhận là học phần tự chọn tự do.
 2. Bổ sung sinh viên học chương trình đào tạo chuẩn chính quy vào học chương trình đào tạo tài năng, chuẩn quốc tế, chất lượng cao.
     a) Căn cứ chỉ tiêu đào tạo đã công bố, Thủ trưởng đơn vị đào tạo tổ chức xét tuyển bổ sung sinh viên vào học chương trình đào tạo tài năng, chuẩn quốc tế, chất lượng cao nếu có đủ các điều kiện sau:
-    - Là sinh viên năm thứ hai hoặc năm thứ ba;
-    - Ngành học phù hợp với ngành học có chương trình đào tạo tài năng, chuẩn quốc tế, chất lượng cao;
-    - Điểm trung bình chung các học phần tính đến thời điểm xét đạt từ 3,20 trở lên và trình độ tiếng Anh đạt chuẩn bậc 3 trở lên;
-    - Điểm các học phần tương ứng với học phần trong chương trình đào tạo tài năng, chuẩn quốc tế, chất lượng cao phải đạt từ B trở lên;
-    - Tư cách đạo đức, ý thức tổ chức kỷ luật tốt.
+  - Là sinh viên năm thứ hai hoặc năm thứ ba;
+  - Ngành học phù hợp với ngành học có chương trình đào tạo tài năng, chuẩn quốc tế, chất lượng cao;
+  - Điểm trung bình chung các học phần tính đến thời điểm xét đạt từ 3,20 trở lên và trình độ tiếng Anh đạt chuẩn bậc 3 trở lên;
+  - Điểm các học phần tương ứng với học phần trong chương trình đào tạo tài năng, chuẩn quốc tế, chất lượng cao phải đạt từ B trở lên;
+  - Tư cách đạo đức, ý thức tổ chức kỷ luật tốt.
     b) Đối với việc chuyển đổi điểm học phần trong chương trình đào tạo chuẩn sang điểm học phần nâng cao tương ứng, Thủ trưởng đơn vị đào tạo xem xét công nhận tương đương hoặc yêu cầu học bổ sung kiến thức.
 3. Không chuyển sinh viên đang học chương trình đào tạo liên kết quốc tế sang học các chương trình đào tạo khác.
 
@@ -384,9 +384,9 @@ Sinh viên chỉ được phép không lên lớp đối với học phần xin 
 Các điều kiện về trình độ tiếng Việt hoặc ngoại ngữ:
     a) Có trình độ tiếng Việt hoặc ngoại ngữ cần dùng đạt chuẩn bậc 4 trở lên trước khi được tiếp nhận vào học. Việc kiểm tra do trường Đại học Khoa học Xã hội và Nhân văn (đối với tiếng Việt) và trường Đại học Ngoại ngữ (đối với ngoại ngữ) tổ chức thực hiện;
     b) Được miễn kiểm tra tiếng Việt hoặc ngoại ngữ nếu thuộc một trong các trường hợp:
-    - Là công dân sử dụng ngoại ngữ cần dùng như ngôn ngữ chính thức;
-    - Đã tốt nghiệp đại học bằng ngoại ngữ cần dùng;
-    - Có chứng chỉ tiếng Việt hoặc ngoại ngữ đạt bậc 4 (theo Khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam) trở lên.
+  - Là công dân sử dụng ngoại ngữ cần dùng như ngôn ngữ chính thức;
+  - Đã tốt nghiệp đại học bằng ngoại ngữ cần dùng;
+  - Có chứng chỉ tiếng Việt hoặc ngoại ngữ đạt bậc 4 (theo Khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam) trở lên.
 4. Sinh viên chuyển trường được bảo lưu điểm và số tín chỉ của học phần theo quy định tại khoản 6, Điều 20 và được miễn học, miễn thi các học phần giáo dục quốc phòng - an ninh, giáo dục thể chất theo quy định tại Điều 22 của Quy chế này.
 
 # Chương IV. HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC CỦA SINH VIÊN
@@ -411,14 +411,14 @@ Tổ chức xét, trao giải thưởng cho các công trình nghiên cứu khoa
 1. Điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên đạt giải được cộng vào điểm trung bình chung học kỳ, điểm trung bình chung tích lũy để làm căn cứ xét học bổng, xét chuyển tiếp vào học ở bậc sau đại học và các quyền lợi khác, không dùng để xếp loại học lực hoặc xác định hạng tốt nghiệp.
 2. Mức điểm thưởng được quy định như sau:
     a) Đạt giải thưởng cấp Đại học Quốc gia Hà Nội hoặc cấp Bộ Giáo dục và Đào tạo:
-    - Giải nhất: 0,20 điểm
-    - Giải nhì: 0,15 điểm
-    - Giải ba: 0,10 điểm
-    - Giải khuyến khích: 0,07 điểm
+  - Giải nhất: 0,20 điểm
+  - Giải nhì: 0,15 điểm
+  - Giải ba: 0,10 điểm
+  - Giải khuyến khích: 0,07 điểm
     b) Đạt giải thưởng cấp đơn vị đào tạo:
-    - Giải nhất: 0,10 điểm
-    - Giải nhì: 0,07 điểm
-    - Giải ba: 0,05 điểm
+  - Giải nhất: 0,10 điểm
+  - Giải nhì: 0,07 điểm
+  - Giải ba: 0,05 điểm
 Nếu công trình nghiên cứu khoa học do nhiều sinh viên cùng thực hiện thì điểm thưởng được chia đều cho số sinh viên cùng tham gia.
 3. Nếu sinh viên đạt nhiều giải thưởng nghiên cứu khoa học ở các cấp thì chỉ cộng điểm thưởng một lần ở mức giải cao nhất.
 4. Công trình nghiên cứu khoa học được tính như một niên luận hoặc tiểu luận; được thay cho một học phần tự chọn có điều kiện thuộc khối kiến thức ngành sẽ được tích lũy vào kết quả học tập chung của học kỳ; được tính đến khi xét học bổng, xét học tiếp sau đại học và các quyền lợi khác, nếu có đủ các điều kiện sau:
@@ -434,8 +434,8 @@ Nếu công trình nghiên cứu khoa học do nhiều sinh viên cùng thực h
 2. Quyền lợi của giảng viên
     a) Được hưởng các quyền lợi chung và ưu đãi do Nhà nước quy định, các chế độ bồi dưỡng, thù lao theo quy chế chi tiêu nội bộ của đơn vị;
     b) Ngoài các quyền lợi chung, giảng viên tham gia chương trình đào tạo tài năng, chất lượng cao, chuẩn quốc tế được hưởng các quyền lợi sau:
-    - Được hưởng chế độ bồi dưỡng ưu đãi đối với công tác giảng dạy, hướng dẫn học tập, nghiên cứu khoa học của các chương trình đào tạo này;
-    - Được ưu tiên tạo điều kiện thực tập, bồi dưỡng nâng cao trình độ chuyên môn ở trong và ngoài nước.
+  - Được hưởng chế độ bồi dưỡng ưu đãi đối với công tác giảng dạy, hướng dẫn học tập, nghiên cứu khoa học của các chương trình đào tạo này;
+  - Được ưu tiên tạo điều kiện thực tập, bồi dưỡng nâng cao trình độ chuyên môn ở trong và ngoài nước.
 
 ## Điều 31. Cố vấn học tập
 1. Cố vấn học tập là giảng viên có trình độ thạc sĩ trở lên, có ít nhất 2 năm trực tiếp giảng dạy, am hiểu chương trình đào tạo.
@@ -459,14 +459,14 @@ Sinh viên không trung thực và có hành vi gian lận trong nghiên cứu k
 4. Sinh viên có trách nhiệm thực hiện đúng các quy định về kỷ luật phòng thi, nếu vi phạm sẽ bị kỷ luật ở các mức sau:
     a) Khiển trách: áp dụng đối với sinh viên phạm lỗi 1 lần nhìn bài của người khác, trao đổi bài, thảo luận bài trong giờ thi. Sinh viên bị khiển trách khi thi học phần nào sẽ bị trừ 25% số điểm đạt được của bài thi học phần đó;
     b) Cảnh cáo: áp dụng đối với sinh viên vi phạm một trong các lỗi:
-    - Đã bị khiển trách 1 lần nhưng trong giờ thi học phần đó vẫn tiếp tục vi phạm quy định;
-    - Trao đổi bài làm, giấy nháp với người khác;
-    - Chép bài của người khác. Những bài thi đã có kết luận là giống nhau thì xử lý như nhau, trừ trường hợp người bị xử lý có đủ bằng chứng chứng tỏ mình thực sự bị quay cóp thì thủ trưởng đơn vị đào tạo có thể xem xét giảm từ mức kỷ luật cảnh cáo xuống mức khiển trách.
+  - Đã bị khiển trách 1 lần nhưng trong giờ thi học phần đó vẫn tiếp tục vi phạm quy định;
+  - Trao đổi bài làm, giấy nháp với người khác;
+  - Chép bài của người khác. Những bài thi đã có kết luận là giống nhau thì xử lý như nhau, trừ trường hợp người bị xử lý có đủ bằng chứng chứng tỏ mình thực sự bị quay cóp thì thủ trưởng đơn vị đào tạo có thể xem xét giảm từ mức kỷ luật cảnh cáo xuống mức khiển trách.
     Sinh viên bị cảnh cáo khi thi học phần nào sẽ bị trừ 50% số điểm đạt được của bài thi học phần đó.
     c) Đình chỉ thi: áp dụng đối với sinh viên vi phạm một trong các lỗi:
-    - Đã bị cảnh cáo một lần nhưng trong giờ thi học phần đó vẫn tiếp tục vi phạm quy định;
-    - Sau khi đã bóc đề thi bị phát hiện mang theo những vật dụng không được phép;
-    - Đưa đề thi ra ngoài hoặc nhận bài giải từ ngoài vào phòng thi.
+  - Đã bị cảnh cáo một lần nhưng trong giờ thi học phần đó vẫn tiếp tục vi phạm quy định;
+  - Sau khi đã bóc đề thi bị phát hiện mang theo những vật dụng không được phép;
+  - Đưa đề thi ra ngoài hoặc nhận bài giải từ ngoài vào phòng thi.
     Sinh viên bị kỷ luật đình chỉ thi sẽ bị điểm không (0) bài thi học phần đó và phải ra khỏi phòng thi ngay sau khi có quyết định đình chỉ thi.
     Các hình thức kỷ luật nói trên do cán bộ coi thi lập biên bản, thu tang vật và ghi rõ hình thức kỷ luật.
     d) Sinh viên thi hộ hoặc nhờ người thi hộ bị kỷ luật ở mức đình chỉ học tập 1 năm nếu vi phạm lần thứ nhất và buộc thôi học nếu vi phạm lần thứ hai.
@@ -533,18 +533,18 @@ Người tham gia công tác coi thi, tổ chức thi, chấm thi vi phạm quy 
 1. Điểm đánh giá bộ phận và điểm thi kết thúc học phần được chấm theo thang điểm 10 (từ 0 đến 10), có lẻ đến một chữ số thập phân.
 2. Điểm học phần là tổng của điểm đánh giá bộ phận và điểm thi kết thúc học phần sau khi đã tính trọng số được quy định trong đề cương học phần và được làm tròn đến một chữ số thập phân, sau đó được chuyển thành điểm chữ.
     a) Loại đạt:
-    - 9,0 - 10: tương ứng với A+
-    - 8,5 – 8,9: tương ứng với A
-    - 8,0 – 8,4: tương ứng với B+
-    - 7,0 - 7,9: tương ứng với B
-    - 6,5 - 6,9: tương ứng với C+
-    - 5,5 - 6,4: tương ứng với C
-    - 5,0 - 5,4: tương ứng với D+
-    - 4,0 - 4,9: tương ứng với D
+  - 9,0 - 10: tương ứng với A+
+  - 8,5 – 8,9: tương ứng với A
+  - 8,0 – 8,4: tương ứng với B+
+  - 7,0 - 7,9: tương ứng với B
+  - 6,5 - 6,9: tương ứng với C+
+  - 5,5 - 6,4: tương ứng với C
+  - 5,0 - 5,4: tương ứng với D+
+  - 4,0 - 4,9: tương ứng với D
     b) Loại không đạt: Dưới 4,0 tương ứng với F
     c) Đối với những học phần chưa đủ cơ sở để đưa vào tính điểm trung bình chung học kỳ, khi xếp mức đánh giá được sử dụng các ký hiệu sau:
-    - I - Chưa đủ điểm đánh giá bộ phận
-    - X - Chưa có kết quả thi kết thúc học phần
+  - I - Chưa đủ điểm đánh giá bộ phận
+  - X - Chưa có kết quả thi kết thúc học phần
     d) Đối với những học phần được Thủ trưởng đơn vị đào tạo cho phép chuyển điểm hoặc được đánh giá đầu học kỳ (nếu có), khi xếp mức đánh giá sử dụng ký hiệu R viết sau điểm học phần.
 3. Việc xếp loại các mức điểm A+, A, B+, B, C⁺, C, D⁺, D, F được áp dụng cho các trường hợp sau đây:
     a) Những học phần mà sinh viên đã có đủ điểm đánh giá bộ phận. Trường hợp sinh viên bỏ học, bỏ kiểm tra hoặc bỏ thi không có lý do sẽ không có điểm;

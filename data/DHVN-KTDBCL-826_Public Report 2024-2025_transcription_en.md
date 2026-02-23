@@ -205,28 +205,28 @@ Major milestones in the history of Vietnam-Japan University are summarised in Ta
   - Testing and 2. Quality Assurance Office
 - **Teaching and research units**
   - **Faculty of Interdisciplinary Social Sciences**
-    - Doctoral Programme in Japanese Studies
-    - Master’s Programme in Area Studies
-    - Master’s Programme in Business Administration
-    - Master’s Programme in Public Policy
-    - Master’s Programme in Global Leadership
-    - Japanese Language Education Programme
-    - Bachelor’s Programme in Japanese Studies
-    - Bachelor’s Programme in Global Development and Innovation
+  - Doctoral Programme in Japanese Studies
+  - Master’s Programme in Area Studies
+  - Master’s Programme in Business Administration
+  - Master’s Programme in Public Policy
+  - Master’s Programme in Global Leadership
+  - Japanese Language Education Programme
+  - Bachelor’s Programme in Japanese Studies
+  - Bachelor’s Programme in Global Development and Innovation
   - **Faculty of Advanced Technologies and Engineering**
-    - Doctoral Programme in Sustainability Science and Technology
-    - Master’s Programme in Nanotechnology
-    - Master’s Programme in Environmental Engineering
-    - Master’s Programme in Civil Engineering
-    - Master’s Programme in Climate Change and Development
-    - Master’s Programme in Computer Science and Engineering
-    - Bachelor’s Programme in Computer Science and Engineering
-    - Bachelor’s Programme in Smart Agriculture and Sustainability
-    - Bachelor’s Programme in Civil Engineering
-    - Bachelor’s Programme in Intelligent Mechatronics Systems and Japanese Manufacturing
-    - Bachelor’s Programme in Food Technology and Health
-    - Bachelor’s Programme in Intelligent Control and Automation
-    - Bachelor’s Programme in Semiconductor Chip Technology
+  - Doctoral Programme in Sustainability Science and Technology
+  - Master’s Programme in Nanotechnology
+  - Master’s Programme in Environmental Engineering
+  - Master’s Programme in Civil Engineering
+  - Master’s Programme in Climate Change and Development
+  - Master’s Programme in Computer Science and Engineering
+  - Bachelor’s Programme in Computer Science and Engineering
+  - Bachelor’s Programme in Smart Agriculture and Sustainability
+  - Bachelor’s Programme in Civil Engineering
+  - Bachelor’s Programme in Intelligent Mechatronics Systems and Japanese Manufacturing
+  - Bachelor’s Programme in Food Technology and Health
+  - Bachelor’s Programme in Intelligent Control and Automation
+  - Bachelor’s Programme in Semiconductor Chip Technology
 
 *Note: Programmes shown with dashed outlines have been approved but have not yet enrolled students.*
 
