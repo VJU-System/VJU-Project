@@ -1,6 +1,6 @@
 # Architecture.md — VJU Document Repository
 
-> **最終更新:** 2026-02-21
+> **最終更新:** 2026-02-23
 > **ステータス:** 確定
 
 ---
@@ -12,31 +12,35 @@
 > - **ランタイム**: ブラウザのみ（GitHub Pages）
 > - **ビルドステップ**: 存在しない。`index.html` 単体で動作する
 > - **単一ファイル SPA**: 全 HTML / CSS / JS が `index.html` に集約
+> - **静的ホスティング前提**: GitHub Pages またはローカルファイル直開きで動作可能であること
 
 ---
 
 ## 2. System Structure（システム構成）
 
 ```
-docs/
-  ├── index.html              # SPA エントリポイント（~1400行、全コード含む）
+/
+  ├── index.html              # SPA エントリポイント（全コード含む）
+  ├── firebase.json           # Firebase 設定
+  ├── firestore.rules         # Firestore Security Rules
+  ├── .nojekyll               # GitHub Pages Jekyll 無効化
   ├── data/                   # 公開文書データ
   │     ├── {DocID}_{Title}_transcription.md      # VI テキスト
   │     ├── {DocID}_{Title}_transcription_en.md   # EN テキスト
   │     ├── {DocID}_{Title}_transcription_ja.md   # JA テキスト
   │     ├── {DocID}_{Title}_source.pdf            # 元 PDF
-  │     └── glossary_vi_en_ja.md                  # 用語集
-  ├── project/                # プロジェクト管理ドキュメント
-  │     ├── Requirements.md
+  │     ├── search-index.json                     # 検索インデックス（自動生成）
+  │     ├── glossary_vi_en_ja.md                  # 用語集
+  │     └── Confidential/                         # 制限文書原本（Firestore経由で配信）
+  ├── docs/                   # プロジェクト管理ドキュメント
   │     ├── Architecture.md   # ← このファイル
   │     ├── Spec.md
-  │     ├── TaskPlan.md
-  │     ├── Testing.md
-  │     └── Lessons.md
-  ├── firebase-rules/         # Firebase Security Rules
-  │     ├── firestore.rules
-  │     └── storage.rules
-  └── MIGRATION_PLAN.md       # 文書移行計画（52文書）
+  │     ├── QA_CHECKLIST.md
+  │     └── MIGRATION_PLAN.md # 文書移行計画（52文書）
+  ├── scripts/                # ビルド・運用スクリプト
+  │     ├── build-search-index.js   # 検索インデックス生成
+  │     └── upload_to_firestore.js  # 制限文書 Firestore アップロード
+  └── tmp/                    # 一時ファイル（gitignore 対象外）
 ```
 
 ---
@@ -51,10 +55,12 @@ docs/
 | **CSS** | prose-legal スタイル、TOC スタイル、ドラッグハンドル |
 | **HTML Views** | 4 つのビュー: home / search / department / reader |
 | **Navigation** | `navigateTo(view)` による SPA ルーティング |
-| **DOC_REGISTRY** | 文書ID → ファイル名プレフィックスのマッピング |
+| **DOC_REGISTRY** | 文書メタデータの単一ソース（doc_id, title, tags, date, department, type, restricted 等） |
+| **Card Renderer** | `renderHomeCards()` — DOC_REGISTRY から動的にカード生成 |
+| **Search Engine** | `filterDocs()` / `scoreDoc()` — 検索インデックス対応の多言語全文検索 |
 | **Document Loader** | `loadPublicDoc()` / `loadRestrictedDoc()` |
 | **YAML Parser** | `parseFrontMatter()` / `stripFrontMatter()` |
-| **Markdown Renderer** | marked.js による MD → HTML 変換 |
+| **Markdown Renderer** | marked.js + `preprocessLegalMd()` による MD → HTML 変換 |
 | **Reader** | 分割ビュー、TOC 生成、スクロール同期 |
 | **Firebase Auth** | `handleSignIn()` / `handleSignOut()` / `isVjuMember()` |
 | **Access Control** | `openDocument()` ゲート関数、ログインモーダル |
@@ -63,9 +69,23 @@ docs/
 
 ## 4. Data Flow（データフロー）
 
+### 検索インデックス（オフライン生成）
+```
+data/*_transcription*.md
+        │
+        ▼
+  node scripts/build-search-index.js
+        │  YAML + 本文 500文字を抽出、3言語分
+        ▼
+  data/search-index.json (VI/EN/JA titles + body)
+        │
+        ▼
+  Client: fetch → scoreDoc() で多言語全文検索
+```
+
 ### 公開文書
 ```
-GitHub Pages (docs/data/*.md)
+GitHub Pages (data/*.md)
         │
         ▼
   fetch() — Promise.all で 3言語並列取得
@@ -105,8 +125,8 @@ Firebase Auth (Google Sign-in)
 
 | ビュー | 内容 | URL パラメータ |
 |--------|------|---------------|
-| `home` | 文書カード一覧、カテゴリタブ、検索バー | — |
-| `search` | 全文検索結果表示 | — |
+| `home` | DOC_REGISTRY から動的生成されるカード一覧、検索バー | — |
+| `search` | 多言語全文検索結果（キーワード / 部署 / 種別フィルタ、ソート） | クエリパラメータ |
 | `department` | 部署別文書フィルタ | — |
 | `reader` | 分割ビュー文書リーダー（TOC + VI + EN/JA） | `currentDocId` |
 
@@ -123,6 +143,15 @@ Firebase Auth (Google Sign-in)
 | **Firestore** | 制限文書テキスト保存 | Security Rules でアクセス制御 |
 | **Firebase Storage** | 制限 PDF 保存 | 署名付き URL で保護 |
 | **GitHub Pages** | ホスティング | 無料、静的、CORS フリー |
+
+### 6.1 ビルドスクリプト（Node.js — ローカル実行のみ）
+
+> **注意**: ランタイムは依然ブラウザのみ。以下は開発時のオフラインツール。
+
+| スクリプト | 用途 |
+|-----------|------|
+| `scripts/build-search-index.js` | `data/*_transcription*.md` → `data/search-index.json` 生成 |
+| `scripts/upload_to_firestore.js` | 制限文書を Firestore にアップロード |
 
 ---
 
