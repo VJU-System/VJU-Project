@@ -159,3 +159,4 @@
 - `911` / `984` require Claude-based structure/table repairs + ID corrections
 - `1010` requires only metadata cleanup (`issue_date`)
 - Script-check commit stamp: `984-TB-DHVN` included in Batch 2 (same findings block above)
+- Script-check commit stamp: `1010-TB-DHVN` metadata follow-up included in Batch 2 (same findings block above)
