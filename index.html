@@ -1874,55 +1874,82 @@
     } else { linksEl.innerHTML = ''; }
   }
 
+  let tocIndexMap = [];
+  let scrollSpyObserver = null;
+
   function buildToc() {
     // Use left-en for TOC text (English headings); assign IDs to all 6 panes
     const enProse = document.getElementById('content-left-en').querySelector('.prose-legal');
-    const headings = enProse.querySelectorAll('h1, h2');
+    const headings = Array.from(enProse.querySelectorAll('h1, h2, h3'));
     tocEl.innerHTML = '';
+    tocIndexMap = [];
     // Assign heading IDs to all 6 panes
     const langs = ['vi','en','ja'];
     headings.forEach((h, i) => {
       ['left','right'].forEach(pane => {
         langs.forEach(lang => {
           const prose = document.getElementById('content-' + pane + '-' + lang).querySelector('.prose-legal');
-          const hs = prose.querySelectorAll('h1, h2');
+          const hs = prose.querySelectorAll('h1, h2, h3');
           if (hs[i]) hs[i].id = pane + '-' + langPrefix(lang) + i;
         });
       });
+    });
 
+    // Prefer legal-document style TOC filtering, but fall back to generic article headings.
+    let entries = headings.map((h, i) => {
       const text = h.textContent.trim();
       const isChapter = h.tagName === 'H1' || /^chapter\s/i.test(text);
       const isArticle = /^article\s/i.test(text);
       const isTitle = /^regulation|^decision|^hereby/i.test(text);
-      if (isChapter || isArticle || isTitle) {
-        const item = document.createElement('div');
-        item.className = isArticle ? 'article-item' : 'chapter-item';
-        const a = document.createElement('a');
-        a.href = '#';
-        a.dataset.idx = i;
-        if (isArticle) {
-          const s = text.replace(/^Article\s+(\d+)\.\s*/, 'Art. $1. ');
-          a.textContent = s.length > 42 ? s.slice(0, 39) + '...' : s;
-          a.title = text;
-        } else {
-          a.textContent = text;
-        }
-        a.addEventListener('click', (e) => {
-          e.preventDefault();
-          const idx = a.dataset.idx;
-          isSyncing = true;
-          const leftEl = getActiveLeft();
-          const rightEl = getActiveRight();
-          const leftH = document.getElementById('left-' + langPrefix(leftLang) + idx);
-          const rightH = document.getElementById('right-' + langPrefix(rightLang) + idx);
-          const scrollOffset = Math.round(leftEl.clientHeight / 3);
-          if (leftH) leftEl.scrollTo({ top: leftH.offsetTop - scrollOffset, behavior: 'smooth' });
-          if (rightH) rightEl.scrollTo({ top: rightH.offsetTop - scrollOffset, behavior: 'smooth' });
-          setTimeout(() => { isSyncing = false; }, 800);
-        });
-        item.appendChild(a);
-        tocEl.appendChild(item);
+      const legalMatch = isChapter || isArticle || isTitle;
+      let kind = 'section';
+      if (isArticle) kind = 'article';
+      else if (h.tagName === 'H1') kind = 'chapter';
+      else if (h.tagName === 'H2') kind = 'section';
+      else kind = 'subsection';
+      return { h, i, text, legalMatch, isArticle, kind };
+    });
+
+    const legalEntries = entries.filter(e => e.legalMatch);
+    const useEntries = legalEntries.length >= 3 ? legalEntries : entries.filter(e => e.text && !/^loading/i.test(e.text));
+    if (!useEntries.length) {
+      tocEl.innerHTML = '<div class="text-xs text-text-muted py-4 text-center">No headings found</div>';
+      return;
+    }
+
+    useEntries.forEach((e) => {
+      tocIndexMap.push(e.i);
+      const item = document.createElement('div');
+      item.className = e.kind === 'article' ? 'article-item' : 'chapter-item';
+      if (e.kind === 'section') item.className = 'article-item';
+      if (e.kind === 'subsection') item.className = 'article-item';
+      const a = document.createElement('a');
+      a.href = '#';
+      a.dataset.idx = e.i;
+      if (e.isArticle) {
+        const s = e.text.replace(/^Article\s+(\d+)\.\s*/, 'Art. $1. ');
+        a.textContent = s.length > 42 ? s.slice(0, 39) + '...' : s;
+        a.title = e.text;
+      } else {
+        const maxLen = e.kind === 'subsection' ? 54 : 46;
+        a.textContent = e.text.length > maxLen ? e.text.slice(0, maxLen - 3) + '...' : e.text;
+        a.title = e.text;
       }
+      a.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        const idx = a.dataset.idx;
+        isSyncing = true;
+        const leftEl = getActiveLeft();
+        const rightEl = getActiveRight();
+        const leftH = document.getElementById('left-' + langPrefix(leftLang) + idx);
+        const rightH = document.getElementById('right-' + langPrefix(rightLang) + idx);
+        const scrollOffset = Math.round(leftEl.clientHeight / 3);
+        if (leftH) leftEl.scrollTo({ top: leftH.offsetTop - scrollOffset, behavior: 'smooth' });
+        if (rightH) rightEl.scrollTo({ top: rightH.offsetTop - scrollOffset, behavior: 'smooth' });
+        setTimeout(() => { isSyncing = false; }, 800);
+      });
+      item.appendChild(a);
+      tocEl.appendChild(item);
     });
   }
 
@@ -1942,7 +1969,14 @@
   function syncScroll(source, target, sourcePrefix, targetPrefix) {
     const srcHeadings = getHeadingOffsets(source, sourcePrefix);
     const tgtHeadings = getHeadingOffsets(target, targetPrefix);
-    if (srcHeadings.length < 2 || tgtHeadings.length < 2) return;
+    if (srcHeadings.length < 2 || tgtHeadings.length < 2) {
+      // Fallback for article-like docs with sparse/non-aligned headings:
+      // sync by scroll ratio so split panes still move together.
+      const srcMax = Math.max(1, source.scrollHeight - source.clientHeight);
+      const tgtMax = Math.max(0, target.scrollHeight - target.clientHeight);
+      target.scrollTop = Math.max(0, Math.min(tgtMax, (source.scrollTop / srcMax) * tgtMax));
+      return;
+    }
 
     const scrollTop = source.scrollTop;
     const count = Math.min(srcHeadings.length, tgtHeadings.length);
@@ -2007,11 +2041,15 @@
   }
 
   function setupScrollSpy() {
+    if (scrollSpyObserver) {
+      scrollSpyObserver.disconnect();
+      scrollSpyObserver = null;
+    }
     const tocLinks = tocEl.querySelectorAll('a[data-idx]');
     if (!tocLinks.length) return;
     const activeLeft = getActiveLeft();
     const prefix = 'left-' + langPrefix(leftLang);
-    const observer = new IntersectionObserver((entries) => {
+    scrollSpyObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           tocLinks.forEach(a => a.classList.remove('active'));
@@ -2023,7 +2061,7 @@
         }
       });
     }, { root: activeLeft, rootMargin: '-44px 0px -70% 0px', threshold: 0 });
-    activeLeft.querySelectorAll('[id^="' + prefix + '"]').forEach(h => observer.observe(h));
+    activeLeft.querySelectorAll('[id^="' + prefix + '"]').forEach(h => scrollSpyObserver.observe(h));
   }
 
   // Start on home
