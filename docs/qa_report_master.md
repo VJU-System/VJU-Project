@@ -315,3 +315,11 @@
 
 ### QA Feedback Added
 - For long website article conversions, prefer chunked translation + chunked review to avoid LLM timeouts and preserve large table/HTML blocks.
+
+### 2026-02-23 Final Adjustment (ĐQĐ notation note clarification)
+- User requested a clearer explanation of the shorthand in the source-omitted formula fragment `ĐQĐ = + Điểm ƯT (ĐT, KV)`.
+- Claude provided revised note text for VI/EN/JA clarifying:
+  - `ĐQĐ = Điểm quy đổi` (converted score / 換算点)
+  - `Điểm ƯT = Điểm ưu tiên` (priority points / 優先加点)
+  - `(ĐT, KV)` = object/category and region priority categories
+- Updated the explanatory note in both occurrences of the formula fragment (section 3.1) across VI/EN/JA files.
