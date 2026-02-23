@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VNU Research Hub</title>
+  <title>VJU Document Archive</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
   <script>
@@ -97,7 +97,7 @@
       <!-- Logo -->
       <a href="#" id="nav-home-btn" class="flex items-center gap-2.5 group">
         <div class="w-7 h-7 rounded bg-vnu-blue flex items-center justify-center text-white font-bold text-sm">V</div>
-        <span class="font-bold text-base tracking-tight text-vnu-blue group-hover:text-blue-700 transition-colors">VNU Research Hub</span>
+        <span class="font-bold text-base tracking-tight text-vnu-blue group-hover:text-blue-700 transition-colors">VJU Document Archive</span>
       </a>
       <!-- Nav links (hidden on reader) -->
       <div id="nav-links" class="hidden md:flex gap-6">
@@ -1383,12 +1383,17 @@
   }
   window.openDocument = openDocument;
 
-  function navigateTo(view) {
+  function navigateTo(view, skipHistory) {
     currentView = view;
     views.forEach(v => {
       const el = document.getElementById('view-' + v);
       el.classList.toggle('active', v === view);
     });
+    if (!skipHistory) {
+      const state = { view: view };
+      if (view === 'reader') { state.docId = currentDocId; state.restricted = currentDocRestricted; }
+      history.pushState(state, '', null);
+    }
 
     // Nav state
     const navLinks = document.getElementById('nav-links');
@@ -1435,6 +1440,13 @@
     window.scrollTo(0, 0);
   }
   window.navigateTo = navigateTo;
+  history.replaceState({ view: 'home' }, '', null);
+  window.addEventListener('popstate', function(e) {
+    if (e.state && e.state.view) {
+      if (e.state.view === 'reader' && e.state.docId) { currentDocId = e.state.docId; currentDocRestricted = e.state.restricted || false; readerLoaded = false; }
+      navigateTo(e.state.view, true);
+    } else { navigateTo('home', true); }
+  });
 
   // Home logo → home
   document.getElementById('nav-home-btn').addEventListener('click', (e) => {
