@@ -111,6 +111,9 @@
         <button data-lang="ja" class="lang-btn px-2 py-1 text-[11px] font-bold bg-vnu-blue text-white rounded">JP</button>
         <div class="w-px h-3 bg-gray-200 mx-1"></div>
         <a id="btn-source" href="data/3626-QD-DHQGHN_Regulation on Undergraduate Training_source.pdf" target="_blank" rel="noopener" class="view-btn px-2 py-1 text-[11px] font-medium text-text-muted hover:bg-gray-100 rounded inline-flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>Source</a>
+        <button id="btn-print-content" class="view-btn px-2 py-1 text-[11px] font-medium text-text-muted hover:bg-gray-100 rounded inline-flex items-center gap-1" title="Print or save PDF for the current document content only">
+          <span class="material-symbols-outlined text-[14px]">print</span>Print
+        </button>
         <button id="btn-split" class="view-btn px-2 py-1 text-[11px] font-medium text-accent bg-blue-50 border border-blue-100 rounded">Split View</button>
       </div>
       <!-- Right actions -->
@@ -1479,11 +1482,16 @@
   const syncToast = document.getElementById('sync-toast');
   const btnSplit = document.getElementById('btn-split');
   const btnExitSplit = document.getElementById('btn-exit-split');
+  const btnPrintContent = document.getElementById('btn-print-content');
   const tocEl = document.getElementById('toc');
 
   function getActiveLeft() { return document.getElementById('content-left-' + leftLang); }
   function getActiveRight() { return document.getElementById('content-right-' + rightLang); }
   function langPrefix(lang) { return lang === 'vi' ? 'vi-sec-' : lang === 'ja' ? 'ja-sec-' : 'en-sec-'; }
+  function getActivePaneContent(pane) {
+    const lang = pane === 'left' ? leftLang : rightLang;
+    return document.getElementById('content-' + pane + '-' + lang);
+  }
 
   function switchPaneLang(pane, lang) {
     ['vi','en','ja'].forEach(l => {
@@ -1566,6 +1574,7 @@
   btnExitSplit.addEventListener('click', () => {
     setViewMode('source-' + rightLang);
   });
+  btnPrintContent.addEventListener('click', () => printContentOnly());
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -1579,6 +1588,81 @@
       }
     });
   });
+
+  function buildPrintSection(title, langLabel, paneContentEl) {
+    const prose = paneContentEl?.querySelector('.prose-legal');
+    const body = prose ? prose.innerHTML : '<p>Content unavailable.</p>';
+    return `
+      <section class="print-pane">
+        <header class="print-pane-header">
+          <div class="print-doc-title">${currentDocId}</div>
+          <div class="print-lang">${langLabel}</div>
+        </header>
+        <div class="prose-legal">${body}</div>
+      </section>
+    `;
+  }
+
+  function printContentOnly() {
+    if (currentView !== 'reader') return;
+    const leftEl = getActivePaneContent('left');
+    const rightEl = getActivePaneContent('right');
+    const sections = [];
+    if (viewMode === 'split') {
+      sections.push(buildPrintSection(currentDocId, langSelectLeft.options[langSelectLeft.selectedIndex].text, leftEl));
+      sections.push(buildPrintSection(currentDocId, langSelectRight.options[langSelectRight.selectedIndex].text, rightEl));
+    } else if (paneLeft.style.display === 'none') {
+      sections.push(buildPrintSection(currentDocId, langSelectRight.options[langSelectRight.selectedIndex].text, rightEl));
+    } else {
+      sections.push(buildPrintSection(currentDocId, langSelectLeft.options[langSelectLeft.selectedIndex].text, leftEl));
+    }
+
+    const printWin = window.open('', '_blank', 'noopener,noreferrer');
+    if (!printWin) {
+      console.warn('Popup blocked. Please allow popups to print/export content.');
+      return;
+    }
+
+    const printCss = `
+      body { font-family: ui-sans-serif, system-ui, sans-serif; margin: 0; color: #111827; }
+      .print-wrap { padding: 24px; }
+      .print-meta { margin-bottom: 16px; font-size: 12px; color: #6b7280; }
+      .print-grid { display: grid; grid-template-columns: ${sections.length === 2 ? '1fr 1fr' : '1fr'}; gap: 20px; align-items: start; }
+      .print-pane { border: 1px solid #e5e7eb; border-radius: 8px; padding: 18px; background: #fff; }
+      .print-pane-header { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 12px; border-bottom: 1px solid #f3f4f6; padding-bottom: 8px; }
+      .print-doc-title { font-weight: 700; font-size: 12px; color: #1f2937; }
+      .print-lang { font-size: 11px; color: #6b7280; }
+      .prose-legal { max-width: none; line-height: 1.6; font-size: 14px; }
+      .prose-legal h1, .prose-legal h2, .prose-legal h3 { break-after: avoid-page; }
+      .prose-legal p, .prose-legal li { orphans: 3; widows: 3; }
+      .prose-legal img { max-width: 100%; }
+      @media print {
+        .print-wrap { padding: 0; }
+        .print-pane { border: none; padding: 0; }
+        .print-grid { gap: 12px; }
+        .print-meta { margin-bottom: 8px; }
+      }
+    `;
+
+    printWin.document.open();
+    printWin.document.write(`<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>${currentDocId} - Content Print</title>
+  <style>${printCss}</style>
+</head>
+<body>
+  <div class="print-wrap">
+    <div class="print-meta">Content-only print/export generated from reader view. UI chrome omitted. Generated: ${new Date().toLocaleString()}</div>
+    <div class="print-grid">${sections.join('')}</div>
+  </div>
+</body>
+</html>`);
+    printWin.document.close();
+    printWin.focus();
+    setTimeout(() => printWin.print(), 250);
+  }
 
   // Drag handle
   let isDragging = false;

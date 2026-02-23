@@ -29,7 +29,7 @@ Số: 3626/QĐ-ĐHQGHN
 </div>
 </div>
 
-# QUYẾT ĐỊNH
+<p align="center"><strong>QUYẾT ĐỊNH</strong></p>
 
 <p align="center"><strong>Về việc ban hành Quy chế đào tạo đại học tại Đại học Quốc gia Hà Nội</strong></p>
 
@@ -205,7 +205,7 @@ b) Học phí
 - Sinh viên trả học phí theo kỳ hoặc số tín chỉ đăng ký học trong mỗi học kỳ tại đơn vị đào tạo quản lý ngành học mà sinh viên theo học.
 - Học phí được tính theo công thức:
 
-<p align="center">$$M = a imes extstyle igcap_{i=1}^{k} h_i n_i ext{ (j = 1 ÷ 4)}$$</p>
+<p align="center">$$M = a \times \textstyle\bigcap_{i=1}^{k} h_i n_i \text{ (j = 1 \div 4)}$$</p>
 
 trong đó:
 

@@ -22,7 +22,7 @@ Số: 3636/QĐ-ĐHQGHN
 </div>
 </div>
 
-# QUYẾT ĐỊNH
+<p align="center"><strong>QUYẾT ĐỊNH</strong></p>
 
 <p align="center"><strong>Ban hành Quy chế đào tạo thạc sĩ tại Đại học Quốc gia Hà Nội</strong></p>
 

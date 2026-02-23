@@ -29,7 +29,7 @@ No.: 3626/QĐ-ĐHQGHN
 </div>
 </div>
 
-# DECISION
+<p align="center"><strong>DECISION</strong></p>
 
 <p align="center"><strong>On the promulgation of the Regulation on Undergraduate Training at Vietnam National University, Hanoi</strong></p>
 
@@ -205,7 +205,7 @@ b) Tuition fees
 - Students shall pay tuition fees on a per-semester or per-credit basis for credits registered in each semester at the training unit managing the field of study in which the student is enrolled.
 - Tuition fees shall be calculated according to the formula:
 
-<p align="center">$$M = a \times \textstyle \bigcap_{i=1}^{k} h_i n_i \text{ (j = 1 ÷ 4)}$$</p>
+<p align="center">$$M = a \times \textstyle\bigcap_{i=1}^{k} h_i n_i \text{ (j = 1 \div 4)}$$</p>
 
 where:
 

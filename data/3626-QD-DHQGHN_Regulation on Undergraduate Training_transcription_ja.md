@@ -29,7 +29,7 @@ last_updated: 2026-02-22
 </div>
 </div>
 
-# 決定
+<p align="center"><strong>決定</strong></p>
 
 <p align="center"><strong>ベトナム国家大学ハノイ校における大学教育に関する規程の公布について</strong></p>
 
@@ -205,7 +205,7 @@ b) 授業料
 - 学生は、自身が在籍する専攻を管理する教育訓練機関において、学期ごとまたは各学期に登録した単位数に応じて授業料を納付する。
 - 授業料は以下の計算式により算出される：
 
-<p align="center">$$M = a imes extstyle igcap_{i=1}^{k} h_i n_i ext{ (j = 1 ÷ 4)}$$</p>
+<p align="center">$$M = a \times \textstyle\bigcap_{i=1}^{k} h_i n_i \text{ (j = 1 \div 4)}$$</p>
 
 ここで：
 
