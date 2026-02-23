@@ -643,13 +643,7 @@
           <h3 class="font-semibold text-base text-gray-900">Department</h3>
           <span class="material-symbols-outlined text-gray-400 text-[20px]">apartment</span>
         </div>
-        <div class="space-y-3">
-          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" checked class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">Financial Affairs</span><span class="ml-auto text-xs text-gray-400 font-mono">12</span></label>
-          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">Student Support</span><span class="ml-auto text-xs text-gray-400 font-mono">8</span></label>
-          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">Academic Affairs</span><span class="ml-auto text-xs text-gray-400 font-mono">24</span></label>
-          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">International Relations</span><span class="ml-auto text-xs text-gray-400 font-mono">5</span></label>
-          <button class="text-vnu-blue text-sm font-medium mt-1 hover:underline">+ Show more</button>
-        </div>
+        <div id="filter-departments" class="space-y-3"></div>
       </div>
       <!-- Document Type -->
       <div class="bg-white rounded-xl shadow-subtle p-5 border border-gray-200">
@@ -657,12 +651,7 @@
           <h3 class="font-semibold text-base text-gray-900">Document Type</h3>
           <span class="material-symbols-outlined text-gray-400 text-[20px]">description</span>
         </div>
-        <div class="space-y-3">
-          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" checked class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">Regulations</span></label>
-          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">Circulars</span></label>
-          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">Announcements</span></label>
-          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20"><span class="text-sm text-gray-700 group-hover:text-vnu-blue transition-colors">Forms</span></label>
-        </div>
+        <div id="filter-types" class="space-y-3"></div>
       </div>
       <!-- Date Range -->
       <div class="bg-white rounded-xl shadow-subtle p-5 border border-gray-200">
@@ -671,12 +660,12 @@
           <span class="material-symbols-outlined text-gray-400 text-[20px]">calendar_today</span>
         </div>
         <div class="grid grid-cols-2 gap-2">
-          <div><label class="text-xs text-gray-500 mb-1 block">From</label><input type="date" class="w-full text-sm border-gray-300 rounded-lg focus:ring-vnu-blue focus:border-vnu-blue"></div>
-          <div><label class="text-xs text-gray-500 mb-1 block">To</label><input type="date" class="w-full text-sm border-gray-300 rounded-lg focus:ring-vnu-blue focus:border-vnu-blue"></div>
+          <div><label class="text-xs text-gray-500 mb-1 block">From</label><input id="date-from" type="date" class="w-full text-sm border-gray-300 rounded-lg focus:ring-vnu-blue focus:border-vnu-blue"></div>
+          <div><label class="text-xs text-gray-500 mb-1 block">To</label><input id="date-to" type="date" class="w-full text-sm border-gray-300 rounded-lg focus:ring-vnu-blue focus:border-vnu-blue"></div>
         </div>
         <div class="pt-2 flex flex-wrap gap-2">
-          <button class="px-3 py-1 bg-gray-100 hover:bg-gray-200 text-xs font-medium rounded-full text-gray-600 transition-colors">2024</button>
-          <button class="px-3 py-1 bg-gray-100 hover:bg-gray-200 text-xs font-medium rounded-full text-gray-600 transition-colors">Last 30 days</button>
+          <button class="date-preset px-3 py-1 bg-gray-100 hover:bg-gray-200 text-xs font-medium rounded-full text-gray-600 transition-colors" data-year="2024">2024</button>
+          <button class="date-preset px-3 py-1 bg-gray-100 hover:bg-gray-200 text-xs font-medium rounded-full text-gray-600 transition-colors" data-days="30">Last 30 days</button>
         </div>
       </div>
     </aside>
@@ -686,52 +675,16 @@
       <div class="flex flex-col sm:flex-row gap-4 mb-6">
         <div class="relative flex-1">
           <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><span class="material-symbols-outlined text-gray-400 text-[24px]">search</span></div>
-          <input id="search-input" type="text" class="block w-full pl-12 pr-4 py-3 border-gray-200 rounded-xl bg-white shadow-sm focus:ring-2 focus:ring-vnu-blue/20 focus:border-vnu-blue text-base placeholder-gray-400" placeholder="Search by ID, keyword, or department..." value="Tuition Regulations">
+          <input id="search-input" type="text" class="block w-full pl-12 pr-4 py-3 border-gray-200 rounded-xl bg-white shadow-sm focus:ring-2 focus:ring-vnu-blue/20 focus:border-vnu-blue text-base placeholder-gray-400" placeholder="Search by ID, keyword, or department...">
         </div>
-        <select class="form-select border-gray-200 rounded-xl bg-white shadow-sm py-3 pl-4 pr-10 text-sm focus:ring-vnu-blue/20 focus:border-vnu-blue cursor-pointer">
+        <select id="search-sort" class="form-select border-gray-200 rounded-xl bg-white shadow-sm py-3 pl-4 pr-10 text-sm focus:ring-vnu-blue/20 focus:border-vnu-blue cursor-pointer">
           <option>Relevance</option><option>Newest first</option><option>Oldest first</option>
         </select>
       </div>
       <!-- Active filters -->
-      <div class="flex flex-wrap items-center gap-2 border-b border-gray-200 pb-4 mb-6">
-        <span class="text-sm font-medium text-gray-500 mr-2">Showing 24 results</span>
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-vnu-blue/10 text-vnu-blue border border-vnu-blue/20 text-sm font-medium">Financial Affairs <button class="hover:bg-vnu-blue/20 rounded-full p-0.5"><span class="material-symbols-outlined text-[16px]">close</span></button></div>
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-vnu-blue/10 text-vnu-blue border border-vnu-blue/20 text-sm font-medium">Regulations <button class="hover:bg-vnu-blue/20 rounded-full p-0.5"><span class="material-symbols-outlined text-[16px]">close</span></button></div>
-        <button class="text-sm text-gray-500 hover:text-vnu-blue font-medium ml-1">Clear all</button>
-      </div>
+      <div id="active-filters" class="flex flex-wrap items-center gap-2 border-b border-gray-200 pb-4 mb-6"></div>
       <!-- Results list -->
-      <div class="space-y-4 pb-8">
-        <!-- Result 1 (real doc) -->
-        <article class="search-result bg-white rounded-xl p-5 shadow-subtle border border-gray-200 hover:shadow-md hover:border-vnu-blue/30 transition-all cursor-pointer group flex flex-col sm:flex-row gap-5" data-doc="3626-QD-DHQGHN">
-          <div class="shrink-0 flex sm:flex-col items-center sm:items-start gap-3 sm:w-32">
-            <span class="inline-flex items-center px-2.5 py-1 rounded bg-gray-100 text-gray-600 font-mono text-xs font-medium border border-gray-200 group-hover:bg-vnu-blue/5 group-hover:text-vnu-blue group-hover:border-vnu-blue/20 transition-colors">3626/QD-DHQGHN</span>
-            <div class="flex items-center gap-1.5 text-xs text-gray-500"><span class="material-symbols-outlined text-[16px]">calendar_month</span><span>Oct 21, 2022</span></div>
-          </div>
-          <div class="flex-1 space-y-2">
-            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-vnu-blue transition-colors leading-tight">Regulation on Undergraduate Training at VNU, Hanoi</h3>
-            <p class="text-sm text-gray-600 leading-relaxed line-clamp-2">Decision promulgating the regulation on undergraduate training. Covers training programs, duration, organization, examinations, and graduation requirements.</p>
-            <div class="flex items-center flex-wrap gap-4 pt-2">
-              <div class="flex items-center gap-1.5 text-xs font-medium text-gray-500"><span class="material-symbols-outlined text-[18px] text-gray-400">school</span>Academic Affairs</div>
-              <div class="flex items-center gap-2 ml-auto">
-                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-blue-50 text-blue-700 border border-blue-100">VN</span>
-                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-emerald-50 text-emerald-700 border border-emerald-100">EN</span>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-      <!-- Pagination -->
-      <div class="flex items-center justify-between border-t border-gray-200 pt-6">
-        <button class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"><span class="material-symbols-outlined text-[18px]">arrow_back</span>Previous</button>
-        <div class="hidden sm:flex items-center gap-1">
-          <button class="px-3 py-1 text-sm font-medium text-white bg-vnu-blue rounded-md">1</button>
-          <button class="px-3 py-1 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-md">2</button>
-          <button class="px-3 py-1 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-md">3</button>
-          <span class="px-2 text-gray-400">...</span>
-          <button class="px-3 py-1 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-md">8</button>
-        </div>
-        <button class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">Next<span class="material-symbols-outlined text-[18px]">arrow_forward</span></button>
-      </div>
+      <div id="search-results-list" class="space-y-4 pb-8"></div>
     </div>
   </main>
 </div>
@@ -1182,6 +1135,11 @@
       prefix: '3626-QD-DHQGHN_Regulation on Undergraduate Training',
       title: 'Regulation on Undergraduate Training',
       tags: ['undergraduate', 'training', 'VNU regulation'],
+      date: '2022-10-21',
+      department: 'Academic Affairs',
+      type: 'Regulation',
+      description: 'Decision 3626/QD-DHQGHN promulgating the regulation on undergraduate training at Vietnam National University, Hanoi.',
+      restricted: false,
       relations: [
         { id: '5115-QD-DHQGHN', type: 'supersedes', label: 'Supersedes' },
         { id: '2486-QD-DHQGHN', type: 'amended-by', label: 'Amended by' },
@@ -1193,6 +1151,11 @@
       prefix: '3636-QD-DHQGHN_Regulation on Masters Training',
       title: 'Regulation on Masters Training',
       tags: ['masters', 'training', 'VNU regulation'],
+      date: '2022-10-21',
+      department: 'Academic Affairs',
+      type: 'Regulation',
+      description: 'Decision 3636/QĐ-ĐHQGHN promulgating the regulation on master\u2019s training at Vietnam National University, Hanoi.',
+      restricted: false,
       relations: [
         { id: '2459-QD-DHQGHN', type: 'amended-by', label: 'Amended by' },
         { id: '3626-QD-DHQGHN', type: 'related', label: 'Related' },
@@ -1203,6 +1166,11 @@
       prefix: '3638-QD-DHQGHN_Regulation on Doctoral Training',
       title: 'Regulation on Doctoral Training',
       tags: ['doctoral', 'training', 'VNU regulation'],
+      date: '2022-10-24',
+      department: 'Academic Affairs',
+      type: 'Regulation',
+      description: 'Decision 3638/QĐ-ĐHQGHN promulgating the regulation on doctoral training at Vietnam National University, Hanoi.',
+      restricted: false,
       relations: [
         { id: '3626-QD-DHQGHN', type: 'related', label: 'Related' },
         { id: '3636-QD-DHQGHN', type: 'related', label: 'Related' },
@@ -1212,6 +1180,11 @@
       prefix: '2459-QD-DHQGHN_Amendment to Masters Training Regulation',
       title: 'Amendment to Masters Training Regulation',
       tags: ['masters', 'amendment'],
+      date: '2024-06-05',
+      department: 'Academic Affairs',
+      type: 'Decision',
+      description: 'Decision 2459/QĐ-ĐHQGHN amending and supplementing the Master\u2019s training regulation promulgated with Decision 3636.',
+      restricted: false,
       relations: [
         { id: '3636-QD-DHQGHN', type: 'amends', label: 'Amends' },
       ]
@@ -1220,6 +1193,11 @@
       prefix: '2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation',
       title: 'Amendment to Undergraduate Admission Regulation',
       tags: ['undergraduate', 'amendment', 'admission'],
+      date: '2024-06-06',
+      department: 'Academic Affairs',
+      type: 'Decision',
+      description: 'Decision 2486/QĐ-ĐHQGHN amending and supplementing the regular undergraduate admission regulation at VNU.',
+      restricted: false,
       relations: [
         { id: '3626-QD-DHQGHN', type: 'amends', label: 'Amends' },
       ]
@@ -1228,24 +1206,44 @@
       prefix: '4391-QD-DHQGHN_Online Training and E-Lecture Regulations',
       title: 'Online Training and E-Lecture Regulations',
       tags: ['e-learning', 'online'],
+      date: '2021-12-29',
+      department: 'Academic Affairs',
+      type: 'Regulation',
+      description: 'Decision 4391/QĐ-ĐHQGHN on organizing, managing online training and developing electronic lectures at VNU.',
+      restricted: false,
       relations: []
     },
     '4455-QD-DHQGHN': {
       prefix: '4455-QD-DHQGHN_Diploma and Certificate Management',
       title: 'Diploma and Certificate Management',
       tags: ['diploma', 'certificate', 'management'],
+      date: '2023-11-23',
+      department: 'Academic Affairs',
+      type: 'Regulation',
+      description: 'Decision 4455/QĐ-ĐHQGHN on management of diplomas, certificates, and certifications at VNU.',
+      restricted: false,
       relations: []
     },
     '4618-QD-DHQGHN': {
       prefix: '4618-QD-DHQGHN_Scholarship Management and Use',
       title: 'Scholarship Management and Use',
       tags: ['scholarship', 'finance'],
+      date: '2024-10-07',
+      department: 'Student Affairs',
+      type: 'Regulation',
+      description: 'Decision 4618/QĐ-ĐHQGHN on management and use of scholarships at VNU.',
+      restricted: false,
       relations: []
     },
     '5115-QD-DHQGHN': {
       prefix: '5115-QD-DHQGHN_Superseded Undergraduate Training',
       title: 'Superseded Undergraduate Training',
       tags: ['undergraduate', 'training', 'superseded'],
+      date: '2014-12-25',
+      department: 'Academic Affairs',
+      type: 'Superseded',
+      description: 'Decision 5115/QĐ-ĐHQGHN \u2014 superseded by 3626/QĐ-ĐHQGHN (2022). Retained for historical reference.',
+      restricted: false,
       relations: [
         { id: '3626-QD-DHQGHN', type: 'superseded-by', label: 'Superseded by' },
       ]
@@ -1254,42 +1252,77 @@
       prefix: '1132-QD-DHVN_Examination Affairs Regulations',
       title: 'Examination Affairs Regulations',
       tags: ['examination', 'VJU regulation'],
+      date: '2025-10-01',
+      department: 'Education Testing',
+      type: 'Regulation',
+      description: 'Decision 1132/QĐ-ĐHVN on examination affairs at Vietnam Japan University \u2014 assessment, grading, and end-of-course exams.',
+      restricted: false,
       relations: []
     },
     '1274-HD-KTDBCL': {
       prefix: '1274-HD-KTDBCL_End-of-Course Exam Guidance S1 2025-2026',
       title: 'End-of-Course Exam Guidance S1 2025-2026',
       tags: ['examination', 'guidance', 'semester'],
+      date: '2025-10-27',
+      department: 'Education Testing',
+      type: 'Guidance',
+      description: 'Guidance 1274/HD-KT&ĐBCL on implementing end-of-course examinations for Semester 1, AY2025-2026.',
+      restricted: false,
       relations: []
     },
     '628-QD-DHQGHN': {
       prefix: '628-QD-DHQGHN_Educational Quality Assurance Regulation',
       title: 'Educational Quality Assurance Regulation',
       tags: ['quality assurance', 'VNU regulation'],
+      date: '2015-02-10',
+      department: 'Quality Assurance',
+      type: 'Regulation',
+      description: 'Decision 628/QĐ-ĐHQGHN on educational quality assurance \u2014 accreditation, benchmarking, and data management.',
+      restricted: false,
       relations: []
     },
     '700-QD-DHVN': {
       prefix: '700-QD-DHVN_Anti-Plagiarism Regulations',
       title: 'Anti-Plagiarism Regulations',
       tags: ['plagiarism', 'academic integrity'],
+      date: '2021-09-30',
+      department: 'Education Testing',
+      type: 'Regulation',
+      description: 'Decision 700/QĐ-ĐHVN on prevention of plagiarism in education and scientific research at VJU.',
+      restricted: false,
       relations: []
     },
     '840-DT-DHVN': {
       prefix: '840-DT-DHVN_Academic Calendar 2025-2026',
       title: 'Academic Calendar 2025-2026',
       tags: ['academic calendar', 'schedule'],
+      date: '2025-07-30',
+      department: 'Academic Affairs',
+      type: 'Official Letter',
+      description: 'Official letter 840/ĐHVN-ĐT on the academic calendar for AY2025-2026, with annexes for each cohort.',
+      restricted: false,
       relations: []
     },
     '483-HD-DHVN': {
       prefix: '483-HD-DHVN_Practical Internship Guidance',
       title: 'Practical Internship Guidance',
       tags: ['internship', 'guidance'],
+      date: '2025-05-20',
+      department: 'Academic Affairs',
+      type: 'Guidance',
+      description: 'Guidance 483/HD-ĐHVN on practical internship and internship projects for full-time undergraduate students at VJU.',
+      restricted: false,
       relations: []
     },
     '1534-HD-DHVN': {
       prefix: '1534-HD-DHVN_Thesis and Graduation Project Guidelines',
       title: 'Thesis and Graduation Project Guidelines',
       tags: ['thesis', 'graduation', 'guidance'],
+      date: '2023-12-29',
+      department: 'Academic Affairs',
+      type: 'Guidance',
+      description: 'Guidance 1534/HD-ĐHVN on organizing undergraduate theses and graduation projects at VJU.',
+      restricted: false,
       relations: [
         { id: 'DHVN-HD-1534-Annex', type: 'has-annex', label: 'Annex' },
       ]
@@ -1298,6 +1331,11 @@
       prefix: '1534-HD-DHVN_Annex Templates English Format',
       title: 'Annex Templates English Format',
       tags: ['thesis', 'templates'],
+      date: '2023-12-29',
+      department: 'Academic Affairs',
+      type: 'Annex',
+      description: 'English-format annex templates for thesis cover pages, reference guidelines, and evaluation forms (HD-1534).',
+      restricted: false,
       relations: [
         { id: '1534-HD-DHVN', type: 'annex-of', label: 'Annex of' },
       ]
@@ -1306,14 +1344,215 @@
       prefix: 'WEB-TTTS2026-VJU_Undergraduate Admissions Information 2026',
       title: 'Undergraduate Admissions Information 2026',
       tags: ['admissions', 'undergraduate', 'website article'],
+      date: '2025-12-30',
+      department: 'Admissions',
+      type: 'Admissions',
+      description: 'VJU website admissions article (2026 regular undergraduate intake), converted to markdown with VI/EN/JA versions and archived page PDF.',
+      restricted: false,
       relations: []
     },
   };
+
+  // ==================== SEARCH CONSTANTS ====================
+  const DEPARTMENTS = [
+    { id: 'Academic Affairs', icon: 'school', label: 'Academic Affairs' },
+    { id: 'Education Testing', icon: 'quiz', label: 'Education Testing' },
+    { id: 'Student Affairs', icon: 'payments', label: 'Student Affairs' },
+    { id: 'Quality Assurance', icon: 'verified', label: 'Quality Assurance' },
+    { id: 'Admissions', icon: 'campaign', label: 'Admissions' },
+  ];
+  const DOC_TYPES = ['Regulation', 'Decision', 'Guidance', 'Official Letter', 'Annex', 'Admissions', 'Superseded'];
+
+  // ==================== SEARCH STATE ====================
+  let searchState = { query: '', departments: [], types: [], dateFrom: null, dateTo: null, sortBy: 'newest' };
+
+  // ==================== SEARCH HELPERS ====================
+  function getAllDocs() {
+    return Object.entries(DOC_REGISTRY).map(([id, e]) => ({ id, ...e }));
+  }
+
+  function countByDepartment(dept) {
+    return getAllDocs().filter(d => d.department === dept).length;
+  }
+
+  function countByType(type) {
+    return getAllDocs().filter(d => d.type === type).length;
+  }
+
+  function formatDisplayDate(isoDate) {
+    if (!isoDate) return '';
+    const d = new Date(isoDate + 'T00:00:00');
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  }
+
+  // ==================== SEARCH ENGINE ====================
+  function filterDocs(state) {
+    let docs = getAllDocs();
+    // 1. Filter by text query
+    if (state.query) {
+      const q = state.query.toLowerCase();
+      docs = docs.filter(d => {
+        const haystack = [d.title, d.id, d.description, ...(d.tags || [])].join(' ').toLowerCase();
+        return haystack.includes(q);
+      });
+    }
+    // 2. Filter by departments
+    if (state.departments && state.departments.length > 0) {
+      docs = docs.filter(d => state.departments.includes(d.department));
+    }
+    // 3. Filter by types
+    if (state.types && state.types.length > 0) {
+      docs = docs.filter(d => state.types.includes(d.type));
+    }
+    // 4. Filter by date range
+    if (state.dateFrom) {
+      docs = docs.filter(d => d.date && d.date >= state.dateFrom);
+    }
+    if (state.dateTo) {
+      docs = docs.filter(d => d.date && d.date <= state.dateTo);
+    }
+    // 5. Sort
+    if (state.sortBy === 'newest') {
+      docs.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+    } else if (state.sortBy === 'oldest') {
+      docs.sort((a, b) => (a.date || '').localeCompare(b.date || ''));
+    } else if (state.sortBy === 'relevance' && state.query) {
+      const q = state.query.toLowerCase();
+      docs.sort((a, b) => {
+        const scoreA = (a.title.toLowerCase().includes(q) ? 10 : 0) + (a.id.toLowerCase().includes(q) ? 5 : 0) + ((a.tags || []).join(' ').toLowerCase().includes(q) ? 3 : 0);
+        const scoreB = (b.title.toLowerCase().includes(q) ? 10 : 0) + (b.id.toLowerCase().includes(q) ? 5 : 0) + ((b.tags || []).join(' ').toLowerCase().includes(q) ? 3 : 0);
+        return scoreB - scoreA || (b.date || '').localeCompare(a.date || '');
+      });
+    }
+    return docs;
+  }
 
   function getDocPrefix(docId) {
     const entry = DOC_REGISTRY[docId];
     if (!entry) return docId;
     return typeof entry === 'string' ? entry : entry.prefix;
+  }
+
+  // ==================== SEARCH VIEW RENDERING ====================
+  let searchViewInitialized = false;
+
+  function renderDepartmentFilters() {
+    const container = document.getElementById('filter-departments');
+    container.innerHTML = DEPARTMENTS.map(d => '<label class="flex items-center gap-3 py-1.5 cursor-pointer group">' + '<input type="checkbox" value="' + d.id + '" class="dept-filter size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20">' + '<span class="material-symbols-outlined text-[18px] text-gray-400">' + d.icon + '</span>' + '<span class="text-sm text-gray-700 group-hover:text-vnu-blue">' + d.label + '</span>' + '<span class="ml-auto text-xs text-gray-400 font-mono">' + countByDepartment(d.id) + '</span>' + '</label>').join('');
+    container.querySelectorAll('.dept-filter').forEach(cb => {
+      cb.addEventListener('change', () => {
+        searchState.departments = [...container.querySelectorAll('.dept-filter:checked')].map(c => c.value);
+        renderSearchResults();
+      });
+    });
+  }
+
+  function renderTypeFilters() {
+    const container = document.getElementById('filter-types');
+    container.innerHTML = DOC_TYPES.map(t => '<label class="flex items-center gap-3 py-1.5 cursor-pointer group">' + '<input type="checkbox" value="' + t + '" class="type-filter size-4 rounded border-gray-300 text-vnu-blue focus:ring-vnu-blue/20">' + '<span class="text-sm text-gray-700 group-hover:text-vnu-blue">' + t + '</span>' + '<span class="ml-auto text-xs text-gray-400 font-mono">' + countByType(t) + '</span>' + '</label>').join('');
+    container.querySelectorAll('.type-filter').forEach(cb => {
+      cb.addEventListener('change', () => {
+        searchState.types = [...container.querySelectorAll('.type-filter:checked')].map(c => c.value);
+        renderSearchResults();
+      });
+    });
+  }
+
+  function renderActiveFilters() {
+    const container = document.getElementById('active-filters');
+    const chips = [];
+    searchState.departments.forEach(d => chips.push({ label: d, type: 'dept', value: d }));
+    searchState.types.forEach(t => chips.push({ label: t, type: 'type', value: t }));
+    if (searchState.query) chips.push({ label: '"' + searchState.query + '"', type: 'query', value: searchState.query });
+    if (searchState.dateFrom) chips.push({ label: 'From: ' + searchState.dateFrom, type: 'dateFrom', value: searchState.dateFrom });
+    if (searchState.dateTo) chips.push({ label: 'To: ' + searchState.dateTo, type: 'dateTo', value: searchState.dateTo });
+    const count = filterDocs(searchState).length;
+    let html = '<span class="text-sm font-medium text-gray-500 mr-2">Showing ' + count + ' results</span>';
+    chips.forEach(c => {
+      html += '<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-vnu-blue/10 text-vnu-blue border border-vnu-blue/20 text-sm font-medium">' + c.label + ' <button class="filter-chip-remove hover:bg-vnu-blue/20 rounded-full p-0.5" data-type="' + c.type + '" data-value="' + c.value + '"><span class="material-symbols-outlined text-[16px]">close</span></button></div>';
+    });
+    if (chips.length > 0) html += '<button id="clear-all-filters" class="text-sm text-gray-500 hover:text-vnu-blue font-medium ml-1">Clear all</button>';
+    container.innerHTML = html;
+    container.querySelectorAll('.filter-chip-remove').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const chipType = btn.dataset.type;
+        const chipValue = btn.dataset.value;
+        if (chipType === 'dept') { searchState.departments = searchState.departments.filter(d => d !== chipValue); document.querySelectorAll('.dept-filter').forEach(cb => { if (cb.value === chipValue) cb.checked = false; }); }
+        else if (chipType === 'type') { searchState.types = searchState.types.filter(t => t !== chipValue); document.querySelectorAll('.type-filter').forEach(cb => { if (cb.value === chipValue) cb.checked = false; }); }
+        else if (chipType === 'query') { searchState.query = ''; document.getElementById('search-input').value = ''; }
+        else if (chipType === 'dateFrom') { searchState.dateFrom = null; document.getElementById('date-from').value = ''; }
+        else if (chipType === 'dateTo') { searchState.dateTo = null; document.getElementById('date-to').value = ''; }
+        renderSearchResults();
+      });
+    });
+    const clearBtn = document.getElementById('clear-all-filters');
+    if (clearBtn) clearBtn.addEventListener('click', () => {
+      searchState.query = ''; searchState.departments = []; searchState.types = []; searchState.dateFrom = null; searchState.dateTo = null;
+      document.getElementById('search-input').value = '';
+      document.getElementById('date-from').value = '';
+      document.getElementById('date-to').value = '';
+      document.querySelectorAll('.dept-filter, .type-filter').forEach(cb => { cb.checked = false; });
+      renderSearchResults();
+    });
+  }
+
+  function renderSearchResults() {
+    const results = filterDocs(searchState);
+    const container = document.getElementById('search-results-list');
+    if (results.length === 0) {
+      container.innerHTML = '<div class="text-center py-12 text-gray-500"><span class="material-symbols-outlined text-4xl mb-2 block">search_off</span><p class="text-lg font-medium">No results found</p><p class="text-sm">Try adjusting your search or filters</p></div>';
+      renderActiveFilters();
+      return;
+    }
+    container.innerHTML = results.map(doc => {
+      const prefix = getDocPrefix(doc.id);
+      return '<article class="search-result bg-white rounded-xl p-5 shadow-subtle border border-gray-200 hover:shadow-md hover:border-vnu-blue/30 transition-all cursor-pointer group flex flex-col sm:flex-row gap-5" data-doc="' + doc.id + '"' + (doc.restricted ? ' data-restricted="true"' : '') + '>' + '<div class="shrink-0 flex sm:flex-col items-center sm:items-start gap-3 sm:w-36">' + '<span class="inline-flex items-center px-2.5 py-1 rounded bg-gray-100 text-gray-600 font-mono text-xs font-medium border border-gray-200 group-hover:bg-vnu-blue/5 group-hover:text-vnu-blue group-hover:border-vnu-blue/20 transition-colors">' + prefix + '</span>' + '<div class="flex items-center gap-1.5 text-xs text-gray-500"><span class="material-symbols-outlined text-[16px]">calendar_month</span><span>' + formatDisplayDate(doc.date) + '</span></div>' + '</div>' + '<div class="flex-1 space-y-2">' + '<h3 class="text-lg font-semibold text-gray-900 group-hover:text-vnu-blue transition-colors leading-tight">' + doc.title + '</h3>' + '<p class="text-sm text-gray-600 leading-relaxed line-clamp-2">' + (doc.description || '') + '</p>' + '<div class="flex items-center flex-wrap gap-4 pt-2">' + '<div class="flex items-center gap-1.5 text-xs font-medium text-gray-500"><span class="material-symbols-outlined text-[18px] text-gray-400">apartment</span>' + (doc.department || '') + '</div>' + '<span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 border border-gray-200">' + (doc.type || '') + '</span>' + (doc.restricted ? '<span class="inline-flex items-center gap-1 text-xs font-medium text-amber-600"><span class="material-symbols-outlined text-[16px]">lock</span>Restricted</span>' : '') + '</div>' + '</div>' + '</article>';
+    }).join('');
+    container.querySelectorAll('.search-result[data-doc]').forEach(el => {
+      el.addEventListener('click', () => openDocument(el.dataset.doc, el.dataset.restricted === 'true'));
+    });
+    renderActiveFilters();
+  }
+
+  function initSearchView() {
+    if (!searchViewInitialized) {
+      renderDepartmentFilters();
+      renderTypeFilters();
+      // Date range inputs
+      document.getElementById('date-from').addEventListener('change', function() { searchState.dateFrom = this.value || null; renderSearchResults(); });
+      document.getElementById('date-to').addEventListener('change', function() { searchState.dateTo = this.value || null; renderSearchResults(); });
+      // Date presets
+      document.querySelectorAll('.date-preset').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const year = btn.dataset.year;
+          const days = btn.dataset.days;
+          if (year) { searchState.dateFrom = year + '-01-01'; searchState.dateTo = year + '-12-31'; document.getElementById('date-from').value = year + '-01-01'; document.getElementById('date-to').value = year + '-12-31'; }
+          else if (days) { const now = new Date(); const from = new Date(now.getTime() - parseInt(days) * 86400000); searchState.dateFrom = from.toISOString().slice(0, 10); searchState.dateTo = now.toISOString().slice(0, 10); document.getElementById('date-from').value = searchState.dateFrom; document.getElementById('date-to').value = searchState.dateTo; }
+          renderSearchResults();
+        });
+      });
+      // Sort select
+      document.getElementById('search-sort').addEventListener('change', function() {
+        const map = { 'Relevance': 'relevance', 'Newest first': 'newest', 'Oldest first': 'oldest' };
+        searchState.sortBy = map[this.value] || 'relevance';
+        renderSearchResults();
+      });
+      // Debounced real-time search on search-input
+      let searchDebounce = null;
+      document.getElementById('search-input').addEventListener('input', function() {
+        clearTimeout(searchDebounce);
+        const val = this.value;
+        searchDebounce = setTimeout(() => { searchState.query = val; renderSearchResults(); }, 300);
+      });
+      searchViewInitialized = true;
+    }
+    // Sync search-input value with searchState
+    document.getElementById('search-input').value = searchState.query;
+    // Set sort select to match state
+    const sortSelect = document.getElementById('search-sort');
+    const reverseMap = { 'relevance': 'Relevance', 'newest': 'Newest first', 'oldest': 'Oldest first' };
+    sortSelect.value = reverseMap[searchState.sortBy] || 'Relevance';
+    renderSearchResults();
   }
 
   // ==================== NAVIGATION ====================
@@ -1400,6 +1639,11 @@
     // Update exit split button visibility
     updateReaderUI();
 
+    // Initialize search view when navigating to it
+    if (view === 'search') {
+      initSearchView();
+    }
+
     window.scrollTo(0, 0);
   }
   window.navigateTo = navigateTo;
@@ -1427,8 +1671,7 @@
 
   // Home search → search view
   document.getElementById('home-search-btn').addEventListener('click', () => {
-    const q = document.getElementById('home-search').value;
-    document.getElementById('search-input').value = q;
+    searchState.query = document.getElementById('home-search').value;
     navigateTo('search');
   });
   document.getElementById('home-search').addEventListener('keydown', (e) => {
@@ -1438,7 +1681,7 @@
   // Trending tags → search
   document.querySelectorAll('.trending-tag').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.getElementById('search-input').value = btn.textContent;
+      searchState.query = btn.textContent;
       navigateTo('search');
     });
   });
@@ -1446,13 +1689,13 @@
   // Nav quick search → search view
   document.getElementById('nav-search-input').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
-      document.getElementById('search-input').value = e.target.value;
+      searchState.query = e.target.value;
       navigateTo('search');
     }
   });
 
   // Document cards → reader (via openDocument gate)
-  document.querySelectorAll('.doc-card[data-doc], .search-result[data-doc]').forEach(el => {
+  document.querySelectorAll('.doc-card[data-doc]').forEach(el => {
     el.addEventListener('click', () => {
       const docId = el.dataset.doc;
       const restricted = el.dataset.restricted === 'true';
