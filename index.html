@@ -1899,35 +1899,100 @@
   let tocIndexMap = [];
   let scrollSpyObserver = null;
 
+  function collectTocHeadingsFromProse(proseEl) {
+    const nativeHeads = Array.from(proseEl.querySelectorAll('h1, h2, h3')).map(el => ({
+      el, level: Number(el.tagName.slice(1)), text: (el.textContent || '').trim()
+    }));
+    // If native headings are sufficient, use them.
+    if (nativeHeads.length >= 8) return nativeHeads;
+
+    const items = [];
+    const add = (el, level, text) => {
+      const t = (text || '').replace(/\s+/g, ' ').trim();
+      if (!t) return;
+      items.push({ el, level, text: t });
+    };
+
+    proseEl.querySelectorAll('h1').forEach(h => add(h, 1, h.textContent));
+
+    // WordPress article often uses red span+strong banners
+    proseEl.querySelectorAll('p > span > strong').forEach(st => {
+      const txt = st.textContent || '';
+      if (/THÔNG TIN/i.test(txt) || /C[ÁA]C NỘI DUNG KHÁC/i.test(txt)) add(st.closest('p'), 2, txt);
+    });
+
+    // List headings like <ol><li><strong> ... </strong></li></ol>
+    proseEl.querySelectorAll('ol > li > strong').forEach(st => {
+      const txt = st.textContent || '';
+      add(st.closest('ol') || st.closest('li') || st, 2, txt);
+    });
+
+    // Paragraph strong headings like 1.1 / 2.3 / 10.5.1
+    proseEl.querySelectorAll('p > strong').forEach(st => {
+      const p = st.closest('p');
+      if (!p) return;
+      const full = (p.textContent || '').trim();
+      if (/^\d+\.\d+(?:\.\d+)?\.?\s+/.test(full)) add(p, 3, full);
+      else if (/^\d+\.\s+/.test(full)) add(p, 2, full);
+    });
+
+    // Top-level plain paragraph headings in article body (e.g., "Chỉ tiêu tuyển sinh năm 2026")
+    proseEl.querySelectorAll('p').forEach(p => {
+      const txt = (p.textContent || '').trim();
+      if (!txt || txt.length > 140) return;
+      if (/^(Chỉ tiêu tuyển sinh năm 2026|Các thông tin cần thiết khác|Lệ phí xét tuyển, học phí và học bổng|Việc cơ sở đào tạo thực hiện các cam kết đối với thí sinh|Các nội dung khác|Thông tin về tuyển sinh của 2 năm gần nhất)$/i.test(txt)) {
+        add(p, 2, txt);
+      }
+    });
+
+    // De-duplicate by element and preserve DOM order
+    const seen = new Set();
+    const dedup = [];
+    for (const it of items) {
+      if (!it.el || seen.has(it.el)) continue;
+      seen.add(it.el);
+      dedup.push(it);
+    }
+    dedup.sort((a, b) => {
+      if (a.el === b.el) return 0;
+      const pos = a.el.compareDocumentPosition(b.el);
+      if (pos & Node.DOCUMENT_POSITION_FOLLOWING) return -1;
+      if (pos & Node.DOCUMENT_POSITION_PRECEDING) return 1;
+      return 0;
+    });
+    return dedup;
+  }
+
   function buildToc() {
     // Build TOC from the currently visible left pane so heading order matches
     // scroll spy and click targets even when one language uses HTML source rendering.
     const leftPane = getActiveLeft();
     const leftProse = leftPane.querySelector('.prose-legal');
-    const headings = Array.from(leftProse.querySelectorAll('h1, h2, h3'));
+    const headingItems = collectTocHeadingsFromProse(leftProse);
     tocEl.innerHTML = '';
     tocIndexMap = [];
     // Assign IDs to left pane headings (TOC + scrollspy source of truth)
-    headings.forEach((h, i) => { h.id = 'left-' + langPrefix(leftLang) + i; });
+    headingItems.forEach((it, i) => { it.el.id = 'left-' + langPrefix(leftLang) + i; });
     // Best-effort IDs to right pane only (same index when structures align; harmless if not)
     const rightProse = getActiveRight().querySelector('.prose-legal');
-    Array.from(rightProse.querySelectorAll('h1, h2, h3')).forEach((h, i) => {
-      h.id = 'right-' + langPrefix(rightLang) + i;
+    collectTocHeadingsFromProse(rightProse).forEach((it, i) => {
+      it.el.id = 'right-' + langPrefix(rightLang) + i;
     });
 
     // Prefer legal-document style TOC filtering, but fall back to generic article headings.
-    let entries = headings.map((h, i) => {
-      const text = h.textContent.trim();
-      const isChapter = h.tagName === 'H1' || /^chapter\s/i.test(text);
+    let entries = headingItems.map((it, i) => {
+      const text = it.text;
+      const tagName = (it.level === 1 ? 'H1' : it.level === 2 ? 'H2' : 'H3');
+      const isChapter = tagName === 'H1' || /^chapter\s/i.test(text);
       const isArticle = /^article\s/i.test(text);
       const isTitle = /^regulation|^decision|^hereby/i.test(text);
       const legalMatch = isChapter || isArticle || isTitle;
       let kind = 'section';
       if (isArticle) kind = 'article';
-      else if (h.tagName === 'H1') kind = 'chapter';
-      else if (h.tagName === 'H2') kind = 'section';
+      else if (tagName === 'H1') kind = 'chapter';
+      else if (tagName === 'H2') kind = 'section';
       else kind = 'subsection';
-      return { h, i, text, legalMatch, isArticle, kind };
+      return { h: it.el, i, text, legalMatch, isArticle, kind };
     });
 
     const legalEntries = entries.filter(e => e.legalMatch);
