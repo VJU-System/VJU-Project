@@ -204,3 +204,114 @@
 1. JA line-break hygiene for rendered markdown with `breaks: true` (avoid accidental visible mid-sentence breaks)
 2. JA proper-noun disambiguation when different Vietnamese names collapse to identical katakana (use parenthetical romanization)
 3. Metadata normalization pass for `issue_date` from body date line when unambiguous across VI/EN/JA
+
+## 2026-02-23 Document 3626 QA Integration
+
+### Scope
+- `data/3626-QD-DHQGHN_Regulation on Undergraduate Training_transcription.md`
+- `data/3626-QD-DHQGHN_Regulation on Undergraduate Training_transcription_en.md`
+- `data/3626-QD-DHQGHN_Regulation on Undergraduate Training_transcription_ja.md`
+- Checklist reference: `docs/QA_CHECKLIST.md`
+
+### Checklist Items Verified / Addressed
+- YAML front matter validation
+- Heading normalization (Chapter/Article levels)
+- Decision-section formatting (legal basis / articles / signature blocks)
+- khoản/điểm indentation normalization across VI/EN/JA
+- PDF->MD layout fidelity (high-level structural checks)
+- Cross-language structural consistency
+- Heading translation pattern consistency
+
+### Fix Summary
+- Applied hierarchical indentation across all three language files:
+  - Level 1 clauses (`1.`, `2.`): no indent
+  - Level 2 items (`a)`, `b)`): 4 spaces
+  - Level 3 sub-items (`-`): 8 spaces
+- Corrected broken LaTeX formula syntax in Article 8 across VI/EN/JA (`\times`, `\bigcap`, `\textstyle`, `\text`)
+
+### Findings / Deviations
+- `docs/QA_CHECKLIST.md` indentation guidance conflicts with observed repository convention (8-space vs 4-space for second-level items).
+- QA chose 4-space indentation for level-2 items to preserve readability and consistency with existing documents; this should be reviewed as a checklist standardization item.
+
+### Remaining Risks
+- QA focused on formatting/structure consistency and checklist adherence.
+- No full line-by-line semantic verification against the source PDF was recorded, so non-structural transcription issues may remain.
+
+### Final Status
+- `SUCCESS`
+
+## 2026-02-23 Document 3636 QA Integration
+
+### Scope
+- `data/3636-QD-DHQGHN_Regulation on Masters Training_source.pdf`
+- `data/3636-QD-DHQGHN_Regulation on Masters Training_transcription.md`
+- `data/3636-QD-DHQGHN_Regulation on Masters Training_transcription_en.md`
+- `data/3636-QD-DHQGHN_Regulation on Masters Training_transcription_ja.md`
+- Checklist reference: `docs/QA_CHECKLIST.md`
+
+### Fix Summary
+- Structural / heading normalization:
+  - Converted main DECISION heading to centered non-heading paragraph in VI/EN/JA
+  - Rebuilt EN/JA signature and recipient (`Nơi nhận`) blocks with two-column HTML layout
+- Content / metadata correction:
+  - Corrected EN/JA subtitle document ID from `QD-VNU` to `QĐ-ĐHQGHN`
+  - Changed EN/JA header number labels to source-consistent `Số:`
+- Indentation / list formatting:
+  - Removed leading whitespace from EN/JA top-level numbered clauses (`1.`, `2.`...) to match VI structure and checklist rendering expectations
+
+### QA Checklist Items Addressed
+- Heading normalization
+- Decision section formatting / layout
+- khoản/điểm indentation
+- PDF layout fidelity (structural scope only)
+- Document ID integrity
+- Cross-language structural consistency
+- Heading translation patterns
+
+### Findings / Risks
+- Primary issue was structural drift between VI and EN/JA (lists, HTML layout blocks, signature section).
+- Minor metadata inconsistencies (document ID and labels) were also present in translations.
+- Content accuracy and translation fidelity were not verified against the source PDF.
+- Final visual browser rendering was not explicitly verified after structural fixes.
+
+### Final Status
+- `PARTIAL` (formatting/structure QA completed; semantic/source-PDF verification not completed)
+## 2026-02-23 WEB-TTTS2026-VJU (Website Article Intake Page) — PDF Save + MD/EN/JA + Viewer Registration
+
+### Source
+- URL: `https://vju.ac.vn/ttts2026/`
+- Saved PDF snapshot: `data/WEB-TTTS2026-VJU_Undergraduate Admissions Information 2026_source.pdf` (Playwright print, A4, 37 pages)
+- Article content extracted from WordPress REST API (`/wp-json/wp/v2/posts/43086`) and converted from HTML to Markdown via `pandoc`
+
+### Deliverables Created
+- `data/WEB-TTTS2026-VJU_Undergraduate Admissions Information 2026_transcription.md` (VI)
+- `data/WEB-TTTS2026-VJU_Undergraduate Admissions Information 2026_transcription_en.md` (EN)
+- `data/WEB-TTTS2026-VJU_Undergraduate Admissions Information 2026_transcription_ja.md` (JA)
+- `index.html` updated with new card + `DOC_REGISTRY` entry (`WEB-TTTS2026-VJU`)
+
+### Script Checks (Codex-run)
+- VI/EN/JA all present with front matter + source metadata (`source_url`, `source_modified`)
+- Line counts: VI 2037 / EN 2035 / JA 2029
+- Markdown tables: 56 lines (all 3)
+- HTML tables: 14 (all 3)
+- `index.html` card and `DOC_REGISTRY` entry confirmed for `WEB-TTTS2026-VJU`
+
+### Claude QA / Fix / Review Summary
+- Claude translated EN/JA in 4 chunks (A-D) preserving markdown/HTML/tables
+- Claude QA found and fixes were applied for:
+  - `ẸMM` typo -> `EMJM` (all 3)
+  - `D11D53` cell ambiguity -> `D11<br />D53` (all 3)
+  - VI typo `Bộ GB&ĐT` -> `Bộ GD&ĐT`
+  - EN HSA term consistency -> `Competency Assessment Test (HSA)`
+  - EN decimal consistency `20,5` -> `20.5` (11.1 table values)
+  - EN/JA Section 11.1 table program names translated (previously left in Vietnamese)
+  - Added formula omission note near first `ĐQĐ` formula because source web page itself omits term before `+`
+  - Missing `)` restored in VJU5 row (VI/EN/JA)
+- User-provided screenshots (SAT and interview conversion tables) were used as supplemental visual confirmation for the conversion table values and formulas shown in section 3 tables.
+
+### Final QA State
+- Verdict from Claude: `CONDITIONAL PASS` -> after targeted fixes, no blocking structural/data issues remain for publication.
+- Remaining items are low-priority wording/consistency cleanups (mainly JA terminology harmonization and minor cosmetic artifacts).
+
+### QA Feedback Added
+- For long website article conversions, prefer chunked translation + chunked review to avoid LLM timeouts and preserve large table/HTML blocks.
