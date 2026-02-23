@@ -9,6 +9,7 @@ status: active
 replaces: []
 replaced_by: []
 revision_history: []
+last_updated: "2026-02-23"
 tags:
 - quality-assurance
 version:
@@ -32,8 +33,8 @@ Table recognition is technically challenging, so table layouts and contents may 
 | **Independence - Freedom - Happiness** | |
 No. 04/2016/TT-BGDĐT | *Hà Nội, 14 March 2016*
 
-# CIRCULAR
-**Promulgating Regulations on Quality Standards for Training Programs at Higher Education Levels**
+<h1 align="center">CIRCULAR</h1>
+<p align="center"><strong>Promulgating Regulations on Quality Standards for Training Programs at Higher Education Levels</strong></p>
 
 *Pursuant to the Law on Education dated 14 June 2005; the Law Amending and Supplementing a Number of Articles of the Law on Education dated 25 November 2009;*
 
@@ -67,10 +68,8 @@ No. 04/2016/TT-BGDĐT | *Hà Nội, 14 March 2016*
 :--- | :---
 | **Independence - Freedom - Happiness** | |
 
-## REGULATIONS
-**On Quality Standards for Training Programs**  
-**at Higher Education Levels**
-*(Issued together with Circular No. 04/2016/TT-BGDĐT dated 14 March 2016 of the Minister of Education and Training)*
+<h2 align="center">REGULATIONS</h2>
+<p align="center"><strong>On Quality Standards for Training Programs<br>at Higher Education Levels</strong><br><em>(Issued together with Circular No. 04/2016/TT-BGDĐT dated 14 March 2016 of the Minister of Education and Training)</em></p>
 
 ### Chapter I
 #### GENERAL PROVISIONS

@@ -8,6 +8,7 @@ status: active
 replaces: []
 replaced_by: []
 revision_history: []
+last_updated: "2026-02-23"
 tags:
 - quality-assurance
 version:
@@ -30,8 +31,8 @@ lang: ja
 | **独立・自由・幸福** | |
 番号：04/2016/TT-BGDĐT | *ハノイ、2016年3月14日*
 
-# 通達
-**高等教育各課程の質評価基準規程を公布する**
+<h1 align="center">通達</h1>
+<p align="center"><strong>高等教育各課程の質評価基準規程を公布する</strong></p>
 
 *2005年6月14日付教育法および2009年11月25日付教育法一部改正・補足法を根拠として；*
 
@@ -65,9 +66,8 @@ lang: ja
 :--- | :---
 | **独立・自由・幸福** | |
 
-## 規程
-**高等教育各課程の質評価基準について**  
-*(2016年3月14日付教育訓練大臣通達第04/2016/TT-BGDĐT号に添付)*
+<h2 align="center">規程</h2>
+<p align="center"><strong>高等教育各課程の質評価基準について</strong><br><em>(2016年3月14日付教育訓練大臣通達第04/2016/TT-BGDĐT号に添付)</em></p>
 
 ### 第1章
 #### 総則

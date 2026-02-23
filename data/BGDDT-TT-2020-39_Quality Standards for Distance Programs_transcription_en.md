@@ -8,6 +8,7 @@ status: active
 replaces: []
 replaced_by: []
 revision_history: []
+last_updated: "2026-02-23"
 tags:
 - quality-assurance
 version:
@@ -31,8 +32,8 @@ Table recognition is technically challenging, so table layouts and contents may 
 | **Independence - Freedom - Happiness** | |
 No. 39/2020/TT-BGDĐT | *Hà Nội, 9 October 2020*
 
-# CIRCULAR
-**On Quality Standards for Distance Undergraduate Programs**
+<h1 align="center">CIRCULAR</h1>
+<p align="center"><strong>On Quality Standards for Distance Undergraduate Programs</strong></p>
 
 *Pursuant to the Law on Higher Education dated 18 June 2012; the Law Amending and Supplementing a Number of Articles of the Law on Higher Education dated 19 November 2018;*
 

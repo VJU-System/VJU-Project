@@ -8,6 +8,7 @@ status: active
 replaces: []
 replaced_by: []
 revision_history: []
+last_updated: "2026-02-23"
 tags:
 - university-regulations
 version:
@@ -28,8 +29,8 @@ lang: ja
 | **独立・自由・幸福**
 番号: 04/2020/TT-BGDĐT | *ハノイ、2020年3月18日*
 
-# **通達**
-**教育分野の外国協力・投資に関する政府政令第86/2018/NĐ-CP（2018年6月6日付）の条項の一部を詳細に規定する通達**
+<h1 align="center">通達</h1>
+<p align="center"><strong>教育分野の外国協力・投資に関する政府政令第86/2018/NĐ-CP（2018年6月6日付）の条項の一部を詳細に規定する通達</strong></p>
 
 *教育訓練省の機能、任務、権限および組織構成を規定する、2017年5月25日付政府政令第69/2017/NĐ-CPに基づき、*
 

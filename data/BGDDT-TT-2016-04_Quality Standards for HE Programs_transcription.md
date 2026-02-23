@@ -9,6 +9,7 @@ status: active
 replaces: []
 replaced_by: []
 revision_history: []
+last_updated: "2026-02-23"
 tags:
 - quality-assurance
 version:
@@ -32,8 +33,8 @@ Việc nhận dạng bảng gặp khó khăn về mặt kỹ thuật nên bố c
 | **Độc lập - Tự do - Hạnh phúc**
 Số: 04/2016/TT-BGDĐT | *Hà Nội, ngày 14 tháng 3 năm 2016*
 
-# THÔNG TƯ
-**Ban hành Quy định về tiêu chuẩn đánh giá chất lượng chương trình đào tạo các trình độ của giáo dục đại học**
+<h1 align="center">THÔNG TƯ</h1>
+<p align="center"><strong>Ban hành Quy định về tiêu chuẩn đánh giá chất lượng chương trình đào tạo các trình độ của giáo dục đại học</strong></p>
 
 *Căn cứ Luật giáo dục ngày 14 tháng 6 năm 2005; Luật sửa đổi, bổ sung một số điều của Luật giáo dục ngày 25 tháng 11 năm 2009;*
 
@@ -67,10 +68,8 @@ Số: 04/2016/TT-BGDĐT | *Hà Nội, ngày 14 tháng 3 năm 2016*
 :--- | :---
 | **Độc lập - Tự do - Hạnh phúc**
 
-## QUY ĐỊNH
-**Về tiêu chuẩn đánh giá chất lượng chương trình đào tạo**  
-**các trình độ của giáo dục đại học**
-*(Ban hành kèm theo Thông tư số 04/2016/TT-BGDĐT ngày 14 tháng 3 năm 2016 của Bộ trưởng Bộ Giáo dục và Đào tạo)*
+<h2 align="center">QUY ĐỊNH</h2>
+<p align="center"><strong>Về tiêu chuẩn đánh giá chất lượng chương trình đào tạo<br>các trình độ của giáo dục đại học</strong><br><em>(Ban hành kèm theo Thông tư số 04/2016/TT-BGDĐT ngày 14 tháng 3 năm 2016 của Bộ trưởng Bộ Giáo dục và Đào tạo)</em></p>
 
 ### Chương I
 #### QUY ĐỊNH CHUNG

@@ -9,6 +9,7 @@ status: active
 replaces: []
 replaced_by: []
 revision_history: []
+last_updated: "2026-02-23"
 tags:
 - quality-assurance
 version:
@@ -32,8 +33,8 @@ Việc nhận dạng bảng gặp khó khăn về mặt kỹ thuật nên bố c
 | **Độc lập - Tự do - Hạnh phúc**
 Số: 39/2020/TT-BGDĐT | *Hà Nội, ngày 09 tháng 10 năm 2020*
 
-# THÔNG TƯ
-**Quy định về tiêu chuẩn đánh giá chất lượng chương trình đào tạo từ xa trình độ đại học**
+<h1 align="center">THÔNG TƯ</h1>
+<p align="center"><strong>Quy định về tiêu chuẩn đánh giá chất lượng chương trình đào tạo từ xa trình độ đại học</strong></p>
 
 *Căn cứ Luật Giáo dục đại học ngày 18 tháng 6 năm 2012; Luật sửa đổi, bổ sung một số điều của Luật Giáo dục đại học ngày 19 tháng 11 năm 2018;*
 

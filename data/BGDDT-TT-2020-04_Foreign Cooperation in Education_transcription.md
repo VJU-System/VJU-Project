@@ -9,6 +9,7 @@ status: active
 replaces: []
 replaced_by: []
 revision_history: []
+last_updated: "2026-02-23"
 tags:
 - university-regulations
 version:
@@ -29,8 +30,8 @@ Cơ quan ban hành có thể công bố chính thức các phiên bản ngôn ng
 | **Độc lập - Tự do - Hạnh phúc**
 Số: 04/2020/TT-BGDĐT | *Hà Nội, ngày 18 tháng 3 năm 2020*
 
-# **THÔNG TƯ**
-**Quy định chi tiết một số điều của Nghị định số 86/2018/NĐ-CP ngày 06 tháng 6 năm 2018 của Chính phủ quy định về hợp tác, đầu tư của nước ngoài trong lĩnh vực giáo dục**
+<h1 align="center">THÔNG TƯ</h1>
+<p align="center"><strong>Quy định chi tiết một số điều của Nghị định số 86/2018/NĐ-CP ngày 06 tháng 6 năm 2018 của Chính phủ quy định về hợp tác, đầu tư của nước ngoài trong lĩnh vực giáo dục</strong></p>
 
 *Căn cứ Nghị định số 69/2017/NĐ-CP ngày 25 tháng 5 năm 2017 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Giáo dục và Đào tạo;*
 

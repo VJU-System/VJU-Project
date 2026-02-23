@@ -9,6 +9,7 @@ status: active
 replaces: []
 replaced_by: []
 revision_history: []
+last_updated: "2026-02-23"
 tags:
 - university-regulations
 version:
@@ -29,8 +30,8 @@ Other language versions may be officially published by the issuing authority.</d
 | **Independence - Freedom - Happiness**
 No. 04/2020/TT-BGDĐT | *Hà Nội, 18 March 2020*
 
-# CIRCULAR
-**Detailing a number of articles of Decree No. 86/2018/NĐ-CP dated 6 June 2018 of the Government on foreign cooperation and investment in the field of education**
+<h1 align="center">CIRCULAR</h1>
+<p align="center"><strong>Detailing a number of articles of Decree No. 86/2018/NĐ-CP dated 6 June 2018 of the Government on foreign cooperation and investment in the field of education</strong></p>
 
 *Pursuant to Decree No. 69/2017/NĐ-CP dated 25 May 2017 of the Government defining the functions, duties, powers, and organizational structure of the Ministry of Education and Training;*
 

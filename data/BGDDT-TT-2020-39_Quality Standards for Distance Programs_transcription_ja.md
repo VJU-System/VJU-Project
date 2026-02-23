@@ -8,6 +8,7 @@ status: active
 replaces: []
 replaced_by: []
 revision_history: []
+last_updated: "2026-02-23"
 tags:
 - quality-assurance
 version:
@@ -30,8 +31,8 @@ lang: ja
 | **独立・自由・幸福** | |
 番号：39/2020/TT-BGDĐT | *ハノイ、2020年10月9日*
 
-# 通達
-**遠隔大学課程の質保証基準について**
+<h1 align="center">通達</h1>
+<p align="center"><strong>遠隔大学課程の質保証基準について</strong></p>
 
 *2012年6月18日付高等教育法および2018年11月19日付高等教育法一部改正・補足法を根拠として；*
 
