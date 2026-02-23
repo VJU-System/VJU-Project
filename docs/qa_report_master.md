@@ -141,3 +141,20 @@
 
 ### Timeout Events (300s threshold)
 - None in this cycle
+## 2026-02-23 Batch 2 Script Checks (911 / 984 / 1010 metadata follow-up)
+
+### Scope
+- `911-TB-DHVN_Foreign Language Certificate Submission VJU2024` (VI/EN/JA)
+- `984-TB-DHVN_Foreign Language Certificate Submission VJU2023` (VI/EN/JA)
+- `1010-TB-DHVN_English Certificate Submission VJU2025` (metadata follow-up only)
+
+### Script Findings Summary
+- `911` VI: pipe tables detected (`38`), no ASCII-table warning
+- `911` EN/JA: no pipe tables; ASCII table separators detected (`6`), escaped pipes detected, sanitized `QD` token pattern detected
+- `984` VI: pipe tables detected (`10`), no ASCII-table warning
+- `984` EN/JA: ASCII table separators detected (`2`), escaped pipes detected, sanitized `QD` token pattern detected
+- `1010` VI/EN/JA: structural checks clean; all three still have `issue_date: null` (low-priority metadata normalization)
+
+### Status
+- `911` / `984` require Claude-based structure/table repairs + ID corrections
+- `1010` requires only metadata cleanup (`issue_date`)
