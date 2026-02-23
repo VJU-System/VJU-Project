@@ -1125,15 +1125,15 @@ and are made public on the training unit's website.
         instructing 01 student;
     c)  Thesis supervisor criteria:
 
-    - Have a doctoral degree of 02 years or more, with expertise
-      appropriate to the student's training field and thesis topic;
-    - Have foreign language skills and apply information technology to
-      conduct research and international scientific exchanges;
-    - Have scientific research results related to the thesis topic
-      within 05 years from the time of being assigned guidance;
-    - Meet other requirements according to the training program
-      standards of the industry, training field and regulations of the
-      training unit.
+  - Have a doctoral degree of 02 years or more, with expertise
+    appropriate to the student's training field and thesis topic;
+  - Have foreign language skills and apply information technology to
+    conduct research and international scientific exchanges;
+  - Have scientific research results related to the thesis topic
+    within 05 years from the time of being assigned guidance;
+  - Meet other requirements according to the training program
+    standards of the industry, training field and regulations of the
+    training unit.
 2.  Thesis evaluation conditions
     a)  Students complete all modules of the training program;
     b)  Meet the foreign language output standards in accordance with
@@ -1142,16 +1142,16 @@ and are made public on the training unit's website.
         Framework for Vietnam; proven through one of the following
         diplomas or certificates:
 
-    - Have a university, master's or doctoral degree from a full-time
-      training program abroad, and have the degree recognized by a
-      competent authority according to current regulations;
-    - Have a university degree in foreign languages;
-    - Have a foreign language proficiency certificate equivalent to
-      Level 4 of the 6-level Foreign Language Proficiency Framework for
-      Vietnam, or equivalent within 02 years (from the date of the
-      foreign language certificate exam to the date of submission of the
-      certificate to the training unit, in case the student extends, it
-      is calculated from the date of the foreign language certificate
+  - Have a university, master's or doctoral degree from a full-time
+    training program abroad, and have the degree recognized by a
+    competent authority according to current regulations;
+  - Have a university degree in foreign languages;
+  - Have a foreign language proficiency certificate equivalent to
+    Level 4 of the 6-level Foreign Language Proficiency Framework for
+    Vietnam, or equivalent within 02 years (from the date of the
+    foreign language certificate exam to the date of submission of the
+    certificate to the training unit, in case the student extends, it
+    is calculated from the date of the foreign language certificate
       exam to the date of submission of the thesis defense application)
       issued by institutions recognized by the Ministry of Education and
       Training and Hanoi National University.
@@ -1633,10 +1633,10 @@ Regulations.
         Director of Hanoi National University for approval before
         implementation;
 
-    - The above tuition calculation is applied to all courses that
-      students must retake;
-    - The head of the training unit shall specify and widely publicize
-      to students the method of collecting and paying tuition fees.
+  - The above tuition calculation is applied to all courses that
+    students must retake;
+  - The head of the training unit shall specify and widely publicize
+    to students the method of collecting and paying tuition fees.
     c)  Other legal sources of funding Legal sources of funding for
         training are determined by the head of the training unit
         according to the actual situation to ensure effective use and
