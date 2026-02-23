@@ -5,10 +5,10 @@ issuer: Ministry of Education and Training
 category: 3. University Regulations
 status: Official
 version:
-- en
-- ja
-- vi
-- source
+  - en
+  - ja
+  - vi
+  - source
 lang: vi
 ---
 <div class="source-note" role="note" aria-label="Ghi chú nguồn">Tệp này được tạo dựa trên nội dung công khai.  
@@ -67,12 +67,12 @@ Số: 4998/QĐ-BGDĐT
 
 **1. Phạm vi điều chỉnh**
 Văn bản này quy định kỹ thuật về dữ liệu của cơ sở dữ liệu giáo dục và đào tạo gồm: trường dữ liệu, kiểu dữ liệu, độ dài dữ liệu đối với các cơ sở dữ liệu giáo dục và đào tạo cụ thể như sau:
-- Đối với cơ sở dữ liệu về giáo dục mầm non, giáo dục phổ thông và giáo dục thường xuyên gồm các dữ liệu về: cơ sở giáo dục, lớp học, đội ngũ cán bộ quản lý, nhân viên, giáo viên ở các cơ sở giáo dục (gọi chung là đội ngũ), người học và các dữ liệu khác;
-- Đối với cơ sở dữ liệu về giáo dục đại học gồm các dữ liệu về: cơ sở giáo dục, ngành đào tạo, chương trình đào tạo, đội ngũ, người học, nguồn lực khoa học công nghệ, cơ sở vật chất và trang thiết bị cơ sở giáo dục, tài chính, hợp tác quốc tế, hợp tác với doanh nghiệp và các dữ liệu khác.
+  - Đối với cơ sở dữ liệu về giáo dục mầm non, giáo dục phổ thông và giáo dục thường xuyên gồm các dữ liệu về: cơ sở giáo dục, lớp học, đội ngũ cán bộ quản lý, nhân viên, giáo viên ở các cơ sở giáo dục (gọi chung là đội ngũ), người học và các dữ liệu khác;
+  - Đối với cơ sở dữ liệu về giáo dục đại học gồm các dữ liệu về: cơ sở giáo dục, ngành đào tạo, chương trình đào tạo, đội ngũ, người học, nguồn lực khoa học công nghệ, cơ sở vật chất và trang thiết bị cơ sở giáo dục, tài chính, hợp tác quốc tế, hợp tác với doanh nghiệp và các dữ liệu khác.
 
 **2. Đối tượng áp dụng**
-- Cơ quan quản lý giáo dục và đào tạo gồm: Bộ Giáo dục và Đào tạo, các sở giáo dục và đào tạo, các phòng giáo dục và đào tạo;
-- Các cơ sở giáo dục, các cơ quan, tổ chức, cá nhân khác có liên quan đến kết nối, chia sẻ dữ liệu với cơ sở dữ liệu giáo dục và đào tạo do Bộ Giáo dục và Đào tạo quản lý.
+  - Cơ quan quản lý giáo dục và đào tạo gồm: Bộ Giáo dục và Đào tạo, các sở giáo dục và đào tạo, các phòng giáo dục và đào tạo;
+  - Các cơ sở giáo dục, các cơ quan, tổ chức, cá nhân khác có liên quan đến kết nối, chia sẻ dữ liệu với cơ sở dữ liệu giáo dục và đào tạo do Bộ Giáo dục và Đào tạo quản lý.
 
 **3. Giải thích từ ngữ**
 *Cơ sở dữ liệu giáo dục và đào tạo*: là tập hợp dữ liệu số hóa thông tin quản lý về giáo dục và đào tạo (gồm dữ liệu về mạng lưới cơ sở giáo dục, dữ liệu về lớp học, dữ liệu về đội ngũ giáo viên, giảng viên, cán bộ quản lý giáo dục và nhân viên, dữ liệu về học sinh, sinh viên, dữ liệu về chương trình giáo dục, dữ liệu về cơ sở vật chất trường học và các dữ liệu liên quan khác) do Bộ Giáo dục và Đào tạo xây dựng, quản lý và cung cấp.

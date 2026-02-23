@@ -5,10 +5,10 @@ issuer: Ministry of Education and Training
 category: 3. University Regulations
 status: Official
 version:
-- en
-- ja
-- vi
-- source
+  - en
+  - ja
+  - vi
+  - source
 lang: en
 ---
 <div class="source-note" role="note" aria-label="Source note">This file is created with reference to publicly available content.  
@@ -67,12 +67,12 @@ No.: 4998/QĐ-BGDĐT
 
 **1. Scope of regulation**
 This document sets out the technical specifications on data of the education and training database, including data fields, data types, and data length for the following specific education and training databases:
-- For the database on preschool education, general education, and continuing education: data on educational institutions, classes, management staff, employees, teachers at educational institutions (collectively referred to as staff), learners, and other data;
-- For the database on higher education: data on educational institutions, training disciplines, training programs, staff, learners, science and technology resources, facilities and equipment of educational institutions, finance, international cooperation, cooperation with enterprises, and other data.
+  - For the database on preschool education, general education, and continuing education: data on educational institutions, classes, management staff, employees, teachers at educational institutions (collectively referred to as staff), learners, and other data;
+  - For the database on higher education: data on educational institutions, training disciplines, training programs, staff, learners, science and technology resources, facilities and equipment of educational institutions, finance, international cooperation, cooperation with enterprises, and other data.
 
 **2. Subjects of application**
-- Education and training management agencies, including: the Ministry of Education and Training, provincial Departments of Education and Training, and district-level Divisions of Education and Training;
-- Educational institutions and other agencies, organizations, and individuals related to the connection and sharing of data with the education and training database managed by the Ministry of Education and Training.
+  - Education and training management agencies, including: the Ministry of Education and Training, provincial Departments of Education and Training, and district-level Divisions of Education and Training;
+  - Educational institutions and other agencies, organizations, and individuals related to the connection and sharing of data with the education and training database managed by the Ministry of Education and Training.
 
 **3. Interpretation of terms**
 *Education and training database*: a collection of digitized data on education and training management information (including data on the network of educational institutions, data on classes, data on teaching staff, lecturers, education management staff and employees, data on pupils and students, data on education programs, data on school facilities, and other related data) developed, managed, and provided by the Ministry of Education and Training.

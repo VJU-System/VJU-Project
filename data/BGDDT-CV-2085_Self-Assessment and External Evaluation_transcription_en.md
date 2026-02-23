@@ -5,10 +5,10 @@ issuer: Ministry of Education and Training
 category: 3. University Regulations
 status: Official
 version:
-- en
-- ja
-- vi
-- source
+  - en
+  - ja
+  - vi
+  - source
 lang: en
 ---
 <div class="source-note" role="note" aria-label="Source note">This file is created with reference to publicly available content.  
@@ -29,9 +29,9 @@ Re: Guidance on self-assessment and external evaluation of training programs
 *Ha Noi, December 31, 2020*
 
 **To:**
-- Higher education institutions;
-- Colleges that provide teacher training;
-- Education quality accreditation organizations.
+  - Higher education institutions;
+  - Colleges that provide teacher training;
+  - Education quality accreditation organizations.
 
 To implement the self-assessment and external evaluation of training programs (CTĐT) at higher education institutions and colleges that provide teacher training in accordance with current regulations¹, the Department of Quality Management under the Ministry of Education and Training (GDĐT) provides guidance on conducting the self-assessment and external evaluation of CTĐT as follows.
 
@@ -52,9 +52,9 @@ c) It demonstrates the institution’s autonomy and accountability in all activi
 **2. Requirements for self-assessment of training programs**
 
 a) During the self-assessment (TĐG) of the CTĐT, based on each standard and criterion, the education institution must focus on the following tasks:
-- Describe clearly the current status of the CTĐT.
-- Analyze, explain, compare, contrast, and provide judgments; indicate strengths, existing issues, and remedial measures.
-- Develop action plans to improve and enhance the quality of the CTĐT.
+  - Describe clearly the current status of the CTĐT.
+  - Analyze, explain, compare, contrast, and provide judgments; indicate strengths, existing issues, and remedial measures.
+  - Develop action plans to improve and enhance the quality of the CTĐT.
 
 b) Self-assessing CTĐT is a continuous process that requires significant effort and time, as well as the participation of many individuals across the entire unit delivering the CTĐT and coordination with individuals and units elsewhere in the institution.
 
@@ -135,9 +135,9 @@ To improve the quality of the Criterion Evaluation Form, the writing process sho
 **4. Preparing the self-assessment report**
 
 The self-assessment council prepares the self-assessment report in accordance with Circular No. 38/2013/TT-BGDĐT, clearly presenting:
-- The objectives, scope, and methods of the self-assessment.
-- The current status assessments, attainment levels, strengths, existing issues, and improvement plans for each standard and criterion.
-- The overall conclusions of the self-assessment and recommendations.
+  - The objectives, scope, and methods of the self-assessment.
+  - The current status assessments, attainment levels, strengths, existing issues, and improvement plans for each standard and criterion.
+  - The overall conclusions of the self-assessment and recommendations.
 
 Refer to Annex 5 for the structure and format of the self-assessment report.
 
@@ -254,8 +254,8 @@ Specific duties of the members shall be assigned by the council chairperson. The
 **Article 3.** Heads of relevant units .... and the individuals named in Article 1 are responsible for implementing this Decision./.
 
 **Recipients:**
-- As stated in Article 3;
-- Archive: ..................
+  - As stated in Article 3;
+  - Archive: ..................
 
 **HEAD OF THE EDUCATION INSTITUTION**
 *(Signature, full name, and seal)*
@@ -399,10 +399,10 @@ Each education institution determines an appropriate schedule to complete the se
 
 **Recipients:**
 
-- Direct supervisory authority (for reporting);
-- Self-assessment council (for implementation);
-- Units within the education institution (for implementation);
-- Archive .................................
+  - Direct supervisory authority (for reporting);
+  - Self-assessment council (for implementation);
+  - Units within the education institution (for implementation);
+  - Archive .................................
 
 **HEAD OF THE EDUCATION INSTITUTION**
 *(Signature, full name, and seal)*
@@ -532,8 +532,8 @@ Mark (x) in one of the boxes below.
 
 *Note:*
 
-- If not achieved, specify the percentage of the requirement met and explain why.
-- If assessment is not possible, state the reason (no evidence, criterion not applicable, or other reasons).
+  - If not achieved, specify the percentage of the requirement met and explain why.
+  - If assessment is not possible, state the reason (no evidence, criterion not applicable, or other reasons).
 
 **Confirmation by head of working group**
 
@@ -724,8 +724,8 @@ b) For self-assessments conducted under the CTĐT quality standards promulgated 
 | **Overall evaluation of the CTĐT** | | | **37** | **92.50** |
 
 **Note:**
-- Record the evaluation result as A for Achieved and N for Not achieved.
-- The percentage of criteria achieved is rounded to two decimal places.
+  - Record the evaluation result as A for Achieved and N for Not achieved.
+  - The percentage of criteria achieved is rounded to two decimal places.
 
 *..., date..... month..... year 20...*
 **HEAD OF THE EDUCATION INSTITUTION**
@@ -1023,10 +1023,10 @@ Total number of applicants to the program, admitted learners, and enrolled learn
 | 5.3. Percentage of graduates who need retraining or at least 6 months of additional training (%). | | | | | |
 
 **Note:**
-- Graduates are learners eligible for graduation under regulations, including those yet to receive their diplomas.
-- Employed graduates are those who have found or created employment.
-- “First year after graduation” means 12 months from the graduation date.
-- Any items left blank are considered cases where the education institution/unit implementing the program did not conduct a survey on that issue.
+  - Graduates are learners eligible for graduation under regulations, including those yet to receive their diplomas.
+  - Employed graduates are those who have found or created employment.
+  - “First year after graduation” means 12 months from the graduation date.
+  - Any items left blank are considered cases where the education institution/unit implementing the program did not conduct a survey on that issue.
 
 **VI. Scientific research and technology transfer**
 45. Number of scientific research and technology transfer projects of the unit implementing the program accepted in the past 5 years:
@@ -1197,8 +1197,8 @@ Working area: ............... Study area: ..................... Recreational are
 
 59. Total area of classrooms (in m²)
 
-- Total classroom area: .....................................................................................
-- Ratio of classroom area to the number of full-time learners: .......................................
+  - Total classroom area: .....................................................................................
+  - Ratio of classroom area to the number of full-time learners: .......................................
 
 60. Total number of book titles in the training discipline available at the Information Center – Library:..........................................................
 
@@ -1206,8 +1206,8 @@ Total number of book titles in the resource room of the unit implementing the pr
 
 61. Total number of computers of the unit implementing the program:
 
-- Used for office systems: .........................................................................
-- Used for learners’ study activities: ............................................................................
+  - Used for office systems: .........................................................................
+  - Used for learners’ study activities: ............................................................................
 
 Ratio of computers for learners to full-time learners: ..........................
 
@@ -1283,19 +1283,19 @@ Education institutions with training programs under evaluation may encode inform
 
 Where:
 
-- **H:** abbreviation of “evidence box” (the evidence for each standard is stored in one or more boxes).
-- **n:** ordinal number of the evidence box, numbered from 1 upward (if n ≥ 10, the symbol string has 12 or more characters).
-- **ab:** ordinal number of the standard (standard 1 is written as 01, standard 10 as 10).
-- **cd:** ordinal number of the criterion (criterion 1 is written as 01, criterion 10 as 10).
-- **ef:** ordinal number of the evidence for each criterion (the first piece of information/evidence is written as 01, the 15th as 15, etc.).
+  - **H:** abbreviation of “evidence box” (the evidence for each standard is stored in one or more boxes).
+  - **n:** ordinal number of the evidence box, numbered from 1 upward (if n ≥ 10, the symbol string has 12 or more characters).
+  - **ab:** ordinal number of the standard (standard 1 is written as 01, standard 10 as 10).
+  - **cd:** ordinal number of the criterion (criterion 1 is written as 01, criterion 10 as 10).
+  - **ef:** ordinal number of the evidence for each criterion (the first piece of information/evidence is written as 01, the 15th as 15, etc.).
 
 Examples:
 
-- H1.01.01.01: the first evidence of criterion 1, standard 1, stored in box 1.
-- H3.03.02.15: the 15th evidence of criterion 2, standard 3, stored in box 3.
-- H4.04.03.25: the 25th evidence of criterion 3, standard 4, stored in box 4.
-- H8.10.02.04: the 4th evidence of criterion 2, standard 10, stored in box 8.
-- H10.10.02.04: the 4th evidence of criterion 2, standard 10, stored in box 10.
+  - H1.01.01.01: the first evidence of criterion 1, standard 1, stored in box 1.
+  - H3.03.02.15: the 15th evidence of criterion 2, standard 3, stored in box 3.
+  - H4.04.03.25: the 25th evidence of criterion 3, standard 4, stored in box 4.
+  - H8.10.02.04: the 4th evidence of criterion 2, standard 10, stored in box 8.
+  - H10.10.02.04: the 4th evidence of criterion 2, standard 10, stored in box 10.
 
 ---
 
@@ -1477,11 +1477,11 @@ d) Other remarks (if any): .....................................................
 **2. Comments on content**
 a) Introduction, overall conclusion, annexes, etc. ...................................
 b) Criteria:
-- Description of current status
-- Strengths
-- Existing issues
-- Action plan
-- Self-assessment results
+  - Description of current status
+  - Strengths
+  - Existing issues
+  - Action plan
+  - Self-assessment results
 c) Use of information and evidence, and the honesty, accuracy, and sufficiency of the information and evidence
 
 **3. Criteria not evaluated, not properly evaluated, or not fully evaluated**
@@ -1511,11 +1511,11 @@ d) Other remarks (if any): .....................................................
 **2. Comments on content**
 a) Introduction, overall conclusion, annexes, etc.
 b) Criteria:
-- Description of current status
-- Strengths
-- Existing issues
-- Action plan
-- Self-assessment results
+  - Description of current status
+  - Strengths
+  - Existing issues
+  - Action plan
+  - Self-assessment results
 c) Use of information and evidence, and the honesty, accuracy, and sufficiency of the information and evidence
 
 **3. Criteria not evaluated, not properly evaluated, or not fully evaluated**
@@ -1576,12 +1576,12 @@ Time: From..............to..................
 **1. Objectives of the preliminary visit**
 **2. Discussion on the results of reviewing the self-assessment dossier**
 **3. Specific requirements for the education institution**
-- Working conditions for the external evaluation team;
-- List of documents, materials, information, and evidence to be supplemented or verified;
-- Stakeholders proposed for interviews;
-- Facilities of the education institution proposed for site visits;
-- Activities in the CTĐT that the education institution is requested to arrange for observation (if any);
-- Other proposals (if any).
+  - Working conditions for the external evaluation team;
+  - List of documents, materials, information, and evidence to be supplemented or verified;
+  - Stakeholders proposed for interviews;
+  - Facilities of the education institution proposed for site visits;
+  - Activities in the CTĐT that the education institution is requested to arrange for observation (if any);
+  - Other proposals (if any).
 **3. Agreement on the official visit schedule**
 
 The meeting concluded at .... hours on the same day.
@@ -1615,8 +1615,8 @@ Present the assigned standards and criteria in sequence using the following stru
 5. Assessment of the criterion’s attainment level (*)
 
 *Note:*
-- Evaluate Achieved/Not achieved for CTĐT evaluated according to Circulars No. 23/2011/TT-BGDĐT, No. 49/2012/TT-BGDĐT, and No. 33/2014/TT-BGDĐT.
-- Evaluate Achieved/Not achieved together with the level (from Level 1 to Level 7) for CTĐT evaluated according to Circulars No. 04/2016/TT-BGDĐT, No. 02/2020/TT-BGDĐT, and No. 39/2020/TT-BGDĐT.
+  - Evaluate Achieved/Not achieved for CTĐT evaluated according to Circulars No. 23/2011/TT-BGDĐT, No. 49/2012/TT-BGDĐT, and No. 33/2014/TT-BGDĐT.
+  - Evaluate Achieved/Not achieved together with the level (from Level 1 to Level 7) for CTĐT evaluated according to Circulars No. 04/2016/TT-BGDĐT, No. 02/2020/TT-BGDĐT, and No. 39/2020/TT-BGDĐT.
 
 *....., date ....... month ...... year.....*
 **Evaluator**
@@ -1784,13 +1784,13 @@ Based on the CTĐT self-assessment results, the review of the self-assessment do
 5. Assessment of the criterion’s attainment level (*):
 
 *Note:*
-- Evaluate Achieved/Not achieved for CTĐT whose quality is assessed in accordance with Circulars No. 23/2011/TT-BGDĐT, No. 49/2012/TT-BGDĐT, and No. 33/2014/TT-BGDĐT.
-- Evaluate Achieved/Not achieved together with the level (from Level 1 to Level 7) for CTĐT evaluated according to Circulars No. 04/2016/TT-BGDĐT, No. 02/2020/TT-BGDĐT, and No. 39/2020/TT-BGDĐT.
+  - Evaluate Achieved/Not achieved for CTĐT whose quality is assessed in accordance with Circulars No. 23/2011/TT-BGDĐT, No. 49/2012/TT-BGDĐT, and No. 33/2014/TT-BGDĐT.
+  - Evaluate Achieved/Not achieved together with the level (from Level 1 to Level 7) for CTĐT evaluated according to Circulars No. 04/2016/TT-BGDĐT, No. 02/2020/TT-BGDĐT, and No. 39/2020/TT-BGDĐT.
 
 **Overall assessment of Standard 1:**
-- Key strengths of the CTĐT: ..............................................................................................
-- Fundamental existing issues of the CTĐT: ......................................................................
-- Recommendations for the CTĐT: .....................................................................................
+  - Key strengths of the CTĐT: ..............................................................................................
+  - Fundamental existing issues of the CTĐT: ......................................................................
+  - Recommendations for the CTĐT: .....................................................................................
 **II. Standard 2:**
 *(Subsequent standards are evaluated using the structure above.)*
 
@@ -1837,8 +1837,8 @@ Other annexes (if any)
 | **Overall evaluation of the CTĐT** | | | **4.25** | **43** | **86.00** | **4.13** | **41** | **82.00** |
 
 *Note:*
-- Record the rating for each criterion using integers.
-- The overall rating for each standard and for the CTĐT is the arithmetic mean of the criterion ratings, rounded to two decimal places.
+  - Record the rating for each criterion using integers.
+  - The overall rating for each standard and for the CTĐT is the arithmetic mean of the criterion ratings, rounded to two decimal places.
 
 ---
 
@@ -1870,31 +1870,31 @@ Other annexes (if any)
 
 **I. Formatting of the self-assessment and external evaluation reports**
 Guidance on presenting the self-assessment report and the external evaluation report
-- The self-assessment report and the external evaluation report must be concise, clear, coherent, and free of erasures. The reports should be edited to ensure consistency in presentation, wording, terminology, and to avoid spelling and grammatical errors.
-- The self-assessment report and the external evaluation report should not exceed 200 A4 pages, excluding annexes. Tables, charts, graphs, illustrations, maps, and photos may be printed on A3 paper. The reports should be bound (softcover or hardcover) for long-term use (along with the electronic file).
-- Do not overuse abbreviations in the reports. Only abbreviate words, phrases, or terms that are used more than three times in the report. Do not abbreviate overly long phrases or clauses, nor words or phrases that appear infrequently. When words, phrases, terms, or names of agencies or organizations are abbreviated, the first occurrence must be written in full with the abbreviation in parentheses. Reports containing abbreviations must include a list of abbreviations (arranged alphabetically) at the beginning of the report.
+  - The self-assessment report and the external evaluation report must be concise, clear, coherent, and free of erasures. The reports should be edited to ensure consistency in presentation, wording, terminology, and to avoid spelling and grammatical errors.
+  - The self-assessment report and the external evaluation report should not exceed 200 A4 pages, excluding annexes. Tables, charts, graphs, illustrations, maps, and photos may be printed on A3 paper. The reports should be bound (softcover or hardcover) for long-term use (along with the electronic file).
+  - Do not overuse abbreviations in the reports. Only abbreviate words, phrases, or terms that are used more than three times in the report. Do not abbreviate overly long phrases or clauses, nor words or phrases that appear infrequently. When words, phrases, terms, or names of agencies or organizations are abbreviated, the first occurrence must be written in full with the abbreviation in parentheses. Reports containing abbreviations must include a list of abbreviations (arranged alphabetically) at the beginning of the report.
 
 **II. Structure of the self-assessment and external evaluation reports**
 **1. Structure of the self-assessment report**
-- Front cover
-- Inner cover
-- List of self-assessment council members and signatures
-- Table of contents
-- List of abbreviations (if any)
-- Part I. Overview
-- Part II. Self-assessment by standards and criteria
-- Part III. Conclusion
-- Part IV. Annexes
+  - Front cover
+  - Inner cover
+  - List of self-assessment council members and signatures
+  - Table of contents
+  - List of abbreviations (if any)
+  - Part I. Overview
+  - Part II. Self-assessment by standards and criteria
+  - Part III. Conclusion
+  - Part IV. Annexes
 
 **2. Structure of the external evaluation report**
-- Front cover
-- Inner cover
-- List of external evaluation team members and signatures
-- Table of contents
-- List of abbreviations (if any)
-- Part I. Overview
-- Part II. Evaluation by criterion
-- Part III. Conclusions and recommendations
-- Part IV. Annexes
+  - Front cover
+  - Inner cover
+  - List of external evaluation team members and signatures
+  - Table of contents
+  - List of abbreviations (if any)
+  - Part I. Overview
+  - Part II. Evaluation by criterion
+  - Part III. Conclusions and recommendations
+  - Part IV. Annexes
 
 **Department of Quality Management**

@@ -5,10 +5,10 @@ issuer: Ministry of Education and Training
 category: 3. University Regulations
 status: Official
 version:
-- en
-- ja
-- vi
-- source
+  - en
+  - ja
+  - vi
+  - source
 lang: en
 ---
 <div class="source-note" role="note" aria-label="Source note">This file is created with reference to publicly available content.  
@@ -28,9 +28,9 @@ Official Letter No. 2085/QLCL-KĐCLGD
 *Hà Nội, 10 June 2021*
 
 **To:**
-- Higher education institutions;
-- Colleges that provide teacher training;
-- Educational quality assurance and accreditation organizations.
+  - Higher education institutions;
+  - Colleges that provide teacher training;
+  - Educational quality assurance and accreditation organizations.
 
 On 31 December 2020, the Department of Quality Management under the Ministry of Education and Training issued Official Letter No. 2085/QLCL-KĐCLGD on self-assessment and external assessment of training programs.
 
@@ -39,13 +39,13 @@ Based on practical implementation and comments collected from certain units, the
 During implementation, if there are any concerns or proposals, please contact the Division of Educational Quality Accreditation, Department of Quality Management, Ministry of Education and Training at 35 Đại Cồ Việt, Hai Bà Trưng, Hà Nội; email: phongkdclgd@moet.gov.vn for prompt resolution.
 
 **Recipients:**
-- As above;
-- Deputy Minister Hoàng Minh Sơn (for reporting);
-- Director General (for reporting);
-- Department of Schools (Ministry of National Defence);
-- Department of Training (Ministry of Public Security);
-- Higher Education Department;
-- Archives: Office, Division of Educational Quality Accreditation.
+  - As above;
+  - Deputy Minister Hoàng Minh Sơn (for reporting);
+  - Director General (for reporting);
+  - Department of Schools (Ministry of National Defence);
+  - Department of Training (Ministry of Public Security);
+  - Higher Education Department;
+  - Archives: Office, Division of Educational Quality Accreditation.
 
 **For the Director General**  
 **Deputy Director General**  
@@ -350,11 +350,11 @@ d) Other opinions (if any): ....................................................
 **2. Comments on contents**  
 a) The sections Statement of issues, Overall conclusion, Appendices, etc.  
 b) The criteria:  
-- Description of the current situation  
-- Strengths  
-- Limitations  
-- Action plan  
-- Self-assessment results  
+  - Description of the current situation  
+  - Strengths  
+  - Limitations  
+  - Action plan  
+  - Self-assessment results  
 c) Use of information and evidence, and the authenticity, accuracy, and sufficiency of the information and evidence
 
 **3. Criteria not yet assessed, not properly assessed, or not fully assessed**  

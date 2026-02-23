@@ -5,10 +5,10 @@ issuer: Ministry of Education and Training
 category: 3. University Regulations
 status: Official
 version:
-- en
-- ja
-- vi
-- source
+  - en
+  - ja
+  - vi
+  - source
 lang: vi
 ---
 <div class="source-note" role="note" aria-label="Ghi chú nguồn">Tệp này được tạo dựa trên nội dung công khai.  
@@ -28,9 +28,9 @@ Công văn số 2085/QLCL-KĐCLGD
 *Hà Nội, ngày 10 tháng 6 năm 2021*
 
 Kính gửi:
-- Các cơ sở giáo dục đại học;
-- Các trường cao đẳng có đào tạo giáo viên;
-- Các tổ chức kiểm định chất lượng giáo dục.
+  - Các cơ sở giáo dục đại học;
+  - Các trường cao đẳng có đào tạo giáo viên;
+  - Các tổ chức kiểm định chất lượng giáo dục.
 
 Ngày 31 tháng 12 năm 2020, Cục Quản lý chất lượng - Bộ Giáo dục và Đào tạo đã ban hành Công văn số 2085/QLCL-KĐCLGD về việc hướng dẫn tự đánh giá và đánh giá ngoài chương trình đào tạo.
 
@@ -39,13 +39,13 @@ Qua thực tế triển khai và tổng hợp ý kiến góp ý của một số
 Trong quá trình thực hiện nếu có vướng mắc hoặc đề xuất cần liên hệ với Phòng Kiểm định chất lượng giáo dục, Cục Quản lý chất lượng, Bộ Giáo dục và Đào tạo theo địa chỉ: 35 Đại Cồ Việt, Hai Bà Trưng, Hà Nội; email: phongkdclgd@moet.gov.vn để được giải quyết kịp thời./.
 
 **Nơi nhận:**
-- Như trên;
-- TT Hoàng Minh Sơn (để b/c);
-- Cục trưởng (để b/c);
-- Cục Nhà trường (Bộ Quốc phòng);
-- Cục Đào tạo (Bộ Công an);
-- Vụ GDĐH;
-- Lưu: VT, KĐCLGD.
+  - Như trên;
+  - TT Hoàng Minh Sơn (để b/c);
+  - Cục trưởng (để b/c);
+  - Cục Nhà trường (Bộ Quốc phòng);
+  - Cục Đào tạo (Bộ Công an);
+  - Vụ GDĐH;
+  - Lưu: VT, KĐCLGD.
 
 **KT. CỤC TRƯỞNG**
 **PHÓ CỤC TRƯỞNG**
@@ -338,11 +338,11 @@ d) Các ý kiến khác (nếu có): ...........................................
 **2. Nhận xét về nội dung**
 a) Phần Đặt vấn đề, Kết luận chung, phần Phụ lục,...
 b) Các tiêu chí:
-- Mô tả hiện trạng
-- Điểm mạnh
-- Điểm tồn tại
-- Kế hoạch hành động
-- Kết quả tự đánh giá
+  - Mô tả hiện trạng
+  - Điểm mạnh
+  - Điểm tồn tại
+  - Kế hoạch hành động
+  - Kết quả tự đánh giá
 c) Việc sử dụng các thông tin, minh chứng, tính trung thực và đúng, đủ của các thông tin, minh chứng
 
 **3. Các tiêu chí chưa đánh giá, chưa đánh giá đúng, chưa đánh giá đầy đủ**

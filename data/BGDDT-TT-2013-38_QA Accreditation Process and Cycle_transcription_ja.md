@@ -9,12 +9,12 @@ replaces: []
 replaced_by: []
 revision_history: []
 tags:
-- quality-assurance
+  - quality-assurance
 version:
-- en
-- ja
-- source
-- vi
+  - en
+  - ja
+  - source
+  - vi
 lang: ja
 ---
 
