@@ -1529,12 +1529,12 @@
     });
     if (pane === 'left') leftLang = lang; else rightLang = lang;
     document.getElementById('lang-select-' + pane).value = lang;
-    // Update lang button styles (reflect right pane language)
+    // Update top language button styles (reflect left pane language)
     document.querySelectorAll('.lang-btn').forEach(b => {
       const l = b.dataset.lang;
-      if ((l === 'en' && rightLang === 'en') || (l === 'ja' && rightLang === 'ja') || (l === 'vi')) {
+      if (l === leftLang) {
         b.className = 'lang-btn px-2 py-1 text-[11px] font-bold bg-vnu-blue text-white rounded';
-      } else if (l === 'en' || l === 'ja') {
+      } else {
         b.className = 'lang-btn px-2 py-1 text-[11px] font-medium text-text-muted hover:bg-gray-100 rounded';
       }
     });
@@ -1613,10 +1613,10 @@
       if (btn.disabled) return;
       const lang = btn.dataset.lang;
       if (viewMode === 'split') {
-        switchPaneLang('right', lang);
+        switchPaneLang('left', lang);
       } else {
-        if (lang !== 'vi') switchPaneLang('right', lang);
-        setViewMode('source-' + lang);
+        // In source mode, keep button semantics consistent: control left pane language.
+        switchPaneLang('left', lang);
       }
     });
   });
