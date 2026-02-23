@@ -323,3 +323,10 @@
   - `Điểm ƯT = Điểm ưu tiên` (priority points / 優先加点)
   - `(ĐT, KV)` = object/category and region priority categories
 - Updated the explanatory note in both occurrences of the formula fragment (section 3.1) across VI/EN/JA files.
+
+### 2026-02-23 PDF Source Replacement (A4 message-focused version adopted)
+- Replaced `data/WEB-TTTS2026-VJU_Undergraduate Admissions Information 2026_source.pdf` with a message-focused local-HTML print (A4 portrait) that hides site chrome/CTA widgets.
+- Rationale: prior full-page snapshot was too narrow in content area and produced an unnecessarily tall render.
+- Removed temporary alternates after adoption:
+  - `*_source_message_a4.pdf`
+  - `*_source_message_wide.pdf`
