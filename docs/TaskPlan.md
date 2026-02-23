@@ -1,6 +1,6 @@
 # TaskPlan.md — VJU Document Repository
 
-> **最終更新:** 2026-02-21
+> **最終更新:** 2026-02-23
 > **ステータス:** 実行中
 
 ---
@@ -94,3 +94,31 @@ M1 (基盤) ✅
 | 52 文書の移行工数 | 完了まで時間がかかる | 優先順位に従い段階的に移行（Group A → B → E → C → D → F） |
 | PDF ファイルサイズ | GitHub Pages 100MB 制限 | 大きい PDF は Firebase Storage に移行 |
 | Google ポップアップブロック | ログインできない | ポップアップブロック検出時にリダイレクト認証にフォールバック |
+
+---
+
+## QA Progress Update（2026-02-23）
+
+### 実施済み
+- [x] `3626` / `3636` の QA 第1段（決定文タイトル、レイアウト整合、VI/EN/JA 構造整合）
+- [x] `3626` / `3636` の transcription 修正（VI/EN/JA）
+- [x] `index.html` に `content-only print/export`（本文のみ印刷/保存）追加
+- [x] ブラウザ直接確認 + ブラウザPDF保存比較の手順を追加して検証
+- [x] QA知見を `docs/QA_CHECKLIST.md` に反映（content-only PDF比較、比較範囲記録、疑わしい改行検知/修正）
+- [x] 点項目（`a) b) c)`）の字下げ幅を調整（`3em -> 1.5em`）
+- [x] GitHub `main` に push 済み（Pages確認可能）
+
+### 継続中
+- [ ] 疑わしい改行（極端に早い改行）の誤検知除外 + 一括修正（主に `3636` EN/JA）
+
+### 既知の課題
+- `content-only print/export` 導入前のブラウザ印刷PDFは UI 全体を含み、原本PDFとの忠実比較に不向き
+- `Gemini CLI` で `gemini-3.1-pro` 指定時に `ModelNotFound`（モデル名/提供名の差異の可能性）
+
+## Next QA Plan（直近計画）
+
+1. `Gemini` を `gemini-3.1-pro-preview` 指定で再実行し、疑わしい改行候補の真偽判定 + 修正を実施
+2. 失敗時は `Gemini 2.5 Flash Lite` を検索補助に使って候補の妥当性を確認
+3. 最終フォールバックで `Claude` に同タスクを実施
+4. 修正後、`3626` / `3636` を再確認（ブラウザ表示 + content-only PDF 比較）
+5. 追加修正分を commit / push

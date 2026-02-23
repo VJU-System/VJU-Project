@@ -41,6 +41,7 @@
 - [ ] No mixing of khoản (1.) and điểm (a)) numbering at same level
 - [ ] khoản (1., 2., 3.) are NOT indented — they are clause-level elements, not list items
 - [ ] khoản are distinguished from bullet lists: numbered clauses at article body level vs sub-item lists
+- [ ] điểm / bullet indentation visually checked in browser (avoid excessive left padding after CSS changes)
 
 ### 1.6 HTML Inside Markdown
 
@@ -135,6 +136,7 @@ PDFの視覚的レイアウトがMDに正確に反映されていることを確
 - [ ] HTML div structures (2-column etc.) identical in all 3
 - [ ] List structures identical in all 3
 - [ ] Heading translation follows gold standard pattern
+- [ ] No suspicious early line breaks in prose (mid-sentence wraps preserved from OCR/translation are merged when not intentional)
 
 ### 4.3 Heading Translation Patterns
 
@@ -221,6 +223,7 @@ When adding a new document:
 - [ ] Card added to index.html with `data-doc` attribute
 - [ ] Card click → reader opens
 - [ ] All 3 languages render correctly
+- [ ] Run suspicious line-break detection (heuristic + manual review) and fix only true positives
 - [ ] push → deploy → hard reload confirms on GitHub Pages
 - [ ] （高精度QA時）Browser direct check に加えて content-only PDF を保存し、原本PDFと目視比較した結果を記録
 
