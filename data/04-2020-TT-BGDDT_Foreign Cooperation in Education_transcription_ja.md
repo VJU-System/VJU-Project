@@ -10,10 +10,10 @@ last_updated: 2026-02-23
 
 > **[DISCLAIMER]** 本文書はAIにより生成されたものであり、学習および参照を目的としています。内容はベトナム語の公式法的文書に基づいています。法的効力については、署名・捺印された公式のベトナム語原文を優先してください。
 
-<p align="center"><strong>教育訓練省 | ベトナム社会主義共和国</strong></p>
-<p align="center"><strong>:--- | :---</strong></p>
-<p align="center"><strong>| 独立・自由・幸福</strong></p>
-<p align="center"><strong>番号: 04/2020/TT-BGDĐT | *ハノイ、2020年3月18日*</strong></p>
+<p align="center"><strong>教育訓練省</strong></p>
+<p align="center"><strong>ベトナム社会主義共和国</strong></p>
+<p align="center"><strong>独立・自由・幸福</strong></p>
+<p align="center"><strong>番号: 04/2020/TT-BGDĐT</strong> | <em>ハノイ、2020年3月18日</em></p>
 
 <p align="center"><strong>通達</strong></p>
 <p align="center"><strong>教育分野の外国協力・投資に関する政府政令第86/2018/NĐ-CP（2018年6月6日付）の条項の一部を詳細に規定する通達</strong></p>

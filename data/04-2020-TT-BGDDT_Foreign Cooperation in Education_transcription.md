@@ -10,10 +10,10 @@ last_updated: 2026-02-23
 
 > **[DISCLAIMER]** Tài liệu này được tạo bởi AI phục vụ mục đích học tập và tham khảo. Nội dung gốc tiếng Việt được trích xuất từ văn bản chính thức. Mọi thông tin có tính pháp lý phải được đối chiếu với văn bản gốc có đóng dấu đỏ.
 
-<p align="center"><strong>BỘ GIÁO DỤC VÀ ĐÀO TẠO | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</strong></p>
-<p align="center"><strong>:--- | :---</strong></p>
-| **Độc lập - Tự do - Hạnh phúc**
-<p align="center"><strong>Số: 04/2020/TT-BGDĐT | *Hà Nội, ngày 18 tháng 3 năm 2020*</strong></p>
+<p align="center"><strong>BỘ GIÁO DỤC VÀ ĐÀO TẠO</strong></p>
+<p align="center"><strong>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</strong></p>
+<p align="center"><strong>Độc lập - Tự do - Hạnh phúc</strong></p>
+<p align="center"><strong>Số: 04/2020/TT-BGDĐT</strong> | <em>Hà Nội, ngày 18 tháng 3 năm 2020</em></p>
 
 <p align="center"><strong>THÔNG TƯ</strong></p>
 <p align="center"><strong>Quy định chi tiết một số điều của Nghị định số 86/2018/NĐ-CP ngày 06 tháng 6 năm 2018 của Chính phủ quy định về hợp tác, đầu tư của nước ngoài trong lĩnh vực giáo dục</strong></p>
