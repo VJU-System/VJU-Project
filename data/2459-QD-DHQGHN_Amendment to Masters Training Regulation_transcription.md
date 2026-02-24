@@ -69,7 +69,7 @@ Số: 2459/QĐ-ĐHQGHN
 
 3.  Sửa đổi, bổ sung Điều 24 như sau:
     “Điều 24. Nhập học và công nhận học viên
-    “1. Căn cứ điểm trúng tuyển đã được phê duyệt, thủ trưởng đơn vị đào tạo công bố danh sách thí sinh trúng tuyển, gửi giấy gọi nhập học và Quyết định trúng tuyển đến các thí sinh được tuyển chọn.
+    1. Căn cứ điểm trúng tuyển đã được phê duyệt, thủ trưởng đơn vị đào tạo công bố danh sách thí sinh trúng tuyển, gửi giấy gọi nhập học và Quyết định trúng tuyển đến các thí sinh được tuyển chọn.
 2. Đơn vị đào tạo gửi giấy báo nhập học đến các thí sinh trong danh sách trúng tuyển trước ngày nhập học tối thiểu 15 ngày. Thí sinh đến nhập học chậm sau 15 ngày trở lên kể từ ngày nhập học ghi trong thông báo nhập học, nếu không có lý do chính đáng thì coi như bỏ học.
 3. Chậm nhất một tuần sau khi nhập học, học viên phải khai báo đầy đủ thông tin cá nhân theo quy định của Đại học Quốc gia Hà Nội (theo hệ thống thông tin tích hợp trong phần mềm quản lý đào tạo) và của đơn vị đào tạo.
 4. Sau khi thí sinh nhập học chính thức, thủ trưởng đơn vị đào tạo là trường đại học thành viên ra quyết định công nhận học viên của đơn vị mình và báo cáo Đại học Quốc gia Hà Nội. Căn cứ đề xuất của thủ trưởng đơn vị đào tạo không phải là trường đại học thành viên, Giám đốc Đại học Quốc gia Hà Nội quyết định công nhận học viên của các đơn vị đào tạo”.
