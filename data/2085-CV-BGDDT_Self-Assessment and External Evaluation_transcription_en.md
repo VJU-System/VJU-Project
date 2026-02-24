@@ -142,6 +142,14 @@ The self-assessment council verifies the consistency and accuracy of the report�
 
 The self-assessment report and related documents must be prepared in the format prescribed by the Ministry of Education and Training and submitted to the relevant recipients. The submission package must include the Evidence List and coding list (see Annexes 9 and 8).
 
+¹ Regulations on the process and cycle of quality accreditation of training programs of universities, colleges, and professional secondary schools, promulgated together with Circular No. 38/2013/TT-BGDĐT dated 29/11/2013 of the Minister of MOET. The current quality assessment standards for training programs are promulgated under the following circulars:
+  - Circular No. 23/2011/TT-BGDĐT dated 16/6/2011 of the Minister of MOET promulgating Regulations on quality assessment standards for industrial technical pedagogy education programs at the university level;
+  - Circular No. 49/2012/TT-BGDĐT dated 12/12/2012 of the Minister of MOET promulgating Regulations on quality assessment standards for upper secondary teacher training programs at the university level;
+  - Circular No. 33/2014/TT-BGDĐT dated 02/10/2014 of the Minister of MOET promulgating Regulations on quality assessment standards for nursing training programs at the university and college levels;
+  - Circular No. 04/2016/TT-BGDĐT dated 14/3/2016 of the Minister of MOET promulgating Regulations on quality assessment standards for training programs at all levels of higher education;
+  - Circular No. 02/2020/TT-BGDĐT dated 05/02/2020 of the Minister of MOET providing regulations on quality assessment standards for teacher training programs at the pedagogical college and pedagogical secondary levels;
+  - Circular No. 39/2020/TT-BGDĐT dated 09/10/2020 of the Minister of MOET providing regulations on quality assessment standards for distance training programs at the university level.
+
 ---
 
 ## **Part II**
