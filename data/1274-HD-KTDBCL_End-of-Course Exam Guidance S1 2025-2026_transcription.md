@@ -576,3 +576,5 @@ Nội dung diễn ra tại phòng thi:
 
 Cán bộ coi thi 1                         Cán bộ coi thi 2 (Ký và ghi rõ họ tên)                      (Ký và ghi rõ họ tên)
 ```
+
+> **[SOURCE]** `1274-HD-KTDBCL_End-of-Course Exam Guidance S1 2025-2026_source.pdf`

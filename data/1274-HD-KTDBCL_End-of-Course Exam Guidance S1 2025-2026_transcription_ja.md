@@ -576,3 +576,5 @@ A.                  B.                  C.                  D.
 
 試験監督官1                         試験監督官2 （署名および氏名）                      （署名および氏名）
 ```
+
+> **[SOURCE]** `1274-HD-KTDBCL_End-of-Course Exam Guidance S1 2025-2026_source.pdf`
