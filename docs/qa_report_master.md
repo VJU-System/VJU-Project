@@ -1237,3 +1237,23 @@
 
 ### Status
 - Pending Claude QA -> fix -> review cycle
+
+## 2026-02-24 01-2024-TT-BGDDT Script Check (Batch run 20260224_163537)
+
+### Scope
+- `data/01-2024-TT-BGDDT_Standards for Higher Education Institutions_source.pdf`
+- `data/01-2024-TT-BGDDT_Standards for Higher Education Institutions_transcription.md`
+- `data/01-2024-TT-BGDDT_Standards for Higher Education Institutions_transcription_en.md`
+- `data/01-2024-TT-BGDDT_Standards for Higher Education Institutions_transcription_ja.md`
+
+### Page Count / Chunk Plan
+- Page count: `27` (tool: `pdfinfo`)
+- Chunking: `no chunking`
+
+### Script results (Codex-run)
+- `data/01-2024-TT-BGDDT_Standards for Higher Education Institutions_transcription.md`: disclaimer present; source note missing; pipe_table_lines=149
+- `data/01-2024-TT-BGDDT_Standards for Higher Education Institutions_transcription_en.md`: disclaimer present; source note missing; pipe_table_lines=164
+- `data/01-2024-TT-BGDDT_Standards for Higher Education Institutions_transcription_ja.md`: disclaimer present; source note missing; pipe_table_lines=164
+
+### Status
+- Pending Claude QA -> fix -> review cycle
