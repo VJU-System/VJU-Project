@@ -1,7 +1,7 @@
 ---
 doc_id: "840/ĐHVN-ĐT"
 title: "Phụ lục 4: Lịch trình đào tạo thạc sĩ, tiến sĩ"
-date: 2025-07-30
+date: 2025-08-08
 department: "Academic Affairs"
 type: "Annex"
 restricted: false
@@ -14,6 +14,8 @@ last_updated: 2026-02-22
 Do hạn chế kỹ thuật, việc tái tạo bố cục và nội dung có thể không chính xác.  
 Để có thông tin chính xác, vui lòng tìm kiếm theo số thông tư và tham khảo cơ quan ban hành.  
 Cơ quan ban hành có thể công bố chính thức các phiên bản ngôn ngữ khác.
+</div>
+
 ## A. Học kỳ 1 / 1st semester
 
 ### I. Thạc sĩ / Master level
@@ -40,7 +42,7 @@ Cơ quan ban hành có thể công bố chính thức các phiên bản ngôn ng
 | 2.4 | 17/12/2025-25/12/2025 | Tuần dự trữ học kỳ I cho học viên khóa QHJ2024<br>Make-up week of 1st semester for cohort QHJ2024 | Phòng Đào tạo và Công tác sinh viên, Các Khoa/CTĐT<br>Academic and Student Affairs Office, Faculties and Academic Programs | |
 | 2.5 | Trước ngày 12/11/2025<br>Before 12/11/2025 | Phân công cán bộ hướng dẫn và giao đề tài luận văn cho học viên khóa QHJ2024<br>Assigning thesis title and supervisors for cohort QHJ2024 | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
 | 2.6 | 11/2025 | Xây dựng thời khóa biểu học kỳ II năm học 2025-2026 cho các CTĐT (thạc sĩ, tiến sỹ)<br>Arrange timetable for 2nd semester AY2025-2026 for postgraduate programs (Master's and PhD) | Phòng Đào tạo và Công tác sinh viên, Các Khoa/CTĐT<br>Academic and Student Affairs Office, Faculties and Academic Programs | |
-| 2.7 | 26/12/2025-14/01/2026 | Thi kết thúc học phần học kỳ I năm học 2025-2026 cho học viên QHJ2024<br>Organize final exam of 1st semester for cohort QHJ2024 | P.Khảo thí và Đảm bảo chất lượng<br>Educational Testing and 2. Quality Assurance Office | Phòng Đào tạo và Công tác sinh viên, Các Khoa/CTĐT<br>Academic and Student Affairs Office, Faculties and Academic Programs |
+| 2.7 | 26/12/2025-14/01/2026 | Thi kết thúc học phần học kỳ I năm học 2025-2026 cho học viên QHJ2024<br>Organize final exam of 1st semester for cohort QHJ2024 | P.Khảo thí và Đảm bảo chất lượng<br>Educational Testing and Quality Assurance Office | Phòng Đào tạo và Công tác sinh viên, Các Khoa/CTĐT<br>Academic and Student Affairs Office, Faculties and Academic Programs |
 
 #### 3. Đối với học viên khóa QHJ2025 / For cohort QHJ2025
 
@@ -53,12 +55,12 @@ Cơ quan ban hành có thể công bố chính thức các phiên bản ngôn ng
 | 3.5 | 24/9/2025-04/01/2026 | Bắt đầu học kỳ I năm học 2025-2026 cho học viên khóa QHJ2025<br>1st semester AY2025-2026 starts for cohort QHJ2025 | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | |
 | 3.6 | Trước 15/10/2025<br>Before 15/10/2025 | Tuyển sinh sau đại học đợt bổ sung năm 2025 (nếu có)<br>Additional Postgraduate Admission 2025 (if any) | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
 | 3.7 | Dự kiến 16/10/2025<br>16/10/2025 (tentative) | Tổ chức nhập học sau đại học đợt bổ sung năm 2025 (nếu có)<br>Conduct additional postgraduate enrollment 2025 (if any) | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
-| 3.8 | Theo lịch của ĐHQGHN<br>According to the schedule of VNU | Hậu kiểm sau đại học đợt 2 năm 2025<br>Postgraduate Verification (1st time of 2025) | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
-| 3.9 | | Tổng kết công tác tuyển sinh SĐH năm 2025 và xây dựng kế hoạch tuyển sinh SĐH năm 2026<br>Review of 2025 Postgraduate Admissions and develope the 2026 Postgraduate Admission plan | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | |
+| 3.8 | Theo lịch của ĐHQGHN<br>According to the schedule of VNU | Hậu kiểm sau đại học đợt 2 năm 2025<br>Postgraduate Verification (1st time of 2025) <!-- sic: source EN says "1st" but Vietnamese says "đợt 2" (2nd time) --> | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
+| 3.9 | | Tổng kết công tác tuyển sinh SĐH năm 2025 và xây dựng kế hoạch tuyển sinh SĐH năm 2026<br>Review of 2025 Postgraduate Admissions and develope the 2026 Postgraduate Admission plan <!-- sic --> | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | |
 | 3.10 | 24/9/2025-04/01/2026 | Bắt đầu học kỳ I năm học 2025-2026 cho học viên khóa QHJ2025<br>1st semester AY2025-2026 starts for cohort QHJ2025 | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | |
 | 3.11 | 05/01/2026-07/01/2026 | Tuần dự trữ học kỳ I cho học viên khóa QHJ2025<br>Make-up week of 1st semester for cohort QHJ2025 | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | |
 | 3.12 | 11/10/2025 (dự kiến)<br>11/10/2025 (tentative) | Tổ chức Khai giảng cho học viên khóa QHJ2025<br>Opening ceremony for cohort QHJ2025 | Văn phòng, Phòng Đào tạo và Công tác sinh viên<br>Admin Office, Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
-| 3.13 | 08/01/2026-08/02/2026 | Thi kết thúc học phần học kỳ I năm học 2025-2026 cho học viên QHJ2025<br>Organize final exam of 1st semester for QHJ2025 | P.Khảo thí và Đảm bảo chất lượng<br>Educational Testing and 2. Quality Assurance Office | Phòng Đào tạo và Công tác sinh viên, Các Khoa/CTĐT<br>Academic and Student Affairs Office, Faculties and Academic Programs |
+| 3.13 | 08/01/2026-08/02/2026 | Thi kết thúc học phần học kỳ I năm học 2025-2026 cho học viên QHJ2025<br>Organize final exam of 1st semester for QHJ2025 | P.Khảo thí và Đảm bảo chất lượng<br>Educational Testing and Quality Assurance Office | Phòng Đào tạo và Công tác sinh viên, Các Khoa/CTĐT<br>Academic and Student Affairs Office, Faculties and Academic Programs |
 | 3.14 | 11/2025 | Xây dựng thời khóa biểu học kỳ II năm học 2025-2026 cho các CTĐT<br>Arrange timetable for 2nd semester AY2025-2026 | Bộ phận Đào tạo-P.ĐT&CTSV<br>Academic Affairs - Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
 | | 09/02/2026-22/02/2026 | NGHỈ TẾT NGUYÊN ĐÁN / LUNAR NEW YEAR HOLIDAY | | |
 
@@ -72,7 +74,7 @@ Cơ quan ban hành có thể công bố chính thức các phiên bản ngôn ng
 | 4.4 | Trước 19/09/2025 /<br>Before 19/09/2025 | Tuyển sinh sau đại học đợt 2 năm 2025<br>Postgraduate Admission (2nd time of 2025) | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
 | 4.5 | Dự kiến 24/9/2025 /<br>24/9/2025 (tentative) | Tổ chức nhập học đợt 2 sau đại học<br>Conduct postgraduate enrollment (2nd time of 2025) | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
 | 4.6 | Trước 15/10/2025 /<br>Before 15/10/2025 | Tuyển sinh sau đại học đợt bổ sung năm 2025 (nếu có)<br>Additional Postgraduate Admission 2025 (if any) | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
-| 4.7 | Dự kiến 16/10/2025 /<br>16/10/2025 (tentative) | Tổ chức nhập học sau đại học đợt bổ sung năm 2025 (nếu có)<br>Conduct additional postgraduate enrollment (if any) | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
+| 4.7 | Dự kiến 16/10/2025 /<br>16/10/2025 (tentavtive) <!-- sic --> | Tổ chức nhập học sau đại học đợt bổ sung năm 2025 (nếu có)<br>Conduct additional postgraduate enrollment (if any) | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
 | 4.8 | Theo lịch của ĐHQGHN<br>According to the schedule of VNU | Hậu kiểm sau đại học đợt 2 năm 2025<br>Postgraduate Verification (2nd time of 2025) | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | |
 | 4.9 | 11/2025 | Xây dựng kế hoạch đào tạo, nghiên cứu<br>Develop academic and research plans | Phòng Đào tạo và Công tác sinh viên, Các Khoa/CTĐT<br>Academic and Student Affairs Office, Faculties and Academic Programs | |
 | 4.1 | 11/2025-12/2025 | Tổ chức đào tạo<br>Conduct academic programs | Phòng Đào tạo và Công tác sinh viên, Các Khoa/CTĐT<br>Academic and Student Affairs Office, Faculties and Academic Programs | |
@@ -101,14 +103,14 @@ Cơ quan ban hành có thể công bố chính thức các phiên bản ngôn ng
 | ---: | :--- | :--- | :--- | :--- |
 | 6.1 | 23/02/2026-07/06/2026 | Bắt đầu học kỳ II năm học 2025-2026 cho học viên khóa QHJ2025<br>2nd semester AY2025-2026 for cohort QHJ2025 | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
 | 6.2 | 08/06/2026-14/06/2026 | Tuần dự trữ học kỳ II cho học viên khóa QHJ2025<br>Make-up week of 2nd semester for cohort QHJ2025 | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
-| 6.3 | 15/06/2026-15/07/2026 | Thi kết thúc học phần học kỳ II năm học 2025-2026 cho khóa QHJ2025<br>Organize final exam of 2nd semester for QHJ2025 | P.Khảo thí và Đảm bảo chất lượng<br>Educational Testing and 2. Quality Assurance Office | Phòng Đào tạo và Công tác sinh viên, Các Khoa/CTĐT<br>Academic and Student Affairs Office, Faculties and Academic Programs |
+| 6.3 | 15/06/2026-15/07/2026 | Thi kết thúc học phần học kỳ II năm học 2025-2026 cho khóa QHJ2025<br>Organize final exam of 2nd semester for QHJ2025 | P.Khảo thí và Đảm bảo chất lượng<br>Educational Testing and Quality Assurance Office | Phòng Đào tạo và Công tác sinh viên, Các Khoa/CTĐT<br>Academic and Student Affairs Office, Faculties and Academic Programs |
 
 ## C. Học kỳ hè / Summer semester
 
 | TT<br>No. | Thời gian thực hiện<br>Time | Nội dung công việc<br>Tasks | Đơn vị đầu mối<br>Focal unit | Đơn vị phối hợp<br>Cooperating unit |
 | ---: | :--- | :--- | :--- | :--- |
 | 7.1 | 07/2026-09/2026 | Tổ chức học kỳ hè theo thời khóa biểu<br>Organize the summer semester according to the academic schedule | Phòng Đào tạo và Công tác sinh viên<br>Academic and Student Affairs Office | Các Khoa/CTĐT<br>Faculties and Academic Programs |
-| 7.2 | 09/2026 | Thi kết thúc học phần học kỳ hè<br>Organize final exam of summer semester | P.Khảo thí và Đảm bảo chất lượng<br>Educational Testing and 2. Quality Assurance Office | Phòng Đào tạo và Công tác sinh viên, Các Khoa/CTĐT<br>Academic and Student Affairs Office, Faculties and Academic Programs |
+| 7.2 | 09/2026 | Thi kết thúc học phần học kỳ hè<br>Organize final exam of summer semester | P.Khảo thí và Đảm bảo chất lượng<br>Educational Testing and Quality Assurance Office | Phòng Đào tạo và Công tác sinh viên, Các Khoa/CTĐT<br>Academic and Student Affairs Office, Faculties and Academic Programs |
 
 ### II. Tiến sỹ / Doctor
 

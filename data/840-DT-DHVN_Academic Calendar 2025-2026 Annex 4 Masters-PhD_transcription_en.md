@@ -1,7 +1,7 @@
 ---
 doc_id: "840/ĐHVN-ĐT"
 title: "Annex 4: Academic Schedule for Master's and PhD Programs"
-date: 2025-07-30
+date: 2025-08-08
 department: "Academic Affairs"
 type: "Annex"
 restricted: false
@@ -33,7 +33,7 @@ last_updated: 2026-02-22
 | 2.4 | 17/12/2025-25/12/2025 | Make-up week of 1st semester for cohort QHJ2024 | Academic and Student Affairs Office, Faculties and Academic Programs | |
 | 2.5 | Before 12/11/2025 | Assigning thesis title and supervisors for cohort QHJ2024 | Academic and Student Affairs Office | Faculties and Academic Programs |
 | 2.6 | 11/2025 | Arrange timetable for 2nd semester AY2025-2026 for postgraduate programs (Master's and PhD) | Academic and Student Affairs Office, Faculties and Academic Programs | |
-| 2.7 | 26/12/2025-14/01/2026 | Organize final exam of 1st semester for cohort QHJ2024 | Educational Testing and 2. Quality Assurance Office | Academic and Student Affairs Office, Faculties and Academic Programs |
+| 2.7 | 26/12/2025-14/01/2026 | Organize final exam of 1st semester for cohort QHJ2024 | Educational Testing and Quality Assurance Office | Academic and Student Affairs Office, Faculties and Academic Programs |
 | **3** | | **For cohort QHJ2025** | | |
 | 3.1 | 08/2025 | Conduct postgraduate enrollment (1st time of 2025) | Academic and Student Affairs Office | Faculties and Academic Programs |
 | 3.2 | According to the schedule of VNU | Postgraduate Verification (1st time of 2025) | Academic and Student Affairs Office | |
@@ -46,8 +46,8 @@ last_updated: 2026-02-22
 | 3.9 | | Review of 2025 Postgraduate Admissions and develop the 2026 Postgraduate Admission plan | Academic and Student Affairs Office | |
 | 3.10 | 24/9/2025-04/01/2026 | 1st semester AY2025-2026 starts for cohort QHJ2025 | Academic and Student Affairs Office | |
 | 3.11 | 05/01/2026-07/01/2026 | Make-up week of 1st semester for cohort QHJ2025 | Academic and Student Affairs Office | |
-| 3.12 | 11/10/2025 (tentative) | Opening ceremony for cohort QHJ2025 | Rector Office, Academic and Student Affairs Office | Faculties and Academic Programs |
-| 3.13 | 08/01/2026-08/02/2026 | Organize final exam of 1st semester for QHJ2025 | Educational Testing and 2. Quality Assurance Office | Academic and Student Affairs Office, Faculties and Academic Programs |
+| 3.12 | 11/10/2025 (tentative) | Opening ceremony for cohort QHJ2025 | Admin Office, Academic and Student Affairs Office | Faculties and Academic Programs |
+| 3.13 | 08/01/2026-08/02/2026 | Organize final exam of 1st semester for QHJ2025 | Educational Testing and Quality Assurance Office | Academic and Student Affairs Office, Faculties and Academic Programs |
 | 3.14 | 11/2025 | Arrange timetable for 2nd semester AY2025-2026 | Academic Affairs - Academic and Student Affairs Office | Faculties and Academic Programs |
 | | 09/02/2026-22/02/2026 | LUNAR NEW YEAR HOLIDAY | | |
 
@@ -64,7 +64,7 @@ last_updated: 2026-02-22
 | 4.7 | 16/10/2025 (tentative) | Conduct additional postgraduate enrollment (if any) | Academic and Student Affairs Office | Faculties and Academic Programs |
 | 4.8 | According to the schedule of VNU | Postgraduate Verification (2nd time of 2025) | Academic and Student Affairs Office | |
 | 4.9 | 11/2025 | Develop academic and research plans | Academic and Student Affairs Office, Faculties and Academic Programs | |
-| 4.10 | 11/2025-12/2025 | Conduct academic programs | Academic and Student Affairs Office, Faculties and Academic Programs | |
+| 4.1 | 11/2025-12/2025 | Conduct academic programs | Academic and Student Affairs Office, Faculties and Academic Programs | | <!-- sic: duplicate numbering in source -->
 | | 09/02/2026-22/02/2026 | LUNAR NEW YEAR HOLIDAY (for Master's and PhD) | | |
 
 ## B. 2nd Semester
@@ -85,14 +85,14 @@ last_updated: 2026-02-22
 | **2** | | **For cohort QHJ2025** | | |
 | 6.1 | 23/02/2026-07/06/2026 | 2nd semester AY2025-2026 starts for cohort QHJ2025 | Academic and Student Affairs Office | Faculties and Academic Programs |
 | 6.2 | 08/06/2026-14/06/2026 | Make-up week of 2nd semester for cohort QHJ2025 | Academic and Student Affairs Office | Faculties and Academic Programs |
-| 6.3 | 15/06/2026-15/07/2026 | Organize final exam of 2nd semester for QHJ2025 | Educational Testing and 2. Quality Assurance Office | Academic and Student Affairs Office, Faculties and Academic Programs |
+| 6.3 | 15/06/2026-15/07/2026 | Organize final exam of 2nd semester for QHJ2025 | Educational Testing and Quality Assurance Office | Academic and Student Affairs Office, Faculties and Academic Programs |
 
 ## C. Summer Semester
 
 | No. | Time | Tasks | Focal Unit | Cooperating Unit |
 | :--- | :--- | :--- | :--- | :--- |
 | 7.1 | 07/2026-09/2026 | Organize the summer semester according to the academic schedule | Academic and Student Affairs Office | Faculties and Academic Programs |
-| 7.2 | 09/2026 | Organize final exam of summer semester | Educational Testing and 2. Quality Assurance Office | Academic and Student Affairs Office, Faculties and Academic Programs |
+| 7.2 | 09/2026 | Organize final exam of summer semester | Educational Testing and Quality Assurance Office | Academic and Student Affairs Office, Faculties and Academic Programs |
 
 ### II. PhD Level
 

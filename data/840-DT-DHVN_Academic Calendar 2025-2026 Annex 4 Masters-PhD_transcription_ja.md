@@ -1,7 +1,7 @@
 ---
 doc_id: "840/ĐHVN-ĐT"
 title: "付録4: 修士・博士課程学年暦"
-date: 2025-07-30
+date: 2025-08-08
 department: "Academic Affairs"
 type: "Annex"
 restricted: false
