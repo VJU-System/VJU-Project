@@ -1942,3 +1942,24 @@
 - suggested next targets: `04-2020-TT-BGDDT`, `01-2024-TT-BGDDT`
 - runtime duration: `~6m`
 - stop reason: `completion`
+
+## 2026-02-24 04-2020-TT-BGDDT Script Check (Batch run 20260224_192742)
+
+### Scope
+- `data/04-2020-TT-BGDDT_Foreign Cooperation in Education_source.pdf`
+- `data/04-2020-TT-BGDDT_Foreign Cooperation in Education_transcription.md`
+- `data/04-2020-TT-BGDDT_Foreign Cooperation in Education_transcription_en.md`
+- `data/04-2020-TT-BGDDT_Foreign Cooperation in Education_transcription_ja.md`
+
+### Page Count / Chunk Plan
+- Page count: `8` (tool: `pdfinfo`)
+- Extraction quality: `unreliable` (`pdftotext` metadata/signature-only; 4 lines / 178 chars)
+- Chunking: `no chunking` (<=30 pages)
+
+### Script results (Codex-run)
+- VI/EN/JA all: YAML baseline fields OK; disclaimer present; EOF source note present
+- Pipe-table lines detected: `7` each (header/signature table layout)
+- No obvious baseline structural failures from scripted checks
+
+### Status
+- Pending Claude QA -> fix -> review cycle (PDF extraction unreliable)
