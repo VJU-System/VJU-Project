@@ -71,6 +71,52 @@ function validateHtmlMarkdownMix(text) {
   return { errors: errors };
 }
 
+function validateSourceNote(text, expectedPdfPath, expectedPages) {
+  var errors = [];
+  var m = text.match(/>\s*\*\*\[SOURCE_NOTE\]\*\*\s*Transcription source:\s*`([^`]+)`\s*\((\d+)\s+pages\)/);
+  if (!m) {
+    errors.push('Missing SOURCE_NOTE block');
+    return { errors: errors };
+  }
+  if (expectedPdfPath && m[1] !== expectedPdfPath) {
+    errors.push('SOURCE_NOTE pdf path mismatch: ' + m[1]);
+  }
+  if (typeof expectedPages === 'number' && Number(m[2]) !== expectedPages) {
+    errors.push('SOURCE_NOTE page count mismatch: ' + m[2]);
+  }
+  return { errors: errors, pdfPath: m[1], pages: Number(m[2]) };
+}
+
+function validateHeadingLevelParity(viText, translatedText, lang) {
+  var warnings = [];
+  var viChapters = (viText.match(/^#\s+Chương\b/gm) || []).length;
+  var viArticles = (viText.match(/^##\s+Điều\b/gm) || []).length;
+  var trChapters = lang === 'ja'
+    ? (translatedText.match(/^#\s+第[0-9一二三四五六七八九十百]+章/gm) || []).length
+    : (translatedText.match(/^#\s+Chapter\b/gm) || []).length;
+  var trArticles = lang === 'ja'
+    ? (translatedText.match(/^##\s+第[0-9一二三四五六七八九十百]+条/gm) || []).length
+    : (translatedText.match(/^##\s+Article\b/gm) || []).length;
+  var badArticleH3 = lang === 'ja'
+    ? (translatedText.match(/^###\s+第[0-9一二三四五六七八九十百]+条/gm) || []).length
+    : (translatedText.match(/^###\s+Article\b/gm) || []).length;
+  if (badArticleH3 > 0) warnings.push('Translated file uses h3 article headings: ' + badArticleH3);
+  if (viChapters > 0 && trChapters !== viChapters) warnings.push('Chapter heading count mismatch: vi=' + viChapters + ' tr=' + trChapters);
+  if (viArticles > 0 && trArticles !== viArticles) warnings.push('Article heading count mismatch: vi=' + viArticles + ' tr=' + trArticles);
+  return { warnings: warnings, counts: { viChapters: viChapters, viArticles: viArticles, trChapters: trChapters, trArticles: trArticles } };
+}
+
+function validateCenteredHtmlWrapperMisuse(text) {
+  var warnings = [];
+  var lines = text.split('\n');
+  lines.forEach(function (line, i) {
+    if (/<p align="center"><strong>\*.*\*<\/strong><\/p>/.test(line)) {
+      warnings.push('Line ' + (i + 1) + ': centered+bold wrapper used around italic paragraph');
+    }
+  });
+  return { warnings: warnings };
+}
+
 // === Tests ===
 
 describe('QA Validation Helpers', function () {
@@ -155,6 +201,43 @@ describe('QA Validation Helpers', function () {
     var plain = 'Just some *italic* text outside HTML';
     var result = validateHtmlMarkdownMix(plain);
     assertEqual(result.errors.length, 0, 'Should pass for non-HTML text');
+  });
+
+  it('validateSourceNote detects missing source note', function () {
+    var result = validateSourceNote('Body only');
+    assert(result.errors.length > 0, 'Should detect missing SOURCE_NOTE');
+  });
+
+  it('validateSourceNote validates path and page count', function () {
+    var text = '> **[SOURCE_NOTE]** Transcription source: `data/a_source.pdf` (9 pages)';
+    var result = validateSourceNote(text, 'data/a_source.pdf', 9);
+    assertEqual(result.errors.length, 0, 'Expected valid SOURCE_NOTE');
+  });
+
+  it('validateHeadingLevelParity flags translated h3 article headings', function () {
+    var vi = '# Chương I\n## Điều 1. A\n## Điều 2. B';
+    var en = '# Chapter I\n### Article 1. A\n### Article 2. B';
+    var result = validateHeadingLevelParity(vi, en, 'en');
+    assert(result.warnings.some(function (w) { return w.includes('h3 article headings'); }), 'Should flag h3 articles');
+  });
+
+  it('validateHeadingLevelParity passes VI/JA parity', function () {
+    var vi = '# Chương I\n## Điều 1. A\n## Điều 2. B';
+    var ja = '# 第1章 総則\n## 第1条 A\n## 第2条 B';
+    var result = validateHeadingLevelParity(vi, ja, 'ja');
+    assertEqual(result.warnings.length, 0, 'Expected no parity warnings');
+  });
+
+  it('validateCenteredHtmlWrapperMisuse flags centered bold italic wrapper', function () {
+    var bad = '<p align="center"><strong>*Pursuant to ...*</strong></p>';
+    var result = validateCenteredHtmlWrapperMisuse(bad);
+    assert(result.warnings.length > 0, 'Should flag wrapper misuse');
+  });
+
+  it('validateCenteredHtmlWrapperMisuse ignores centered heading without italics', function () {
+    var good = '<p align="center"><strong>THÔNG TƯ</strong></p>';
+    var result = validateCenteredHtmlWrapperMisuse(good);
+    assertEqual(result.warnings.length, 0, 'Should not flag normal centered headings');
   });
 });
 
