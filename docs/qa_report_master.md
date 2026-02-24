@@ -673,3 +673,66 @@
 - suggested next targets: `259-HD-DHVN_Annex 1 Certificate Equivalency Table` (replace source PDF first), `1132-QD-DHVN_Examination Affairs Regulations`, `826-KTDBCL-DHVN_Public Report 2024-2025`
 - runtime duration: `~00:06:15`
 - stop reason: `completion`
+
+
+## 2026-02-24 Batch 5 Script Checks (259 Annex 2 / 000 / 2184)
+
+### Scope
+- Batch start timestamp: 2026-02-24 11:55:12 (local)
+- Run ID: `20260224_115512`
+- Total detected QA-incomplete sets: `41`
+- Selected targets (max 3): `259 Annex 2`, `000`, `2184`
+
+
+## 2026-02-24 259-HD-DHVN Script Check Pass (Pre-QA)
+
+### Scope
+- `data/259-HD-DHVN_Annex 2 JLPT Authorization Letter Template_source.pdf`
+- `data/259-HD-DHVN_Annex 2 JLPT Authorization Letter Template_transcription.md`
+- `data/259-HD-DHVN_Annex 2 JLPT Authorization Letter Template_transcription_en.md`
+- `data/259-HD-DHVN_Annex 2 JLPT Authorization Letter Template_transcription_ja.md`
+
+### Page Count + Chunk Plan
+- Page count: `2` (tool: `pdfinfo`)
+- Chunk ranges used: `no chunking` (<=30 pages)
+
+### Script results (Codex-run)
+- `259-HD-DHVN_Annex 2 JLPT Authorization Letter Template_transcription.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~0
+- `259-HD-DHVN_Annex 2 JLPT Authorization Letter Template_transcription_en.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~0
+- `259-HD-DHVN_Annex 2 JLPT Authorization Letter Template_transcription_ja.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~0
+
+
+## 2026-02-24 000-HD-DHVN Script Check Pass (Pre-QA)
+
+### Scope
+- `data/000-HD-DHVN_Foreign Language Certificate Guidelines_source.pdf`
+- `data/000-HD-DHVN_Foreign Language Certificate Guidelines_transcription.md`
+- `data/000-HD-DHVN_Foreign Language Certificate Guidelines_transcription_en.md`
+- `data/000-HD-DHVN_Foreign Language Certificate Guidelines_transcription_ja.md`
+
+### Page Count + Chunk Plan
+- Page count: `7` (tool: `pdfinfo`)
+- Chunk ranges used: `no chunking` (<=30 pages)
+
+### Script results (Codex-run)
+- `000-HD-DHVN_Foreign Language Certificate Guidelines_transcription.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~30
+- `000-HD-DHVN_Foreign Language Certificate Guidelines_transcription_en.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~30
+- `000-HD-DHVN_Foreign Language Certificate Guidelines_transcription_ja.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~30
+
+
+## 2026-02-24 2184-TB-DHNN Script Check Pass (Pre-QA)
+
+### Scope
+- `data/2184-TB-DHNN_VNU-TESTS Language Assessment Plan_source.pdf`
+- `data/2184-TB-DHNN_VNU-TESTS Language Assessment Plan_transcription.md`
+- `data/2184-TB-DHNN_VNU-TESTS Language Assessment Plan_transcription_en.md`
+- `data/2184-TB-DHNN_VNU-TESTS Language Assessment Plan_transcription_ja.md`
+
+### Page Count + Chunk Plan
+- Page count: `3` (tool: `pdfinfo`)
+- Chunk ranges used: `no chunking` (<=30 pages)
+
+### Script results (Codex-run)
+- `2184-TB-DHNN_VNU-TESTS Language Assessment Plan_transcription.md`: YAML keys detected (id, title, issuer, category, issue_date, status, replaces, replaced_by); disclaimer/source-note detected; pipe-table lines ~7
+- `2184-TB-DHNN_VNU-TESTS Language Assessment Plan_transcription_en.md`: YAML keys detected (id, title, issuer, category, issue_date, status, replaces, replaced_by); disclaimer/source-note detected; pipe-table lines ~7
+- `2184-TB-DHNN_VNU-TESTS Language Assessment Plan_transcription_ja.md`: YAML keys detected (id, title, issuer, category, issue_date, status, replaces, replaced_by); disclaimer/source-note detected; pipe-table lines ~7
