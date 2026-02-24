@@ -479,3 +479,49 @@
 - VI/EN/JA: YAML fields (`id`, `title`, `issue_date`) present; `lang` field present
 - Tables detected in all variants (`pipe` lines ~40); no ASCII-table separator warning
 - Source/disclaimer note detected in VI and JA; EN source/disclaimer note not detected by script pattern (needs Claude confirmation)
+
+
+## 2026-02-24 Batch (Time-limited) Claude QA Results (1592 / 323)
+
+### 1592-QD-DHVN_Budget Estimate Disclosure 2025
+- Files processed: VI/EN/JA + source PDF
+- Page count + tool: `2` (`pdfinfo`)
+- Chunk ranges used: `no chunking`
+- Claude QA result: `CONDITIONAL PASS`
+- Claude findings:
+  - `CRITICAL` JA legal-basis year error (`2024` -> should be `2017`)
+  - `MINOR` EN source-note wrapper missing `<div class="source-note">` HTML parity with VI/JA
+  - `MINOR` JA closing punctuation missing final period (`。/.` expected)
+  - Table completeness and VI fidelity verified as OK by Claude
+- Claude fix instructions received (not applied in this batch due time limit stop)
+- Review outcome: not run (stopped due to time limit)
+- New QA checks suggested by Claude:
+  1. Date cross-check across VI/EN/JA legal bases
+  2. Source-note HTML parity across languages
+  3. Closing punctuation preservation for `./.` convention
+  4. Budget table sum verification
+
+### 323-QD-DHVN_Q1 2025 Budget Execution Disclosure
+- Files processed: VI/EN/JA + source PDF
+- Page count + tool: `3` (`pdfinfo`)
+- Chunk ranges used: `no chunking`
+- Claude QA result: `FAIL`
+- Claude findings:
+  - `CRITICAL` table data loss in all 3 files: missing Section II rows `3` through `7.2` between rows `2.2` and `8`
+  - `CRITICAL` JA legal-basis year error (`2024` -> should be `2017`)
+  - `MEDIUM` YAML `issue_date: null` in all 3 files (should be `2025-04-04`)
+  - `MEDIUM` EN source note lacks `<div class="source-note">` wrapper
+  - `MINOR` VI row `2.1` trailing dots omitted
+  - `MINOR` JA closing punctuation missing final period
+- Claude fix instructions received (rows + metadata + wording), not applied in this batch due time limit stop
+- Review outcome: not run (stopped due to time limit)
+- New QA checks suggested by Claude:
+  1. Row-count parity check vs PDF
+  2. Standard-form completeness check for budget disclosure section-II categories
+  3. Date cross-validation VI vs EN/JA
+  4. Source-note format consistency
+  5. YAML `issue_date` non-null when body date is clear
+
+### Time-limit Handling
+- Batch stopped before fix/review phases for `1592` and `323` due execution time limit policy.
+- No Claude timeout events in this batch.
