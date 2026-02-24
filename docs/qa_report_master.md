@@ -318,6 +318,97 @@
   - `04-2020-TT-BGDDT_Foreign Cooperation in Education`
 - runtime duration: `00:04:33`
 - stop reason: `completion`
+
+## 2026-02-24 04-2016-TT-BGDDT Claude QA -> Fix -> Review Cycle
+
+### Files processed
+- `data/04-2016-TT-BGDDT_Quality Standards for HE Programs_source.pdf`
+- `data/04-2016-TT-BGDDT_Quality Standards for HE Programs_transcription.md`
+- `data/04-2016-TT-BGDDT_Quality Standards for HE Programs_transcription_en.md`
+- `data/04-2016-TT-BGDDT_Quality Standards for HE Programs_transcription_ja.md`
+
+### Claude findings (pre-fix)
+- `[CRITICAL]` SOURCE_NOTE missing in all 3 variants
+- `[MODERATE]` EN/JA heading levels used `##/###` instead of VI-parity `#/##` (Chapter/Article)
+- `[MODERATE]` JA legal-basis preamble formatting inconsistent (center/bold wrappers)
+
+### Fixes applied
+- Added `[SOURCE_NOTE]` to VI/EN/JA (EOF)
+- Normalized EN/JA chapter/article heading levels (`# Chapter` / `## Article`, `# 第X章` / `## 第X条`)
+- Removed JA legal-basis `<p align="center"><strong>` wrappers (plain italic `*...*`)
+
+### Final review outcome (Claude)
+- Initial post-fix review: `FAIL` (JA legal-basis wrappers partially remained)
+- Follow-up fix + final spot review: `PASS`
+
+### New QA checks
+- Verify `SOURCE_NOTE` exists at EOF in all variants
+- Verify heading-level parity across VI/EN/JA (Chapter=`#`, Article=`##`)
+- Verify legal-basis section formatting consistency (no mixed wrapper styles)
+
+### Timeout events
+- None
+
+## 2026-02-24 04-2020-TT-BGDDT Claude QA -> Fix -> Review Cycle
+
+### Files processed
+- `data/04-2020-TT-BGDDT_Foreign Cooperation in Education_source.pdf`
+- `data/04-2020-TT-BGDDT_Foreign Cooperation in Education_transcription.md`
+- `data/04-2020-TT-BGDDT_Foreign Cooperation in Education_transcription_en.md`
+- `data/04-2020-TT-BGDDT_Foreign Cooperation in Education_transcription_ja.md`
+
+### Claude findings (pre-fix)
+- `[HIGH]` SOURCE_NOTE missing in all 3 variants
+- `[MEDIUM]` EN/JA article headings used `###` (should be `##`)
+- `[LOW]` EN stray numbering artifact `b) 5. Guide`
+
+### Fixes applied
+- Added `[SOURCE_NOTE]` to VI/EN/JA (EOF)
+- EN `### Article` -> `## Article`; JA `### 第` -> `## 第`
+- Fixed EN stray numbering artifact (`b) 5. Guide` -> `b) Guide`)
+
+### Final review outcome (Claude)
+- `PASS` (all prior findings fixed, no new issues)
+
+### New QA checks
+- EOF `SOURCE_NOTE` presence in all variants
+- Article heading level consistency (`##`)
+- Stray numbering artifact scan in translated bullets/sub-items
+
+### Timeout events
+- None
+
+## 2026-02-24 01-2024-TT-BGDDT Claude QA -> Fix -> Review Cycle
+
+### Files processed
+- `data/01-2024-TT-BGDDT_Standards for Higher Education Institutions_source.pdf`
+- `data/01-2024-TT-BGDDT_Standards for Higher Education Institutions_transcription.md`
+- `data/01-2024-TT-BGDDT_Standards for Higher Education Institutions_transcription_en.md`
+- `data/01-2024-TT-BGDDT_Standards for Higher Education Institutions_transcription_ja.md`
+
+### Claude findings (pre-fix)
+- `[HIGH]` SOURCE_NOTE missing in all 3 variants
+- `[MEDIUM]` EN/JA article headings mixed HTML-centered headings and `###` (should normalize to `##`)
+- `[MEDIUM]` JA body text incorrectly wrapped in center/bold HTML
+
+### Fixes applied
+- Added `[SOURCE_NOTE]` to VI/EN/JA (EOF)
+- Normalized EN/JA article headings to `##`
+- Removed JA center/bold wrappers from body text
+- Follow-up fix (Claude post-review): removed JA preamble legal-basis center/bold wrappers; flattened JA doc number/date line formatting
+
+### Final review outcome (Claude)
+- Initial post-fix review: `CONDITIONAL PASS` (new JA preamble wrapper issue)
+- Follow-up fix + final spot review: `PASS`
+
+### New QA checks
+- EOF `SOURCE_NOTE` presence with correct page count
+- Article heading parity (`##`) and no mixed HTML heading wrappers
+- HTML tag misuse check for JA preamble/body (only headers should be centered HTML)
+- Doc number/date line format parity across language variants
+
+### Timeout events
+- None
 - PDF->MD layout fidelity (high-level structural checks)
 - Cross-language structural consistency
 - Heading translation pattern consistency
