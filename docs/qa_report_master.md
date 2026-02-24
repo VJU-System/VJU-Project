@@ -796,3 +796,66 @@
 - suggested next targets: `259-HD-DHVN_Foreign Language Certificate Guidelines VJU2020-2021`, `1132-QD-DHVN_Examination Affairs Regulations Appendix`, `24-2023-ND-CP_Decree on Base Salary`
 - runtime duration: `~00:05:00`
 - stop reason: `completion`
+
+
+## 2026-02-24 Batch 6 Script Checks (24 / 473 / 483)
+
+### Scope
+- Batch start timestamp: 2026-02-24 12:06:13 (local)
+- Run ID: `20260224_120613`
+- Total detected QA-incomplete sets: `39`
+- Selected targets (max 3): `24-2023-ND-CP`, `473-QD-DHVN`, `483-HD-DHVN`
+
+
+## 2026-02-24 24-2023-ND-CP Script Check Pass (Pre-QA)
+
+### Scope
+- `data/24-2023-ND-CP_Decree on Base Salary_source.pdf`
+- `data/24-2023-ND-CP_Decree on Base Salary_transcription.md`
+- `data/24-2023-ND-CP_Decree on Base Salary_transcription_en.md`
+- `data/24-2023-ND-CP_Decree on Base Salary_transcription_ja.md`
+
+### Page Count + Chunk Plan
+- Page count: `5` (tool: `pdfinfo`)
+- Chunk ranges used: `no chunking` (<=30 pages)
+
+### Script results (Codex-run)
+- `24-2023-ND-CP_Decree on Base Salary_transcription.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~0
+- `24-2023-ND-CP_Decree on Base Salary_transcription_en.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~0
+- `24-2023-ND-CP_Decree on Base Salary_transcription_ja.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~0
+
+
+## 2026-02-24 473-QD-DHVN Script Check Pass (Pre-QA)
+
+### Scope
+- `data/473-QD-DHVN_Academic Advisory Work Regulations_source.pdf`
+- `data/473-QD-DHVN_Academic Advisory Work Regulations_transcription.md`
+- `data/473-QD-DHVN_Academic Advisory Work Regulations_transcription_en.md`
+- `data/473-QD-DHVN_Academic Advisory Work Regulations_transcription_ja.md`
+
+### Page Count + Chunk Plan
+- Page count: `8` (tool: `pdfinfo`)
+- Chunk ranges used: `no chunking` (<=30 pages)
+
+### Script results (Codex-run)
+- `473-QD-DHVN_Academic Advisory Work Regulations_transcription.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~12
+- `473-QD-DHVN_Academic Advisory Work Regulations_transcription_en.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~12
+- `473-QD-DHVN_Academic Advisory Work Regulations_transcription_ja.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~12
+
+
+## 2026-02-24 483-HD-DHVN Script Check Pass (Pre-QA)
+
+### Scope
+- `data/483-HD-DHVN_Practical Internship Guidance_source.pdf`
+- `data/483-HD-DHVN_Practical Internship Guidance_transcription.md`
+- `data/483-HD-DHVN_Practical Internship Guidance_transcription_en.md`
+- `data/483-HD-DHVN_Practical Internship Guidance_transcription_ja.md`
+
+### Page Count + Chunk Plan
+- Page count: `13` (tool: `pdfinfo`)
+- Chunk ranges used: `no chunking` (<=30 pages)
+
+### Script results (Codex-run)
+- `483-HD-DHVN_Practical Internship Guidance_transcription.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~25
+- `483-HD-DHVN_Practical Internship Guidance_transcription_en.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~25
+- `483-HD-DHVN_Practical Internship Guidance_transcription_ja.md`: YAML keys detected (doc_id, title, date, department, type, restricted, last_updated); disclaimer/source-note detected; pipe-table lines ~25
