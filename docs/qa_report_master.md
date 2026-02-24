@@ -650,3 +650,26 @@
 - Claude review outcome: `CONDITIONAL PASS`
 - New QA checks (Claude): source-note structural parity, legal-basis year cross-check, terminal marker `./.` preservation, source-PDF identity/hash validation for annexes, duplicate-source detection.
 - Timeout events: none
+
+
+### Batch 4 Temp Cleanup Status
+- Per-set cleanup: `1592`, `323`, `259 Annex 1` tmp subfolders removed (best-effort)
+- Final sweep: `tmp/run_20260224_113348` remains
+- Cleanup failures: none
+
+## Batch Execution Summary (auto)
+
+- run_id: `20260224_113348`
+- processed sets: `1592-QD-DHVN_Budget Estimate Disclosure 2025`, `323-QD-DHVN_Q1 2025 Budget Execution Disclosure`
+- partially processed sets: `259-HD-DHVN_Annex 1 Certificate Equivalency Table` (QA/review completed; blocked on wrong source PDF)
+- skipped sets due to time limit: none
+- estimated remaining sets: `42` (total detected incomplete `44` - processed `2`)
+- major issues: `259 Annex 1` source PDF mismatch (Annex1 file contains Annex2 content; duplicate source PDFs), `323` source text extraction empty via `pdftotext` (review proceeded with elevated risk)
+- major fixes: `1592` and `323` JA legal-basis year `2024->2017`; JA terminal marker `。/.`; EN source-note HTML wrapper parity; JA extra source-note paragraph removal (`1592`); JA bracket normalization (`323`)
+- new QA checks discovered: legal-basis year cross-check, source-note structural parity, terminal marker `./.` preservation, source-PDF identity/hash verification for annexes, duplicate annex PDF detection
+- timeout events: none
+- git push failures: none
+- temp cleanup status: tmp remains
+- suggested next targets: `259-HD-DHVN_Annex 1 Certificate Equivalency Table` (replace source PDF first), `1132-QD-DHVN_Examination Affairs Regulations`, `826-KTDBCL-DHVN_Public Report 2024-2025`
+- runtime duration: `~00:06:15`
+- stop reason: `completion`
