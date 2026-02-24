@@ -47,12 +47,12 @@ Hoàn thiện mô hình IQA của Trường theo hướng:
   - **Về cải tiến chất lượng**: Triển khai kế hoạch cải tiến chất lượng cấp cơ sở giáo dục và thực hiện các khuyến nghị sau kiểm định; Xây dựng 03 báo cáo cải tiến chất lượng của 3 CTĐT đã kiểm định; 01 báo cáo cải tiến chất lượng của Trường.
   - **Về xếp hạng đại học**: Cung cấp đầy đủ dữ liệu về xếp hạng Đại học theo yêu cầu của ĐHQGHN.
   - **Về đánh giá chất lượng**:
-  - 100% học phần được khảo sát và lấy ý kiến người học.
-  - 100% người học được lấy ý kiến về hoạt động hỗ trợ đào tạo và có ít nhất 30% người học phản hồi.
-  - 100% giảng viên được lấy ý kiến về hoạt động giảng dạy và cán bộ hành chính trong đó có 70% giảng viên tự đánh giá về hoạt động giảng dạy; 50% giảng viên phản hồi về cán bộ hành chính.
-  - 100% cán bộ được lấy ý kiến về công tác điều hành lãnh đạo trong đó có 50% cán bộ phản hồi.
-  - 100% người học tốt nghiệp sau 1 năm được lấy ý kiến về tình trạng việc làm và năng lực đạt CĐR của CTĐT trong đó 50% người học tốt nghiệp phản hồi.
-  - Mỗi CTĐT thu thập được ít nhất ý kiến phản hồi của 5 nhà tuyển dụng về năng lực đạt CĐR của người học tốt nghiệp.
+    - 100% học phần được khảo sát và lấy ý kiến người học.
+    - 100% người học được lấy ý kiến về hoạt động hỗ trợ đào tạo và có ít nhất 30% người học phản hồi.
+    - 100% giảng viên được lấy ý kiến về hoạt động giảng dạy và cán bộ hành chính trong đó có 70% giảng viên tự đánh giá về hoạt động giảng dạy; 50% giảng viên phản hồi về cán bộ hành chính.
+    - 100% cán bộ được lấy ý kiến về công tác điều hành lãnh đạo trong đó có 50% cán bộ phản hồi.
+    - 100% người học tốt nghiệp sau 1 năm được lấy ý kiến về tình trạng việc làm và năng lực đạt CĐR của CTĐT trong đó 50% người học tốt nghiệp phản hồi.
+    - Mỗi CTĐT thu thập được ít nhất ý kiến phản hồi của 5 nhà tuyển dụng về năng lực đạt CĐR của người học tốt nghiệp.
   - **Về công tác phát triển đội ngũ**: Xây dựng kế hoạch tuyển dụng nhân sự chi tiết đến từng CTĐT nhằm đảm bảo tuyển dụng 50% nhu cầu của các CTĐT.
 
 <p align="center"><strong>3. Nội dung hoạt động</strong></p>
@@ -86,12 +86,12 @@ Hoàn thiện mô hình IQA của Trường theo hướng:
 | 1 | Lấy ý kiến sinh viên về học phần | Phòng KT&ĐBCL | Các Khoa | 2/2026 & 7/2026 | 100% sinh viên được lấy ý kiến |
 | 6 | Lấy ý kiến phản hồi của nhà tuyển dụng về năng lực đạt CĐR của người học tốt nghiệp | Các Khoa | Phòng KT&ĐBCL | 8/2026 | 5 nhà tuyển dụng / 1 CTĐT |
 
-### 4. Nguồn lực thực hiện
-#### 4.1. Nguồn lực nhân sự
+<p align="center"><strong>4. Nguồn lực thực hiện</strong></p>
+<p align="center"><strong>4.1. Nguồn lực nhân sự</strong></p>
   - Các đơn vị phân công cán bộ đầu mối thực hiện theo dõi, giám sát tiến độ thực hiện các hoạt động cải tiến chất lượng của đơn vị mình phụ trách.
   - Phòng Khảo thí và Đảm bảo chất lượng phối hợp với các đầu mối của các đơn vị để theo dõi, giám sát tiến độ thực hiện các hoạt động đảm bảo chất lượng theo kế hoạch.
 
-#### 4.2. Nguồn lực tài chính
+<p align="center"><strong>4.2. Nguồn lực tài chính</strong></p>
 Phòng Kế hoạch và tài chính xem xét bố trí nguồn kinh phí cho các đơn vị dựa trên tiến độ thực hiện các nội dung của kế hoạch.
 
 <p align="right"><strong>K/T HIỆU TRƯỞNG</strong><br><strong>PHÓ HIỆU TRƯỞNG</strong></p>
