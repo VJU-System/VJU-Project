@@ -18,8 +18,10 @@ version:
 - vi
 lang: en
 ---
-This file is a text transcription of information published on the web. For accurate content, please search by the regulation number and refer to the information published on the official website.
-Because table recognition is technically challenging, table layouts and contents may not be reproduced exactly.
+<div class="source-note" role="note" aria-label="Source note">
+  <p><strong>Source note.</strong> This file is a text transcription of information published on the web. For accurate content, please search by the regulation number and refer to the information published on the official website.</p>
+  <p><em>Because table recognition is technically challenging, table layouts and contents may not be reproduced exactly.</em></p>
+</div>
 
 ---
 
