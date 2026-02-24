@@ -57,7 +57,7 @@ No.: 2486/QĐ-ĐHQGHN
 
 **Article 2. Replace Appendix IV of Decision 1328/QĐ-ĐHQGHN dated 18 April 2023 of the President of Vietnam National University, Hanoi (ĐHQGHN) promulgating the Regulation on Regular Undergraduate Admission at Vietnam National University, Hanoi (ĐHQGHN) with Appendix IV issued together with this Decision.**
 
-**Article 3. This Decision takes effect from the date of signing. The Chief of the Office, heads of functional departments, heads of member units and affiliated units of Vietnam National University, Hanoi (ĐHQGHN), and relevant organizations and individuals are responsible for implementing this Decision.**
+**Article 3. This Decision takes effect from the date of signing. The Chief of the Office, heads of functional departments, heads of member units and affiliated units of Vietnam National University, Hanoi (ĐHQGHN), and relevant organizations and individuals are responsible for implementing this Decision./.**
 
 **Recipients:**
   - As in Article 3;
@@ -93,7 +93,7 @@ No.: 2486/QĐ-ĐHQGHN
 
   - Additionally, units may use the list of foreign language certificates prescribed in the current regulations on the high school graduation examination to convert scores as a subject in the admission combination (applicable to admission method 100);
 
-  - Vietnam National University, Hanoi (ĐHQGHN) does not accept foreign language certificates earned through online examinations.
+  - Vietnam National University, Hanoi (ĐHQGHN) does not accept foreign language certificates earned through online examinations./.
 
 # Appendix VI. Direct admission and prioritized admission consideration of upper-secondary students to universities at Vietnam National University, Hanoi (ĐHQGHN)
 
