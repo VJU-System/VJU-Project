@@ -1891,3 +1891,28 @@
 
 ### Status
 - Pending Claude QA -> fix -> review cycle (PDF extraction unreliable)
+
+## 2026-02-24 1592-QD-DHVN Claude QA / Fix / Review (Batch run 20260224_191809)
+
+### Claude findings (QA)
+- 判定: 修正要（メタデータ/冒頭注意書き）
+- 代替YAMLスキーマはベースライン不一致と判断（Public Reportカテゴリでもベースライン統一を推奨）
+- DISCLAIMER blockquote 欠落（source-note div のみ）
+- `issue_date: null` のため `date: null` ポリシー（理由コメント付き）を採用
+- EOF source-note は不要（Claude判断）
+
+### Fixes applied (Codex, per Claude instructions)
+- VI/EN/JA 3ファイルの YAML をベースラインスキーマへ変換（`doc_id: "1592/QĐ-ĐHVN"`, `date: null`, `department: "Financial Affairs"`, `type: "Report"`）
+- 冒頭 source-note div を削除し、YAML直後に DISCLAIMER + 表認識注意書き（言語別）を blockquote で挿入
+
+### Claude review after fixes
+- Outcome: `PASS`
+- YAML baseline 変換 / DISCLAIMER 挿入 / source-note div除去 / EOF source-note不要ポリシーを確認
+
+### New QA checks (Claude提案)
+- Public Report 系（例: `826-KTDBCL-DHVN`, `323-QD-DHVN`）の `date: null` ポリシー整合確認
+- `index.html` / search index 側で `date: null` 表示・ソートが崩れないか確認
+
+### Timeout / Auth / Cleanup
+- Claude timeout events: none
+- Claude auth errors: none
