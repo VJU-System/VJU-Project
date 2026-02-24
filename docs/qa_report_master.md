@@ -1643,3 +1643,24 @@
   - `2486-QD-DHQGHN` の旧 pending 記録整理（必要なら）
 - runtime duration: `255s` (~4m15s)
 - stop reason: `completion`
+
+## 2026-02-24 2085-CV-BGDDT Script Check (Batch run 20260224_183937)
+
+### Scope
+- `data/2085-CV-BGDDT_Self-Assessment and External Evaluation_source.pdf`
+- `data/2085-CV-BGDDT_Self-Assessment and External Evaluation_transcription.md`
+- `data/2085-CV-BGDDT_Self-Assessment and External Evaluation_transcription_en.md`
+- `data/2085-CV-BGDDT_Self-Assessment and External Evaluation_transcription_ja.md`
+
+### Page Count / Chunk Plan
+- Page count: `17` (tool: `pdfinfo`)
+- Extraction quality: `unreliable` (`pdftotext` output empty: 0 lines / 17 bytes form-feed only)
+- Chunking: `no chunking` (<=30 pages)
+
+### Script results (Codex-run)
+- `data/2085-CV-BGDDT_Self-Assessment and External Evaluation_transcription.md`: YAML required fields OK; disclaimer present; source note missing at EOF; pipe_table_lines=550; ascii_separator_lines=74; escaped_pipe_corruption=0; headings `# Chương`=2 / `## Điều`=4; VI footnote markers detected `¹²³⁴` and inline footnote text present; no markdown footnote definition lines
+- `data/2085-CV-BGDDT_Self-Assessment and External Evaluation_transcription_en.md`: YAML required fields OK; disclaimer present; source note missing at EOF; pipe_table_lines=533; ascii_separator_lines=72; escaped_pipe_corruption=0; `### Article` headings flagged=4 (likely heading-level mismatch)
+- `data/2085-CV-BGDDT_Self-Assessment and External Evaluation_transcription_ja.md`: YAML required fields OK; disclaimer present; source note missing at EOF; pipe_table_lines=532; ascii_separator_lines=72; escaped_pipe_corruption=0; `<p align="center"><strong>` non-heading wrapper misuse candidates flagged=14 (needs Claude judgment)
+
+### Status
+- Pending Claude QA -> fix -> review cycle (PDF extraction unreliable)
