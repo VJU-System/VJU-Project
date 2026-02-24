@@ -238,6 +238,55 @@
 
 ### Status
 - Pending Claude QA -> fix -> review cycle
+
+## 2026-02-24 50-2026-KH-DHVN Claude QA -> Fix -> Review Cycle
+
+### Files processed
+- `data/50-2026-KH-DHVN_VJU Quality Assurance Plan 2026_source.pdf`
+- `data/50-2026-KH-DHVN_VJU Quality Assurance Plan 2026_transcription.md`
+
+### Page count + tool used + chunk plan
+- Page count: `12` (tool: `pdfinfo`)
+- Chunk plan: `no chunking`
+
+### Claude findings (pre-fix)
+- Verdict: `FAIL`
+- `[CRITICAL]` Heading numbering mismatch (`1. Mục tiêu` with child headings `4.1`, `4.2`, `4.2.1`...)
+- `[CRITICAL]` Section 3 table appears truncated (missing III.1.3-1.6 and IV.2-5 rows)
+- `[HIGH]` Missing `4.2.4` (jump `4.2.3` -> `4.2.5`)
+- `[MEDIUM]` Section 4 headings used Markdown heading syntax while Sections 1-3 use centered HTML headings
+- `[LOW]` Bullet nesting under `Về đánh giá chất lượng` was unclear
+- Constraint noted by Claude: `pdftotext` extraction was effectively empty / insufficient for exact PDF-based content reconstruction (PDF likely image-scanned or non-text layer issue)
+
+### Merged fix plan (Claude-directed)
+- Apply only safe Markdown-only fixes not requiring PDF verification:
+  - normalize Section 4 heading format to centered HTML heading style
+  - indent sub-bullets under `Về đánh giá chất lượng`
+- Defer numbering/table/content restoration until PDF-readable extraction / manual verification is available
+
+### Fixes applied (Codex, per Claude instructions)
+- Converted Section 4 headings to `<p align="center"><strong>...`
+- Fixed nesting indentation for the six sub-bullets under `Về đánh giá chất lượng`
+
+### Final review outcome (Claude post-fix)
+- Verdict: `FAIL`
+- Confirmed fixed:
+  - heading-format consistency (Section 4)
+  - bullet nesting under `Về đánh giá chất lượng`
+- Remaining issues:
+  - `[CRITICAL]` heading numbering mismatch (`1.` parent vs `4.x` children)
+  - `[CRITICAL]` truncated Section 3 table rows
+  - `[HIGH]` missing `4.2.4`
+  - `[MEDIUM]` duplicate `4.1` numbering collision (further evidence numbering is wrong upstream in current MD)
+
+### New QA checks (Claude feedback)
+- Duplicate sub-numbering check (avoid repeated `4.1` for different sections)
+- Fix-agent scope verification (confirm PDF-required issues are not silently skipped)
+- Table row-count validation heuristic for plan/schedule documents
+- Explicit `PDF re-extraction required` flag when source text layer is unavailable
+
+### Timeout events
+- None (all Claude calls returned within 300s)
 - PDF->MD layout fidelity (high-level structural checks)
 - Cross-language structural consistency
 - Heading translation pattern consistency
