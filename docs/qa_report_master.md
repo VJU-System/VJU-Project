@@ -1404,3 +1404,23 @@
 
 ### Status
 - Pending Claude QA -> fix -> review cycle
+
+## 2026-02-24 2486-QD-DHQGHN Script Check (Batch run 20260224_164658)
+
+### Scope
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_source.pdf`
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription.md`
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription_en.md`
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription_ja.md`
+
+### Page Count / Chunk Plan
+- Page count: `5` (tool: `pdfinfo`)
+- Chunking: `no chunking` (<=30 pages)
+
+### Script results (Codex-run)
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription.md`: disclaimer present; source note missing; pipe_table_lines=11
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription_en.md`: disclaimer present; source note missing; pipe_table_lines=11
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription_ja.md`: disclaimer missing; source note missing; pipe_table_lines=11
+
+### Status
+- Pending Claude QA -> fix -> review cycle
