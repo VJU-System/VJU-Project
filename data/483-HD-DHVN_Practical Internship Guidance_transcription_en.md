@@ -106,7 +106,7 @@ Vietnam-Japan University hereby provides guidance to the Faculties on the implem
 ## 8. Requirements for supervisors
 
 - Supervisor qualifications: Shall meet the requirements regarding teaching experience or professional qualifications and shall cooperate with the internship facility in evaluation.
-- Number of students supervised: A maximum of 15 students per internship period and no more than 8 students for thematic internship of the graduation course per semester.
+- Number of students supervised: A maximum of 15 students per internship period and no more than 8 students for thematic internship/graduation course per semester.
 - Prepare the list of interns, internship facilities and supervisors (Appendix 2).
 - Assist students in contacting internship facilities.
 - Sign the internship diary confirmation (Appendix 3).
@@ -117,7 +117,7 @@ Vietnam-Japan University hereby provides guidance to the Faculties on the implem
   + Edit the internship thesis manuscript.
   + Verify and approve academic integrity and objectivity.
   + Coordinate with internship facilities to evaluate students and grade internship reports.
-  + Coordinate with internship facilities to inspect and monitor the internship situation and receive payment in accordance with the internal spending regulations of Vietnam-Japan University.
+- Coordinate with internship facilities to inspect and monitor the internship situation and receive payment in accordance with the internal spending regulations of Vietnam-Japan University.
 
 ## 9. Requirements for the comprehensive internship report
 

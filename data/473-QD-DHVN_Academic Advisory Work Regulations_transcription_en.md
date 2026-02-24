@@ -165,7 +165,7 @@ Academic advisors are responsible for performing tasks according to the followin
 5. Heads of units and relevant organizations and individuals are responsible for organizing the implementation of this regulation.
 6. During the implementation process, if there are any problems or adjustments needed, units and individuals shall report to the Rector (through the Department of Training and Student Affairs) for consideration, revision and supplementation.
 
-# Appendix 1. Course Meeting Minutes
+# Appendix 1. Cohort Class Meeting Minutes
 
 **VIETNAM NATIONAL UNIVERSITY, HANOI**
 **VIETNAM-JAPAN UNIVERSITY**

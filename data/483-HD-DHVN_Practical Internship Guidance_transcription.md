@@ -106,7 +106,7 @@ Trường Đại học Việt Nhật hướng dẫn các Khoa thực hiện côn
 ## 8. Yêu cầu về giảng viên hướng dẫn
 
 - Điều kiện giảng viên hướng dẫn: Đáp ứng các yêu cầu về kinh nghiệm giảng dạy hoặc trình độ chuyên môn và phối hợp với cơ sở thực tập trong việc đánh giá.
-- Số lượng sinh viên hướng dẫn: Tối đa 15 sinh viên mỗi đợt thực tập và không quá 8 sinh viên cho thực tập chuyên đề học phần tốt nghiệp trong mỗi học kỳ.
+- Số lượng sinh viên hướng dẫn: Tối đa 15 sinh viên mỗi đợt thực tập và không quá 8 sinh viên cho thực tập chuyên đề/học phần tốt nghiệp trong mỗi học kỳ.
 - Lập danh sách sinh viên thực tập, cơ sở thực tập và giảng viên hướng dẫn (Phụ lục 2).
 - Hỗ trợ liên hệ cơ sở thực tập cho sinh viên.
 - Ký xác nhận nhật ký thực tập (Phụ lục 3).
@@ -117,7 +117,7 @@ Trường Đại học Việt Nhật hướng dẫn các Khoa thực hiện côn
   + Sửa bản thảo chuyên đề thực tập.
   + Kiểm tra và phê duyệt tính trung thực, khách quan trong học thuật.
   + Phối hợp với cơ sở thực tập đánh giá sinh viên và chấm điểm báo cáo thực tập.
-  + Phối hợp với cơ sở thực tập thanh tra, kiểm tra tình hình thực tập và được thanh toán theo quy chế chi tiêu nội bộ của Trường Đại học Việt Nhật.
+- Phối hợp với cơ sở thực tập thanh tra, kiểm tra tình hình thực tập và được thanh toán theo quy chế chi tiêu nội bộ của Trường Đại học Việt Nhật.
 
 ## 9. Yêu cầu về báo cáo thực tập tổng hợp
 

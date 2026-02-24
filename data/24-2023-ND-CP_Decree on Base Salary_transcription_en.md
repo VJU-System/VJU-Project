@@ -33,11 +33,11 @@ last_updated: 2026-02-23
 
 ---
 
-### Article 1. Scope of regulation
+## Article 1. Scope of regulation
 
 This Decree prescribes the base salary applicable to cadres, civil servants, public employees; salary and allowance beneficiaries; and workers (hereinafter collectively referred to as salary and allowance beneficiaries) working within agencies, organizations, and public service units of the Communist Party of Viet Nam, the State, the Viet Nam Fatherland Front, socio-political organizations, and associations financed by the state budget at the central level; provinces and centrally run cities (provincial level); districts, urban districts, towns, provincial cities, cities under centrally run cities (district level); communes, wards, townships (commune level); special administrative-economic units; and the armed forces.
 
-### Article 2. Subjects of application
+## Article 2. Subjects of application
 
 Salary and allowance beneficiaries specified in Article 1 of this Decree include:
 
@@ -51,7 +51,7 @@ Salary and allowance beneficiaries specified in Article 1 of this Decree include
 8. Persons working in cipher organizations.
 9. Part-time office holders at the commune level, in villages, and in residential groups.
 
-### Article 3. Base salary level
+## Article 3. Base salary level
 
 1. The base salary is used as the basis for:
     a) Calculating salary levels in salary tables, allowances, and implementing other regimes prescribed by law for the subjects specified in Article 2 of this Decree;
@@ -61,7 +61,7 @@ Salary and allowance beneficiaries specified in Article 1 of this Decree include
 3. Special financial and income mechanisms currently applied by agencies and units at the central level under decisions of competent authorities for certain state administrative agencies shall continue to be implemented until the overall salary policy reform under Resolution No. 27-NQ/TW dated May 21, 2018 of the Seventh Plenum of the 12th Party Central Committee is carried out; the monthly salaries and additional incomes calculated on the base salary of VND 1,800,000 per month from July 1, 2023 under such special mechanisms must not exceed the average salaries and additional incomes of 2022 (excluding increases in salaries and additional incomes resulting from adjustments to salary coefficients upon promotion in grade or rank).
 4. The Government shall submit to the National Assembly for consideration of adjustments to the base salary in conformity with the state budget capacity, consumer price index, and the country's economic growth rate.
 
-### Article 4. Funding sources for implementation
+## Article 4. Funding sources for implementation
 
 1. Ministries, ministerial-level agencies, government-attached agencies, and other central agencies shall:
     a) Use 10% of savings from regular expenditures (excluding salary, salary-based allowances, expenditure items of a salary nature, and personal payments under regimes) in the 2023 estimates that increase compared with the 2022 estimates assigned by competent authorities;
@@ -75,18 +75,18 @@ Salary and allowance beneficiaries specified in Article 1 of this Decree include
 3. The central budget shall supplement funding shortfalls resulting from the 2023 adjustment of the base salary for ministries, ministerial-level agencies, government-attached agencies, other central agencies, and provinces and centrally run cities after implementing the provisions in Clauses 1 and 2 of this Article.
 4. Funding for salary reform for public employees and workers in public service units of group 1 and group 2 that are self-financed shall be ensured by the units themselves in accordance with the Government's Decree No. 60/2021/NĐ-CP dated June 21, 2021 on the financial autonomy mechanism of public service units and any documents amending, supplementing, and replacing Decree No. 60/2021/NĐ-CP (if any).
 
-### Article 5. Effect
+## Article 5. Effect
 
 1. This Decree takes effect on July 1, 2023.
 2. The Government's Decree No. 38/2019/NĐ-CP dated May 9, 2019 prescribing the base salary for cadres, civil servants, public employees, and the armed forces ceases to be effective from the effective date of this Decree.
 
-### Article 6. Responsibilities for guidance and implementation
+## Article 6. Responsibilities for guidance and implementation
 
 1. The Minister of Home Affairs shall guide the implementation of this Decree with respect to salary and allowance beneficiaries in agencies, organizations, and public service units of the Communist Party of Viet Nam, the State, the Viet Nam Fatherland Front, socio-political organizations, and associations.
 2. The Minister of National Defence and the Minister of Public Security shall guide the implementation of this Decree with respect to the subjects under their management.
 3. The Minister of Finance shall:
-    a) 5. Guide the determination of needs, funding sources, and methods of expenditure for implementing the base salary prescribed in this Decree;
-    b) 5. Guide the payment of salaries and incomes for agencies and units applying special financial and income mechanisms at the central level as stipulated in Clause 3 Article 3 of this Decree;
+    a) Guide the determination of needs, funding sources, and methods of expenditure for implementing the base salary prescribed in this Decree;
+    b) Guide the payment of salaries and incomes for agencies and units applying special financial and income mechanisms at the central level as stipulated in Clause 3 Article 3 of this Decree;
     c) Appraise the needs and supplement the funding shortfalls resulting from the adjustment of the base salary for ministries, ministerial-level agencies, government-attached agencies, other central agencies, and provinces and centrally run cities in accordance with this Decree.
 4. Ministers, heads of ministerial-level agencies, heads of government-attached agencies, and Chairpersons of People's Committees of provinces and centrally run cities shall be responsible for implementing this Decree.
 

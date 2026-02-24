@@ -99,7 +99,7 @@ CVHT có trách nhiệm thực hiện các nhiệm vụ theo 04 nhóm chức nă
     a) Hỗ trợ học tập và nghiên cứu
 - Hướng dẫn sinh viên hiểu rõ các quy định, hướng dẫn về đào tạo đại học của ĐHQGHN và Trường ĐHVN, đặc biệt là các nội dung liên quan đến kế hoạch học tập, đăng ký học phần, điều kiện học vụ và xét tốt nghiệp.
 - Hướng dẫn sinh viên xây dựng và cập nhật kế hoạch học tập cá nhân; tư vấn lựa chọn học phần phù hợp với năng lực, nguyện vọng và yêu cầu của chương trình đào tạo.
--Hướng dẫn sinh viên phương pháp học tập hiệu quả, kỹ năng nghiên cứu khoa học và tư duy phản biện; khuyến khích sinh viên tham gia các hoạt động học thuật, hội thảo chuyên đề.
+- Hướng dẫn sinh viên phương pháp học tập hiệu quả, kỹ năng nghiên cứu khoa học và tư duy phản biện; khuyến khích sinh viên tham gia các hoạt động học thuật, hội thảo chuyên đề.
 - Theo dõi kết quả học tập của sinh viên, phát hiện sớm các trường hợp có dấu hiệu sa sút học tập để phối hợp với các đơn vị chức năng xử lý, hỗ trợ kịp thời.
     b) Phát triển cá nhân và nghề nghiệp
 - Tư vấn, giới thiệu cho sinh viên các cơ hội học bổng, chương trình trao đổi học thuật, thực tập, tham gia nghiên cứu, học các học phần vượt hoặc học phần tự chọn có định hướng nghề nghiệp.
@@ -179,7 +179,7 @@ Có mặt:
 1. Đăng ký học phần
 (Gợi ý các nội dung: Các vấn đề liên quan đến đăng ký học phần của sinh viên, sinh viên đã đạt chuẩn đầu ra Tiếng Anh khi đăng ký học vượt có cần hỗ trợ không, sinh viên có nguyện vọng mở thêm lớp học phần...)
 2. Hướng dẫn truy cập thông tin
-(Gợi ý các nội dung hưởng dẫn sinh viên: xem thời khóa biểu học kỳ, xem các thông báo của Phòng đào tạo liên quan đến học vụ (cảnh báo, dừng học, thôi học), đăng ký học (học phần tiên quyết, đăng ký học phần ngoài CTĐT...), tải đề cương học phần...)
+(Gợi ý các nội dung hướng dẫn sinh viên: xem thời khóa biểu học kỳ, xem các thông báo của Phòng đào tạo liên quan đến học vụ (cảnh báo, dừng học, thôi học), đăng ký học (học phần tiên quyết, đăng ký học phần ngoài CTĐT...), tải đề cương học phần...)
 3. Phương pháp học tập, phương pháp nghiên cứu
 (Gợi ý các nội dung hướng dẫn sinh viên: tư vấn cho sinh viên phương pháp học tập hiệu quả, khuyến khích và tư vấn cho sinh viên nghiên cứu khoa học...)
 4. Các nội dung khác
