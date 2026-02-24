@@ -349,6 +349,42 @@
 ### Timeout events
 - None
 
+## Batch Execution Summary (auto)
+
+- run_id: `20260224_163537`
+- processed sets:
+  - `04-2016-TT-BGDDT_Quality Standards for HE Programs`
+  - `04-2020-TT-BGDDT_Foreign Cooperation in Education`
+  - `01-2024-TT-BGDDT_Standards for Higher Education Institutions`
+- partially processed sets: none
+- skipped sets due to time limit: none
+- estimated remaining sets: `34` (start estimate `37` - processed `3`)
+- major issues:
+  - common missing `SOURCE_NOTE` in all 3 sets / all variants
+  - EN/JA heading-level inconsistency vs VI conventions in all 3 sets
+  - JA preamble/body HTML wrapper misuse in `04-2016` and `01-2024`
+  - EN stray numbering artifact in `04-2020`
+- major fixes:
+  - added EOF `SOURCE_NOTE` to all 9 files
+  - normalized article/chapter heading levels in EN/JA
+  - removed JA center/bold wrappers from non-heading text
+  - fixed EN stray numbering artifact (`b) 5. Guide` -> `b) Guide`)
+- new QA checks discovered:
+  - EOF `SOURCE_NOTE` presence + page-count match
+  - heading-level parity across VI/EN/JA (`#` chapter, `##` article)
+  - JA preamble/body HTML wrapper misuse check
+  - doc number/date line format parity across variants
+  - stray numbering artifact scan in translated items
+- timeout events: none
+- git push failures: none
+- temp cleanup status: `tmp/run_20260224_163537` removed
+- suggested next targets:
+  - `08-2021-TT-BGDDT_Regulation on Undergraduate Training`
+  - `111-2013-TT-BTC_Personal Income Tax Implementation`
+  - `1534-HD-DHVN_Annex Templates English Format`
+- runtime duration: `~00:08:53`
+- stop reason: `completion`
+
 ## 2026-02-24 04-2020-TT-BGDDT Claude QA -> Fix -> Review Cycle
 
 ### Files processed
