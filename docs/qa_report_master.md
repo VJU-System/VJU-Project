@@ -1587,3 +1587,33 @@
 
 ### Status
 - Pending Claude QA -> fix -> review cycle (PDF extraction unreliable)
+
+## 2026-02-24 2486-QD-DHQGHN Claude QA / Fix / Review (Batch run 20260224_183312)
+
+### Claude findings (QA)
+- 判定: `PASS（軽微修正要）`
+- PDF抽出はメタデータのみのため、本文忠実性は判定対象外（構造・整合性中心）
+- 指摘: VI/EN/JA 全3ファイルで `SOURCE_NOTE` 相当の出典注記が EOF に欠落
+
+### Fixes applied (Codex, per Claude instructions)
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription.md`: EOF に `---` + `[SOURCE]` 注記を追加
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription_en.md`: EOF に `---` + `[SOURCE]` 注記を追加
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription_ja.md`: EOF に `---` + `[出典]` 注記を追加
+
+### Claude review after fixes
+- Outcome: `PASS`
+- 3言語版とも EOF の出典注記形式（区切り線 + blockquote）整合
+- 文書ID/日付/発行者表現/出典元の対応は整合（レビュー範囲内）
+- Residual risks:
+  - PDF原本との文字レベル照合は未実施（抽出不良のため）
+  - 中間セクションの見出し連番等は今回のEOF確認レビュー範囲外
+  - VI版 SOURCE 行の英語混在は方針次第で要統一検討
+
+### New QA checks (Claude提案)
+- VI版SOURCE内の英語混在ポリシー確認
+- YAML `last_updated` を修正日に更新する運用要否確認
+
+### Timeout / Auth / Cleanup
+- Claude timeout events: none
+- Claude auth errors: none
+- Temp cleanup (`tmp/run_20260224_183312/2486-QD-DHQGHN`): success
