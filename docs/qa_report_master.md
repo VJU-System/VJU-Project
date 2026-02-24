@@ -1617,3 +1617,29 @@
 - Claude timeout events: none
 - Claude auth errors: none
 - Temp cleanup (`tmp/run_20260224_183312/2486-QD-DHQGHN`): success
+
+## Batch Execution Summary (auto)
+
+- run_id: `20260224_183312`
+- processed sets: `2486-QD-DHQGHN`
+- partially processed sets: none
+- skipped sets due to time limit: none
+- estimated remaining sets: `7` (based on pending Claude QA markers currently in master report)
+- major issues:
+  - `qpdf` / `mutool` unavailable (non-blocking)
+  - `2486-QD-DHQGHN` PDF text extraction unreliable (`pdftotext` returned metadata-only text)
+  - `2486-QD-DHQGHN` VI/EN/JA files missing EOF source note blocks
+- major fixes:
+  - Added EOF source note blocks to VI/EN/JA for `2486-QD-DHQGHN` per Claude instructions
+- new QA checks discovered:
+  - VI版SOURCE内の英語混在ポリシー確認
+  - YAML `last_updated` 更新運用確認
+- timeout events: none
+- authentication errors: none
+- git push failures: none
+- temp cleanup status: `tmp/run_20260224_183312` removed
+- suggested next targets:
+  - `2085-CV-BGDDT` (report上で Script Check 済み / Claude待ち)
+  - `2486-QD-DHQGHN` の旧 pending 記録整理（必要なら）
+- runtime duration: `255s` (~4m15s)
+- stop reason: `completion`
