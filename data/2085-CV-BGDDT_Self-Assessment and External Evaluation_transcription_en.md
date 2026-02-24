@@ -246,13 +246,13 @@ At the request of ..............................................................
 
 **DECIDES:**
 
-### Article 1. To establish the self-assessment council for the ........................ program, comprising the individuals listed in the attached list.
+## Article 1. To establish the self-assessment council for the ........................ program, comprising the individuals listed in the attached list.
 The council is assisted by a secretariat and specialized working groups comprising the individuals listed in the attached list.
 
-### Article 2. The council shall conduct the self-assessment of the ........ program in accordance with the CTĐT quality standards promulgated together with Circular No. ..... dated ..... of the Minister of Education and Training and the guidance on CTĐT self-assessment and external evaluation of the Department of Quality Management.
+## Article 2. The council shall conduct the self-assessment of the ........ program in accordance with the CTĐT quality standards promulgated together with Circular No. ..... dated ..... of the Minister of Education and Training and the guidance on CTĐT self-assessment and external evaluation of the Department of Quality Management.
 Specific duties of the members shall be assigned by the council chairperson. The council shall dissolve itself upon completion of its tasks.
 
-### Article 3. Heads of relevant units .... and the individuals named in Article 1 are responsible for implementing this Decision./.
+## Article 3. Heads of relevant units .... and the individuals named in Article 1 are responsible for implementing this Decision./.
 
 **Recipients:**
   - As stated in Article 3;
@@ -489,7 +489,7 @@ Mark (x) in one of the boxes below.
 
 ---
 
-### Article 4. Rating scale
+## Article 4. Rating scale
 
 1. The criteria of the CTĐT quality standards are evaluated on a seven-level scale.
 
@@ -1899,3 +1899,4 @@ Guidance on presenting the self-assessment report and the external evaluation re
   - Part IV. Annexes
 
 **Department of Quality Management**
+> **[SOURCE_NOTE]** Transcription source: `data/2085-CV-BGDDT_Self-Assessment and External Evaluation_source.pdf` (17 pages)
