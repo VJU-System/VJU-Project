@@ -1566,3 +1566,24 @@
 
 ### Status
 - Pending Claude QA -> fix -> review cycle
+
+## 2026-02-24 2486-QD-DHQGHN Script Check (Batch run 20260224_183312)
+
+### Scope
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_source.pdf`
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription.md`
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription_en.md`
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription_ja.md`
+
+### Page Count / Chunk Plan
+- Page count: `5` (tool: `pdfinfo`)
+- Extraction quality: `unreliable` (`pdftotext` produced metadata-only text; 3 lines / 89 chars)
+- Chunking: `no chunking` (<=30 pages)
+
+### Script results (Codex-run)
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription.md`: YAML required fields OK; disclaimer present; source note missing at EOF; pipe_table_lines=11; ascii_separator_lines=4; escaped_pipe_corruption=0; heading parity counts (VI/EN/JA chapters/articles)=0/0/0,0/0/0; JA wrapper misuse=0; footnote markers=none
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription_en.md`: YAML required fields OK; disclaimer present; source note missing at EOF; pipe_table_lines=11; ascii_separator_lines=4; escaped_pipe_corruption=0; heading parity counts (VI/EN/JA chapters/articles)=0/0/0,0/0/0; JA wrapper misuse=0; footnote markers=none
+- `data/2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation_transcription_ja.md`: YAML required fields OK; disclaimer present (JA localized label); source note missing at EOF; pipe_table_lines=11; ascii_separator_lines=4; escaped_pipe_corruption=0; heading parity counts (VI/EN/JA chapters/articles)=0/0/0,0/0/0; JA wrapper misuse=0; footnote markers=none
+
+### Status
+- Pending Claude QA -> fix -> review cycle (PDF extraction unreliable)
