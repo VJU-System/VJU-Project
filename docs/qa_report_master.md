@@ -773,3 +773,26 @@
 - Remaining low-risk notes (Claude): VI `chương đào tạo` wording may reflect PDF extraction break and is acceptable pending PDF visual check; `index.html` DOC_REGISTRY entry missing (publication task, not markdown QA blocker).
 - New QA checks: title suffix contamination (`_source/_transcription`), `issue_date` non-null when body date exists, ID format `{number}-{type}-{issuer}`, PDF visual check for extracted-word split artifacts.
 - Timeout events: none
+
+
+### Batch 5 Temp Cleanup Status
+- Per-set cleanup: `259 Annex 2`, `000`, `2184` tmp subfolders removed (best-effort)
+- Final sweep: `tmp/run_20260224_115512` remains
+- Cleanup failures: none
+
+## Batch Execution Summary (auto)
+
+- run_id: `20260224_115512`
+- processed sets: `259-HD-DHVN_Annex 2 JLPT Authorization Letter Template`, `000-HD-DHVN_Foreign Language Certificate Guidelines`, `2184-TB-DHNN_VNU-TESTS Language Assessment Plan`
+- partially processed sets: none
+- skipped sets due to time limit: none
+- estimated remaining sets: `38` (total detected incomplete `41` - processed `3`)
+- major issues: `000` had silent source-fidelity corrections (numbering/typo/duplication/separator); `2184` had metadata defects (`issue_date`, title suffix, id format) and one low-risk PDF-visual-check item; `259 Annex 2` EN department-name inconsistency
+- major fixes: restored source fidelity in `000`; metadata normalization in `2184` (`issue_date`, title, id`); EN department-name consistency fix in `259 Annex 2`
+- new QA checks discovered: preserve source numbering/typos verbatim, title suffix contamination check, `issue_date` null check, ID-format validation, template-label preservation, cross-version separator consistency
+- timeout events: none
+- git push failures: none
+- temp cleanup status: tmp remains
+- suggested next targets: `259-HD-DHVN_Foreign Language Certificate Guidelines VJU2020-2021`, `1132-QD-DHVN_Examination Affairs Regulations Appendix`, `24-2023-ND-CP_Decree on Base Salary`
+- runtime duration: `~00:05:00`
+- stop reason: `completion`
