@@ -736,3 +736,40 @@
 - `2184-TB-DHNN_VNU-TESTS Language Assessment Plan_transcription.md`: YAML keys detected (id, title, issuer, category, issue_date, status, replaces, replaced_by); disclaimer/source-note detected; pipe-table lines ~7
 - `2184-TB-DHNN_VNU-TESTS Language Assessment Plan_transcription_en.md`: YAML keys detected (id, title, issuer, category, issue_date, status, replaces, replaced_by); disclaimer/source-note detected; pipe-table lines ~7
 - `2184-TB-DHNN_VNU-TESTS Language Assessment Plan_transcription_ja.md`: YAML keys detected (id, title, issuer, category, issue_date, status, replaces, replaced_by); disclaimer/source-note detected; pipe-table lines ~7
+
+
+## 2026-02-24 Batch 5 Claude QA -> Fix -> Review Cycle (259 Annex 2 / 000 / 2184)
+
+### 259-HD-DHVN_Annex 2 JLPT Authorization Letter Template
+- Files processed: VI/EN/JA + source PDF
+- Page count + tool: `2` (`pdfinfo`)
+- Chunk ranges used: `no chunking`
+- Claude QA result: `PASS with minor issues` (mandatory EN department-name consistency fix identified)
+- Claude findings (key): EN department translation inconsistent across sections; separator normalization differences and EN template-label localization choices noted as non-blocking.
+- Claude fixes applied (Codex): EN line updated to use `Department of Academic Affairs and Student Services` consistently in both sections.
+- Claude review outcome: `PASS`
+- New QA checks: template-label preservation, intra-document department-name consistency, cross-version separator normalization consistency.
+- Timeout events: none
+
+### 000-HD-DHVN_Foreign Language Certificate Guidelines
+- Files processed: VI/EN/JA + source PDF
+- Page count + tool: `7` (`pdfinfo`)
+- Chunk ranges used: `no chunking`
+- Claude QA result: `PASS with minor issues` (source-fidelity preservation fixes requested)
+- Claude findings (key): duplicate section numbering in source was silently renumbered in MD, original typo `kỹ tthuật` and duplication `phát sinh phát sinh` were silently corrected, decorative separator differed from source.
+- Claude fixes applied (Codex): restored source numbering in all 3 files (`3`,`3`,`4` sequence), restored VI typo/duplication, restored ornamental separator `—–oo0oo—-` in all 3 files.
+- Claude review outcome: `PASS`
+- New QA checks: preserve source numbering errors/typos/duplication verbatim, character-level ornamental separator verification.
+- Timeout events: none
+
+### 2184-TB-DHNN_VNU-TESTS Language Assessment Plan
+- Files processed: VI/EN/JA + source PDF
+- Page count + tool: `3` (`pdfinfo`)
+- Chunk ranges used: `no chunking`
+- Claude QA result: `PASS (minor metadata fixes)`
+- Claude findings (key): `issue_date: null` in VI/EN/JA; VI title had `_source` suffix; possible VI lexical omission `chương trình` vs `chương` flagged for PDF visual confirmation.
+- Claude fixes applied (Codex): set `issue_date: "2024-12-05"` in all 3 files; removed VI title `_source` suffix; applied Claude-requested follow-up id normalization `DHNN-TB-2184 -> 2184-TB-DHNN` in all 3 files.
+- Claude review outcome: initial `CONDITIONAL PASS`, final re-review after id fix: `PASS`
+- Remaining low-risk notes (Claude): VI `chương đào tạo` wording may reflect PDF extraction break and is acceptable pending PDF visual check; `index.html` DOC_REGISTRY entry missing (publication task, not markdown QA blocker).
+- New QA checks: title suffix contamination (`_source/_transcription`), `issue_date` non-null when body date exists, ID format `{number}-{type}-{issuer}`, PDF visual check for extracted-word split artifacts.
+- Timeout events: none
