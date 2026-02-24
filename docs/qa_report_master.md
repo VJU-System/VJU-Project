@@ -374,3 +374,21 @@
   - EN duplicate wording caused by prior replacement (`Bachelor of Bachelor's ...`) corrected
   - JA repeated suffix (`...プログラム（EMJM）プログラム`) corrected
 - Local glossary (`data/glossary_vi_en_ja.md`) was updated so the admissions-web abbreviation rows for `EMJM`, `BGDI`, `BICA` match the public glossary naming convention (previously short-form variants caused QA mismatch noise).
+
+
+## 2026-02-24 Batch 3 Script Checks (50 / WEB-TTTS2026 / 1274)
+
+### Scope
+- `50-2026-KH-DHVN_VJU Quality Assurance Plan 2026` (VI only)
+- `WEB-TTTS2026-VJU_Undergraduate Admissions Information 2026` (VI/EN/JA)
+- `1274-HD-KTDBCL_End-of-Course Exam Guidance S1 2025-2026` (VI/EN/JA)
+
+### Script Findings Summary (Codex-run)
+- `50-2026` VI: YAML present but missing `id`, `language`, `issue_date`; disclaimer/source note present; pipe tables detected (`28`); ASCII separator line detected (`1`) indicating possible table truncation/format risk
+- `WEB-TTTS2026` VI/EN/JA: YAML present, missing `language` key (uses `lang` convention); disclaimer/source note present; pipe tables detected (`56` each); ASCII separators detected (`5` each) likely due to intentional mixed HTML/Markdown tables
+- `1274` VI/EN/JA: YAML present but missing `id`, `language`, `issue_date`; disclaimer/source note present; heavy pipe-table usage (`165` each); no ASCII-table separator warnings
+
+### Status
+- `50-2026`: escalate to Claude QA/fix due to structural risk (table truncation likely)
+- `WEB-TTTS2026`: send to Claude QA for confirmation; likely low-risk
+- `1274`: send to Claude QA for content/translation contamination review
