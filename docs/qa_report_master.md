@@ -1868,3 +1868,26 @@
 - suggested next targets: `1592-QD-DHVN`, `04-2020-TT-BGDDT`, `01-2024-TT-BGDDT`
 - runtime duration: `~4m`
 - stop reason: `completion`
+
+## 2026-02-24 1592-QD-DHVN Script Check (Batch run 20260224_191809)
+
+### Scope
+- `data/1592-QD-DHVN_Budget Estimate Disclosure 2025_source.pdf`
+- `data/1592-QD-DHVN_Budget Estimate Disclosure 2025_transcription.md`
+- `data/1592-QD-DHVN_Budget Estimate Disclosure 2025_transcription_en.md`
+- `data/1592-QD-DHVN_Budget Estimate Disclosure 2025_transcription_ja.md`
+
+### Page Count / Chunk Plan
+- Page count: `2` (tool: `pdfinfo`)
+- Extraction quality: `unreliable` (`pdftotext` empty/form-feed only)
+- Chunking: `no chunking` (<=30 pages)
+
+### Script results (Codex-run)
+- All 3 files use alternate YAML schema (`id/issuer/category/issue_date/...`) and are missing baseline fields `doc_id/date/department/type/restricted` under current check policy
+- All 3 files: disclaimer missing
+- All 3 files: EOF source note missing
+- Pipe-table lines detected: `28` each; table-heavy budget format
+- Heading parity checks not applicable (no chapter/article headings detected)
+
+### Status
+- Pending Claude QA -> fix -> review cycle (PDF extraction unreliable)
