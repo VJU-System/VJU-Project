@@ -2115,3 +2115,54 @@
 - suggested next targets: none
 - runtime duration: `~1m`
 - stop reason: `completion (no pending sets)`
+
+## Batch Execution Summary (auto) — Confidential Run
+
+- run_id: `20260224_203452`
+- mode: `Confidential/Firebase` (no git push)
+- target folder: `Confidential/`
+- **status: BLOCKING ERROR — no PDF→Markdown sets found**
+
+### Preflight Results
+
+| Check | Result |
+|---|---|
+| Confidential/ directory | EXISTS (12 PDF files) |
+| Markdown transcription files | **0 files** (none created yet) |
+| Claude CLI (nested) | blocked (nested session) → Task tool available |
+| pdfinfo / pdftotext | available |
+| qpdf / mutool | not installed |
+| Git index.lock | clear |
+| .firebaserc | `vju-project2` |
+| firebase.json | Firestore rules only |
+| upload_to_firestore.js | exists (uploads vi/en/ja MD to `docs/{docId}/content/{lang}`) |
+
+### Confidential PDF Inventory (12 files, 0 transcription MD)
+
+1. `1. Planning and Finance Office.pdf`
+2. `2. Quy trinh thanh toan VJU.pdf`
+3. `3. Approved Internal Costnorm (2025 Adjustment).pdf`
+4. `3. Internal Cost norm 2024 full ver..pdf`
+5. `4. 1246 TC Guildeline for management of facilities funded by TC.pdf`
+6. `4. 1246 Vietnamese version (Hướng dẫn quy trình đề xuất quản lý thiết bị TC hỗ trợ).pdf`
+7. `4. 1401 VJU Quy chế quản lý, sd tài sản công Regulation on Facility management.pdf`
+8. `4. 158 Quản lý phòng thí nghiệm.pdf`
+9. `4. 268 QL cơ sở vật chất (Guide line for Facility management).pdf`
+10. `5. VJU campus Plan_Mar.2025.pdf`
+11. `6. 1389 QĐ tiêu chuẩn định mức TSTB.pdf`
+12. `7. Quy trình mua sắm HHDV VJU_24.12.2025.pdf`
+
+### Blocking Error
+
+QA workflow requires existing Markdown transcription files (`*_transcription.md`) to perform script checks, LLM QA, fixes, and review. The `Confidential/` folder contains only source PDFs with no transcription markdown files.
+
+**Batches executed: 0/5** (blocked at preflight)
+**Sets processed: 0/15** (no valid PDF→MD sets)
+
+### Required Next Steps
+
+1. Create Markdown transcription files from each PDF (PDF→MD extraction phase)
+2. Re-run this QA batch after transcription files are available
+
+- runtime duration: `~1m`
+- stop reason: `BLOCKING ERROR — 0 PDF→Markdown sets in Confidential/`
