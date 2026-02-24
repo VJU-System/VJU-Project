@@ -1384,3 +1384,23 @@
 
 ### Status
 - Pending Claude QA -> fix -> review cycle
+
+## 2026-02-24 2459-QD-DHQGHN Script Check (Batch run 20260224_164658)
+
+### Scope
+- `data/2459-QD-DHQGHN_Amendment to Masters Training Regulation_source.pdf`
+- `data/2459-QD-DHQGHN_Amendment to Masters Training Regulation_transcription.md`
+- `data/2459-QD-DHQGHN_Amendment to Masters Training Regulation_transcription_en.md`
+- `data/2459-QD-DHQGHN_Amendment to Masters Training Regulation_transcription_ja.md`
+
+### Page Count / Chunk Plan
+- Page count: `3` (tool: `pdfinfo`)
+- Chunking: `no chunking` (<=30 pages)
+
+### Script results (Codex-run)
+- `data/2459-QD-DHQGHN_Amendment to Masters Training Regulation_transcription.md`: disclaimer present; source note missing; pipe_table_lines=0
+- `data/2459-QD-DHQGHN_Amendment to Masters Training Regulation_transcription_en.md`: disclaimer present; source note missing; pipe_table_lines=0
+- `data/2459-QD-DHQGHN_Amendment to Masters Training Regulation_transcription_ja.md`: disclaimer missing; source note missing; pipe_table_lines=0
+
+### Status
+- Pending Claude QA -> fix -> review cycle
