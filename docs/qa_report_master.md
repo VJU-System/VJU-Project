@@ -2036,3 +2036,36 @@
 
 ### Status
 - Pending Claude QA -> fix -> review cycle (PDF extraction unreliable)
+
+## 2026-02-24 01-2024-TT-BGDDT Claude QA / Fix / Review (Batch run 20260224_193131)
+
+### Claude findings (QA)
+- 初回判定: `conditional_pass`
+- YAML / DISCLAIMER / EOF `SOURCE_NOTE` は正常
+- ヘッダー部のテーブル記法残骸（`:--- | :---`、先頭 `|` のモットー行）を3版共通問題として指摘
+- JA `line 29` の `<p align="center"><strong>---</strong></p>` を VI/EN 対応確認の上で `hr` 化推奨
+
+### Fixes applied (Codex, per Claude instructions)
+- VI/EN/JA ヘッダー冒頭の `:--- | :---` / 先頭 `|` を除去し、センター揃え `<p align="center">` 行へ正規化
+- VI 文書番号行の余分スペース `01 /2024` を `01/2024` に修正
+- VI/EN/JA の `<p align="center"><strong>---</strong></p>` を `<hr>` に置換
+- 追加Claude判定に基づき:
+  - VI見出しのインライン太字（##/###/#### 内 `**`）7箇所を除去
+  - EN/JA の Part V (`### V`) 直前に `---` を挿入（VI構造に整合）
+
+### Claude review after fixes
+- Outcome: `PASS`
+- 構造面の修正（見出し階層・太字混入・HR数・Part V前区切り）完了を確認
+- Residual risks (Claude):
+  - Part IV の翻訳詳細度ミスマッチ（VIにある計算式・Trong đó定義が EN/JA で大幅要約）
+  - Part V の様式テンプレート詳細度ミスマッチ（VI 詳細、EN/JA 簡略）
+  - EN/JA 総行数が VI の約68%で、完全翻訳用途には注意が必要
+
+### New QA checks (Claude提案)
+- Part IV 計算式/変数定義（Trong đó）翻訳照合
+- Part V テーブル列数・行数の3言語一致確認
+- 数式記号（∑, ≤, ≥ 等）の保持確認
+
+### Timeout / Auth / Cleanup
+- Claude timeout events: none
+- Claude auth errors: none
