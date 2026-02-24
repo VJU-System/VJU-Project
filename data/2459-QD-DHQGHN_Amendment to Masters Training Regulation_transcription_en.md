@@ -90,3 +90,5 @@ At the request of the Head of the Academic Affairs Department.
 **Vice Director**
 
 **Nguyễn Hoàng Hải**
+
+> **[SOURCE_NOTE]** Transcription source: `data/2459-QD-DHQGHN_Amendment to Masters Training Regulation_source.pdf` (3 pages)
