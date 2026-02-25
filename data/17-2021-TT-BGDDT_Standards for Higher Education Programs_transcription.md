@@ -1,19 +1,31 @@
 ---
 doc_id: "17/2021/TT-BGDĐT"
+id: "17-2021-TT-BGDDT"
+language: "vi"
+original_language: "vi"
+source_pdf: "data/17-2021-TT-BGDDT_Standards for Higher Education Programs_source.pdf"
 title: "Quy định về chuẩn chương trình đào tạo; xây dựng, thẩm định và ban hành chương trình đào tạo các trình độ của giáo dục đại học"
 date: 2021-06-22
 department: "Ministry of Education and Training"
 type: "Circular"
 restricted: false
-last_updated: 2026-02-23
+last_updated: 2026-02-25
 ---
 
 > **[DISCLAIMER]** Tài liệu này được tạo bởi AI phục vụ mục đích học tập và tham khảo. Nội dung gốc tiếng Việt được trích xuất từ văn bản chính thức. Mọi thông tin có tính pháp lý phải được đối chiếu với văn bản gốc có đóng dấu đỏ.
 
-<p align="center"><strong>BỘ GIÁO DỤC VÀ ĐÀO TẠO | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</strong></p>
-<p align="center"><strong>:--- | :---</strong></p>
-| **Độc lập - Tự do - Hạnh phúc**
-<p align="center"><strong>Số: 17/2021/TT-BGDĐT | *Hà Nội, ngày 22 tháng 6 năm 2021*</strong></p>
+<div style="display: flex; justify-content: space-between; text-align: center;">
+<div>
+<strong>BỘ GIÁO DỤC VÀ ĐÀO TẠO</strong>
+</div>
+<div>
+<strong>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</strong><br>
+<strong>Độc lập - Tự do - Hạnh phúc</strong>
+</div>
+</div>
+
+<p align="center"><strong>Số: 17/2021/TT-BGDĐT</strong></p>
+<p align="center"><em>Hà Nội, ngày 22 tháng 6 năm 2021</em></p>
 
 <p align="center">
 <p align="center"><strong>THÔNG TƯ</strong></p>
@@ -299,3 +311,5 @@ Bước 5: Khảo sát ý kiến của các bên liên quan (nhà quản lý, gi
 Bước 6: Hoàn thiện dự thảo chuẩn chương trình đào tạo và khả năng áp dụng đối với loại nhân lực ngành đào tạo tại Việt Nam dựa vào kết quả khảo sát.
 
 Bước 7: Hoàn thiện dự thảo chuẩn chương trình đào tạo và báo cáo kết quả rà soát, nghiên cứu, phân tích nhu cầu năng lực loại nhân lực ngành đào tạo tại Việt Nam, trình Bộ Giáo dục và Đào tạo.
+
+> **[SOURCE_NOTE]** Transcription source: `data/17-2021-TT-BGDDT_Standards for Higher Education Programs_source.pdf` (18 pages)

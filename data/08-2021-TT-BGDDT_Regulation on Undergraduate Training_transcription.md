@@ -48,7 +48,7 @@ Bộ trưởng Bộ Giáo dục và Đào tạo ban hành Thông tư ban hành Q
 
 ## Điều 3. Chánh Văn phòng, Vụ trưởng Vụ Giáo dục Đại học, Thủ trưởng các đơn vị có liên quan thuộc Bộ Giáo dục và Đào tạo; giám đốc đại học, học viện, hiệu trưởng trường đại học; trường của cơ quan nhà nước, tổ chức chính trị, tổ chức chính trị - xã hội, các tổ chức, cá nhân liên quan chịu trách nhiệm thi hành Thông tư này./.
 
-**KT. BỘ TRƯỞỞNG**
+**KT. BỘ TRƯỞNG**
 **THỨ TRƯỞNG**
 
 **Hoàng Minh Sơn**
@@ -357,7 +357,7 @@ ngày 18 tháng 3 năm 2021 của Bộ trưởng Bộ Giáo dục và Đào tạ
     đ) Thông báo tuyển sinh theo quy chế tuyển sinh hiện hành;
     e) Các minh chứng về việc đáp ứng các yêu cầu tối thiểu đối với liên kết đào tạo vừa làm vừa học theo quy định tại khoản 2 và khoản 3 Điều 5 của Quy chế này.
 
-**KT. BỘ TRƯỞỞNG**
+**KT. BỘ TRƯỞNG**
 **THỨ TRƯỞNG**
 
 **Hoàng Minh Sơn**

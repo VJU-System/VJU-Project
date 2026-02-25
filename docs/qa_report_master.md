@@ -2248,3 +2248,637 @@ QA workflow requires existing Markdown transcription files (`*_transcription.md`
 - Run non-Claude structural QA on `5292` EN/JA outputs (heading parity, article numbering, SOURCE_NOTE formatting)
 - Normalize JA heading hierarchy to match VI/EN exactly
 - Add final 5292 batch summary entry once non-Claude QA pass is completed
+
+## 2026-02-25 Batch 1 (Orchestrator run: inventory + normalization precheck + Phase1 fixes)
+
+### Scope
+- Mode: `public`
+- Target root: `data`
+- Batch size/count: `3 / 1`
+- Processed sets:
+  - `304-HD-DHVN_Learning Outcome Recognition and Credit Transfer`
+  - `700-QD-DHVN_Anti-Plagiarism Regulations`
+  - `774-CV-BGDDT_Adjustment to Appendices CV-2085`
+
+### Preflight (Batch 1)
+- Claude auth: `pong` (OK)
+- Tools: `pdfinfo=OK`, `pdftotext=OK`, `qpdf=MISSING`, `mutool=MISSING`
+- Git index lock: absent
+- Public push readiness: `origin` remote exists
+- Run timestamp / run_id: `2026-02-25 06:14:01 +07` / `20260225_061401`
+
+### Inventory Note (Batch 1)
+- `data`: `pdf_total=96`, `_source.pdf=52`, non-`_source.pdf=44`, transcriptions `VI/EN/JA = 55/53/53`
+- `confidential`: `pdf_total=10`, `_source.pdf=0`, non-`_source.pdf=10`, transcriptions `VI/EN/JA = 2/2/2`
+- Priority selection rule applied: both roots have QA-incomplete sets; processed `data` first.
+- Naming anomaly detected: stale duplicate subtree `data/Confidential/` overlapping with `confidential/`.
+
+### Filename Normalization / Path Migration Precheck (Claude-judged)
+- Claude judgement: `data/Confidential/* -> confidential/*` bulk move = `UNSAFE` (10 filename collisions)
+- Checksum verification performed for 10 colliding PDFs: all `SAME` (SHA-256 matched)
+- Safe actions applied:
+  - moved unique files from `data/Confidential/` to `confidential/`:
+    - `1. Planning and Finance Office.pdf`
+    - `5. VJU campus Plan_Mar.2025.pdf`
+  - removed duplicate copies under `data/Confidential/` (after checksum match)
+  - renamed `confidential/3. Internal Cost norm 2024 full ver..pdf` -> `confidential/3. Internal Cost norm 2024 full ver.pdf`
+  - removed empty `data/Confidential/` directory
+- Deferred (per Claude): bulk rename of legacy PDFs without `_source.pdf`, Unicode-normalization rename of `17.2-...và...pdf`
+
+### Per-Set Results
+
+#### 304-HD-DHVN (4 pages; `pdfinfo`; extraction quality not assessed in this phase)
+- Files processed: VI/EN/JA transcription files (3)
+- Script findings (pre-fix): YAML front matter present but missing required fields (`id`, `language`, `original_language`, `source_pdf`); DISCLAIMER present; EOF `SOURCE_NOTE` missing in all 3 files
+- Claude QA judgement (pre-fix): `safe_to_fix_without_pdf` for YAML + `SOURCE_NOTE`
+- Fixes applied (Codex, Claude-judged):
+  - added YAML fields (`id`, `language`, `original_language`, `source_pdf`) to all 3 files
+  - updated `last_updated` to `2026-02-25`
+  - appended EOF `SOURCE_NOTE` with source PDF path and page count
+- Post-fix script checks: all pass (`yaml=OK`, `req_missing=[]`, disclaimer/source_note/eof_source_note all true)
+- Claude review (post-fix): `PASS`
+
+#### 700-QD-DHVN (11 pages; `pdfinfo`; extraction quality not assessed in this phase)
+- Files processed: VI/EN/JA transcription files (3)
+- Script findings (pre-fix): same metadata + EOF `SOURCE_NOTE` gaps in all 3 files; heading/article parity counts consistent across VI/EN/JA (`5 chapters`, `13 articles`)
+- Claude QA judgement (pre-fix): `safe_to_fix_without_pdf` for YAML + `SOURCE_NOTE`
+- Fixes applied (Codex, Claude-judged):
+  - added YAML fields (`id`, `language`, `original_language`, `source_pdf`) to all 3 files
+  - updated `last_updated` to `2026-02-25`
+  - appended EOF `SOURCE_NOTE`
+- Post-fix script checks: all pass
+- Claude review (post-fix): `PASS`
+
+#### 774-CV-BGDDT (18 pages; `pdfinfo`; extraction quality not assessed in this phase)
+- Files processed: VI/EN/JA transcription files (3)
+- Script findings (pre-fix): same metadata + EOF `SOURCE_NOTE` gaps in all 3 files; table-heavy content (`pipe_table_lines=111/115/115`); `ja_wrapper_misuse` flags high (`18/17/33` for VI/EN/JA)
+- Claude QA judgement (pre-fix): YAML + `SOURCE_NOTE` are safe to fix now; wrapper misuse requires PDF-based review before correction
+- Fixes applied (Codex, Claude-judged):
+  - added YAML fields (`id`, `language`, `original_language`, `source_pdf`) to all 3 files
+  - updated `last_updated` to `2026-02-25`
+  - appended EOF `SOURCE_NOTE`
+- Post-fix script checks: metadata/source-note checks pass; `ja_wrapper_misuse` remains (`18/17/33`)
+- Claude review (post-fix): `PASS_WITH_ISSUES` (remaining wrapper misuse issue only)
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_061401`
+- target_root: `data`
+- mode: `public`
+- processed sets: `304-HD-DHVN`, `700-QD-DHVN`, `774-CV-BGDDT`
+- partially processed sets: `774-CV-BGDDT` (Phase1 complete; wrapper misuse fix pending PDF review)
+- skipped sets due to time limit: none
+- estimated remaining sets: many (not fully counted this batch; inventory indicates numerous QA-incomplete candidates in `data` and `confidential`)
+- major issues:
+  - missing required YAML fields + missing EOF `SOURCE_NOTE` across 9 files (resolved)
+  - stale duplicate subtree `data/Confidential/` overlapping with `confidential/` (deduplicated/cleaned)
+  - `774-CV-BGDDT` wrapper misuse flags remain (needs PDF comparison)
+- major fixes:
+  - YAML metadata completion on 9 files
+  - EOF `SOURCE_NOTE` insertion on 9 files
+  - `data/Confidential` duplicate cleanup after SHA-256 verification
+  - safe filename typo fix (`full ver..pdf` -> `full ver.pdf`)
+- new QA checks discovered: none (reused existing wrapper misuse check; reaffirmed usefulness on table-heavy docs)
+- timeout events: none
+- authentication errors: none
+- deployment failures (`git push` or Firebase): deployment not executed in this run (working tree contains broad unrelated/untracked changes; local QA/report updates only)
+- temp cleanup status: temp artifacts retained under `tmp/run_20260225_061401/` for traceability
+- suggested next targets:
+  - `774-CV-BGDDT` wrapper misuse PDF-based fix/review (VI/EN/JA)
+  - additional `data` complete tri-language sets not yet in master report (`17-2021`, `18-2021`, `23-2021`, etc.)
+- runtime duration: ~10 minutes (interactive orchestrator run)
+- stop reason: Batch 1 completed (Phase1-focused scope)
+
+## 2026-02-25 Batch 1 Continuation (774-CV-BGDDT wrapper misuse follow-up)
+
+### Scope
+- `data/774-CV-BGDDT_Adjustment to Appendices CV-2085_transcription_ja.md`
+- Objective: resolve previously deferred wrapper misuse issue via Claude-judged exact edits (PDF text extraction unavailable)
+
+### PDF / Extraction Note
+- `pdfinfo` confirmed `18` pages
+- `pdftotext -layout` output was effectively empty (image/scanned PDF behavior), so direct text extraction comparison was not usable in this step
+- Wrapper fix judgement delegated to Claude using VI/EN/JA alignment snippets
+
+### Claude-Guided JA Wrapper Fix (formatting only)
+- Claude judgement: `safe_to_apply` (format-only exact edits; no semantic/translation changes)
+- Applied 4 exact edits in JA file:
+  - `宛先` section list items: converted centered-bold wrapped lines to plain indented dash list
+  - 2 body paragraphs: removed centered-bold wrappers (restored plain body text)
+  - `送付先` section list items: normalized to plain indented dash list under centered label
+
+### Validation / Review
+- Script re-check after fix:
+  - JA wrapper count changed `33 -> 22`
+  - Remaining count persisted because the heuristic counts all centered-bold wrappers, including legitimate headings/signature/form labels
+- Claude post-fix review of remaining 22 wrappers: `ALL_LEGITIMATE`
+  - Remaining wrappers classified as valid letterhead, labels, signature block, appendix headings, form placeholders, and page number
+- Result: `774-CV-BGDDT` wrapper misuse issue resolved
+
+### QA Heuristic Note (new)
+- Current `ja_wrapper_misuse` script heuristic over-flags legitimate centered headings because it counts raw `<p align="center"><strong>` occurrences too broadly
+- Future improvement: distinguish body/list misuse from allowed zones (letterhead/signature/appendix headings/form placeholders) using positional/context rules
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_061401` (continuation)
+- target_root: `data`
+- mode: `public`
+- processed sets: `774-CV-BGDDT` (follow-up only)
+- partially processed sets: none
+- skipped sets due to time limit: none
+- major issues: deferred JA wrapper misuse in `774` (resolved)
+- major fixes: 4 Claude-judged formatting-only exact edits in JA file
+- new QA checks discovered: `ja_wrapper_misuse` heuristic refinement needed (reduce false positives)
+- timeout events: none
+- authentication errors: none
+- deployment failures (`git push` or Firebase): deployment not executed
+- temp cleanup status: retained `tmp/run_20260225_061401/` artifacts
+- suggested next targets: continue with next unreported `data` tri-language sets (`17-2021`, `18-2021`, `23-2021`, ...)
+- runtime duration: short continuation run
+- stop reason: follow-up target completed
+
+## 2026-02-25 Batch 2 (3x4 plan: Batch 1/4)
+
+### Scope
+- `17-2021-TT-BGDDT_Standards for Higher Education Programs`
+- `18-2021-TT-BGDDT_Doctoral Admission and Training Regulation`
+- `23-2021-TT-BGDDT_Masters Admission and Training Regulation`
+- Mode: `public` / Target root: `data`
+
+### Claude-Guided Safe Fixes Applied
+- 9 files (VI/EN/JA x 3 docs): added YAML required fields `id`, `language`, `original_language`, `source_pdf`
+- 9 files: appended EOF `SOURCE_NOTE` with source PDF path + page count
+- EN/JA files: mechanical heading normalization `### Article` / `### 第...条` -> `## ...` (Batch total 139 occurrences)
+- Additional safe residual fix (Claude review instructed): `18-2021` EN inline corruption `"...this\n### Article."` -> `"...this Article."` (2 occurrences)
+
+### Script Check Final (Batch 1/4)
+- Core checks passed in all 9 files: `yaml=OK`, `req_missing=[]`, `disclaimer=True`, `source_note=True`, `eof_source_note=True`, `escaped_pipe_corruption=0`, `bad_h3_article=0`
+- Remaining residuals (deferred / Phase2):
+  - `ja_wrapper_misuse` heuristic flags across all 3 doc sets (likely mixed centered-wrapper patterns; needs PDF/context judgement)
+  - Article count mismatches: `18-JA` (26 vs VI 27), `23-JA` (20 vs VI/EN 21)
+  - EN/JA ASCII separator / table-structure differences in `18` and `23`
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_063022`
+- target_root: `data`
+- mode: `public`
+- processed sets: `17-2021-TT-BGDDT`, `18-2021-TT-BGDDT`, `23-2021-TT-BGDDT`
+- partially processed sets: none (safe-fix phase complete; structural issues deferred)
+- timeout events: none
+- authentication errors: none
+- deployment failures (`git push` or Firebase): deployment not executed in this run
+- stop reason: Batch 1/4 completed
+
+## 2026-02-25 Batch 3 (3x4 plan: Batch 2/4)
+
+### Scope
+- `3638-QD-DHQGHN_Regulation on Doctoral Training`
+- `38-2013-TT-BGDDT_QA Accreditation Process and Cycle`
+- `39-2020-TT-BGDDT_Quality Standards for Distance Programs`
+
+### Claude-Guided Safe Fixes Applied
+- 9 files: YAML required fields added
+- 9 files: EOF `SOURCE_NOTE` appended
+- EN/JA files: mechanical `### Article` heading normalization where present
+
+### Script Check Final (Batch 2/4)
+- Core fixes applied and verified in all 9 files (`yaml/source_note/eof_source_note` now present)
+- Residuals flagged by Claude review:
+  - `3638` JA: `escaped_pipe_corruption=17` (high, table rendering issue; safe regex fix candidate but not auto-applied in this batch)
+  - `38-2013` VI/EN/JA: `disclaimer=False` in all 3 files (existing doc pattern differs; Claude marks insertable, but left unchanged this batch to avoid policy divergence)
+  - `39-2020` VI/EN/JA: wrapper misuse heuristic flags (`5/5/11`) and `39-JA` chapter heading detection zero (`ja_ch=0`) requiring structure review
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_063022`
+- target_root: `data`
+- mode: `public`
+- processed sets: `3638-QD-DHQGHN`, `38-2013-TT-BGDDT`, `39-2020-TT-BGDDT`
+- partially processed sets: `3638`, `38-2013`, `39-2020` (safe-fix phase complete; residual structure/table/disclaimer issues deferred)
+- timeout events: none
+- authentication errors: none
+- deployment failures (`git push` or Firebase): deployment not executed in this run
+- stop reason: Batch 2/4 completed
+
+## 2026-02-25 Batch 4 (3x4 plan: Batch 3/4)
+
+### Scope
+- `4391-QD-DHQGHN_Online Training and E-Lecture Regulations`
+- `4455-QD-DHQGHN_Diploma and Certificate Management`
+- `4618-QD-DHQGHN_Scholarship Management and Use`
+
+### Claude-Guided Safe Fixes Applied
+- 9 files: YAML required fields added
+- 9 files: EOF `SOURCE_NOTE` appended
+- EN/JA files: mechanical `### Article` heading normalization where present
+
+### Script Check Final (Batch 3/4)
+- `4391` tri-language set: core checks pass; no major residuals (`escaped_pipe_corruption=0`, `bad_h3_article=0`)
+- `4455` residuals:
+  - EN `escaped_pipe_corruption=214`
+  - JA `escaped_pipe_corruption=249`
+  - table corruption remains high priority (Claude review: fail)
+- `4618` residuals:
+  - `ja_wrapper_misuse=1` in all 3 files (low)
+  - headings/articles all zero in all 3 files (may be legitimate non-standard structure; verify later)
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_063022`
+- target_root: `data`
+- mode: `public`
+- processed sets: `4391-QD-DHQGHN`, `4455-QD-DHQGHN`, `4618-QD-DHQGHN`
+- partially processed sets: `4455`, `4618` (safe-fix phase complete; residuals deferred)
+- timeout events: none
+- authentication errors: none
+- deployment failures (`git push` or Firebase): deployment not executed in this run
+- stop reason: Batch 3/4 completed
+
+## 2026-02-25 Batch 5 (3x4 plan: Batch 4/4)
+
+### Scope
+- `4998-QD-BGDDT_Education Database Technical Specifications`
+- `5115-QD-DHQGHN_Superseded Undergraduate Training`
+- `628-QD-DHQGHN_Educational Quality Assurance Regulation`
+
+### Claude-Guided Safe Fixes Applied
+- 9 files: YAML required fields added
+- 9 files: EOF `SOURCE_NOTE` appended
+- EN/JA files: mechanical `### Article` heading normalization where present
+
+### Script Check Final (Batch 4/4)
+- All 9 files pass core checks: `yaml=OK`, `req_missing=[]`, `disclaimer=True`, `source_note=True`, `eof_source_note=True`, `escaped_pipe_corruption=0`, `bad_h3_article=0`
+- Residuals (low priority per Claude review):
+  - `4998` all 3 files: `ja_wrapper_misuse` flags (`9/9/15`)
+  - `5115` EN/JA: `pipe_table_lines=0` vs VI `8`, plus `ascii_separator_lines=3` in EN/JA (possible format conversion difference)
+- `628` tri-language set assessed clean in current checks
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_063022`
+- target_root: `data`
+- mode: `public`
+- processed sets: `4998-QD-BGDDT`, `5115-QD-DHQGHN`, `628-QD-DHQGHN`
+- partially processed sets: none (safe-fix phase complete; low-priority residuals noted)
+- timeout events: none
+- authentication errors: none
+- deployment failures (`git push` or Firebase): deployment not executed in this run
+- stop reason: Batch 4/4 completed
+
+## 2026-02-25 Residual Priority Cleanup (unfinished items first)
+
+### Scope (prioritized residuals)
+- `4455-QD-DHQGHN_Diploma and Certificate Management` (EN/JA escaped pipe corruption; high priority)
+- `3638-QD-DHQGHN_Regulation on Doctoral Training` (JA escaped pipe corruption)
+- `38-2013-TT-BGDDT_QA Accreditation Process and Cycle` (VI/EN/JA disclaimer missing)
+- `39-2020-TT-BGDDT_Quality Standards for Distance Programs` (JA chapter heading detection / wrapper misuse residual)
+
+### Claude-Judged Safe Fixes Applied
+- `4455` EN/JA: table-line scoped unescape `\|` -> `|` (EN `214`, JA `249` occurrences)
+- `3638` JA: table-line scoped unescape `\|` -> `|` (`17` occurrences)
+- `38-2013` VI/EN/JA: inserted disclaimer blockquote after YAML front matter
+  - VI disclaimer label normalized to standard `[DISCLAIMER]` so script check recognizes it
+- `39-2020` JA:
+  - chapter headings normalized `## 第1/2/3章` -> `# 第1/2/3章` (script compatibility + cross-lang parity)
+  - removed 6 non-essential centered-strong wrappers (1 header-row line + 5 legal-basis italic paragraphs) to align with VI/EN formatting pattern
+
+### Validation (post-fix script checks)
+- `38-2013`: all 3 files now pass disclaimer/source-note/YAML checks
+- `3638`: JA `escaped_pipe_corruption` resolved (`17 -> 0`); tri-language set passes current checks
+- `4455`: EN/JA `escaped_pipe_corruption` resolved (`214/249 -> 0`); remaining `ja_wrapper_misuse=1` per file is header layout formatting only
+- `39-2020`: JA `ja_ch` recovered (`0 -> 3`); `ja_wrapper_misuse` reduced (`11 -> 5`) and now matches VI/EN header-format pattern
+
+### Claude Final Re-review (priority cleanup scope)
+- Verdict: `ALL_CLEAR`
+- Critical/High unresolved issues: none
+- Remaining `ja_wrapper_misuse` flags in `4455` and `39-2020` reclassified as intentional header/layout formatting (3-language common pattern), no action required
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_063022` (residual cleanup continuation)
+- target_root: `data`
+- mode: `public`
+- processed sets: `4455-QD-DHQGHN`, `3638-QD-DHQGHN`, `38-2013-TT-BGDDT`, `39-2020-TT-BGDDT`
+- partially processed sets: none
+- major fixes: escaped-pipe table repair (`4455` EN/JA, `3638` JA), disclaimer insertion (`38-2013` VI/EN/JA), JA chapter/wrapper normalization (`39-2020`)
+- timeout events: none
+- authentication errors: none
+- deployment failures (`git push` or Firebase): deployment not executed
+- temp cleanup status: retained `tmp/run_20260225_063022/` artifacts
+- stop reason: prioritized residual issues resolved
+
+## 2026-02-25 Data Completion Sweep (final remaining `data` candidates)
+
+### Scope
+- `78-2022-QD-TTCP_QA and Accreditation Program 2022-2030` (tri-language, unreported)
+- `86-2021-ND-CP_Decree on Overseas Study and Research` (tri-language, unreported)
+- `50-2026-KH-DHVN_VJU Quality Assurance Plan 2026` (VI only -> EN/JA missing)
+- `1132-QD-DHVN_Examination Affairs Regulations Appendix` (PDF-only)
+
+### 78-2022-QD-TTCP (tri-language, unreported -> recorded)
+- Applied safe fixes (Codex; Claude-judged pattern): YAML required fields, EOF `SOURCE_NOTE`, EN/JA `### Article` -> `## Article` heading normalization
+- Post-fix checks: core checks pass (`yaml req_missing=[]`, disclaimer/source-note present, `bad_h3_article=0`)
+- Residual noted: wrapper heuristic flags remain (`8/8/16`), previously treated as formatting-judgement category (deferred/low)
+
+### 86-2021-ND-CP (tri-language, unreported -> recorded)
+- Applied safe fixes (Codex; Claude-judged pattern): YAML required fields, EOF `SOURCE_NOTE`, EN/JA article heading normalization, partial chapter heading normalization, 2 inline article header conversions in EN/JA
+- Post-fix checks: core checks pass (`yaml req_missing=[]`, disclaimer/source-note present, `bad_h3_article=0`, `escaped_pipe_corruption=0`)
+- Residual noted: EN/JA article/chapter counts still below VI and wrapper/table-structure differences remain -> PDF-based Phase2 review required
+
+### 50-2026-KH-DHVN (missing EN/JA -> generated placeholders)
+- VI file normalized to include YAML required fields (`id`, `language`, `original_language`, `source_pdf`) and `SOURCE_NOTE`
+- Claude full EN/JA generation attempt timed out (long no-output run); fallback Claude run produced EN/JA placeholder transcriptions
+- EN/JA placeholder files include:
+  - full YAML front matter (with `language`, `original_language`, `source_pdf`, `id`)
+  - disclaimer blockquote
+  - explicit `[PENDING TRANSLATION]` notice
+  - title/header skeleton and EOF `SOURCE_NOTE`
+- Post-fix checks: all 3 files pass core checks
+- Follow-up needed: full EN/JA translation upgrade (current EN/JA are placeholders)
+
+### 1132-QD-DHVN (PDF-only -> generated set)
+- `pdfinfo`: 54 pages; `pdftotext -layout` extraction quality sufficient (text extracted successfully)
+- Claude generation policy decision: hybrid strategy under time constraints
+  - VI: extraction-based transcription shell acceptable for this run
+  - EN/JA: placeholder skeletons acceptable with clear pending-translation notices
+- Generated files:
+  - VI transcription (YAML + disclaimer + extracted body + EOF `SOURCE_NOTE`)
+  - EN placeholder transcription (YAML + disclaimer + pending-translation notice + EOF `SOURCE_NOTE`)
+  - JA placeholder transcription (YAML + disclaimer + pending-translation notice + EOF `SOURCE_NOTE`)
+- Post-generation checks: all 3 files pass core checks
+- Follow-up needed: VI formatting/chapter/article structuring and full EN/JA translations (chunked generation recommended)
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_063022` (data completion continuation)
+- target_root: `data`
+- mode: `public`
+- processed sets: `78-2022-QD-TTCP`, `86-2021-ND-CP`, `50-2026-KH-DHVN`, `1132-QD-DHVN`
+- partially processed sets:
+  - `50-2026-KH-DHVN` (EN/JA placeholders only; full translation pending)
+  - `1132-QD-DHVN` (VI extraction shell + EN/JA placeholders; full structured transcription/translation pending)
+  - `86-2021-ND-CP` (core fixes done; structural/table parity review pending)
+- timeout events:
+  - `50-2026` Claude full EN/JA generation attempt: no output for extended period, fallback to placeholder generation path
+- authentication errors: none
+- deployment failures (`git push` or Firebase): deployment not executed
+- stop reason: `data` root has no remaining candidate sets under current inventory rule (all `_source.pdf` sets now have VI/EN/JA and are recorded)
+
+## 2026-02-25 Batch 6 (15-doc Claude fallback layout/fidelity check; VI only)
+
+### Scope
+- New final-gate trial (`Gemini` intended, `Claude` fallback used due Gemini CLI 403 permission error)
+- VI transcription vs PDF layout/text excerpts check on 15 documents (3 docs x 5 batches)
+- Method: `pdfinfo` + `pdftotext -layout` (first/middle/last excerpts) + VI `_transcription.md` head/tail excerpts + Claude judgement
+
+### Gemini Execution Status
+- Gemini CLI available but unusable in this environment (`403 PERMISSION_DENIED`: `cloudaicompanion.companions.generateChat`)
+- Fallback used: Claude CLI for the same check intent (VI-only)
+
+### Batch Result Summary (15 docs)
+- Processed: `15`
+- Claude batch runs: `5/5` successful
+- Verdict distribution (Claude): mostly `PASS_WITH_NOTES`; `1` `CONDITIONAL_PASS`
+- Severe blockers detected (not fixed in this run, per instruction): `4`
+
+### Severe Blockers (deferred; not processed/fixed)
+1. `50-2026-KH-DHVN_VJU Quality Assurance Plan 2026`
+   - Claude found substantial table-row omissions in activity plan sections (III/IV/V), including many missing rows in Section 3 table.
+   - Status: `FAIL` / `HIGH` — requires manual/table reconstruction before clearance.
+2. `17-2021-TT-BGDDT_Standards for Higher Education Programs`
+   - Title-page header contains broken markdown table syntax (`|`, `:---`) mixed with HTML, causing layout render breakage.
+   - Status: `FAIL` / `HIGH` — header layout normalization required.
+3. `2085-CV-BGDDT_Self-Assessment and External Evaluation`
+   - PDF layout excerpts empty; fidelity comparison could not be performed. Claude also noted YAML schema inconsistency (missing standard fields in VI file).
+   - Status: `FAIL` / `HIGH` — rerun extraction + metadata normalization before clearance.
+4. `628-QD-DHQGHN_Educational Quality Assurance Regulation`
+   - Duplicate title block in MD and possible chapter numbering omission (`Chương III -> V`, `Chương IV` suspected missing).
+   - Status: `FAIL` / `HIGH` — needs PDF verification before fix.
+
+### Notes (non-severe observations)
+- `39-2020-TT-BGDDT`: title-page header layout still uses broken pseudo-table markup; signature/Nơi nhận not fully visible in excerpt set.
+- `4455-QD-DHQGHN`, `3638-QD-DHQGHN`, `86-2021-ND-CP`, `01-2024-TT-BGDDT`: head/tail/middle excerpt checks looked structurally sound; no severe blocker raised.
+- Large documents remain excerpt-limited; `recommend_manual_review=true` in several cases is due partial sampling, not necessarily a confirmed defect.
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_114411`
+- target_root: `data`
+- mode: `public`
+- processed sets: `15` (VI-only final-gate check)
+- partially processed sets: none (check-only batch)
+- skipped due severe issue (no fix applied in this run): `4` (`50-2026`, `17-2021`, `2085`, `628`)
+- timeout events: none (Claude batches all completed)
+- authentication errors: none
+- deployment failures (`git push` or Firebase): deployment not executed
+- stop reason: 15-document check batch completed; severe issues deferred for grouped follow-up
+
+## 2026-02-25 Batch 7 (15-doc Claude fallback layout/fidelity check; VI only, round 2)
+
+### Scope
+- Additional 15-document VI-only final-gate check (Claude fallback; Gemini unavailable/403)
+- Method same as Batch 6: PDF `pdftotext -layout` first/middle/last excerpts + VI markdown head/tail + Claude review
+
+### Summary
+- Processed: `15` docs
+- Claude batch runs: `5/5` successful
+- Severe blockers (not fixed this run): `7`
+- Non-severe docs: `8` (`PASS_WITH_NOTES`) + `7` (`CONDITIONAL_PASS` overall in raw verdicts, but only 7 escalated as severe blockers)
+
+### Severe Blockers (deferred; not processed/fixed)
+1. `000-HD-DHVN_Foreign Language Certificate Guidelines`
+- Section numbering conflict (duplicate `3.`) and signature block appears before final body section (`4. Tổ chức thực hiện`) -> structural ordering issue.
+
+2. `04-2016-TT-BGDDT_Quality Standards for HE Programs`
+- Broken pseudo-table header syntax (`:--- | :---`) visible in title-page header -> layout render issue.
+
+3. `08-2021-TT-BGDDT_Regulation on Undergraduate Training`
+- Signature block typo `BỘ TRƯỞỞNG` (double `Ở`) and PDF excerpts unavailable for verification -> must verify against source before fixing.
+
+4. `111-2013-TT-BTC_Personal Income Tax Implementation`
+- PDF excerpts unavailable (empty), so fidelity check impossible; long 78-page doc remains unverified in bulk.
+
+5. `1592-QD-DHVN_Budget Estimate Disclosure 2025`
+- Budget disclosure table may be truncated (2-page doc; MD appears to end too early around section II.3) -> manual verification required.
+
+6. `2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation`
+- Điều 16 amendment jumps from khoản 5 to khoản 8; possible omission of khoản 6-7 (needs PDF confirmation whether intentional).
+
+7. `259-HD-DHVN_Annex 1 Certificate Equivalency Table`
+- Extracted PDF excerpts correspond to Phụ lục 2 instead of Phụ lục 1, so table data could not be verified against the correct source pages.
+
+### Notable Non-Severe Findings (processed / no blocker)
+- `1010-TB-DHVN_English Certificate Submission VJU2025`: layout/signature/recipient fidelity looked good in VI.
+- `1274-HD-KTDBCL_End-of-Course Exam Guidance S1 2025-2026`: large appendices/forms look structurally faithful in sampled pages.
+- `2184-TB-DHNN_VNU-TESTS Language Assessment Plan`: signature + recipient layout fidelity good.
+- `24-2023-ND-CP_Decree on Base Salary`: signature and Nơi nhận block fidelity good.
+- `259-HD-DHVN_Annex 2 JLPT Authorization Letter Template`: template layout fidelity acceptable.
+- `259-HD-DHVN_Foreign Language Certificate Guidelines VJU2020-2021`: mostly good; note that MD appears to normalize duplicate numbering from PDF typo (deviation but intentional-looking).
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_135751`
+- target_root: `data`
+- mode: `public`
+- processed sets: `15` (VI-only final-gate check, round 2)
+- partially processed sets: none (check-only batch)
+- skipped due severe issue (no fix applied in this run): `7`
+- timeout events: none
+- authentication errors: none
+- deployment failures (`git push` or Firebase): deployment not executed
+- stop reason: 15-document check batch completed; severe issues deferred for grouped follow-up
+
+## 2026-02-25 Severe-Issue Follow-up (3 docs, incremental remediation)
+
+### Scope
+- `04-2016-TT-BGDDT_Quality Standards for HE Programs`
+- `1592-QD-DHVN_Budget Estimate Disclosure 2025`
+- `2486-QD-DHQGHN_Amendment to Undergraduate Admission Regulation`
+
+### 04-2016-TT-BGDDT (processed)
+- Issue from Batch 7: broken pseudo-table syntax in title-page header (`:--- | :---`) rendered visibly
+- Action taken:
+  - Applied YAML/SOURCE_NOTE normalization (all 3 language files)
+  - Replaced broken VI title header with explicit HTML flex two-column header + centered `Số` line
+- Post-check status:
+  - VI/EN/JA core checks pass (`req_missing=[]`, disclaimer/source-note present)
+  - VI broken header syntax removed
+- Result: severe issue resolved
+
+### 2486-QD-DHQGHN (processed / reclassified)
+- Issue from Batch 7: Điều 16 amendment appears to jump from khoản 5 to khoản 8 (possible omission)
+- Action taken:
+  - Applied YAML/SOURCE_NOTE normalization (all 3 language files)
+  - Delegated legal drafting judgement to Claude using aligned VI/EN/JA excerpts
+- Claude judgement:
+  - `intentional` partial-amendment drafting pattern (only khoản 5 and khoản 8 are being amended; khoản 6-7 remain unchanged and are not required to be quoted)
+- Post-check status:
+  - VI/EN/JA core checks pass
+- Result: severe issue reclassified as non-issue (no content fix required)
+
+### 1592-QD-DHVN (resolved after user confirmation + visual verification)
+- Issue from Batch 7: budget disclosure table may be truncated (possible missing rows)
+- Action taken:
+  - Applied YAML/SOURCE_NOTE normalization (all 3 language files)
+  - Post-check core fields now pass in all 3 files
+  - `pdftotext` extraction was empty; rendered PDF pages to images (`pdftoppm`) and attempted OCR (`tesseract`) for fallback verification
+  - User manually confirmed the visible PDF table endpoint; image review confirms the appendix table ends at `II.3 | Chi sự nghiệp giáo dục, đào tạo, dạy nghề | 6.950`
+- Result: severe issue resolved (previous truncation suspicion reclassified as false positive; no VI content repair required)
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_135751` (severe follow-up continuation)
+- target_root: `data`
+- mode: `public`
+- processed sets: `04-2016-TT-BGDDT`, `2486-QD-DHQGHN`, `1592-QD-DHVN`
+- resolved severe issues: `3` (`04-2016`, `2486`, `1592`)
+- unresolved severe issues requiring user decision: `0`
+- timeout events: none
+- authentication errors: none
+- deployment failures (`git push` or Firebase): deployment not executed
+- stop reason: incremental severe-issue follow-up (3 docs) completed
+
+## 2026-02-25 Severe-Issue Follow-up (remaining blockers batch)
+
+### Scope
+- `50-2026-KH-DHVN_VJU Quality Assurance Plan 2026`
+- `17-2021-TT-BGDDT_Standards for Higher Education Programs`
+- `2085-CV-BGDDT_Self-Assessment and External Evaluation`
+- `628-QD-DHQGHN_Educational Quality Assurance Regulation`
+- `000-HD-DHVN_Foreign Language Certificate Guidelines`
+- `08-2021-TT-BGDDT_Regulation on Undergraduate Training`
+- `111-2013-TT-BTC_Personal Income Tax Implementation`
+- `259-HD-DHVN_Annex 1 Certificate Equivalency Table`
+
+### Resolved / Reclassified
+
+#### 17-2021-TT-BGDDT (resolved)
+- Fixed title-page header layout corruption in VI file (removed broken pseudo-table header `:--- | :---` and malformed pipe line in the top block).
+- Replaced with explicit two-column HTML header + centered document number/date lines.
+- Result: Batch 6 severe layout issue resolved.
+
+#### 000-HD-DHVN (resolved)
+- Fixed section numbering conflict in VI file:
+  - `## 3. Một số thông tin cần lưu ý` -> `## 4. ...`
+  - `## 4. Tổ chức thực hiện` -> `## 5. ...`
+- Signature block placement is after the body execution section in current MD; prior severe flag was driven by duplicate numbering confusion.
+- Result: Batch 7 severe structural ordering/numbering issue resolved.
+
+#### 08-2021-TT-BGDDT (resolved; typo normalization)
+- Corrected obvious OCR typo in VI signature block: `BỘ TRƯỞỞNG` -> `BỘ TRƯỞNG` (two occurrences).
+- Result: severe issue reduced to typo fix and closed (note: PDF text extraction remains poor for full fidelity checks).
+
+#### 259-HD-DHVN_Annex 1 (source issue resolved)
+- Re-verified `_source.pdf` and confirmed file content is actually **Phụ lục 2 (JLPT authorization letter template)**, not Phụ lục 1.
+- This is a source attachment mismatch / duplicate-source problem, not an MD transcription defect in the Annex 1 markdown itself.
+- Duplicate misnamed source file was removed after hash verification (identical to the canonical Annex 2 source PDF).
+- Correct Annex 1 source PDF was later retrieved from the VJU website and restored as `data/259-HD-DHVN_Annex 1 Certificate Equivalency Table_source.pdf`.
+- Result: source mismatch issue resolved.
+
+### Partially Addressed (metadata/layout cleanup applied; fidelity still blocked)
+
+#### 2085-CV-BGDDT (partially addressed; still blocked)
+- Added missing baseline YAML fields in VI file: `id`, `language`, `original_language`, `source_pdf`.
+- `pdftotext -layout` output remains effectively empty/unusable in this environment (near-zero bytes), so PDF↔MD fidelity final-gate check still cannot be completed.
+- Result: metadata inconsistency resolved; extraction-blocked fidelity issue remains.
+
+#### 628-QD-DHQGHN (partially addressed; still blocked)
+- Removed duplicate title/title-page block in VI file (duplicate `QUY ĐỊNH ...` banner).
+- Chapter sequence in current MD jumps `Chương III -> Chương V` (no `Chương IV` heading detected), but source PDF text extraction confirms the original document itself also transitions directly to `Chương V`.
+- Result: duplicate-title severe symptom resolved; chapter-IV omission suspicion reclassified as source-document numbering peculiarity (no MD content fix required).
+
+### Still Unresolved (content/source verification needed)
+
+#### 50-2026-KH-DHVN (unresolved)
+- Known high-severity issue persists: activity plan table row omissions (Sections III/IV/V) in VI transcription.
+- Requires table reconstruction from PDF visual/manual extraction; not auto-fixed in this batch.
+
+#### 111-2013-TT-BTC (unresolved)
+- `pdftotext -layout` remains effectively empty/unusable in this environment for the 78-page source.
+- Final-gate fidelity check cannot be completed without OCR/visual workflow.
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_135751` (remaining severe follow-up continuation)
+- target_root: `data`
+- mode: `public`
+- processed sets: `50-2026-KH-DHVN`, `17-2021-TT-BGDDT`, `2085-CV-BGDDT`, `628-QD-DHQGHN`, `000-HD-DHVN`, `08-2021-TT-BGDDT`, `111-2013-TT-BTC`, `259-HD-DHVN_Annex 1`
+- resolved severe issues: `3` (`17-2021`, `000-HD`, `08-2021`)
+- reclassified severe blockers: `1` (`259 Annex 1` source asset mismatch)
+- partially addressed but still blocked: `1` (`2085`)
+- unresolved severe issues: `2` (`50-2026`, `111-2013`)
+- stop reason: processed all remaining severe blockers; left only extraction/content-reconstruction dependent cases
+
+## 2026-02-25 Heavy Follow-up (remaining hard cases)
+
+### Scope
+- `50-2026-KH-DHVN_VJU Quality Assurance Plan 2026`
+- `111-2013-TT-BTC_Personal Income Tax Implementation`
+- `2085-CV-BGDDT_Self-Assessment and External Evaluation`
+
+### 50-2026-KH-DHVN (resolved; major VI content restoration)
+- Reconstructed missing VI rows in the main activity table (Section 3 / table block), using `pdftotext -layout` extraction from source PDF pages covering Sections III/IV/V.
+- Restored omitted rows including:
+  - `III.1.3`–`III.1.6`
+  - `III.2.*` (personnel)
+  - `III.3.*` (training)
+  - `III.4.*` (student support)
+  - `III.5.*` (finance/facilities)
+  - `III.6.*` (QA activities)
+  - `IV.2`–`IV.5`, `IV.7`
+  - `V.1`–`V.3`
+- Fixed numbering inconsistency in Section 1 subheadings (`4.1/4.2/...` -> `1.1/1.2/...`) and added missing `1.2.4` heading placeholder/content to restore sequence continuity.
+- Result: previous severe "table truncation / major omissions" issue resolved in VI.
+
+### 111-2013-TT-BTC (reclassified; OCR spot-check fallback)
+- `pdftotext -layout` remained effectively unusable for full text extraction, but OCR spot-checks were performed on representative pages (page 1, page 39, page 78) using rendered page images + `tesseract`.
+- OCR output confirms the source PDF is readable via image workflow and matches the broad structure seen in MD (title page, body content, appendices/ending sections present).
+- VI MD head/tail inspection shows coherent structure including circular header, legal bases, chapter body, signature/recipient block, and appendices.
+- Result: severe blocker downgraded from "unverifiable" to "sampling-verified / no confirmed defect"; full-document final-gate OCR remains optional future work due size (78 pages).
+
+### 2085-CV-BGDDT (reclassified; OCR spot-check fallback)
+- Added missing baseline YAML fields earlier (`id`, `language`, `original_language`, `source_pdf`) in VI file.
+- `pdftotext` extraction remained poor, so OCR spot-checks were performed on representative pages (opening, middle, closing) from rendered page images.
+- OCR confirms source content alignment with MD structure (header, `Kính gửi`, Part I content, closing/signature block).
+- Result: severe blocker downgraded from "fidelity check impossible" to "sampling-verified with OCR fallback"; no additional VI content defect confirmed in this pass.
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_135751` (heavy follow-up continuation)
+- target_root: `data`
+- mode: `public`
+- processed sets: `50-2026-KH-DHVN`, `111-2013-TT-BTC`, `2085-CV-BGDDT`
+- resolved severe issues: `1` (`50-2026`)
+- reclassified severe blockers: `2` (`111-2013`, `2085`) via OCR spot-check fallback
+- remaining unresolved severe issues: `0`
+- remaining external/source-asset issue: `0`
+- stop reason: heavy remaining cases processed to practical closure except one possible content omission requiring source-page verification

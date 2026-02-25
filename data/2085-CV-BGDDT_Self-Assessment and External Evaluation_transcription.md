@@ -1,5 +1,9 @@
 ---
 doc_id: "2085/QLCL-KĐCLGD"
+id: "2085-CV-BGDDT"
+language: "vi"
+original_language: "vi"
+source_pdf: "data/2085-CV-BGDDT_Self-Assessment and External Evaluation_source.pdf"
 title: "Hướng dẫn tự đánh giá và đánh giá ngoài chương trình đào tạo"
 date: 2020-12-31
 department: "Ministry of Education and Training"
@@ -9,6 +13,7 @@ last_updated: 2026-02-23
 ---
 
 > **[DISCLAIMER]** Tài liệu này được tạo bởi AI phục vụ mục đích học tập và tham khảo. Nội dung gốc tiếng Việt được trích xuất từ văn bản chính thức. Mọi thông tin có tính pháp lý phải được đối chiếu với văn bản gốc có đóng dấu đỏ.
+
 
 <p align="center"><strong>BỘ GIÁO DỤC VÀ ĐÀO TẠO</strong></p>
 <p align="center"><strong>CỤC QUẢN LÝ CHẤT LƯỢNG</strong></p>

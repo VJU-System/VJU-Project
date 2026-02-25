@@ -63,6 +63,15 @@ function processFile(filePath) {
         return pipeishCount >= 2 ? line.replace(/\\\|/g, '|') : line;
     }).join('\n');
 
+    // Repair common broken title-page pseudo-table header artifact safely.
+    content = content.replace(
+        /<p align="center"><strong>:--- \| :---<\/strong><\/p>\n\| \*\*([^\n*]+)\*\*/g,
+        '<p align="center"><strong>$1</strong></p>'
+    );
+
+    // Normalize observed OCR typo in ministerial signer title.
+    content = content.replace(/BỘ TRƯỞỞNG/g, 'BỘ TRƯỞNG');
+
     // 5. Fix *** separator spacing
     // Ensure proper blank line before and after ***
     content = content.replace(/([^\n])\n\*\*\*\n([^\n])/g, '$1\n\n***\n\n$2');
