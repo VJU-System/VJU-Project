@@ -208,6 +208,7 @@ If MODE=`public`:
 - run `git push` after every completed document-set
 - also push after master report update
 - also push after batch summary
+- and perform a final `git push` at the end of the run (even if earlier pushes already succeeded) to ensure the latest state is remote
 - retry once on failure
 - if second failure, report and continue locally when safe
 
@@ -473,6 +474,7 @@ Begin with Batch 1 preflight using:
 Remember:
 - QA judgement must be delegated to Claude.
 - `public` mode uses git push.
+- In `public` mode, always execute a final `git push` before ending the run summary.
 - `confidential` mode uses Firebase workflow only.
 - If transcriptions are missing, create them first via Claude-driven generation.
 ```

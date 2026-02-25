@@ -2943,3 +2943,155 @@ QA workflow requires existing Markdown transcription files (`*_transcription.md`
 - Claude review: `PASS_WITH_ISSUES` (safe intermediate state)
 - deployment failures (`git push` or Firebase): Firebase workflow intentionally not executed in this step; confidential outputs remain local (`confidential/` is gitignored)
 - stop reason: reached practical local intermediate completion; OCR/manual work required for placeholder-only documents
+
+## 2026-02-25 Confidential Recheck / Incremental Processing (possible-range execution)
+
+### Scope
+- Re-check `confidential/` after incremental manual/AI transcription progress
+- Apply safe structural fixes only (no history rewrite; local-only because `confidential/` is gitignored)
+- Re-run baseline script checks and disclaimer issuer-link QA
+
+### Findings (Before Fix)
+- `confidential` inventory remains complete:
+  - PDFs: `12`
+  - transcription files: `36` (`VI/EN/JA x 12`)
+- Some VI/EN files lost `DISCLAIMER` lines during body replacement/import steps (observed in 9 files)
+- `SOURCE_NOTE` blocks remained present
+- `disclaimer_issuer_link_mismatch`: none detected
+
+### Safe Fixes Applied
+- Reinserted missing `DISCLAIMER` blocks in `9` confidential transcription files:
+  - `1246-QD-DHVN_Guideline for Management of Facilities Funded by Technical Cooperation_transcription.md`
+  - `1246-QD-DHVN_Guideline for Management of Facilities Funded by Technical Cooperation_transcription_en.md`
+  - `1246-QD-DHVN_Guideline for Proposal and Management of TC-Funded Equipment Vietnamese Version_transcription.md`
+  - `1389-QD-DHVN_Decision on Standards and Norms for Assets and Equipment_transcription.md`
+  - `1401-QD-DHVN_Regulation on Public Asset and Facility Management_transcription.md`
+  - `158-QD-DHVN_Laboratory Management Regulation_transcription.md`
+  - `268-QD-DHVN_Guideline for Facility Management_transcription.md`
+  - `CONF-02_Internal Cost Norm 2025 Adjustment_transcription.md`
+  - `CONF-03_Internal Cost Norm 2024 Full Version_transcription.md`
+
+### Recheck Results (After Fix)
+- Baseline structural checks (36 files): `PASS`
+  - YAML required fields present
+  - DISCLAIMER present
+  - SOURCE_NOTE / 出典 present
+- Disclaimer issuer-link QA (`confidential`): `0` mismatches
+
+### OCR Failure Tracking (for manual/Gemini follow-up)
+- OCR failure page list maintained in local working artifact:
+  - `tmp/confidential_ocr/ocr_failure_list.md`
+- Status update (after Gemini/manual incremental merges reported by user and local recheck):
+  - previously flagged pages were rechecked against current `confidential/*_transcription.md`
+  - no unresolved markers such as `[OCR unreadable]` / `[blank page]` remain in the target VI files
+  - some page numbers are `NOT_FOUND` by `## PAGE <n>` regex due to page-marker compression/merge, not necessarily missing content
+  - `tmp/confidential_ocr/ocr_failure_list.md` has been converted from a failure list into a recheck-status ledger
+
+### Claude Review (recheck)
+- Review judgement: `ACCEPTABLE` (safe in-progress state)
+- Rationale (summary):
+  - Structural integrity checks pass and no disclaimer issuer-link mismatch remains
+  - Pending JA files and OCR-failure pages are tracked as expected in-progress artifacts rather than structural defects
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_confidential_recheck_incremental`
+- target_root: `confidential`
+- mode: `confidential`
+- processed sets: recheck across all `12` confidential document sets
+- fixes applied: `9` missing DISCLAIMER block reinserts
+- structural checks: `PASS (36/36)`
+- disclaimer issuer-link QA: `PASS (0 mismatches)`
+- remaining work: OCR/manual page remediation + JA translation completion for several sets (tracked locally)
+- deployment failures (`git push` or Firebase): not executed (confidential outputs remain local / gitignored)
+- stop reason: all safe structural/QA work in current scope completed
+
+## 2026-02-26 840-DT-DHVN Annex 2/3 Claude QA / Fix / Review (Batch run 20260226_033354)
+
+### Inventory / Preflight
+- target_root: `data`
+- mode: `public`
+- Claude auth: `pong` (OK)
+- tools: `pdfinfo` / `pdftotext` available (`qpdf`/`mutool` not used)
+- inventory summary (`data`): `91` sets (`complete=52`, `pdf-only=35`, `partial=0`)
+- Batch target selection (report未記載の完全セット): `840` Annex 2 / Annex 3 の2件
+
+### Files processed
+- `data/840-DT-DHVN_Academic Calendar 2025-2026 Annex 2 VJU2024-2023_transcription.md`
+- `data/840-DT-DHVN_Academic Calendar 2025-2026 Annex 2 VJU2024-2023_transcription_en.md`
+- `data/840-DT-DHVN_Academic Calendar 2025-2026 Annex 2 VJU2024-2023_transcription_ja.md`
+- `data/840-DT-DHVN_Academic Calendar 2025-2026 Annex 3 VJU2022-2020_transcription.md`
+- `data/840-DT-DHVN_Academic Calendar 2025-2026 Annex 3 VJU2022-2020_transcription_en.md`
+- `data/840-DT-DHVN_Academic Calendar 2025-2026 Annex 3 VJU2022-2020_transcription_ja.md`
+
+### Page count / extraction
+- `840 Annex 2`: `2` pages (`pdfinfo`), extraction quality `reliable` (`pdftotext -layout`)
+- `840 Annex 3`: `4` pages (`pdfinfo`), extraction quality `reliable` (`pdftotext -layout`)
+- chunking: not required (short docs)
+- transcriptions generated this run: `no` (existing VI/EN/JA sets used)
+
+### Script findings (pre-Claude)
+- YAML front matter / DISCLAIMER present in all 6 files
+- Disclaimer issuer-link mismatch (`scripts/check_disclaimer_issuer_link.js`): `0`
+- `language` frontmatter key missing in all 6 files
+- VI 2 files had unclosed `<div class=\"source-note\">` wrapping into body heading
+- EN files contained formatting artifact: `Educational Testing and 2. Quality Assurance Office`
+- Annex 3 JA file retained `ESA2022` typo in note (later fixed)
+
+### Claude findings (QA)
+- Claude judgement: structural/metadata fixes are safe to apply
+- High: close unclosed `source-note` div in VI Annex 2/3 before first `## Học kỳ 1`
+- Medium: remove stray `2.` from EN department name in Annex 2/3
+- Medium: Annex 3 EN `ESA2022` -> `ESAS2022`
+- Low: add `language: vi|en|ja` to front matter (all 6 files)
+- Claude note: duplicate row number `30` in Annex 3 matches PDF and should be preserved
+- Claude deferred: `source_pdf` key insertion omitted pending filename confirmation (not auto-applied this run)
+
+### Fixes applied (Codex, per Claude instructions)
+- Added `language` frontmatter key to all 6 files
+- Closed VI `source-note` div and restored heading separation in Annex 2/3 VI files
+- Replaced all EN occurrences of `and 2. Quality Assurance Office` -> `and Quality Assurance Office`
+- Fixed Annex 3 EN note code `ESA2022` -> `ESAS2022`
+- Fixed Annex 3 JA note code `ESA2022` -> `ESAS2022` (based on Claude post-fix review residual)
+
+### Claude review after fixes
+- Review verdict: `PASS_WITH_ISSUES`
+- Confirmed: table structure, duplicate row `30`, footnotes, disclaimer blocks, doc_id consistency
+- Residual medium issue flagged by Claude review (`JA ESA2022 typo`) was corrected immediately after review
+- Remaining low-priority items after local follow-up:
+  - trailing whitespace in some JA table cells (cosmetic)
+  - `source_pdf` frontmatter key still absent (deferred)
+
+### New QA checks / implementation notes
+- Claude JSON responses may include fenced JSON plus trailing explanatory notes; parser must strip fences and ignore trailing prose
+- `normalize_filenames.js --dry-run` updated references unexpectedly (side-effect observed); treat current `--dry-run` as mutating and avoid in automation until script behavior is fixed
+
+### Deployment / git
+- `git push`: skipped this run (workspace already dirty with many unrelated tracked/untracked changes; safe batch execution limited to local file processing/report updates)
+- temp artifacts: stored under `tmp/run_20260226_033354/`
+
+## Batch Execution Summary (auto)
+- run_id: `20260226_033354`
+- target_root: `data`
+- mode: `public`
+- processed sets: `2` (`840 Annex 2`, `840 Annex 3`)
+- partially processed sets: `0`
+- skipped sets due to time limit: `0` (available unprocessed candidates in this selection mode were `2`)
+- estimated remaining sets: not recalculated globally (many `pdf-only` sets remain in `data`)
+- major issues:
+  - VI unclosed source-note div (2 files)
+  - EN `2.` formatting artifact in department name
+  - Annex 3 EN/JA `ESA2022` typo
+- major fixes:
+  - structural div closure + metadata `language` normalization (6 files)
+  - EN artifact cleanup (all occurrences)
+  - EN/JA note code typo correction
+- new QA checks discovered:
+  - Claude fenced-JSON + trailing-note parsing robustness requirement
+  - `normalize_filenames.js --dry-run` side-effect caution
+- timeout events: none
+- authentication errors: none
+- deployment failures (`git push` or Firebase): not attempted
+- temp cleanup status: temp artifacts retained in `tmp/run_20260226_033354/`
+- suggested next targets: `data` の report未記載 complete set を再スキャン（現状は `840` 系を処理済みのため再選定必要）
+- runtime duration: short batch (manual execution, exact duration not logged)
+- stop reason: selected targets completed
