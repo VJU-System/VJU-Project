@@ -2882,3 +2882,64 @@ QA workflow requires existing Markdown transcription files (`*_transcription.md`
 - remaining unresolved severe issues: `0`
 - remaining external/source-asset issue: `0`
 - stop reason: heavy remaining cases processed to practical closure except one possible content omission requiring source-page verification
+
+## 2026-02-25 Confidential Batch (local intermediate completion; gitignored)
+
+### Scope
+- target_root: `confidential`
+- mode: `confidential`
+- objective: generate missing tri-language transcription shells/placeholders and normalize baseline structure for all confidential PDFs
+
+### Inventory / Output
+- Confidential PDFs detected: `12`
+- Transcription files present after run: `36` (`VI/EN/JA x 12`)
+- Existing rich transcription sets (repaired metadata + EOF source note):
+  - `106-QD-DHVN`
+  - `1686-QD-DHVN`
+- New tri-language sets generated for remaining `10` PDFs
+
+### Generation Policy (Claude-judged)
+- `extraction-shell` (text extractable, content included with fidelity caveat):
+  - `CONF-01` (`1. Planning and Finance Office.pdf`)
+  - `CONF-04` (`5. VJU campus Plan_Mar.2025.pdf`)
+- `placeholder-only` (non-OCR / poor extractability; safe placeholders only):
+  - `CONF-02` (`3. Approved Internal Costnorm (2025 Adjustment).pdf`)
+  - `CONF-03` (`3. Internal Cost norm 2024 full ver.pdf`)
+  - `1246-QD-DHVN` (EN/VI versions)
+  - `1401-QD-DHVN`
+  - `158-QD-DHVN`
+  - `268-QD-DHVN`
+  - `1389-QD-DHVN`
+
+### Script Checks / QA
+- Structural baseline checks (all 36 files): `PASS`
+  - YAML required fields present
+  - DISCLAIMER present
+  - EOF `SOURCE_NOTE` / `出典` present
+- New QA item applied: `disclaimer_issuer_link_mismatch`
+  - `confidential` scan result: `0` mismatches
+
+### Claude Review (batch-level)
+- Review status: `PASS_WITH_ISSUES`
+- Claude summary (JP):
+  - 機密バッチ12件中、既存リッチ転記2件＋テキスト抽出2件＋プレースホルダー8件の計36ファイル（VI/EN/JA）を生成完了。構造チェック・免責リンクQAは全件パス。プレースホルダー8件はOCRまたは手動転記が必要なため保留。ローカル限定のためバックアップリスクあり。中間状態としてPASS_WITH_ISSUES。
+
+### Residual Risks / Deferred Work
+- `8/12` documents remain placeholder-only (actual transcription pending OCR/manual work)
+- OCR pipeline for confidential scanned PDFs is not yet selected/executed
+- `1246` EN/VI pair both placeholder-only (future OCR run must resolve source-version alignment carefully)
+- `confidential/` is gitignored in this repo (local-only state; no git history backup)
+- Firebase upload/deploy was not executed in this run
+- `CONF-01` and `CONF-04` extraction-shell files are not yet human-verified against source PDFs
+
+## Batch Execution Summary (auto)
+- run_id: `20260225_confidential_local_intermediate`
+- target_root: `confidential`
+- mode: `confidential`
+- processed sets: `12` confidential PDF sets (36 transcription files present after run)
+- generated sets this run: `10` (tri-language)
+- repaired existing sets this run: `2` (`106-QD-DHVN`, `1686-QD-DHVN`) baseline metadata/source-note
+- new QA checks applied: `disclaimer_issuer_link_mismatch`
+- Claude review: `PASS_WITH_ISSUES` (safe intermediate state)
+- deployment failures (`git push` or Firebase): Firebase workflow intentionally not executed in this step; confidential outputs remain local (`confidential/` is gitignored)
+- stop reason: reached practical local intermediate completion; OCR/manual work required for placeholder-only documents
