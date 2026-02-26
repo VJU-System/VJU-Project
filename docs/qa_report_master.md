@@ -3095,3 +3095,91 @@ QA workflow requires existing Markdown transcription files (`*_transcription.md`
 - suggested next targets: `data` の report未記載 complete set を再スキャン（現状は `840` 系を処理済みのため再選定必要）
 - runtime duration: short batch (manual execution, exact duration not logged)
 - stop reason: selected targets completed
+
+## Confidential QA Batch (auto) - 10 docs local structural pass
+- run_id: `20260226_073510`
+- target_root: `confidential`
+- mode: `confidential`
+- scope: `10` confidential document sets (`VI/EN/JA + _source.pdf`)
+- preflight: Claude auth `pong`; tools `pdfinfo`/`pdftotext` available; `qpdf`/`mutool` unavailable; `.git/index.lock` absent
+- Firebase preflight: `.firebaserc` and `firebase.json` present (`vju-project2`), but no repo-defined confidential content processing/deploy workflow command was identified in this run; deployment step skipped (local QA only)
+- disclaimer issuer-link QA script (`scripts/check_disclaimer_issuer_link.js confidential`): `scanned_files=30`, `mismatches=0`, `fixed=0`
+- inventory: `10` PDFs / `10` VI / `10` EN / `10` JA (complete tri-language sets exist for all 10)
+- generated transcriptions this run: `no`
+
+### Script Findings Summary (10 sets)
+- `106-QD-DHVN_Payment Control Process`: pages=32 (pdfinfo), extract=limited; bytes VI/EN/JA=16692/17515/6672; EOF source-note VI/EN/JA=OK/OK/OK; notes: JA wrapper candidates=3
+- `1246-QD-DHVN_Guideline for Management of Facilities Funded by Technical Cooperation`: pages=7 (pdfinfo), extract=limited; bytes VI/EN/JA=10259/10446/4827; EOF source-note VI/EN/JA=OK/OK/OK; notes: table-count diff VI/EN/JA=21/19/21
+- `1246-QD-DHVN_Guideline for Proposal and Management of TC-Funded Equipment Vietnamese Version`: pages=6 (pdfinfo), extract=limited; bytes VI/EN/JA=8445/1052/4150; EOF source-note VI/EN/JA=OK/OK/OK; notes: EN tiny/stub suspected; table-count diff VI/EN/JA=17/0/17
+- `1389-QD-DHVN_Decision on Standards and Norms for Assets and Equipment`: pages=21 (pdfinfo), extract=poor; bytes VI/EN/JA=29900/953/14796; EOF source-note VI/EN/JA=OK/OK/OK; notes: EN tiny/stub suspected; table-count diff VI/EN/JA=185/0/185
+- `1401-QD-DHVN_Regulation on Public Asset and Facility Management`: pages=10 (pdfinfo), extract=poor; bytes VI/EN/JA=23401/986/9589; EOF source-note VI/EN/JA=OK/OK/OK; notes: EN tiny/stub suspected
+- `158-QD-DHVN_Laboratory Management Regulation`: pages=16 (pdfinfo), extract=poor; bytes VI/EN/JA=24715/930/10248; EOF source-note VI/EN/JA=OK/OK/OK; notes: EN tiny/stub suspected
+- `1686-QD-DHVN_Procurement Process`: pages=53 (pdfinfo), extract=reliable; bytes VI/EN/JA=22985/18379/6509; EOF source-note VI/EN/JA=OK/OK/OK; notes: JA wrapper candidates=3; table-count diff VI/EN/JA=83/75/63
+- `268-QD-DHVN_Guideline for Facility Management`: pages=46 (pdfinfo), extract=poor; bytes VI/EN/JA=52994/935/23305; EOF source-note VI/EN/JA=OK/OK/OK; notes: EN tiny/stub suspected; table-count diff VI/EN/JA=111/0/104
+- `546-QD-DHVN_Internal Cost Norm 2025 Adjustment`: pages=14 (pdfinfo), extract=poor; bytes VI/EN/JA=17743/961/13248; EOF source-note VI/EN/JA=OK/OK/OK; notes: EN tiny/stub suspected; JA EOF source note fixed; table-count diff VI/EN/JA=121/0/121
+- `94-QD-DHVN_Internal Cost Norm 2024 Full Version`: pages=109 (pdfinfo), extract=poor; bytes VI/EN/JA=109810/899/659; EOF source-note VI/EN/JA=OK/OK/OK; notes: EN tiny/stub suspected; JA tiny/stub suspected; table-count diff VI/EN/JA=861/0/0
+
+### Claude QA Judgement (delegated, summary)
+- Claude CLI was used as judgement authority on machine-check summaries (content equivalence to PDF was intentionally not asserted in this pass).
+- Consolidated judgement trend from Claude outputs: `PASS=1`, `WARN=2`, `FAIL=7` (major cause: EN files are placeholder/stub-size in many sets; one JA EOF truncation issue fixed mechanically for `546-QD-DHVN`).
+- Claude-highlighted likely PASS/WARN cases:
+  - `106-QD-DHVN_Payment Control Process`: PASS (structural indicators balanced across VI/EN/JA; minor JA wrapper candidates only)
+  - `1246-QD-DHVN_Guideline for Management of Facilities Funded by Technical Cooperation`: WARN (EN table count lower than VI/JA)
+  - `1686-QD-DHVN_Procurement Process`: WARN (EN/JA table counts lower than VI; JA wrapper candidates)
+- Claude-highlighted FAIL pattern (manual/OCR work still needed): `1246...(VN Version)`, `1389`, `1401`, `158`, `268`, `546`, `94`
+- Claude noted `546-QD-DHVN` JA EOF issue as safe mechanical fix candidate; applied in this run.
+
+### Fixes Applied (this run)
+- `confidential/546-QD-DHVN_Internal Cost Norm 2025 Adjustment_transcription_ja.md`: EOF に `---` + `[出典]` SOURCE_NOTE を追加（安全な機械修正）
+
+### Timeout / Auth / Deploy
+- Claude auth error: none
+- Claude timeout/no-output events: observed on large batched prompts; fallback to per-document short prompts used
+- Deployment (confidential mode / Firebase): not executed in this batch (no repo-defined confidential content deploy workflow identified)
+- Temp artifacts: `tmp/confidential_10doc_inventory_checks.json`, `tmp/confidential_10doc_qa_claude_input.md`, `tmp/confidential_10doc_claude_judgements.md` retained for audit
+
+## Batch Execution Summary (auto)
+- run_id: `20260226_073510`
+- target_root: `confidential`
+- mode: `confidential`
+- processed sets: `10`
+- partially processed sets: `0` (all 10 structurally checked; content-level OCR/translation backlog remains)
+- skipped sets due to time limit: `0`
+- estimated remaining sets: `0` within current confidential folder scope (10/10 processed this batch)
+- major issues: EN placeholder/stub translations in 7 sets; table-count mismatches in 2 sets; poor extraction quality in multiple table-heavy PDFs
+- major fixes: added missing JA EOF source note for `546-QD-DHVN`
+- new QA checks discovered: none (used existing baseline + disclaimer issuer-link check)
+- timeout events: batched Claude prompt no-output; mitigated by per-doc prompts
+- authentication errors: none
+- deployment failures (`git push` or Firebase): Firebase workflow not run (not identified)
+- temp cleanup status: not cleaned (artifacts retained intentionally for follow-up)
+- suggested next targets: `94-QD-DHVN`, `546-QD-DHVN`, `268-QD-DHVN`, `1389-QD-DHVN` (OCR/table-heavy + EN/JA backlog)
+- runtime duration: ~several minutes (interactive Claude retries included)
+- stop reason: requested 10 confidential document sets processed
+
+## Confidential follow-up (auto) - EN stub translation completion + table diff fixes
+- target_root: `confidential`
+- mode: `confidential`
+- scope: EN stub translation completion + table diff fixes for `1246 (Management)` and `1686`
+- translator path: Claude CLI via local chunked orchestrator helper `tmp/translate_vi_to_en_chunked.js`
+
+### EN Stub Translation Completion
+- `confidential/1246-QD-DHVN_Guideline for Proposal and Management of TC-Funded Equipment Vietnamese Version_transcription_en.md`: EN全文翻訳を補完（current bytes=9288)
+- `confidential/1389-QD-DHVN_Decision on Standards and Norms for Assets and Equipment_transcription_en.md`: EN全文翻訳を補完（current bytes=32394)
+- `confidential/1401-QD-DHVN_Regulation on Public Asset and Facility Management_transcription_en.md`: EN全文翻訳を補完（current bytes=26224)
+- `confidential/158-QD-DHVN_Laboratory Management Regulation_transcription_en.md`: EN全文翻訳を補完（current bytes=27536)
+- `confidential/546-QD-DHVN_Internal Cost Norm 2025 Adjustment_transcription_en.md`: EN全文翻訳を補完（current bytes=18680)
+- `confidential/268-QD-DHVN_Guideline for Facility Management_transcription_en.md`: EN全文翻訳を補完（current bytes=43688)
+- `confidential/94-QD-DHVN_Internal Cost Norm 2024 Full Version_transcription_en.md`: EN全文翻訳を補完（current bytes=122264)
+- EN stub remaining (`<2000 bytes`): `0` files
+
+### Table Difference Check / Fill
+- `1246-QD-DHVN_Guideline for Management of Facilities Funded by Technical Cooperation_transcription_en.md`: 署名欄テーブルの欠落2行（署名・捺印欄）を補完
+- `1686-QD-DHVN_Procurement Process_transcription_en.md`: Table 2 の `8-16` 圧縮行を `8..16` の個別行へ展開補完（EN table-line count `75 -> 83`）
+- Post-check table-line counts:
+  - `1246(Management)` VI/EN/JA = `21/21/21`
+  - `1686` VI/EN/JA = `83/83/63` (JA remains summarized / diff not fixed in this step)
+
+### Sanity Checks
+- `scripts/check_disclaimer_issuer_link.js confidential`: mismatches `0`
+- confidential EN files stub-size scan (`<2000B`): `0`
