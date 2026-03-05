@@ -3882,3 +3882,44 @@ QA workflow requires existing Markdown transcription files (`*_transcription.md`
 - suggested next targets: skip remaining sets for 2026-03-05 if this summary is considered completion of 3 daily sets
 - runtime duration: ~15 minutes
 - stop reason: daily cap reached (3 sets completed)
+
+## 2026-03-05 Additional QA Run (User-requested override after daily cap)
+
+### Scope
+- Target set with missing update metadata in all language files:
+  - `1534-HD-DHVN_Annex Templates Layout Guide`
+
+### Claude QA judgement (authority)
+- Status: `fix_needed`
+- Findings:
+  - `last_updated` missing in VI/EN/JA files.
+  - EN title had stray artifact: `Layout 5. Guide`.
+  - Some EN/JA garbled MT fragments noted in table area; deferred (needs source-PDF cross-check for safe correction).
+
+### Fixes applied
+- Added `last_updated: 2026-03-05` to:
+  - `data/1534-HD-DHVN_Annex Templates Layout Guide_transcription.md`
+  - `data/1534-HD-DHVN_Annex Templates Layout Guide_transcription_en.md`
+  - `data/1534-HD-DHVN_Annex Templates Layout Guide_transcription_ja.md`
+- Fixed EN YAML title:
+  - `Thesis and Graduation Project Annex Templates - Layout 5. Guide`
+  - -> `Thesis and Graduation Project Annex Templates - Layout Guide`
+
+## Batch Execution Summary (auto)
+- run_id: `20260305_091200`
+- target_root: `data`
+- mode: `public`
+- processed sets: 1
+- partially processed sets: 0
+- skipped sets due to time limit: 0
+- estimated remaining sets: 0 (for missing-update-metadata target class)
+- major issues: missing `last_updated` metadata in VI/EN/JA
+- major fixes: metadata update + EN title artifact fix
+- new QA checks discovered: none
+- timeout events: none
+- authentication errors: none
+- deployment failures: none
+- temp cleanup status: no temp artifacts
+- suggested next targets: run PDF cross-check for noted EN/JA garbled table passages if high-fidelity publication is required
+- runtime duration: ~8 minutes
+- stop reason: requested additional run completed
