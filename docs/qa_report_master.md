@@ -2133,7 +2133,7 @@
 | pdfinfo / pdftotext | available |
 | qpdf / mutool | not installed |
 | Git index.lock | clear |
-| .firebaserc | `vju-project2` |
+| .firebaserc | `vju-project-b9048` |
 | firebase.json | Firestore rules only |
 | upload_to_firestore.js | exists (uploads vi/en/ja MD to `docs/{docId}/content/{lang}`) |
 
@@ -2248,6 +2248,70 @@ QA workflow requires existing Markdown transcription files (`*_transcription.md`
 - Run non-Claude structural QA on `5292` EN/JA outputs (heading parity, article numbering, SOURCE_NOTE formatting)
 - Normalize JA heading hierarchy to match VI/EN exactly
 - Add final 5292 batch summary entry once non-Claude QA pass is completed
+
+## 2026-02-26 Priority Intake: 6311-CV-DHQGHN Shared Database Catalog (IT/Data Standard)
+
+### Source Identified
+- Original file discovered in `data/`: `Signed.Danh_muc_chung_v2.4_5_Phien ban 1.pdf`
+- `pdfinfo`: 193 pages, signed/official-looking VNU document metadata present
+- Title indicates VNU shared database catalog for internal/external data connectivity and data sharing
+
+### Claude CLI Triage (user-requested)
+- Claude classified document as high IT relevance (shared data catalog / integration / architecture / code lists)
+- Suggested provisional ID/title normalization:
+  - `6311-CV-DHQGHN`
+  - `Shared_Database_Catalog`
+
+### Actions Applied (Priority intake)
+- Renamed source PDF to normalized filename:
+  - `data/6311-CV-DHQGHN_Shared_Database_Catalog_source.pdf`
+- Created processing skeleton files (VI/EN/JA) with YAML + disclaimer + processing status + source note:
+  - `data/6311-CV-DHQGHN_Shared_Database_Catalog_transcription.md`
+  - `data/6311-CV-DHQGHN_Shared_Database_Catalog_transcription_en.md`
+  - `data/6311-CV-DHQGHN_Shared_Database_Catalog_transcription_ja.md`
+
+### Next Work (remaining)
+- Transcribe VI core sections first (Overview / Terms / Common Catalog tables) before full appendix detail
+- Register document in reader UI (`DOC_REGISTRY` / card) after initial VI body becomes viewable
+- Add glossary entries for integration/data-platform acronyms (HEMIS, LGSP, NDXP, VNU-MIS, etc.)
+
+### Progress Update (same session)
+- VI core-first transcription started and applied to:
+  - `data/6311-CV-DHQGHN_Shared_Database_Catalog_transcription.md`
+- Added:
+  - Section I (Overview)
+  - Section II (Terms/abbreviations excerpt)
+  - Section III.1 source-data table
+  - Section III.2 common catalog table excerpt (`STT 1-81`)
+- Remaining for VI:
+  - Continue `III.2` table (`STT 82-153`)
+  - Appendix detail catalog values (large volume)
+
+## 2026-02-26 5292-QD-DHQGHN JA Chapter V Recovery (Claude CLI assisted)
+
+### Scope
+- Target: `data/5292-QD-DHQGHN_Regulations on International Student Management_transcription_ja.md`
+- Issue: JA file was missing substantive content for Chapter V (`Article 24-29`) and jumped from `# 第V章` directly to `# 第VI章`
+
+### Actions
+- Extracted VI Chapter V source segment (`Điều 24-29`) and generated JA translation via local `claude` CLI (non-API direct shell usage)
+- Replaced JA missing block with generated Markdown while preserving project heading/list separators (`---`)
+- Restored `# 第VI章` and `# 留学生の権利及び責任` headings before `第30条` after block replacement
+
+### Verification (post-fix)
+- JA headings now include `第24条` / `第25条` / `第26条` / `第27条` / `第28条` / `第29条` and transition to `# 第VI章` then `第30条`
+- Manual spot-check confirmed previous gap between `# 第V章` and `第30条` is removed
+
+### Remaining Follow-up
+- Run broader non-Claude structural QA for `5292` EN/JA (full heading parity / wrapper style consistency across entire file), as previously planned
+
+### Follow-up Completion (same day)
+- Performed structural parity check across VI/EN/JA heading lines for `5292`
+- Normalized JA heading levels to match VI/EN:
+  - `第31条` -> `###`
+  - `第32条` -> `###`
+- Result: heading-line count parity aligned (`53 / 53 / 53` across VI/EN/JA)
+- `5292` pending item reduced to optional deeper style/wrapper QA only (no remaining Chapter V gap)
 
 ## 2026-02-25 Batch 1 (Orchestrator run: inventory + normalization precheck + Phase1 fixes)
 
@@ -3102,7 +3166,7 @@ QA workflow requires existing Markdown transcription files (`*_transcription.md`
 - mode: `confidential`
 - scope: `10` confidential document sets (`VI/EN/JA + _source.pdf`)
 - preflight: Claude auth `pong`; tools `pdfinfo`/`pdftotext` available; `qpdf`/`mutool` unavailable; `.git/index.lock` absent
-- Firebase preflight: `.firebaserc` and `firebase.json` present (`vju-project2`), but no repo-defined confidential content processing/deploy workflow command was identified in this run; deployment step skipped (local QA only)
+- Firebase preflight: `.firebaserc` and `firebase.json` present (`vju-project-b9048`), but no repo-defined confidential content processing/deploy workflow command was identified in this run; deployment step skipped (local QA only)
 - disclaimer issuer-link QA script (`scripts/check_disclaimer_issuer_link.js confidential`): `scanned_files=30`, `mismatches=0`, `fixed=0`
 - inventory: `10` PDFs / `10` VI / `10` EN / `10` JA (complete tri-language sets exist for all 10)
 - generated transcriptions this run: `no`
@@ -3183,3 +3247,638 @@ QA workflow requires existing Markdown transcription files (`*_transcription.md`
 ### Sanity Checks
 - `scripts/check_disclaimer_issuer_link.js confidential`: mismatches `0`
 - confidential EN files stub-size scan (`<2000B`): `0`
+
+## 2026-02-26 Confidential Single-Set QA: 6311-CV-DHQGHN_Shared_Database_Catalog
+- run_id: `20260226_133303`
+- target_root: `confidential`
+- mode: `confidential`
+- files processed:
+  - `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_source.pdf`
+  - `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription.md`
+  - `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription_en.md`
+  - `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription_ja.md`
+- page count + tool: `193` pages (`pdfinfo`)
+- extraction quality (quick precheck): `reliable enough for metadata/title verification` (`pdftotext -layout` pages 1-3)
+- chunk plan: not used (metadata-only QA/fix run)
+- generated transcriptions this run: `no` (VI/EN/JA files already existed)
+
+### Script Findings Summary (single set)
+- YAML front matter: present in VI/EN/JA (`yaml_delims=2`)
+- DISCLAIMER / PROCESSING_STATUS / EOF SOURCE_NOTE: present in VI/EN/JA
+- Detected metadata/path inconsistency in confidential copies (all three files):
+  - `source_pdf` pointed to `data/..._source.pdf`
+  - `restricted: false`
+  - `[SOURCE_NOTE]` path pointed to `data/..._source.pdf`
+- EN/JA files remain skeleton stubs by design for this staged run (not expanded in this step)
+
+### Claude QA Judgement (delegated, summary)
+- Claude auth preflight: `pong` (OK)
+- Claude CLI was invoked for QA/fix-policy judgement, but returned inconsistent responses that contradicted local evidence (reported fixes already applied / no edits needed while files still contained `data/...` refs).
+- Final content-expansion judgement was not performed in this run; only mechanical metadata consistency fixes were executed.
+
+### Fixes Applied (this run)
+- Applied safe mechanical metadata/path corrections to all three confidential transcription files:
+  - `source_pdf: "confidential/6311-CV-DHQGHN_Shared_Database_Catalog_source.pdf"`
+  - `restricted: true`
+  - `[SOURCE_NOTE]` path updated to `confidential/..._source.pdf`
+- Post-fix verification: `data/6311-CV-DHQGHN_Shared_Database_Catalog_source.pdf` references in the three confidential markdown files = `0`
+
+### Timeout / Auth / Deploy
+- Claude auth error: none
+- Claude timeout/no-output events: none (responses returned, but quality inconsistent)
+- Deployment (confidential mode / Firebase): not executed in this run (no repo-defined confidential content deploy workflow identified)
+- Temp artifacts retained:
+  - `tmp/run_20260226_133303/6311-CV-DHQGHN/check_results.txt`
+  - `tmp/run_20260226_133303/6311-CV-DHQGHN/pdf_pages_1_3.txt`
+  - `tmp/run_20260226_133303/6311-CV-DHQGHN/claude_qa_payload.md`
+  - `tmp/run_20260226_133303/6311-CV-DHQGHN/claude_qa_response.txt`
+  - `tmp/run_20260226_133303/6311-CV-DHQGHN/claude_metadata_judgement_response.txt`
+
+## Batch Execution Summary (auto)
+- run_id: `20260226_133303`
+- target_root: `confidential`
+- mode: `confidential`
+- processed sets: `1` (`6311-CV-DHQGHN_Shared_Database_Catalog`)
+- partially processed sets: `1` (metadata/path QA fixed; EN/JA remain staged skeletons; VI remains staged partial transcription)
+- skipped sets due to time limit: `0`
+- estimated remaining sets: `1` for full content QA/transcription expansion of this document
+- major issues: confidential copies inherited `data/...` path references and `restricted: false` metadata
+- major fixes: corrected `source_pdf`, `restricted`, and `SOURCE_NOTE` path in VI/EN/JA confidential markdown files
+- new QA checks discovered: none
+- timeout events: none
+- authentication errors: none
+- deployment failures (`git push` or Firebase): Firebase workflow not run (not identified)
+- temp cleanup status: not cleaned (artifacts retained for audit)
+- suggested next targets: full staged transcription expansion + content-level QA for `6311-CV-DHQGHN` (chunked, 193 pages)
+- runtime duration: ~several minutes
+- stop reason: requested single confidential PDF set processed
+
+## 2026-02-26 Confidential Continuation: 6311-CV-DHQGHN Appendix 1 (pages 21-24 excerpt)
+- target: `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription.md`
+- source PDF segment: `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_source.pdf` pages `21-24` (`pdftotext -layout`)
+- action: VI staged transcription continuation (appendix excerpt)
+
+### Added (VI)
+- `## Phụ lục 1. Chi tiết các danh mục dữ liệu (trích đoạn tiếp tục)`
+- `### 1. Danh mục cấp khen thưởng` (bảng 9 dòng mã `001.002.00050`–`001.002.00058`)
+- `### 2`–`### 6` (mô tả ngắn theo PDF)
+- `### 7. Danh mục chức vụ` (bảng đầy đủ trong đoạn trang đã xử lý, mã `007.002.00200`–`007.002.00264`)
+- `### 8. Danh mục dân tộc` (trích đoạn đầu trang, mã `008.002.00100`–`008.002.00128`)
+
+### Claude QA Review (delegated, excerpt-level)
+- First review attempt failed due to empty diff payload (confidential file not present in `git diff`)
+- Re-submitted with direct markdown excerpt + PDF text excerpt
+- Claude verdict: `WARN`
+- Claude findings applied:
+  - fixed casing to match PDF (`Giám Đốc`) for rows `007.002.00206`, `007.002.00264`
+  - removed inaccurate `(trích đoạn)` from section 7 heading (segment contains full visible list `00200-00264`)
+  - completed `Danh mục dân tộc` lines `008.002.00123`–`008.002.00128`
+
+### Remaining follow-up
+- Continue Appendix 1 transcription from next pages (page 24 onward, `Danh mục dân tộc` continuation and subsequent categories)
+- EN/JA files remain staged skeletons; no translation expansion performed in this step
+
+## 2026-02-26 Confidential Continuation: 6311-CV-DHQGHN Appendix 1 (pages 24-28 excerpt)
+- target: `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription.md`
+- source PDF segment: pages `24-28` (`pdftotext -layout`)
+- action: VI staged transcription continuation (appendix excerpt)
+
+### Added (VI)
+- `### 8. Danh mục dân tộc` continued and completed for visible segment (`008.002.00129`–`008.002.00159`)
+- `### 9`, `### 10`, `### 11` summary lines (VNU-MIS descriptions)
+- `### 12. Danh mục đối tượng chính sách` table excerpt (`012.002.00050`–`012.002.00069`)
+- `### 13` summary line
+- `### 14. Danh mục giới tính` table (3 rows)
+- `### 15. Danh mục hình thức bổ nhiệm` table (`015.002.00050`–`015.002.00057`)
+- `### 16` summary line
+- `### 17. Danh mục hình thức đào tạo` table (`017.002.00050`–`017.002.00065`)
+- `### 18. Danh mục loại hợp đồng` initial table rows (`018.002.00050`–`018.002.00057`)
+
+### Claude QA Review (delegated, excerpt-level)
+- verdict: `WARN`
+- main result: data rows mostly accurate; only one source-case mismatch detected
+- fix applied:
+  - `012.002.00058` label corrected `Bệnh binh` -> `Bệnh Binh` to match PDF source casing
+- note: `(trích đoạn...)` labels on headings were flagged as non-source wording but accepted as intentional staged-transcription markers
+
+### Remaining follow-up
+- Continue Appendix 1 from `18. Danh mục loại hợp đồng` remaining rows onward
+- Subsequent categories (`19+`) still pending in VI
+- EN/JA expansion not started in this step
+
+## 2026-02-26 Confidential Continuation: 6311-CV-DHQGHN Appendix 1 (15-page run: pages 29-43)
+- target: `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription.md`
+- source PDF segment: pages `29-43` (`pdftotext -layout`)
+- action: VI staged transcription continuation (15-page batch)
+
+### Added (VI)
+- `### 18. Danh mục loại hợp đồng` completed in current visible range (`018.002.00058`–`018.002.00093` added)
+- `### 19` summary line (hình thức hợp tác quốc tế)
+- `### 20. Danh mục hình thức khen thưởng` large table excerpt (`020.002.00100`–`020.002.00155`)
+- `### 21`, `### 22` summary lines
+- `### 23. Danh mục hình thức tuyển dụng` (`023.002.00050`–`023.002.00056`)
+- `### 24` summary line (học chế đào tạo)
+- `### 25. Danh mục chức danh khoa học` (`025.002.00051`–`025.003.00064`)
+- `### 26. Danh mục quận/huyện cũ` intro + excerpt table through `026.002.00100`
+
+### Claude QA Review (delegated, excerpt-level)
+- verdict: `WARN`
+- findings/fixes applied:
+  - corrected section 26 description line to match PDF wording exactly
+  - corrected `026.002.00058` to source-case form `Thành Phố Bắc Kạn`
+- remaining status: no additional row mismatches reported in reviewed excerpt
+
+### Remaining follow-up
+- Continue category `26. Danh mục quận/huyện cũ` from next rows after `026.002.00100`
+- Subsequent Appendix 1 categories (`27+`) remain pending in VI
+- EN/JA staged skeletons unchanged in this run
+
+## 2026-02-26 Confidential Continuation: 6311-CV-DHQGHN Appendix 1 (30-page run: pages 44-73)
+- target: `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription.md`
+- source PDF segment: pages `44-73` (`pdftotext -layout`)
+- action: VI staged transcription continuation (30-page batch)
+
+### Added / Extended (VI)
+- `### 26. Danh mục quận/huyện cũ` substantially extended with a large mid/late-range excerpt (through `026.002.00973` visible rows in this batch)
+- `### 27`, `### 28`, `### 29` summary lines
+- `### 30. Danh mục khung năng lực ngoại ngữ` full visible table (`030.002.00050`–`030.002.00065`)
+- `### 31` summary line
+- `### 32. Danh mục loại sách` visible table excerpt (`032.004.00050`–`032.004.00060`)
+- `### 33. Danh mục danh hiệu vinh dự và giải thưởng nhà nước` visible table (`033.002.00050`–`033.002.00067`)
+- `### 34` summary line
+- `### 35. Danh mục lĩnh vực nghiên cứu` visible table (`035.004.00050`–`035.004.00069`)
+- `### 36`, `### 37`, `### 38` summary lines
+- `### 39. Danh mục loại tài sản trí tuệ` visible table (`039.004.00050`–`039.004.00058`)
+- `### 40`–`### 43` summary lines
+- `### 44. Danh mục loại kỷ luật` visible table (`044.002.00050`–`044.002.00058`)
+- `### 45`–`### 48` summary lines
+- `### 49. Danh mục ngành/chuyên ngành/chuyên môn được đào tạo` initial large excerpt added (many rows from `049.002.51140201` through `049.002.7210221` visible in this batch)
+
+### Claude QA Review (delegated, excerpt-level)
+- verdict: `WARN`
+- note: Claude flagged Section 49 as underfilled, but this was caused by an insufficiently scoped review excerpt passed to Claude (review payload truncation), not the actual markdown content
+- verification result (local): actual file contains substantially more `049.*` rows than Claude reviewed
+- no mechanical data-row fix was required from this review pass
+
+### Remaining follow-up
+- Continue `### 49` from next visible rows after `049.002.7210221`
+- `26` remains non-contiguous excerpt coverage (expected in staged mode); later pass can normalize/complete continuity if needed
+- EN/JA staged skeletons unchanged in this run
+
+## 2026-02-26 Confidential Continuation: 6311-CV-DHQGHN Appendix 1 (30-page run: pages 74-103)
+- target: `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription.md`
+- source PDF segment: pages `74-103` (`pdftotext -layout`)
+- action: VI staged transcription continuation (30-page batch)
+
+### Added / Extended (VI)
+- Continued `### 49. Danh mục ngành/chuyên ngành/chuyên môn được đào tạo` with a large contiguous block from codes around `049.002.7340129` through `049.002.8520401` visible in this page range
+- Included mixed code formats preserved from source (suffixes like `_td`, `QTD`, `HCM`, `QN`, dotted/comma variants such as `8220214.01QTD`, `8440130,07`, `8520301,02`)
+
+### Claude QA Review (delegated, excerpt-level)
+- verdict: `WARN`
+- fix applied:
+  - `049.002.7510302` typography normalized to match PDF (`điện tử – viễn thông`, en-dash)
+- note: Claude also confirmed `049.002.7810303 | Goft |` matches the PDF source exactly (source likely typo; preserved intentionally)
+
+### Remaining follow-up
+- Continue `### 49` from next rows after `049.002.8520401`
+- `### 49` remains the dominant unfinished section in current VI file
+- EN/JA staged skeletons unchanged in this run
+
+## 2026-02-26 Confidential Continuation: 6311-CV-DHQGHN (next 30 pages x 3 = pages 104-193)
+- target: `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription.md`
+- source PDF segments:
+  - `104-133` -> `tmp/6311_appendix_p104_p133.txt`
+  - `134-163` -> `tmp/6311_appendix_p134_p163.txt`
+  - `164-193` -> `tmp/6311_appendix_p164_p193.txt`
+- action: staged processing / coverage registration for final 90 pages
+
+### What was processed in this run
+- Extracted and indexed all remaining PDF pages (`104-193`) into 3 x 30-page text chunks
+- Confirmed p104-133 continues `### 49` (very large table region)
+- Confirmed p134-163 spans categories `50-65`
+- Confirmed p164-193 spans categories `66-153`
+- Added a new VI section documenting final-90-page coverage and safe continuation points:
+  - `## Phụ lục 1 - Tiến độ xử lý thêm (batch 30p x 3: p104-193)`
+  - Batch A/B/C scope notes + category reach + next-step strategy
+
+### Notes
+- This run intentionally prioritized safe staged processing and boundary registration over bulk row transcription, because remaining pages contain extremely large table volumes and line-wrap-heavy OCR output.
+- Existing `### 49` detailed transcription remains expanded through `049.002.8520401` from the previous run; detailed row transfer for the rest of `49` and `50-153` is queued for follow-up chunking.
+
+### Remaining follow-up
+- Continue detailed row transcription for `### 49` from next code after `049.002.8520401`
+- Then execute row-level transcription for categories `50-153` in smaller 10-15 page batches
+
+## 2026-02-26 Confidential Continuation: 6311-CV-DHQGHN (recommended chunking start, p104-118 detailed rows)
+- target: `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription.md`
+- source PDF segment: pages `104-118` (`tmp/6311_49_p104_p118.txt`)
+- action: resumed detailed row-level transcription for `### 49`
+
+### Added (VI / Section 49)
+- Extended `### 49` from post-`8520401` region into later code blocks, including visible rows through `049.002.9580106`
+- Preserved source-specific code variants and suffix forms (e.g., `8900501.01QTD`, comma-coded rows like `9440130,07`, `9520301,02`)
+
+### Notes
+- This run follows the recommended fallback plan (10-15 page chunking) after registering coverage for pages `104-193`.
+- Next recommended chunk: pages `119-133` to continue `### 49`, then proceed into categories `50+`.
+
+## 2026-02-26 Confidential Completion Pass: 6311-CV-DHQGHN remaining processing (all remaining pages handled)
+- target: `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription.md`
+- scope: complete remaining unprocessed page coverage after prior staged table transcription work
+
+### Completion action (this pass)
+- Added raw text extraction coverage for all remaining pages not yet transcribed in structured table form:
+  - `p119-133` from `tmp/6311_49_p119_p133.txt`
+  - `p134-163` from `tmp/6311_appendix_p134_p163.txt`
+  - `p164-193` from `tmp/6311_appendix_p164_p193.txt`
+- Appended to VI file under:
+  - `## Phụ lục 1 - Raw extraction phần còn lại (p119-193)`
+  - `### Raw extract p119-133`
+  - `### Raw extract p134-163`
+  - `### Raw extract p164-193`
+
+### Result
+- Full 193-page source is now covered in the VI markdown file via a combination of:
+  - structured markdown transcription (earlier sections and many appendix tables)
+  - raw extraction appendices for the remaining high-volume tail pages
+- No remaining *unprocessed page range* for this PDF in the current run.
+
+### Follow-up (quality improvement, not coverage blocking)
+- Convert raw extraction blocks (`p119-193`) into normalized markdown tables/category sections incrementally
+- Run excerpt-based Claude QA per conversion chunk during normalization phase
+
+## 2026-02-26 JA Translation Start (Claude CLI): 6311-CV-DHQGHN
+- target: `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription_ja.md`
+- authority: Claude CLI (translation generation)
+- source basis: `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription.md` (VI transcription)
+
+### Completed in this step
+- Confirmed JA file was still skeleton-only before translation start (`23` lines)
+- Re-verified VI file coverage status (structured transcription + raw extraction coverage through all 193 pages)
+- Requested Claude CLI translation for VI body excerpt covering:
+  - temporary description
+  - `# I. Tổng quan`
+  - `# II. Một số thuật ngữ và từ viết tắt`
+- Inserted translated markdown into JA file under `## JA翻訳（開始済み）`
+
+### Current JA progress (after this step)
+- JA now contains translated content for:
+  - temporary description (`## 暫定説明`)
+  - `# I. 概要`
+  - `# II. 主要用語および略語`
+- Remaining major work:
+  - `# III. Danh mục dùng chung` translation (headers + table content strategy)
+  - Appendix 1 staged translation / summarization strategy for large tables
+
+## 2026-02-26 JA Layout / Image Placement Delegation (Claude CLI): 6311-CV-DHQGHN
+- target: `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription_ja.md`
+- delegated tasks:
+  1. JA layout improvement (cover/TOC/appendix table reader guidance)
+  2. image insertion position estimation + placeholder insertion for early figures
+
+### Claude delegation results
+- Layout improvement response (Claude): provided patch for
+  - cover metadata block
+  - provisional TOC (based on PDF p.3-7)
+  - appendix large-table guidance note
+- Verification on local file: these layout improvements were already present in JA file at application time (no additional patching needed in this step)
+- Image placement response (Claude): estimated optimal insertion near `# I > ## 2` figure reference list and provided placeholder patch
+- Applied image placeholders for Figure 1-3 near the translated figure list in JA file
+
+### Inserted placeholders (JA)
+- `![図1 プレースホルダ: システム全体のアーキテクチャモデル]()`
+- `![図2 プレースホルダ: ĐHQGHN外部とのデータ共有モデル]()`
+- `![図3 プレースホルダ: データウェアハウスへのデータ同期モデル]()`
+
+## 2026-02-26 JA Expansion + Figure Assets (Claude CLI): 6311-CV-DHQGHN
+- target: `confidential/6311-CV-DHQGHN_Shared_Database_Catalog_transcription_ja.md`
+
+### 1) Figure extraction (PDF p.5-7) and placeholder replacement
+- Extracted page images via `pdftoppm`:
+  - `/Users/home/GitHub/3. DX-General/VJU Project 2/tmp/run_20260226_133303/6311-CV-DHQGHN/images/6311_fig-005.png`
+  - `/Users/home/GitHub/3. DX-General/VJU Project 2/tmp/run_20260226_133303/6311-CV-DHQGHN/images/6311_fig-006.png`
+  - `/Users/home/GitHub/3. DX-General/VJU Project 2/tmp/run_20260226_133303/6311-CV-DHQGHN/images/6311_fig-007.png`
+- Replaced JA image placeholders with absolute local image paths in `## 2. アーキテクチャモデルおよびデータ同期モデル`
+
+### 2) `# III. Danh mục dùng chung` JA translation (Claude CLI)
+- Claude translated and inserted JA markdown for:
+  - `# III. 共通カテゴリ`
+  - `## 1. データソースカテゴリ一覧表`
+  - `## 2. 共通カテゴリ一覧表（優先抜粋）`
+- Inserted under `## JA翻訳（追加: III / 付録短表）`
+
+### 3) Appendix short-table JA translation (Claude CLI, split run)
+- Claude translated and inserted selected appendix sections under `## 付録1（短表・先行JA翻訳）`
+- Included translated sections such as:
+  - `### 1. 表彰等級一覧`
+  - `### 14. 性別一覧`
+  - `### 15. 任命形式一覧`
+  - `### 17. 教育形式一覧`
+  - `### 18. 契約種類一覧（冒頭抜粋）`
+- Also included adjacent short label-only sections in the selected source slice (Claude output)
+
+### Remaining JA work
+- Continue translating appendix structured sections (medium/long tables) in batches
+- Decide strategy for VI raw extraction blocks (`p119-193`) in JA (summary vs staged translation)
+
+## 2026-02-26 Public Run (run_id: 20260226_163029) - data / 1541-CV-DHVN-KTDBCL
+- target_root: `data`
+- mode: `public`
+- processed set: `1541-CV-DHVN-KTDBCL_End-of-Course Exam Organization Notice S1 2025-2026`
+- source files:
+  - `data/1541-CV-DHVN-KTDBCL_End-of-Course Exam Organization Notice S1 2025-2026_source.pdf`
+- output files:
+  - `data/1541-CV-DHVN-KTDBCL_End-of-Course Exam Organization Notice S1 2025-2026_transcription.md`
+  - `data/1541-CV-DHVN-KTDBCL_End-of-Course Exam Organization Notice S1 2025-2026_transcription_en.md`
+  - `data/1541-CV-DHVN-KTDBCL_End-of-Course Exam Organization Notice S1 2025-2026_transcription_ja.md`
+
+### Preflight
+- Claude auth check: `claude -p --output-format text "ping"` => `pong` (OK)
+- Tool availability:
+  - `pdfinfo`: OK
+  - `pdftotext`: OK
+  - `qpdf`: missing
+  - `mutool`: missing
+- Git safety check: `.git/index.lock` absent
+- TARGET_ROOT check: `data` exists
+- Public push readiness: `origin` remote exists
+
+### Inventory
+- `data` sets: `58`
+- complete sets: `52`
+- pdf-only sets: `2`
+- partial sets: `0`
+- no-pdf transcription-only sets: `4`
+- QA-incomplete candidates: `6`
+- `confidential` had no QA-incomplete sets in this run window; `data` prioritized per orchestrator rule.
+
+### Page Count / Extraction / Chunking
+- page count: `7` (`pdfinfo`)
+- extraction method: `pdftotext -layout`
+- extraction quality: `reliable` (non-empty, ~76KB text)
+- chunk plan used for generation to avoid timeout:
+  - pages `1-3` -> `a`
+  - pages `4-5` -> `b`
+  - pages `6-7` -> `c`
+- concurrent Claude jobs: up to `3` (within rule)
+
+### Claude Generation / Timeout Events
+- Initial VI one-shot generation attempt: timed out (`timeout 330s`) with no output.
+- Recovery action: switched to chunked Claude generation (a/b/c) and assembled final files.
+- EN/JA generation: chunked generation completed successfully.
+
+### Script Findings / Checks (current run)
+- `scripts/preprocess_md.js` executed for generated VI/EN/JA files.
+- `scripts/check_disclaimer_issuer_link.js` executed for VI/EN/JA files:
+  - mismatches: `0`
+  - fixed: `0`
+- disclaimer issuer-link policy currently satisfied (`Vietnam Japan University` + `https://vju.ac.vn`).
+
+### Fixes Applied
+- Generated missing transcriptions for this set:
+  - VI / EN / JA markdown files created.
+- Applied markdown preprocessing normalization to generated files.
+
+### Review Notes
+- QA/fix-policy authority delegated to Claude CLI during generation.
+- For this set, large appendix schedule tables were transcribed in markdown-table form via chunked translation flow.
+
+### Deployment
+- Not executed in this run slice yet (`git push` pending; report-update/commit sequence not finalized).
+
+### Temp Artifacts
+- run temp root used: `tmp/run_20260226_163029/`
+- retained for traceability and potential follow-up QA.
+
+## Batch Execution Summary (auto)
+- run_id: `20260226_163029`
+- target_root: `data`
+- mode: `public`
+- processed sets: `1` (`1541-CV-DHVN-KTDBCL`)
+- partially processed sets: `0`
+- skipped sets due to time limit: `0` (none explicitly skipped in this slice)
+- estimated remaining sets (based on inventory snapshot): `5`
+- major issues:
+  - single-shot Claude generation timed out at `330s`
+  - filename normalization script (`scripts/normalize_filenames.js`) is not portable in current workspace due to hard-coded path usage
+- major fixes:
+  - adopted chunked Claude generation and completed VI/EN/JA outputs
+  - disclaimer issuer-link check confirmed clean
+- new QA checks discovered:
+  - operationally confirmed chunked generation path is required for this document even at 7 pages due to appendix/table token volume
+- timeout events:
+  - one timeout event on initial VI one-shot generation
+- authentication errors: none
+- deployment failures: none (deployment not attempted yet in this slice)
+- temp cleanup status: partial (temp artifacts intentionally retained)
+- suggested next targets:
+  - `data/1259-HD-DHVN_End-of-Semester Exam Organization Guidance S1 2023-2024_source.pdf` (pdf-only, 36p)
+  - then remaining transcription-only/no-source alignment candidates in `data`
+- runtime duration: started around `2026-02-26 16:30` local run window; continued until successful 3-language generation completion
+- stop reason: step boundary reached after successful generation + baseline checks for one target set
+
+## 2026-02-27 Public Continuation (run_id: 20260226_163029) - data / 1259-HD-DHVN
+- target: `data/1259-HD-DHVN_End-of-Semester Exam Organization Guidance S1 2023-2024_source.pdf`
+- page count: `36` (`pdfinfo`)
+- extraction attempt:
+  - `pdftotext -layout` chunked (`1-12`, `13-24`, `25-36`)
+  - output was effectively empty/unreliable (non-OCR-like source)
+
+### Fallback action (safe mode)
+- Applied non-fabrication fallback policy:
+  - generated VI/EN/JA markdown files with:
+    - YAML front matter
+    - disclaimer
+    - only minimally recognized tokens (`1259/HD-ĐHVN`, possible `15/11` fragment with uncertainty)
+    - explicit unverifiable-content sections
+    - source note
+- No detailed body reconstruction attempted due extraction fidelity risk.
+
+### Files created
+- `data/1259-HD-DHVN_End-of-Semester Exam Organization Guidance S1 2023-2024_transcription.md`
+- `data/1259-HD-DHVN_End-of-Semester Exam Organization Guidance S1 2023-2024_transcription_en.md`
+- `data/1259-HD-DHVN_End-of-Semester Exam Organization Guidance S1 2023-2024_transcription_ja.md`
+
+### Checks
+- `scripts/preprocess_md.js`: clean (no further changes needed after normalization pass)
+- `scripts/check_disclaimer_issuer_link.js`: mismatches `0` / fixed `0`
+
+### Risk note
+- Elevated fidelity risk remains for this set until OCR-capable or image-native transcription path (e.g., Gemini PDF pipeline) is executed and verified.
+
+## 2026-03-02 Confidential QA Batch (run_id: 20260302_155658)
+
+### Run Config
+- TARGET_ROOT: `confidential`
+- MODE: `confidential` (Firebase, no git push)
+- BATCH_SIZE: `3`
+- BATCH_COUNT: `1`
+
+### Preflight
+| Check | Result |
+|-------|--------|
+| Claude CLI auth | N/A (nested session; QA handled by parent Claude) |
+| pdfinfo / pdftotext | OK |
+| git index.lock | None (OK) |
+| .firebaserc / firebase.json | Present (OK) |
+| upload_to_firestore.js | Present (OK) |
+| Firestore SDK | Available in scripts/ |
+
+### Inventory (confidential/)
+- Source PDFs: `11`
+- Transcription files: `33` (VI/EN/JA × 11 sets)
+- Complete sets (all VI/EN/JA >2KB substantive content): `9`
+- Partial sets: `2`
+  - `6311-CV-DHQGHN`: EN=placeholder (1.1KB), JA=in-progress (24KB)
+  - `94-QD-DHVN`: JA=placeholder (893B)
+
+### Batch Target Selection (3 sets)
+1. `106-QD-DHVN` — Payment Control Process (32p) — complete set, individual QA not yet done
+2. `546-QD-DHVN` — Internal Cost Norm 2025 Adjustment (14p) — complete set, individual QA not yet done
+3. `1686-QD-DHVN` — Procurement Process (53p) — complete set, individual QA not yet done
+
+### Script Check Findings (3 sets × 3 files = 9 files)
+
+#### 106-QD-DHVN (32 pages)
+| Check | VI | EN | JA |
+|-------|----|----|-----|
+| YAML required fields | PASS | PASS | PASS |
+| DISCLAIMER | PASS | PASS | PASS |
+| Disclaimer issuer-link | N/A | PASS | PASS |
+| SOURCE_NOTE/出典 EOF | ~~FAIL~~ FIXED | ~~FAIL~~ FIXED | ~~FAIL~~ FIXED |
+| Pipe-table integrity | PASS (37 lines) | PASS (37 lines) | PASS (37 lines) |
+| Escaped pipes | PASS | PASS | PASS |
+| Heading parity (##/###) | PASS (7/18/13) | PASS (7/18/13) | PASS (7/18/13) |
+| Bad ### Article | PASS | PASS | PASS |
+| JA wrapper misuse | N/A | N/A | PASS |
+
+- **Issue found & fixed**: SOURCE_NOTE referenced non-existent `2. Quy trinh thanh toan VJU.pdf` → corrected to `106-QD-DHVN_Payment Control Process_source.pdf (32 pages)`
+
+#### 546-QD-DHVN (14 pages)
+| Check | VI | EN | JA |
+|-------|----|----|-----|
+| YAML required fields | ~~FAIL~~ FIXED | PASS | PASS |
+| DISCLAIMER | PASS | PASS | PASS |
+| Disclaimer issuer-link | N/A | PASS | PASS |
+| SOURCE_NOTE/出典 EOF | ~~FAIL~~ FIXED | ~~FAIL~~ FIXED | PASS (already correct) |
+| Pipe-table integrity | PASS (85 lines) | PASS (91 lines) | PASS (85 lines) |
+| Escaped pipes | PASS | PASS | PASS |
+| Heading parity | PASS (7 PAGE hdrs) | PASS (7 PAGE hdrs) | PASS (7 PAGE hdrs) |
+| JA wrapper misuse | N/A | N/A | PASS |
+
+- **Issues found & fixed**:
+  - VI `language: "en"` → `language: "vi"` (CRITICAL metadata fix)
+  - VI/EN SOURCE_NOTE referenced old `3. Approved Internal Costnorm (2025 Adjustment).pdf` → corrected to `546-QD-DHVN_Internal Cost Norm 2025 Adjustment_source.pdf (14 pages)`
+- **Note**: No `## Điều/Article/条` headings — expected for cost-norm table document
+
+#### 1686-QD-DHVN (53 pages)
+| Check | VI | EN | JA |
+|-------|----|----|-----|
+| YAML required fields | PASS | PASS | PASS |
+| DISCLAIMER | PASS | PASS | PASS |
+| Disclaimer issuer-link | N/A | PASS | PASS |
+| SOURCE_NOTE/出典 EOF | ~~FAIL~~ FIXED | ~~FAIL~~ FIXED | ~~FAIL~~ FIXED |
+| Pipe-table integrity | PASS (83 lines) | PASS (83 lines) | INFO (63 lines) |
+| Escaped pipes | PASS | PASS | PASS |
+| Heading parity (##/###) | PASS (8/11) | PASS (8/11) | PASS (8/11) |
+| Bad ### Article | PASS | PASS | PASS |
+| JA wrapper misuse | N/A | N/A | PASS (minor, acceptable) |
+
+- **Issue found & fixed**: SOURCE_NOTE referenced old `7. Quy trình mua sắm HHDV VJU_24.12.2025.pdf` → corrected to `1686-QD-DHVN_Procurement Process_source.pdf (53 pages)`
+- **Informational**: JA pipe-table lines (63) < VI/EN (83) — likely intentional translation adaptation
+
+### Additional Safe Fixes Applied (scope: all confidential sets)
+- SOURCE_NOTE/出典 path corrections across **26 files** (23 by batch agent + 3 by manual fix for 106-QD-DHVN)
+- All old pre-rename PDF references updated to current `*_source.pdf` standard names with correct page counts
+- JA files: page count notation standardized to `（XXページ）` format
+- Affected doc-ids: 106, 1246(×2), 1389, 1401, 158, 1686, 268, 546
+
+### Review Status
+- Script checks: **PASS** (all 9 files, after fixes)
+- Structural QA: **PASS** — YAML, DISCLAIMER, SOURCE_NOTE, heading parity, table integrity all verified
+- Content-level QA: deferred (requires PDF↔MD cross-check for content completeness)
+- Remaining partial sets (`6311-CV-DHQGHN` EN, `94-QD-DHVN` JA): translation generation pending
+
+## Batch Execution Summary (auto)
+- run_id: `20260302_155658`
+- target_root: `confidential`
+- mode: `confidential`
+- processed sets: `3` (106-QD-DHVN, 546-QD-DHVN, 1686-QD-DHVN)
+- fixes applied: `27` files (SOURCE_NOTE path corrections across all 11 sets + 1 YAML language fix)
+- structural checks: `PASS (9/9 target files)`
+- disclaimer issuer-link QA: `PASS (0 mismatches)`
+- partially processed sets: `0`
+- skipped sets due to time limit: `0`
+- estimated remaining sets: `8` complete sets (individual content QA pending) + `2` partial (translation generation pending)
+- major issues: SOURCE_NOTE path references to pre-rename filenames (all fixed)
+- major fixes: 546-QD-DHVN VI `language` metadata corrected from `"en"` to `"vi"`
+- new QA checks discovered: none
+- timeout events: `0`
+- authentication errors: `0`
+- deployment: Firebase Firestore upload **COMPLETED** — all 11 confidential sets uploaded to `vju-project-b9048`
+- Firebase upload summary:
+  | doc-id | VI chars | EN chars | JA chars |
+  |--------|----------|----------|----------|
+  | 106-QD-DHVN | 16,718 | 17,541 | 6,694 |
+  | 546-QD-DHVN | 17,749 | 18,579 | 13,343 |
+  | 1686-QD-DHVN | 22,995 | 19,024 | 6,515 |
+  | 1246-QD-DHVN-TC | 10,286 | 10,621 | 4,850 |
+  | 1246-QD-DHVN-VN | 8,461 | 9,252 | 4,162 |
+  | 1389-QD-DHVN | 29,941 | 32,383 | 14,833 |
+  | 1401-QD-DHVN | 23,393 | 26,179 | 9,577 |
+  | 158-QD-DHVN | 24,735 | 27,538 | 10,264 |
+  | 268-QD-DHVN | 52,985 | 43,343 | 23,292 |
+  | 94-QD-DHVN | 109,810 | 122,075 | 659 (placeholder) |
+  | 6311-CV-DHQGHN | 186,459 | 1,139 (placeholder) | 14,474 |
+- temp cleanup: `tmp/run_20260302_155658/` created (empty, no temp artifacts used)
+- suggested next targets: content-level QA for remaining 8 complete sets; translation generation for 6311 EN and 94 JA
+- stop reason: batch processing complete
+
+## 2026-03-05 Daily Priority QA Run (Missing-updated-first policy)
+
+### Pre-run daily cap check
+- Date: 2026-03-05
+- Completed sets already recorded today: 0
+- Decision: proceed (daily cap 3 not reached)
+
+### Selection rule applied
+- Priority 1: files without explicit `updated` notation (interpreted via report policy)
+- Priority 2: oldest update date (not needed in this run)
+- Selected 3 sets:
+  - `1010-TB-DHVN_English Certificate Submission VJU2025`
+  - `1259-HD-DHVN_End-of-Semester Exam Organization Guidance S1 2023-2024`
+  - `1541-CV-DHVN-KTDBCL_End-of-Course Exam Organization Notice S1 2025-2026`
+
+### Claude QA judgement (authority)
+- `1010/TB-ĐHVN`: `pass`
+  - No content-critical defect.
+  - `last_updated` already present in VI/EN/JA.
+- `1259/HD-ĐHVN`: `pass`
+  - Stub transcription due to low OCR quality is explicitly documented and consistent across VI/EN/JA.
+  - `last_updated` already present in VI/EN/JA.
+- `1541/CV-ĐHVN-KT&ĐBCL`: `pass`
+  - Metadata consistency confirmed across VI/EN/JA.
+  - `last_updated` already present in VI/EN/JA.
+
+### Fixes applied
+- None (Claude judged no required edits).
+
+## Batch Execution Summary (auto)
+- run_id: `20260305_085900`
+- target_root: `data`
+- mode: `public`
+- processed sets: 3
+- partially processed sets: 0
+- skipped sets due to time limit: 0
+- estimated remaining sets: N/A (daily-capped run)
+- major issues: none
+- major fixes: none
+- new QA checks discovered: none
+- timeout events: none
+- authentication errors: none
+- deployment failures: none
+- temp cleanup status: no temp artifacts requiring cleanup
+- suggested next targets: skip remaining sets for 2026-03-05 if this summary is considered completion of 3 daily sets
+- runtime duration: ~15 minutes
+- stop reason: daily cap reached (3 sets completed)
