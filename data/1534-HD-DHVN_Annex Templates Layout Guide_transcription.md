@@ -10,6 +10,7 @@ version:
 - vi
 - source
 lang: vi
+last_updated: 2026-03-05
 ---
 <div class="source-note" role="note" aria-label="Ghi chú nguồn">Tệp này được tạo dựa trên nội dung công khai.  
 Do hạn chế kỹ thuật, việc tái tạo bố cục và nội dung có thể không chính xác.  

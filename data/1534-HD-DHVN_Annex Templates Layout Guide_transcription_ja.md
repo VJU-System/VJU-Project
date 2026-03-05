@@ -10,6 +10,7 @@ version:
 - vi
 - source
 lang: ja
+last_updated: 2026-03-05
 ---
 <div class="source-note" role="note" aria-label="出典メモ">このファイルは公開された内容を参考に作成しています。  
 技術的な問題で、レイアウトや内容の再現が正確でない可能性があります。  
