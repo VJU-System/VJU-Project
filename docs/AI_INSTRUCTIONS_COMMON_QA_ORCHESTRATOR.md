@@ -354,6 +354,12 @@ Gemini check prompt should explicitly ask questions like:
 5. Is title-page layout (center alignment, stacked headers, document number/date line, title/subtitle) reflected in Markdown in a way that preserves meaning and reading order?
 6. Are there visually important formatting cues (centered headings, italic legal-basis paragraphs, side-by-side header rows, tables) that were flattened or distorted incorrectly?
 
+Preferred model for this step:
+- **Gemini 3.x Flash Preview 系** (PDF↔MD cross-check に最優先で使用)
+  - 現時点: `gemini-3.0-flash-preview`（3.1 公開後は最新の 3.x-flash-preview に更新）
+- Fallback: Claude → `gemini-2.5-pro` → `gemini-2.5-flash-lite`
+- CLI invocation example: `gemini --model gemini-3.0-flash-preview -p "..."`
+
 Operational rules for this step:
 - Gemini is an additional checker, not a replacement for Claude judgement authority in this workflow.
 - Treat Gemini findings as supplemental evidence for Claude-directed fixes/review decisions.
@@ -465,6 +471,19 @@ Batch summary (`## Batch Execution Summary (auto)`) must include:
 - stop reason
 
 --------------------------------------------------------------------
+DAILY TARGET SELECTION POLICY (MANDATORY)
+
+The orchestrator MUST apply the following rules when selecting document-sets for each day's QA run:
+
+1. Daily cap: Process a maximum of 3 document-sets per day. Once 3 sets have been completed for the current date, skip further processing for the day.
+2. Pre-run completion check: Before selecting targets, the orchestrator MUST check `docs/qa_report_master.md` for the number of document-sets already completed on the current date (by matching the date in batch execution summaries or per-set completion timestamps). If the count is already >= 3, the orchestrator SHOULD report "Daily cap reached" and exit without processing.
+3. Selection priority order:
+   - Highest priority: Document-sets with no `updated` date recorded in `docs/qa_report_master.md` (i.e., never QA'd).
+   - Second priority: Document-sets with the oldest `updated` date in `docs/qa_report_master.md`.
+4. Among candidates at the same priority level, the orchestrator SHOULD prefer sets in `data` over `confidential` (consistent with the existing target-root selection priority rule).
+5. The daily cap of 3 applies across all batches and all modes executed on the same calendar date. The orchestrator MUST NOT circumvent this limit by splitting into multiple independent runs.
+
+--------------------------------------------------------------------
 START NOW
 
 Begin with Batch 1 preflight using:
@@ -480,6 +499,30 @@ Remember:
 ```
 
 ---
+
+## Infrastructure Configuration
+
+### Firebase Project (updated 2026-03-02)
+- **Project ID**: `vju-project-b9048`
+- **Display Name**: `VJU-Project`
+- **Account**: `auto.cal@vju.ac.vn` (業務用アカウント)
+- **Firestore Location**: `asia-southeast1`
+- **Plan**: Spark (free)
+- **Previous project**: `vju-project2` (deprecated, do not use)
+- **Previous account**: `y.hino@vju.ac.vn` (個人アカウント, deprecated)
+- Config files: `.firebaserc`, `firebase.json`, `firestore.rules`
+- Upload script: `scripts/upload_to_firestore.js` (projectId: `vju-project-b9048`)
+- Firestore data structure: `docs/{docId}/content/{lang}` (lang = vi, en, ja)
+- Security rules: public collection open read; `docs/` restricted to `@vju.ac.vn` authenticated users
+
+### index.html UI Language Switcher (added 2026-03-02)
+- The home page (`index.html`) supports card title switching between EN/VI/JA
+- Language switcher buttons are in the nav bar (`#ui-lang-switcher`)
+- State variable: `uiLang` ('en' | 'vi' | 'ja'), default 'en'
+- Helper function: `getLocalizedTitle(doc)` reads `title_vi` / `title_ja` from DOC_REGISTRY
+- DOC_REGISTRY entries include `title_vi` and `title_ja` fields (18 of 20 entries; 2 restricted/unavailable entries fall back to English)
+- VI/JA titles are sourced from the YAML front matter `title` field of `*_transcription.md` / `*_transcription_ja.md`
+- When adding new documents to DOC_REGISTRY, always include `title_vi` and `title_ja` fields extracted from the corresponding transcription MD files
 
 ## Notes
 - This prompt intentionally supports both public and confidential workflows with the same logic, controlled by `TARGET_ROOT` and `MODE`.
