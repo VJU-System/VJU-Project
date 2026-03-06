@@ -4010,3 +4010,42 @@ QA workflow requires existing Markdown transcription files (`*_transcription.md`
 - deployment failures: none
 - runtime duration: ~10 minutes
 - stop reason: batch complete
+
+## 2026-03-07 Batch 3 (User-requested next 5 via Claude)
+
+### Selected sets (oldest updated first)
+- `259-HD-DHVN_Annex 1 Certificate Equivalency Table`
+- `259-HD-DHVN_Annex 2 JLPT Authorization Letter Template`
+- `259-HD-DHVN_Foreign Language Certificate Guidelines VJU2020-2021`
+- `3626-QD-DHQGHN_Regulation on Undergraduate Training`
+- `3636-QD-DHQGHN_Regulation on Masters Training`
+
+### Claude QA findings
+- `259 Annex 1`: fix_needed (VI disclaimer institution/link mismatch)
+- `259 Annex 2`: fix_needed (VI disclaimer mismatch; VI sub-heading level normalization)
+- `259 Guidelines`: fix_needed (VI disclaimer mismatch)
+- `3626`: pass
+- `3636`: fix_needed (JA Article 25 heading format consistency)
+
+### Fixes applied
+- `259` series (VI): disclaimer issuer/link normalized to `Trường Đại học Việt Nhật (__https://vju.ac.vn__)`
+- `259 Annex 2` (VI):
+  - `**LETTER OF AUTHORIZATION**` -> `### LETTER OF AUTHORIZATION`
+  - `**Authorization Letter**` -> `### Authorization Letter`
+- `3636` (JA): `## 第二十五条 ...` -> `## 第25条 ...`
+- Updated `last_updated: 2026-03-07` in modified files
+
+## Batch Execution Summary (auto)
+- run_id: `20260307_015000`
+- target_root: `data`
+- mode: `public`
+- processed sets: 5
+- partially processed sets: 0
+- skipped sets due to time limit: 0
+- major issues: VI disclaimer issuer-link mismatch in 259 series; JA heading format inconsistency in 3636
+- major fixes: applied in 4 files (5-set review)
+- timeout events: none
+- authentication errors: none
+- deployment failures: none
+- runtime duration: ~16 minutes
+- stop reason: batch complete
