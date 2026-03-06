@@ -3969,3 +3969,44 @@ QA workflow requires existing Markdown transcription files (`*_transcription.md`
 - suggested next targets: PDF cross-check for deferred EN/JA artifacts in 826
 - runtime duration: ~12 minutes
 - stop reason: batch complete
+
+## 2026-03-07 Batch 2 (User-requested next 3 via Claude)
+
+### Selected sets (oldest updated first)
+- `000-HD-DHVN_Foreign Language Certificate Guidelines`
+- `1132-QD-DHVN_Examination Affairs Regulations`
+- `1534-HD-DHVN_Annex Templates English Format`
+
+### Claude QA findings
+- `000-HD-DHVN`: fix_needed
+  - EN/JA section numbering mismatch at headings: `4/5` were rendered as `3/4`.
+- `1132-QD-DHVN`: fix_needed
+  - VI disclaimer line was in English; replaced with Vietnamese disclaimer.
+- `1534-HD-DHVN (English Format)`: pass
+  - no safe mandatory fixes.
+
+### Fixes applied
+- `000-HD-DHVN`:
+  - EN: `## 3. Important information to note` -> `## 4...`
+  - EN: `## 4. Implementation` -> `## 5...`
+  - JA: `## 3. 留意すべき情報` -> `## 4...`
+  - JA: `## 4. 実施組織` -> `## 5...`
+  - Updated `last_updated: 2026-03-07` in EN/JA
+- `1132-QD-DHVN`:
+  - Replaced VI English disclaimer with Vietnamese disclaimer text
+  - Updated `last_updated: 2026-03-07` in VI
+
+## Batch Execution Summary (auto)
+- run_id: `20260307_014600`
+- target_root: `data`
+- mode: `public`
+- processed sets: 3
+- partially processed sets: 0
+- skipped sets due to time limit: 0
+- major issues: heading numbering mismatch (000 EN/JA), VI disclaimer language mismatch (1132)
+- major fixes: applied in 3 files
+- timeout events: none
+- authentication errors: none
+- deployment failures: none
+- runtime duration: ~10 minutes
+- stop reason: batch complete
