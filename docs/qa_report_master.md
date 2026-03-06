@@ -3923,3 +3923,49 @@ QA workflow requires existing Markdown transcription files (`*_transcription.md`
 - suggested next targets: run PDF cross-check for noted EN/JA garbled table passages if high-fidelity publication is required
 - runtime duration: ~8 minutes
 - stop reason: requested additional run completed
+
+## 2026-03-07 Batch 1 (AI Instruction run via Claude)
+
+### Preflight
+- Claude auth check: `pong`
+- Tools: `pdfinfo=OK`, `pdftotext=OK`, `qpdf=MISSING`, `mutool=MISSING`
+- target_root: `data`
+- mode: `public`
+
+### Daily cap check (2026-03-07)
+- Completed sets already recorded today: 0
+- Decision: process up to 3 sets
+
+### Selected sets (priority run)
+- `2184-TB-DHNN_VNU-TESTS Language Assessment Plan`
+- `323-QD-DHVN_Q1 2025 Budget Execution Disclosure`
+- `826-KTDBCL-DHVN_Public Report 2024-2025`
+
+### Claude QA findings
+- `2184-TB-DHNN`: pass (metadata complete; no required edits)
+- `DHVN-QD-323`: fix_needed (`issue_date` was null; body date indicates 2025-04-04)
+- `DHVN-KT&DBCL-826`: fix_needed (`issue_date` was null; body date indicates 2025-07-25)
+- Deferred notes from Claude (not auto-fixed in this run): translation artifacts in some EN/JA sections of 826, and section numbering irregularities in VI 826 (requires source cross-check)
+
+### Fixes applied
+- Set `issue_date: "2025-04-04"` in VI/EN/JA of `DHVN-QD-323`
+- Set `issue_date: "2025-07-25"` in VI/EN/JA of `DHVN-KT&DBCL-826`
+
+## Batch Execution Summary (auto)
+- run_id: `20260307_014200`
+- target_root: `data`
+- mode: `public`
+- processed sets: 3
+- partially processed sets: 0
+- skipped sets due to time limit: 0
+- estimated remaining sets: N/A (daily run complete)
+- major issues: missing `issue_date` in 2 sets
+- major fixes: YAML `issue_date` backfilled in 6 files
+- new QA checks discovered: none
+- timeout events: none
+- authentication errors: none
+- deployment failures: none
+- temp cleanup status: no temp artifacts
+- suggested next targets: PDF cross-check for deferred EN/JA artifacts in 826
+- runtime duration: ~12 minutes
+- stop reason: batch complete
