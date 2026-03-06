@@ -3,7 +3,7 @@ id: DHVN-KT&DBCL-826
 title: 2024-2025年度の公開レポート
 issuer: Trường Đại học Việt Nhật
 category: Public Report
-issue_date: null
+issue_date: "2025-07-25"
 status: active
 replaces: []
 replaced_by: []
