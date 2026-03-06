@@ -3,7 +3,7 @@ id: DHVN-QD-323
 title: ASSESSMENT OF THE IMPLEMENTATION OF THE BUDGET REVENUE AND EXPENDITURE ESTIMATE
 issuer: Trường Đại học Việt Nhật
 category: Public Report
-issue_date: null
+issue_date: "2025-04-04"
 status: active
 replaces: []
 replaced_by: []

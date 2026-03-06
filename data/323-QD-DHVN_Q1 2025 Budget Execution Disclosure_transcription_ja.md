@@ -3,7 +3,7 @@ id: DHVN-QD-323
 title: 予算収支見積りの執行状況評価
 issuer: Trường Đại học Việt Nhật
 category: Public Report
-issue_date: null
+issue_date: "2025-04-04"
 status: active
 replaces: []
 replaced_by: []
