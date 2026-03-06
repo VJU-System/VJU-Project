@@ -5,7 +5,7 @@ date: 2023-12-29
 department: "Vietnam National University, Hanoi"
 type: "Decision"
 restricted: false
-last_updated: 2026-02-24
+last_updated: 2026-03-07
 ---
 
 > **[DISCLAIMER]** Tài liệu này được tạo bởi AI phục vụ mục đích học tập và tham khảo. Nội dung gốc tiếng Việt được trích xuất từ văn bản hình ảnh (scan/OCR). Mọi thông tin có tính pháp lý phải được đối chiếu với văn bản gốc có đóng dấu đỏ.
@@ -63,7 +63,7 @@ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
 
 **HỌC TẬP Ở ĐẠI HỌC QUỐC GIA HÀ NỘI**
 
-*(Kèm theo Quyết định số 5282/QĐ-ĐHQGHN ngày 29 tháng 12 năm 2023 của Giám đốc Đại học Quốc gia Hà Nội)*
+*(Kèm theo Quyết định số 5292/QĐ-ĐHQGHN ngày 29 tháng 12 năm 2023 của Giám đốc Đại học Quốc gia Hà Nội)*
 
 # Chương I
 NHỮNG QUY ĐỊNH CHUNG
