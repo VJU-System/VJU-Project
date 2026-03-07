@@ -335,7 +335,12 @@ MANDATORY QUALITY FIRST GATE: GEMINI PDF↔MD VISUAL/CONTENT CROSS-CHECK (RUN BE
 
 Before script checks and before Claude QA/fix/review, run Gemini verification by providing both:
 - the source PDF
-- the generated/transcribed Markdown (`*_transcription*.md`)
+- the source-language transcription Markdown only (`*_transcription.md`)
+
+Scope boundary (mandatory):
+- Gemini in this workflow checks **PDF ↔ source transcription MD** fidelity only.
+- Do NOT use Gemini for source-transcription ↔ translation (EN/JA) consistency checks.
+- EN/JA translation consistency must be checked in later non-Gemini QA steps (script checks / Claude QA).
 
 Purpose:
 - detect omissions / skipped passages / dropped lines in MD vs PDF
@@ -364,6 +369,10 @@ Preferred model for this step:
 
 Operational rules for this step:
 - This is the highest-priority QA gate and MUST run before any other QA checks for each document-set.
+- Gemini API rate-limit stabilization:
+  - When running multiple Gemini checks in one batch, calls MUST be staggered with about 3 seconds between starts.
+  - Do NOT fire all Gemini jobs at exactly the same time.
+  - Recommended pattern: start next Gemini call only after `sleep 3` from the previous call start (or longer if quota/backoff warnings appear).
 - If Gemini indicates material PDF↔MD mismatch (missing blocks, structural drift, signature/recipient/title-page misplacement), fix alignment issues first before running script checks or Claude QA.
 - Gemini is a pre-QA verifier, not a replacement for Claude judgement authority in this workflow.
 - Treat Gemini findings as primary evidence for transcription-fidelity fixes and as supplemental evidence for Claude-directed review decisions.
